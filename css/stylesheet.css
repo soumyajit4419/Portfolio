@@ -8,6 +8,17 @@
    background: url('../images/preloader_7.gif') center no-repeat black;
 }
 
+.no-js #loader {
+   display: none;
+}
+
+.js #loader {
+   display: block;
+   position: absolute;
+   left: 100px;
+   top: 0;
+}
+
 
 #home
 {
