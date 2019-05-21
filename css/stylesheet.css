@@ -62,7 +62,7 @@
           background-image: url('../images/prog.jpg');
           width:100%;
           height:100%; 
-          background-size:cover;
+          background-size:100% 100%;
           
       }
 
@@ -78,7 +78,7 @@
             background-image: linear-gradient( to right bottom, rgba(17, 16, 16, 0.801), rgba(15, 14, 14, 0.637)),url('../images/footer1.jpeg');
             width:100%;
             height:100%; 
-            background-size:cover;
+            background-size:100% 100%;
             font-family: sans-serif;
         } 
 
