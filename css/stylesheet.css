@@ -233,16 +233,37 @@
             height:8%
           }
        }
-       
-       #contact
+
+       @media screen and (max-width: 700px) 
+       {
+         #contact
        {
            
            background-image:linear-gradient( to right bottom, rgba(23, 24, 24, 0.521), rgba(68, 67, 68, 0.589)), url('../images/cont.jpg');
            position:center;
-           height:780px; 
+           height:830px; 
            background-size: cover;
            font-family: sans-serif;
        } 
+   
+       }
+       
+       @media screen and (min-width: 701px) 
+       {
+         
+            #contact
+            {
+                
+                background-image:linear-gradient( to right bottom, rgba(23, 24, 24, 0.521), rgba(68, 67, 68, 0.589)), url('../images/cont.jpg');
+                position:center;
+                height:780px; 
+                background-size: cover;
+                font-family: sans-serif;
+            } 
+   
+        }
+       
+      
 
     
     
@@ -251,7 +272,7 @@
           .c1
            {
             font-family:sans-serif;
-            font-size: 13.5px;
+            font-size: 15px;
             color:white;
             padding-top:21px;
           }
@@ -264,7 +285,9 @@
           font-size: 25px;
           color:white;
           font-family:sans-serif;
-          padding-top:150px;
+          padding-top:120px;
           
           }
         }
+
+       
