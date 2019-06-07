@@ -88,7 +88,7 @@
 
       .try
         {
-           background:linear-gradient(to right bottom, rgba(0, 0, 0, 0.705), rgba(3, 3, 3, 0.692)) !important
+           background:linear-gradient( rgba(0, 0, 0, 0.705), rgba(3, 3, 3, 0.781)) !important
         }
 
 
