@@ -239,7 +239,7 @@
          #contact
        {
            
-           background-image:linear-gradient( to right bottom, rgba(23, 24, 24, 0.521), rgba(68, 67, 68, 0.589)), url('../images/cont.jpg');
+           background-image:linear-gradient( to right bottom, rgba(23, 24, 24, 0.521), rgba(68, 67, 68, 0.589)), url('../images/end.jpg');
            position:center;
            height:830px; 
            background-size: cover;
@@ -254,7 +254,7 @@
             #contact
             {
                 
-                background-image:linear-gradient( to right bottom, rgba(23, 24, 24, 0.521), rgba(68, 67, 68, 0.589)), url('../images/cont.jpg');
+                background-image:linear-gradient( to right bottom, rgba(23, 24, 24, 0.521), rgba(68, 67, 68, 0.589)), url('../images/end.jpg');
                 position:center;
                 height:780px; 
                 background-size: cover;
@@ -289,5 +289,32 @@
           
           }
         }
+
+
+        @media screen and (max-width: 700px) 
+       {
+         .map-responsive iframe{
+            left:0;
+            top:0;
+            height:200px;
+            width:100%;
+            position: relative;
+        }
+          
+       }
+       
+       @media screen and (min-width: 701px) 
+       {
+         .map-responsive iframe{
+            left:0;
+            top:0;
+            height:440px;
+            width:100%;
+            position: relative;
+        }
+          
+        }
+
+
 
        
