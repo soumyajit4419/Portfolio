@@ -396,25 +396,39 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 " style="color:white">
+          <br>
           <h2 class="text-center ab1 wow slideInDown" style="font-family:Georgia, 'Times New Roman', Times, serif">DROP
             SOMETHING</h2><br>
           <form>
-            <div class="form-group">
-              <label for="uname">YOUR NAME:-</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+              </div>
               <input type="text" class="form-control" id="uname" placeholder="ENTER YOUR NAME" required>
             </div>
             <br>
-            <div class="form-group">
-              <label for="email">EMAIL ID:-</label>
-
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-phone-square"></i></span>
+              </div>
+              <input type="text" class="form-control" id="phone" placeholder="ENTER YOUR NUMBER" required>
+            </div>
+            <br>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
               <input type="text" class="form-control" id="email" placeholder=" ENTER YOUR EMAIL" required>
             </div>
             <br>
-            <div class="form-group">
-              <label for="textarea1">MESSAGE:-</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              </div>
               <textarea type="text" class="form-control" id="textarea1" placeholder="ENTER YOUR MESSAGE" rows="4"
                 required></textarea>
             </div>
+            <br>
             <button type="submit" class="btn btn-success">SEND</button>
           </form>
         </div>
