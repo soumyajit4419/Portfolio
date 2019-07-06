@@ -399,33 +399,33 @@
           <br>
           <h2 class="text-center ab1 wow slideInDown" style="font-family:Georgia, 'Times New Roman', Times, serif">DROP
             SOMETHING</h2><br>
-          <form>
+          <form methord='POST' action="contactform.php">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fa fa-user"></i></span>
               </div>
-              <input type="text" class="form-control" id="uname" placeholder="ENTER YOUR NAME" required>
+              <input type="text" class="form-control" id="uname" placeholder="ENTER YOUR NAME" name="name" required>
             </div>
             <br>
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fa fa-phone-square"></i></span>
               </div>
-              <input type="text" class="form-control" id="phone" placeholder="ENTER YOUR NUMBER" required>
+              <input type="text" class="form-control" id="phone" placeholder="ENTER YOUR NUMBER" name="number" required>
             </div>
             <br>
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text">@</span>
               </div>
-              <input type="text" class="form-control" id="email" placeholder=" ENTER YOUR EMAIL" required>
+              <input type="text" class="form-control" id="email" placeholder=" ENTER YOUR EMAIL" name="email" required>
             </div>
             <br>
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fa fa-envelope"></i></span>
               </div>
-              <textarea type="text" class="form-control" id="textarea1" placeholder="ENTER YOUR MESSAGE" rows="4"
+              <textarea type="text" class="form-control" id="textarea1" placeholder="ENTER YOUR MESSAGE" rows="4" name="message"
                 required></textarea>
             </div>
             <br>
