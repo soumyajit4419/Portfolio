@@ -5,7 +5,7 @@
 	<title>Soumyajit| My Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<link rel="icon" href="images/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 
@@ -16,7 +16,6 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -76,8 +75,8 @@
 								</a>
 							</h3>
 							<br><br>
-							<p><a href="about.html" class="btn-custom" style="color: rgba(0, 0, 0, 0.603);">More About Me <span
-										class="ion-ios-arrow-forward"></span></a></p>
+							<p><a href="about.html" class="btn-custom" style="color: rgba(0, 0, 0, 0.603);">More About
+									Me <span class="ion-ios-arrow-forward"></span></a></p>
 						</div>
 					</div>
 				</div>
@@ -91,7 +90,7 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" /></svg></div>
 
-
+	<script src="js/typewriter.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -103,69 +102,11 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/particles.js"></script>
 	<script src="js/app.js"></script>
 
-	<script>
-		var TxtType = function (el, toRotate, period) {
-			this.toRotate = toRotate;
-			this.el = el;
-			this.loopNum = 0;
-			this.period = parseInt(period, 10) || 2000;
-			this.txt = '';
-			this.tick()
-			this.isDeleting = false;
-		};
-
-		TxtType.prototype.tick = function () {
-			var i = this.loopNum % this.toRotate.length;
-			var fullTxt = this.toRotate[i];
-
-			if (this.isDeleting) {
-				this.txt = fullTxt.substring(0, this.txt.length - 1);
-			} else {
-				this.txt = fullTxt.substring(0, this.txt.length + 1);
-			}
-
-			this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-			var that = this;
-			var delta = 200 - Math.random() * 100;
-
-			if (this.isDeleting) { delta /= 2; }
-
-			if (!this.isDeleting && this.txt === fullTxt) {
-				delta = this.period;
-				this.isDeleting = true;
-			} else if (this.isDeleting && this.txt === '') {
-				this.isDeleting = false;
-				this.loopNum++;
-				delta = 500;
-			}
-
-			setTimeout(function () {
-				that.tick();
-			}, delta);
-		};
-
-		window.onload = function () {
-			var elements = document.getElementsByClassName('typewrite');
-			for (var i = 0; i < elements.length; i++) {
-				var toRotate = elements[i].getAttribute('data-type');
-				var period = elements[i].getAttribute('data-period');
-				if (toRotate) {
-					new TxtType(elements[i], JSON.parse(toRotate), period);
-				}
-			}
-			// INJECT CSS
-			var css = document.createElement("style");
-			css.type = "text/css";
-			css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid rgb(129, 128, 128)}";
-			document.body.appendChild(css);
-		};</script>
 </body>
 
 </html>

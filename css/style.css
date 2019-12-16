@@ -7314,7 +7314,7 @@ h1, h2, h3, h4, h5,
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 2.5em; }
+  font-size: 1.6em; }
 
 #colorlib-page {
   width: 100%;
@@ -7910,84 +7910,6 @@ h1, h2, h3, h4, h5,
         border-color: #fff;
         color: #f05d23; }
 
-.blog-entry {
-  margin-bottom: 6em; }
-  .blog-entry .img {
-    display: block;
-    height: 400px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px; }
-    .blog-entry .img.img-2 {
-      height: 330px; }
-  .blog-entry .text {
-    position: relative;
-    z-index: 0; }
-    .blog-entry .text .category {
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 1px; }
-    .blog-entry .text h3 {
-      font-weight: 700;
-      font-size: 28px; }
-      .blog-entry .text h3 a {
-        color: #000000; }
-    .blog-entry .text .meta-wrap {
-      width: 100%;
-      display: block; }
-      .blog-entry .text .meta-wrap .half {
-        width: 100%; }
-      .blog-entry .text .meta-wrap .meta span {
-        margin: 0 5px;
-        color: #b3b3b3; }
-        .blog-entry .text .meta-wrap .meta span i {
-          margin-right: 10px; }
-      .blog-entry .text .meta-wrap .btn {
-        text-transform: uppercase;
-        font-size: 13px;
-        letter-spacing: 2px; }
-  .blog-entry .author .img {
-    width: 80px;
-    height: 80px;
-    display: block;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
-  .blog-entry .author .info {
-    width: calc(100% - 80px); }
-    .blog-entry .author .info h3 {
-      font-size: 20px;
-      margin-bottom: 0;
-      font-weight: 400; }
-      .blog-entry .author .info h3 a {
-        font-weight: 600;
-        color: #000000;
-        text-decoration: underline; }
-      .blog-entry .author .info h3 span {
-        color: #000000; }
-  .blog-entry .author span {
-    font-size: 18px;
-    color: #b3b3b3; }
-  .blog-entry .text-2 h3 {
-    font-size: 22px;
-    font-weight: 700; }
-  .blog-entry .author .img {
-    width: 60px;
-    height: 60px;
-    display: block;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
-  .blog-entry .author .info {
-    width: calc(100% - 60px); }
-    .blog-entry .author .info h3 {
-      font-size: 18px; }
-  .blog-entry .author span {
-    font-size: 15px;
-    font-weight: 300; }
 
 .aside-stretch {
   background: #f38053; }
@@ -8006,32 +7928,10 @@ h1, h2, h3, h4, h5,
         background: transparent;
         display: none; } }
 
-.form-control {
-  height: 52px !important;
-  background: #fff !important;
-  color: #000000 !important;
-  font-size: 18px;
-  border-radius: 0px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important; }
-  .form-control:focus, .form-control:active {
-    border-color: #000000; }
-
-textarea.form-control {
-  height: inherit !important; }
 
 .ftco-animate {
   opacity: 0;
   visibility: hidden; }
-
-.about-author img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%; }
-
-.about-author .desc h3 {
-  font-size: 20px; }
 
 .ftco-section {
   padding: 6em 1.8em;
@@ -8501,7 +8401,7 @@ textarea.form-control {
 }
 
 .resume-list li {
-	margin-bottom: 120px;
+	margin-bottom: 85px;
 	position: relative;
 }
 
@@ -8522,12 +8422,12 @@ textarea.form-control {
 }
 
 .resume-list h2 {
-	font-size: 3.1em;
+	font-size: 2.1em;
 	margin-bottom: 10px;
 }
 
 .resume-list h4 {
-	font-size: 20px;
+	font-size: 1.2em;
 	text-transform: uppercase;
 	color: #808181;
 	margin-top: 5px;
@@ -8546,4 +8446,40 @@ textarea.form-control {
 	left: 0;
 	bottom: 0;
 	background: #40424a;
+}
+
+.about_area .about_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main_title h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.about_area .main_title p {
+  margin-bottom: 20px;
+}
+
+.main_title p {
+  margin-bottom: 0px;
+}
+.site-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  min-width: 213px;
+  min-height: 20px;
+  text-align: center;
+  padding: 20px 10px 15px;
+  position: relative;
+  background-color: #fff;
+  margin-right: 10px;
+  border: 2px solid #40424a;
+  color: #40424a;
+  font-weight: 700
 }
