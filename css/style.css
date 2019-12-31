@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -33,8 +34,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family: "Rubik", sans-serif; }
 
 *,
 *::before,
@@ -43,7 +43,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family:  "Rubik", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -55,10 +55,10 @@ html {
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-
+ 
 body {
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:  "Rubik", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -163,7 +163,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Rubik", sans-serif;
   font-size: 1em; }
 
 pre {
@@ -424,7 +424,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "Rubik", sans-serif;}
 
 code {
   font-size: 87.5%;
@@ -4498,7 +4498,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4583,7 +4583,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7272,7 +7272,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family:  "Rubik", sans-serif;
   background: #fff;
   font-size: 15px;
   line-height: 1.8;
@@ -7287,7 +7287,7 @@ body {
       -o-transform: translateX(0);
       transform: translateX(0);
       width: 270px;
-      background: #fff;
+      background: rgba(15, 15, 15, 0.287);
       z-index: 999;
       position: fixed; }
     body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
@@ -7332,7 +7332,7 @@ h1, h2, h3, h4, h5,
   top: 0;
   left: 0;
   z-index: 1001;
-  background: rgba(0, 0, 0, 0.226);
+  background: rgba(15, 15, 15, 0.287);
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -7350,7 +7350,7 @@ h1, h2, h3, h4, h5,
       -o-transform: translateX(-270px);
       transform: translateX(-270px);
       padding-top: 2em;
-      background: rgba(0, 0, 0, 0.04); } }
+      background: rgba(15, 15, 15, 0.287); } }
   #colorlib-aside #colorlib-logo {
     margin-bottom: 2.5em;
     display: block;
@@ -7376,16 +7376,21 @@ h1, h2, h3, h4, h5,
       font-size: 16px;
       font-weight: 700; }
       #colorlib-aside #colorlib-main-menu ul li a {
-        color: rgba(0, 0, 0, 0.4);
+        color: rgba(22, 22, 22, 0.692);
         text-decoration: none;
         position: relative;
         padding: 10px 0;
-        font-family: "Montserrat", Arial, sans-serif;
+        font-family: "Rubik", sans-serif;
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+
+        #colorlib-aside #colorlib-main-menu ul li i {
+          color: rgba(22, 22, 22, 0.692);
+        }
+      
         #colorlib-aside #colorlib-main-menu ul li a:after {
           content: "";
           position: absolute;
@@ -7577,7 +7582,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .5;
-    background: #fff;
+    background: rgba(226, 226, 226, 0.822);
     z-index: 0; }
   .hero-wrap.hero-wrap-2 .overlay {
     opacity: .8; }
@@ -8376,7 +8381,7 @@ h1, h2, h3, h4, h5,
 
 
 .spad {
-    padding-top: 125px;
+    padding-top: 100px;
     padding-bottom: 110px;
 }
 .section-title h2 {
@@ -8401,7 +8406,7 @@ h1, h2, h3, h4, h5,
 }
 
 .resume-list li {
-	margin-bottom: 85px;
+	margin-bottom: 60px;
 	position: relative;
 }
 
@@ -8486,6 +8491,7 @@ h1, h2, h3, h4, h5,
 
 .card{
   border: 2px solid rgba(0, 0, 0, 0.472);
+  box-shadow:2px 2px 4px 4px #888888;
 }
 
 .card-footer{
@@ -8546,25 +8552,16 @@ h1, h2, h3, h4, h5,
 
 .title-box {
   margin-bottom: 4rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:  "Rubik", sans-serif;
 }
 
 .title-a {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: monospace;
+  font-family: cursive;
 }
 
-.title-a::before,
-.title-a::after {
-    display: inline-block;
-    content: "";
-    border-top: .3rem solid black;
-    width: 4rem;
-    margin: 0 1rem;
-    transform: translateY(-1rem);
-}
 
 .card-title{
   font-family: cursive;
