@@ -8005,7 +8005,7 @@ h1, h2, h3, h4, h5,
 }
 
 .work-content {
-  padding: 2rem 3% 1rem 4%;
+  padding: 0.2rem 4% 0.2rem 4%;
 }
 
 .work-content .w-more {
@@ -8018,7 +8018,7 @@ h1, h2, h3, h4, h5,
 }
 
 .work-content .w-like {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #0078ff;
   float: right;
 }
