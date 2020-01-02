@@ -7851,7 +7851,7 @@ h1, h2, h3, h4, h5,
 	text-transform: uppercase;
 	color: #808181;
 	margin-top: 5px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 }
 
 .resume-list p {
@@ -7967,19 +7967,19 @@ h1, h2, h3, h4, h5,
 
 .title-box {
   margin-bottom: 2rem;
-  font-family:  "Rubik", sans-serif;
+  font-family:  "Poppins", Arial, sans-serif;;
 }
 
 .title-a {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: cursive;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 
 .card-title{
-  font-family: cursive;
+  font-family: "Poppins", Arial, sans-serif;;
 }
 
 
@@ -8015,6 +8015,7 @@ h1, h2, h3, h4, h5,
 
 .work-content .w-more .w-ctegory {
   color: #0078ff;
+  font-size: 1.1em;
 }
 
 .work-content .w-like {
@@ -8033,6 +8034,7 @@ h1, h2, h3, h4, h5,
 
 .w-title {
   font-size: 1.2rem;
+  margin-bottom: 0.1em;
 }
 .work-box {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
