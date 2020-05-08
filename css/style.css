@@ -6776,7 +6776,7 @@ h1, h2, h3, h4, h5,
     margin-bottom: 2.5em;
     display: block;
     width: 100%;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 1.8em; }
     @media (max-width: 991.98px) {
       #colorlib-aside #colorlib-logo {
@@ -6871,7 +6871,7 @@ h1, h2, h3, h4, h5,
         list-style: none; }
         #colorlib-aside .colorlib-footer ul li a {
           color: rgba(0, 0, 0, 0.7);
-          padding: 4px; }
+          padding: 6px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
@@ -7720,7 +7720,62 @@ h1, h2, h3, h4, h5,
   background: #fff;
 }
 
-#preloader:before {
+.spinner {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+/* #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -7788,7 +7843,7 @@ h1, h2, h3, h4, h5,
     stroke-dashoffset: -35px; }
   100% {
     stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
+    stroke-dashoffset: -136px; } } */
 
   /*---------------------
 	Resume section
@@ -8214,3 +8269,6 @@ h1, h2, h3, h4, h5,
     transition: all 300ms linear 0s;
   }
 
+.f-2x{
+  font-size: 1.5em;
+}
