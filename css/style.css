@@ -8271,3 +8271,65 @@ h1, h2, h3, h4, h5,
 .f-2x{
   font-size: 1.5em;
 }
+
+/* Space */
+.sm-space {
+	padding: 7.5px;
+}
+.md-space {
+	padding: 10px;
+}
+.lg-space {
+	padding: 25px;
+}
+.xl-space {
+	padding: 50px;
+}
+
+/* Divider */
+.divider {
+	border-width: 2px;
+}
+.divider__solid {
+	border-style: solid;
+}
+
+/* Box Shadow */
+.box {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+	-webkit-transition: box-shadow 0.2s ease;
+	-o-transition: box-shadow 0.2s ease;
+	transition: box-shadow 0.2s ease;
+}
+.box-shadow {
+    box-shadow: 0 12px 24px 8px rgba(36,37,38,0.08);
+}
+.box-shadow__hover:hover {
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.1);
+}
+
+/* Section */
+.section {
+	padding: 80px 0;
+}
+.section-bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.section-overlay {
+	position: relative;
+}
+.section-overlay::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
