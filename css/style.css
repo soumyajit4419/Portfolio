@@ -8021,16 +8021,17 @@ h1, h2, h3, h4, h5,
 
 .title-box {
   margin-bottom: 2rem;
-  font-family:  "Poppins", Arial, sans-serif;;
+  font-family:  "Poppins", Arial, sans-serif;
+  position: relative;
+  color: #173b6c;
 }
 
 .title-a {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif; 
 }
-
 
 .card-title{
   font-family: "Poppins", Arial, sans-serif;;
@@ -8332,4 +8333,88 @@ h1, h2, h3, h4, h5,
     width: 100%;
     height: 100%;
     background-color: #000000;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+.section-title h3::after {
+  content: '';
+  position: relative; 
+  display:block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-box h3::after {
+  content: '';
+  position: relative; 
+  display:block;
+  width: 80px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left:0;
+  margin-left: auto;
+  margin-right: auto;
 }
