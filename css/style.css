@@ -8418,3 +8418,17 @@ h1, h2, h3, h4, h5,
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.section-title h2::after {
+  content: '';
+  position: relative; 
+  display:block;
+  width: 70px;
+  height: 3px;
+  background: #464646;
+  bottom: 0;
+  left:0;
+  margin-left: auto;
+  margin-right: auto;
+}
