@@ -175,10 +175,11 @@
 	$('.imageGallery1 .light').simpleLightbox();
 
 	function gallery_isotope() {
-		if ($('.gallery_f_inner').length) {
+		if ($('.gallery_f_inner').length ) {
 			// Activate isotope in container
 			$(".gallery_f_inner").imagesLoaded(function () {
 				$(".gallery_f_inner").isotope({
+					filter: '.ml',
 					layoutMode: 'fitRows',
 					animationOptions: {
 						duration: 750,
