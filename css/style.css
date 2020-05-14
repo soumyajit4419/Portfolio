@@ -6664,10 +6664,11 @@ h1, h2, h3, h4, h5,
     display: block;
     width: 100%;
     font-weight: 500;
-    font-size: 1.8em; }
+    font-size: 1.9em; }
     @media (max-width: 991.98px) {
       #colorlib-aside #colorlib-logo {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        font-size: 1.7em; } }
     #colorlib-aside #colorlib-logo a {
       display: inline-block;
       text-align: center;
@@ -8356,6 +8357,8 @@ h1, h2, h3, h4, h5,
       margin-left: 10px; }
   .single-services:hover {
     border-color: #FE7A7B; }
+
+    
 .font-weight__500{
 font-size: 1.3em;
 }
