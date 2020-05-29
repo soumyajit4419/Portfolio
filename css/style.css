@@ -8174,7 +8174,7 @@ h1, h2, h3, h4, h5,
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #b3bfe27c;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -8316,9 +8316,23 @@ h1, h2, h3, h4, h5,
 .single-profile:hover .profile-border {border:transparent;}
   
 .font-weight__500{
-font-size: 1.3em;
+font-size: 1.5em;
 }
 
+.font-weight__700{
+  font-size:2.1em;
+  }
 .equal-height > div {
 	display: flex;
+}
+.button {
+  border: 2px solid;
+  border-color: rgb(149, 64, 228);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  margin:8px;
+  border-radius: 5px;
 }
