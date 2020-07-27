@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
 </head>
 
@@ -29,7 +31,7 @@
                     <li><i class="fas fa-book-open">&nbsp</i><a href="resume.html">Resume</a></li>
                     <li class="colorlib-active"><i class="fas fa-laptop-code" style="color: black;">&nbsp</i><a
                             href="projects.html">Projects</a></li>
-                    <li><i class="fas fa-trophy">&nbsp</i><a href="certificate.html">Certificate</a></li>
+                    <!-- <li><i class="fas fa-trophy">&nbsp</i><a href="certificate.html">Certificate</a></li> -->
                     <li><i class="fas fa-user">&nbsp</i><a href="about.html">About Me</a></li>
 
                 </ul>
@@ -56,1072 +58,183 @@
         </aside>
 
         <div id="colorlib-main">
-
-            <section id="blog" class="blog-mf sect-pt4 route project-section with-bg">
-                <div class="hero-wrap hero-wrap-2 " style="background-image: url(images/bg_2.jpg);background-repeat: no-repeat;
-                        background-attachment: fixed;">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="title-box text-center ">
-                                    <br><br>
-                                    <h3 class="title-a">
-                                        Projects
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- web dev section -->
-                        <div class="row" style="display: block;">
-                            <div class="col-sm-12">
-                                <h1 class="text-center" style="color: rgba(26, 26, 26, 0.835);">WEB DEVLOPMENT PROJECT'S
-                                </h1>
-                                <br />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">API / REACT JS</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Github Application
-                                        </h3>
-                                        <p class="card-description">
-                                            Web application which uses Github api and collects all the information
-                                            about
-                                            a user github profile.Frontend is rendered using React Js.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Github_application"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://githubapplication.ashish454570.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Website</span>
-                                                    </a>
+            <div class="section feature-grid bg-light">
+                <div class="row ">
+                    <div class="col-10 mx-auto text-center section-title ">
+                        <h2 class="font-weight__700">Projects</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="row equal-height justify-content-center">
+                                <div class="col-11 col-lg-6">
+                                    <div class="feature-grid box box-shadow box-shadow__hover bg-light-primary row">
+                                        <div class="mt-auto col">
+                                            <div class="row align-items-center">
+                                                <div
+                                                    class="col-12 col-md-8 col-lg-12 text-center text-md-left text-lg-center">
+                                                    <h3 class="font-weight__500">
+                                                        Face Detection And Emotion Recognition
+                                                    </h3>
+                                                    <p style="color: rgb(63, 63, 63);">Detecting The face in a image and
+                                                        Recognising their emotions.
+                                                    </p>
+                                                    <p style="color: rgb(98, 98, 98);text-align: left;"> In this
+                                                        project,
+                                                        I have trained a
+                                                        CNN classifier using "FER-2013 dataset" with Keras and
+                                                        tensorflow backened. The classifier sucessfully predicted the
+                                                        various types of emotions of human. And the highest accuracy
+                                                        obtained with the model was 60.1%. <br />
+                                                        Then used Open-CV to detect the face in an image and then pass
+                                                        the face to the classifer to predict the emotion of a person.
+                                                    </p>
+                                                    <button class="button" disabled>Open Cv</button>
+                                                    <button class="button" disabled>CNN</button>
+                                                    <button class="button" disabled>Image Classification</button>
+                                                    <div style="margin-top: 8px;">
+                                                        <a href="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+                                                            target="_blank" style="color: #9f25d2;  "><i
+                                                                class="fas fa-external-link-alt">&nbsp</i>Repository</a>
+                                                        &nbsp &nbsp
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Node Js / Mongo DB</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Blogging Website
-                                        </h3>
-                                        <p class="card-description">
-                                            A website in which user can share,create and post blogs on different
-                                            types.User can also edit the post and view all other post.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="post-author">
-                                            <a href="https://github.com/soumyajit4419/Blogging_website" target="_blank">
-                                                <i class="fab fa-github">&nbsp</i>
-                                                <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                <span class="author" style="color: black;">Repository</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">API / REACT JS</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Weather Application
-                                        </h3>
-                                        <p class="card-description">
-                                            Web application which uses Open Weather Map api and provides various
-                                            information
-                                            of 16 days Weather forcast.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/weather_apk"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://weatherapk.ashish454570.now.sh/" target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Website</span>
-                                                    </a>
+                                <div class="col-11 col-lg-6">
+                                    <div class="feature-grid box box-shadow box-shadow__hover bg-light-primary row">
+                                        <div class="mt-auto col">
+                                            <div class="row align-items-center">
+                                                <div
+                                                    class="col-12 col-md-8 col-lg-12 text-center text-md-left text-lg-center">
+                                                    <h3 class="font-weight__500">
+                                                        AI FOR SOCIAL GOOD
+                                                    </h3>
+                                                    <p style="color: rgb(63, 63, 63);">Classification of Messages of
+                                                        social media platform to identity if a person is affectd by any
+                                                        metal illness and thus helping in sucide prevention.
+                                                    <p style="color: rgb(98, 98, 98); text-align: left;">
+                                                    </p>
+                                                    <button class="button" disabled>NLP</button>
+                                                    <button class="button" disabled>LSTM</button>
+                                                    <button class="button" disabled>TFIDF</button>
+                                                    <button class="button" disabled>XGBOOST</button>
+                                                    <button class="button" disabled>Classification</button>
+                                                    <div style="margin-top: 8px;">
+                                                        <!-- <a href="./Projects/text_classification.html" target="_blank"
+                                                            style="color: #9f25d2;  "><i
+                                                                class="fas fa-external-link-alt">&nbsp</i>Repository</a>
+                                                        &nbsp &nbsp
+                                                        <a href="./Projects/text_classification.html" target="_blank"
+                                                            style="color: #9f25d2; "><i
+                                                                class="fas fa-laptop-code"></i>&nbsp</i>Website</a> -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <br><br>
-                            </div>
-                        </div>
-                        <br>
-
-
-                        <!-- Python section -->
-                        <div class="row" style="display: block;">
-                            <div class="col-sm-12">
-                                <h1 class="text-center" style="color: rgba(26, 26, 26, 0.835);">PYTHON PROJECT'S
-                                </h1>
-                                <br />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Python / Automation</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Whatsapp Automation
-                                        </h3>
-                                        <p class="card-description">
-                                            Python Script with automates Whatsapp and allows user to send any message
-                                            and any number of message to a user.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="post-author ">
-                                            <a href="https://github.com/soumyajit4419/WhatsApp_Automation"
-                                                target="_blank">
-                                                <i class="fab fa-github">&nbsp</i>
-                                                <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                <span class="author" style="color: black;">Repository</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Python / Web Scraping</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Web Scraping Stack Overflow
-                                        </h3>
-                                        <p class="card-description">
-                                            Web scraping of stack-overflow and finding the most questioned
-                                            launguge.Scraping is done in every 24hr and data is stored in file.
-
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="post-author">
-                                            <a href="https://github.com/soumyajit4419/Web_scraping" target="_blank">
-                                                <i class="fab fa-github">&nbsp</i>
-                                                <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                <span class="author" style="color: black;">Repository</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">PYTHON / BOT</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center"> Instagram Bot
-                                        </h3>
-                                        <p class="card-description">
-                                            A bot automated with selenium which checks the followers and
-                                            following of the user and says which users have not followed you.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="post-author">
-                                            <a href="https://github.com/soumyajit4419/Instagram_Bot" target="_blank">
-                                                <i class="fab fa-github">&nbsp</i>
-                                                <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                <span class="author" style="color: black;">Repository</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br><br>
-                            </div>
-                        </div>
-
-                        <!-- Machine Learning Section -->
-                        <div class="row" style="display: block;">
-                            <div class="col-sm-12">
-                                <h1 class="text-center" style="color: rgba(26, 26, 26, 0.835);;">MACHINE LEARNING
-                                    PROJECT'S
-                                </h1>
-                                <br />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Classification</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Spam Email Detection
-                                        </h3>
-                                        <p class="card-description">
-                                            Detecting if the email is spam or not using machine
-                                            learning classification.<br />
-                                            <a href="https://spam-email-check-app.herokuapp.com/">
-                                                spam-email-check-app.herokuapp.com</a>
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://spam-email-classifier.now.sh/" target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Spam_Email_Classifier"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Website</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Classification</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Password Strength Detection
-                                        </h3>
-                                        <p class="card-description">
-                                            Detection of the strength of the password using machine
-                                            learning classification algorithm.And using the model as api.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://password-strength-classifier.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Password_Strength_Classifier"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Website</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Recommmender System</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Movie Recommender System
-                                        </h3>
-                                        <p class="card-description">
-                                            Recommending movies to the user using varoius features and Machine Learning
-                                            algorithms.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://movie-recommender-system.now.sh/" target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Movie_Recommender_System"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                        </div>
-
-
-
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Classification</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Credit Card Fraud Detection
-                                        </h3>
-                                        <p class="card-description">
-                                            Detecting wheather the transaction of a user was a fraud or not using
-                                            Logistic Regression algorithm.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://credit-card-fraud-detection.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Credit_Card_Fraud_Detection"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Classification</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Amazon Reviews Sentimental Analysis
-                                        </h3>
-                                        <p class="card-description">
-                                            Sentimental analysis of reviews of user using NLP and Classification
-                                            algorithm.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://amazon-sentimental-analysis.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Amazon_Sentimental_Analysis"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Classification</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Fake Profile Detection
-                                        </h3>
-                                        <p class="card-description">
-                                            The purpose of this project is to build a model that can detect fake user
-                                            profiles using only the visible data of the user profiles.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://fake-user-profile-detection.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Fake_User_Profile_Detection"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Regression</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Bike Rental Demand Prediction
-                                        </h3>
-                                        <p class="card-description">
-                                            This project is a Predication of bike rental in a day based on the
-                                            environmental and seasonal condition
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://bike-rental-demand-prediction.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Bike_Rental_Demand_Prediction"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Regression</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Diamond Price Predication
-                                        </h3>
-                                        <p class="card-description">
-                                            This project is a prediction of the price of a new diamond based on its
-                                            various features using Regression Algorithms.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://diamond-price-prediction.now.sh/" target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Diamond_Price_Prediction"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Regression</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Car Price Prediction
-                                        </h3>
-                                        <p class="card-description">
-                                            This project is a prediction of the price of a new car based on various
-                                            features of the car using Regression Algorithms.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://car-price-prediction.now.sh/" target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author">
-                                                    <a href="https://github.com/soumyajit4419/Car_Price_Prediction"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Recommender System</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Book Recommender System
-                                        </h3>
-                                        <p class="card-description">
-                                            Recommending books to the user using colaborative filtering and based on
-                                            user ratings.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://book-recommendation-system.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Book_Recommendation_System"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Clustering</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Mall Customer Segmentation
-                                        </h3>
-                                        <p class="card-description">
-                                            Diving Customer into diffrent groups having same charctersitcs using
-                                            Clustering Algorithms.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://mall-customer-segmentation.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Mall_Customer_Segmentation"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Machine Learning / Classification</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Wine Quality Classification
-                                        </h3>
-                                        <p class="card-description">
-                                            This project is a Wine Quality Classifier,Which predicts the quality of the
-                                            wine i.e good or bad or using Classification Algorithms.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://wine-quality-classification.now.sh/"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Wine_Quality_Classification"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                        </div>
-
-                        <!-- Deep Learning Section -->
-                        <div class="row" style="display: block;">
-                            <div class="col-sm-12">
-                                <h1 class="text-center" style="color: rgba(26, 26, 26, 0.835);">DEEP LEARNING
-                                    PROJECT'S
-                                </h1>
-                                <br />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Deep Learning </h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Writing Like Shakespeare
-                                        </h3>
-                                        <p class="card-description">
-                                            Auto Text generation using text using LSTM and RNN and Predicting Some new
-                                            text or lines of
-                                            the poem.
-
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Writing_Like_Shakespeare/blob/master/Auto_Poem_Generation.ipynb"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Writing_Like_Shakespeare"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Deep Learning </h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Emojify
-                                        </h3>
-                                        <p class="card-description">
-                                            Auto Emoji from text messages using Multilayer Bidirectional LSTM and
-                                            predict emoji from text messages.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Emojify--V1.0/blob/master/Emojify_%5BEmoji_Generation_From_Text%5D.ipynb"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Emojify--V1.0"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Deep Learning </h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Quora Question Pair Similarity
-                                        </h3>
-                                        <p class="card-description">
-                                            Checking similarity between quora questions pairs and predicting if the two
-                                            questions are similar using Bidirectional Multilayer LSTM.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Quora_Question_Pair_Similarity/blob/master/Quora_Question_Pair_Similarity.ipynb"
-                                                        target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Quora_Question_Pair_Similarity"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Deep Learning </h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Deep Learning Using Tensorflow
-                                        </h3>
-                                        <p class="card-description">
-                                            1.Cat Dog Classifier [CNN] <br />
-                                            2.CIFAR 10 Classification [CNN] <br />
-                                            3.Fashion MNSIT Classification [CNN] ,etc..
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Deep_Learning_Projects"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repository</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
-                            </div>
-                        </div>
-
-
-                        <!-- Industry Related Projects Section -->
-                        <div class="row" style="display: block;">
-                            <div class="col-sm-12">
-                                <h1 class="text-center" style="color: rgba(26, 26, 26, 0.835);">ANALYTICS
-                                    PROJECT'S
-                                </h1>
-                                <br />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" class="pad">
-                                <div class="card card-blog">
-                                    <div class="card-img">
-                                        <!-- <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a> -->
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-category-box">
-                                            <div class="card-category">
-                                                <h6 class="category">Data Analytics</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="card-title text-center">Customer Data Analytics
-                                        </h3>
-                                        <p class="card-description">
-                                            To perform "Cutomer Analytics" of mall and doing "Purchase
-                                            Analytics" to predict the purchase behaviour.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://customer-analytics.now.sh/" target="_blank">
-                                                        <i class="fas fa-code">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">ML Code</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="post-author ">
-                                                    <a href="https://github.com/soumyajit4419/Customer_Analytics"
-                                                        target="_blank">
-                                                        <i class="fab fa-github">&nbsp</i>
-                                                        <!-- <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
-                                                        <span class="author" style="color: black;">Repo/Details</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br><br>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-            </section>
-            <!--/ Section Blog End /-->
+                <div class="md-space"></div>
+                <div class="md-space"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="row equal-height justify-content-center">
+                                <div class="col-11 col-lg-6">
+                                    <div class="feature-grid box box-shadow box-shadow__hover bg-light-primary row">
+                                        <div class="mt-auto col">
+                                            <div class="row align-items-center">
+                                                <div
+                                                    class="col-12 col-md-8 col-lg-12 text-center text-md-left text-lg-center">
+                                                    <h3 class="font-weight__500">
+                                                        Spam Email Classifier
+                                                    </h3>
+                                                    <p style="color: rgb(63, 63, 63);">Detection of Spam Email.
+                                                    </p>
+                                                    <p style="color: rgb(98, 98, 98); text-align: left;">In this
+                                                        project.
+                                                        I have used various method of text cleaning methods and then
+                                                        using bag
+                                                        of words and TfIdf to vectorize the text and using various types
+                                                        of Machine Learning Alogrithms like "Naive bayes" , "Random
+                                                        Forest"
+                                                        and "Xgboost" to detect if a mail was a spam mail or not.
+                                                    </p>
+                                                    <button class="button" disabled>NLP</button>
+                                                    <button class="button" disabled>Ml Alogorithms</button>
+                                                    <button class="button" disabled>Bag Of Words</button>
+                                                    <div style="margin-top: 8px;">
+                                                        <a href="https://github.com/soumyajit4419/Spam_Email_Classifier"
+                                                            target="_blank" style="color: #9f25d2;  "><i
+                                                                class="fas fa-external-link-alt">&nbsp</i>Repository</a>
+                                                        &nbsp &nbsp
+                                                        <a href="https://spam-email-check-app.herokuapp.com/"
+                                                            target="_blank" style="color: #9f25d2; "><i
+                                                                class="fas fa-laptop-code"></i>&nbsp</i>Website</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11 col-lg-6">
+                                    <div class="feature-grid box box-shadow box-shadow__hover bg-light-primary row">
+                                        <div class="mt-auto col">
+                                            <div class="row align-items-center">
+                                                <div
+                                                    class="col-12 col-md-8 col-lg-12 text-center text-md-left text-lg-center">
+                                                    <h3 class="font-weight__500">
+                                                        Plant AI
+                                                    </h3>
+                                                    <p style="color: rgb(63, 63, 63);">Detection of diseased leaves of
+                                                        plant and Predicting the disease.
+                                                    </p>
+                                                    <p style="color: rgb(98, 98, 98);text-align: left;">In this project,
+                                                        I have used the "plant disease dataset" from kaggle and trained
+                                                        a image classifer model using PyTorch framework using CNN and
+                                                        Transfer Learning with 38
+                                                        classes of various plant leaves.The model was successfully able
+                                                        to detect diseased and healthy leaves of 14 unique plants.
+                                                        I was able to achive an accuracy of 98% by using Resnet34
+                                                        pretrained model.
+                                                    </p>
+                                                    <button class="button" disabled>Image Classification</button>
+                                                    <button class="button" disabled>CNN</button>
+                                                    <button class="button" disabled>Transfer Learning</button>
+                                                    <div style="margin-top: 8px;">
+                                                        <a href="https://github.com/soumyajit4419/Plant_AI"
+                                                            target="_blank" style="color: #9f25d2;  "><i
+                                                                class="fas fa-external-link-alt">&nbsp</i>Repository</a>
+                                                        &nbsp &nbsp
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-space"></div>
+                <div class="md-space"></div>
+
+
+
+
+
+
+
+            </div>
+            <!--/ End Features Grid -->
+
 
         </div><!-- END COLORLIB-MAIN -->
     </div><!-- END COLORLIB-PAGE -->
