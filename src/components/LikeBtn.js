@@ -46,7 +46,7 @@ function Like() {
   return (
     <Nav.Item className="like-item">
       <Button className="like-btn" onClick={clickHandler} disabled={btnState}>
-        <i className="far fa-heart" style={{ color: "white" }}></i> {numLike}
+        <i className="far fa-heart" style={{ color: "#fb6fcd" }}></i> {numLike}
       </Button>
     </Nav.Item>
   );

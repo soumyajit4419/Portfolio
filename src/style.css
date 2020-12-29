@@ -672,17 +672,14 @@
 }
 
 .like-btn {
-  background-image: linear-gradient(
-      to right,
-      #9e58dfcc 0%rgba (156, 48, 218, 0.678) da 100%
-    ),
-    radial-gradient(circle at top left, #ae57d6b7, #9b45c3b2) !important;
+  background-color: #9535e450 !important;
+  border-color: #9535e450 !important;
   padding: 0.35rem 0.78rem !important;
   border-radius: 5px !important;
   border: 2px transparent !important;
 }
 
 .like-btn:hover {
-  background-color: #af62eec4 !important;
-  border-color: #ae5af3ca !important;
+  background-color: #a35dd169 !important;
+  border-color: #a35dd169 !important;
 }

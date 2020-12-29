@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="" target="_blank">soumyajit.vercel.app</a>
+  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.vercel.app</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img.png" />
@@ -8,17 +8,12 @@
 
 <br/>
 
-#### My personal portfolio <a href="" target="_blank">soumyajit.vercel.app</a> built with **React.js** and hosted with **Vercel**. It aslo uses a Node.JS RESTful API backend for some additional features.
-
-<br/>
+My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.vercel.app</a> built with **React.js** and hosted with **Vercel**. It aslo uses a Node.JS RESTful API backend for some additional features.
 
 ### TL;DR
 
-#### This site is not developed for the purpose of being used as a template.
-
-#### You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
-
-<br/>
+This site is not developed for the purpose of being used as a template.<br/>
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
 
 ### 🛠 Installation and Setup Instructions
 
