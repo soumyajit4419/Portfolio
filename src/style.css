@@ -1,3 +1,23 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+}
+
+.purple {
+  color: var(--imp-text-color) !important;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -132,8 +152,8 @@
 }
 
 .logo {
-  height: 1.6em !important;
-  width: 2.8em !important;
+  height: 1.4em !important;
+  width: 2.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -234,12 +254,7 @@
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: linear-gradient(
-      to bottom left,
-      rgba(17, 16, 16, 0.678),
-      rgba(12, 10, 22, 0.863)
-    ),
-    url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -316,10 +331,6 @@
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
-}
-
-.purple {
-  color: #c770f0 !important;
 }
 
 .home-about-social {
@@ -422,6 +433,10 @@
   margin-bottom: 0.5em !important;
   padding: 0 !important;
 }
+
+.blockquote-footer {
+  color: #a588c0 !important;
+}
 /* --------- */
 /* Projects */
 /* --------- */
@@ -429,11 +444,7 @@
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  ) !important;
+  background-image: var(--section-background-color) !important;
 }
 
 .project-card {
@@ -477,7 +488,6 @@
 
 .blog-link:hover {
   cursor: pointer !important;
-  color: #ce8eec !important;
 }
 
 .blog-card-view:hover {
@@ -528,11 +538,7 @@
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  ) !important;
+  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -584,11 +590,7 @@
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  ) !important;
+  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -667,19 +669,36 @@
 }
 
 .like-item {
-  padding-top: 8px !important;
+  padding-top: 10px !important;
+  font-size: 1.1em !important;
   font-family: sans-serif !important;
 }
 
 .like-btn {
-  background-color: #9535e450 !important;
-  border-color: #9535e450 !important;
-  padding: 0.35rem 0.78rem !important;
+  background-color: #934cce5e !important;
+  border-color: #934cce5e !important;
+  padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
-  border: 2px transparent !important;
+  line-height: 1.4 !important;
+  transition: 0.3s ease !important;
 }
 
 .like-btn:hover {
-  background-color: #a35dd169 !important;
-  border-color: #a35dd169 !important;
+  transform: translateY(-2px) !important;
+  background-color: #a24dd386 !important;
+  border-color: #a24dd386 !important;
+}
+
+.animate-like {
+  animation-name: likeAnimation;
+  animation-fill-mode: forwards;
+  animation-duration: 0.85s;
+}
+@keyframes likeAnimation {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

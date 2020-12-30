@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "./Particle";
 import Resumecontent from "./ResumeContent";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import axios from "axios";
 import pdf from "../Assets/Soumyajit-Resume.pdf";
 
 function Resume() {
+  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
+  const [spojRank, upadteSpojRank] = useState(0);
+  const [hackerrank, upadteHackerank] = useState(0);
+  const [sem, upadateSem] = useState(0);
+  const [cgpa, upadteCgpa] = useState(0);
+
+  useEffect(() => {
+    axios
+      .get(uri)
+      .then((res) => {
+        upadteSpojRank(res.data.message[0].spojRank);
+        upadteHackerank(res.data.message[1].hackerrank);
+        upadteCgpa(res.data.message[2].cgpa);
+        upadateSem(res.data.message[3].sem);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <Container fluid className="resume-section">
       <Particle />
@@ -48,7 +68,7 @@ function Resume() {
             <Resumecontent
               title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
               date="2018 - Present"
-              content={["CGPA: 7.2 (Till 4rd Sem)"]}
+              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
             />
             <Resumecontent
               title="12TH BOARD [ODM Public School,Odisha]"
@@ -64,8 +84,8 @@ function Resume() {
             <Resumecontent
               title=""
               content={[
-                "Current rank in Spoj 17827",
-                "Current rank in HackerRank 15965",
+                `Current rank in Spoj ${spojRank}`,
+                `Current rank in HackerRank  ${hackerrank}`,
                 "Top Perfomer in Code-Break 1.0",
                 "Paticipant in Hack-A-Bit 2019",
               ]}
