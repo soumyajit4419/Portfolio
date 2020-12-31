@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.vercel.app</a>
+  <a href="http://soumyajit.tech/" target="_blank">soumyajit.tech</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img.png" />
@@ -8,7 +8,7 @@
 
 <br/>
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.vercel.app</a> built with **React.js** and hosted with **Vercel**. It aslo uses a Node.JS RESTful API backend for some additional features.
+My personal portfolio <a href="http://soumyajit.tech/" target="_blank">soumyajit.tech</a> built with **React.js** and hosted with **Vercel**. It aslo uses a Node.JS RESTful API backend for some additional features.
 
 ### Features
 
