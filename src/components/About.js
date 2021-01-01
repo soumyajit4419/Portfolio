@@ -5,7 +5,7 @@ import Github from "./Github";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Techstack from "./Techstack";
-import Quotecard from "./QuoteCard";
+import Aboutcard from "./AboutCard";
 import laptopImg from "../Assets/about.png";
 
 function About() {
@@ -25,7 +25,7 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
-            <Quotecard />
+            <Aboutcard />
           </Col>
           <Col
             md={5}

@@ -53,7 +53,7 @@ function Projects() {
               isBlog={false}
               title="Suicide Ideation Prediction"
               description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affectd by any metal illness and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              link="https://gist.github.com/soumyajit4419/ef44d41fdc510637c7f6730d1bbce2ed"
             />
           </Col>
 
@@ -63,7 +63,7 @@ function Projects() {
               isBlog={false}
               title="Emotion Predcition from EEG Signals"
               description="Using EEG signals from 'AMIGOS' Dataset to extract features and train a classifier that helps in detection of human emitions from Brain Signals."
-              link="https://github.com/soumyajit4419/Amigos-Emotion_Recognition_Using_EEG_Signals"
+              link="https://gist.github.com/soumyajit4419/dc94177bc4954752051798f88fbce1df"
             />
           </Col>
 

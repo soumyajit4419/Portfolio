@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function QuoteCard() {
+function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
@@ -15,7 +15,7 @@ function QuoteCard() {
             Mesra.
             <br />
             <br />
-            Apart from coding, some other activities that i love to do!
+            Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
@@ -39,4 +39,4 @@ function QuoteCard() {
   );
 }
 
-export default QuoteCard;
+export default AboutCard;
