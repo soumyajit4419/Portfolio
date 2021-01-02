@@ -140,7 +140,7 @@ html {
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
   .navbar-nav .nav-item a::after {
@@ -168,7 +168,7 @@ html {
 
 @media (max-width: 767px) {
   .nav-link {
-    padding: 1.2rem 1rem !important;
+    padding: 0.7rem 1rem !important;
   }
 }
 
