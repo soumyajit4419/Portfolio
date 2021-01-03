@@ -32,7 +32,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for devloping products
+              Whenever possible, I also apply my passion for developing products
               with
               <i>
                 <b className="purple"> Modern Javascript Frameworks </b>

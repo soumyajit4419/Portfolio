@@ -6,8 +6,10 @@ import Likebtn from "./LikeBtn";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../Assets/logo.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
+  const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
@@ -22,7 +24,7 @@ function NavBar() {
 
   return (
     <Navbar
-      collapseOnSelect
+      expanded={expand}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
@@ -31,7 +33,12 @@ function NavBar() {
         <Navbar.Brand href="/">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -39,22 +46,34 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link href="/">
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <i className="fas fa-home"></i> Home
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/about">
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
                 <i className="far fa-user"></i> About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/project">
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
                 <i className="fab fa-codepen"></i> Projects
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/resume">
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
                 <i className="far fa-file-alt"></i> Resume
               </Nav.Link>
             </Nav.Item>
