@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "./Particle";
-import Github from "./Github";
-import "../style.css";
+import Particle from "../Particle";
+import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../Assets/about.png";
+import laptopImg from "../../Assets/about.png";
 
 function About() {
   return (

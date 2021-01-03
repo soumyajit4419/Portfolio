@@ -31,7 +31,7 @@ function Like() {
     updateLike(numLike + 1);
     upadteCounter(likeCounter + 1);
 
-    if (likeCounter > 8) {
+    if (likeCounter > 3) {
       upadteBtn(true);
     }
     const accessToken = process.env.REACT_APP_ACCESS_TOKEN;

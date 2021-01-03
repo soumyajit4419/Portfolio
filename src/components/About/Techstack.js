@@ -1,6 +1,6 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import "../style.css";
+import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Techstack(prop) {

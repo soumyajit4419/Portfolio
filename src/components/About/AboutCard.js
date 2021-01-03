@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import "../style.css";
+import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function AboutCard() {
@@ -25,7 +25,7 @@ function AboutCard() {
               <i className="far fa-hand-point-right"></i> Writting Tech Blogs
             </li>
             <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Traveling
+              <i className="far fa-hand-point-right"></i> Travelling
             </li>
           </ul>
 

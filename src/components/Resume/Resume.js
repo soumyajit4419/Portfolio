@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "./Particle";
+import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import "../style.css";
+import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import pdf from "../Assets/Soumyajit-Resume.pdf";
+import pdf from "../../Assets/Soumyajit-Resume.pdf";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
@@ -86,8 +86,8 @@ function Resume() {
               content={[
                 `Current rank in Spoj ${spojRank}`,
                 `Current rank in HackerRank  ${hackerrank}`,
-                "Top Perfomer in Code-Break 1.0",
-                "Paticipant in Hack-A-Bit 2019",
+                "Top Performer in Code-Break 1.0",
+                "Participant in Hack-A-Bit 2019",
               ]}
             />
           </Col>
