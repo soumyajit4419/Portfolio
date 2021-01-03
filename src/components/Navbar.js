@@ -6,6 +6,7 @@ import Likebtn from "./LikeBtn";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../Assets/logo.png";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -77,7 +78,19 @@ function NavBar() {
                 <i className="far fa-file-alt"></i> Resume
               </Nav.Link>
             </Nav.Item>
+
             <Likebtn />
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://github.com/soumyajit4419/Portfolio"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <i className="fas fa-code-branch"></i>{" "}
+                <i className="far fa-star"></i>
+              </Button>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

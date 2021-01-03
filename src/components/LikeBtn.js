@@ -34,13 +34,9 @@ function Like() {
     if (likeCounter > 3) {
       upadteBtn(true);
     }
-    const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
+
     axios
-      .post(
-        postUri,
-        { likes: numLike },
-        { headers: { "access-token": accessToken } }
-      )
+      .post(postUri)
       .then((res) => {
         console.log(res.data.status);
       })
