@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Likebtn from "./LikeBtn";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../Assets/logo.png";
@@ -78,8 +77,6 @@ function NavBar() {
                 <i className="far fa-file-alt"></i> Resume
               </Nav.Link>
             </Nav.Item>
-
-            <Likebtn />
 
             <Nav.Item className="fork-btn">
               <Button

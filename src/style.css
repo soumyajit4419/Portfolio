@@ -455,7 +455,7 @@ html {
 }
 
 .project-card-view {
-  box-shadow: 6px 8px 10px 6px rgba(0, 0, 0, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -464,7 +464,7 @@ html {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 6px 8px 10px 8px rgba(6, 4, 12, 0.938) !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
 .blog-card {
@@ -476,7 +476,7 @@ html {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 6px 7px 7px 4px rgba(0, 0, 0, 0.466) !important;
+  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
 }
@@ -493,7 +493,7 @@ html {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 6px 8px 9px 8px rgba(6, 4, 12, 0.938) !important;
+  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
 
 .card-img-top {

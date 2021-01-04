@@ -59,6 +59,8 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://github.com/soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <i className="fab fa-github"></i>
@@ -67,6 +69,8 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://twitter.com/Soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <i className="fab fa-twitter"></i>
@@ -75,6 +79,8 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/soumyajit4419/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <i className="fab fa-linkedin-in"></i>
@@ -83,6 +89,8 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
                   <i className="fab fa-instagram"></i>

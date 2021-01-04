@@ -52,7 +52,7 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Suicide Ideation Prediction"
-              description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affectd by any metal illness and thus helping in sucide prevention."
+              description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affectd by any mental illness and thus helping in sucide prevention."
               link="https://gist.github.com/soumyajit4419/ef44d41fdc510637c7f6730d1bbce2ed"
             />
           </Col>
