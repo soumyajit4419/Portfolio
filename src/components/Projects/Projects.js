@@ -62,7 +62,7 @@ function Projects() {
               imgPath={eeg}
               isBlog={false}
               title="Emotion Predcition from EEG Signals"
-              description="Using EEG signals from 'AMIGOS' Dataset to extract features and train a classifier that helps in detection of human emitions from Brain Signals."
+              description="Using EEG signals from 'AMIGOS' Dataset to extract features and train a classifier that helps in detection of human emotions from Brain Signals."
               link="https://gist.github.com/soumyajit4419/dc94177bc4954752051798f88fbce1df"
             />
           </Col>

@@ -452,6 +452,7 @@ html {
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
+  height: auto !important;
 }
 
 .project-card-view {
@@ -460,6 +461,7 @@ html {
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
+  height: 100% !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
@@ -472,6 +474,7 @@ html {
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
+  height: auto !important;
 }
 
 .blog-card-view {
@@ -479,6 +482,7 @@ html {
   box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
+  height: 100% !important;
 }
 
 .blog-link {
