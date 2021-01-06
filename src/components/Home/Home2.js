@@ -35,7 +35,7 @@ function Home2() {
               Whenever possible, I also apply my passion for developing products
               with
               <i>
-                <b className="purple"> Modern Javascript Libraries </b>
+                <b className="purple"> Modern Javascript Frameworks</b>
               </i>
               like
               <i>
