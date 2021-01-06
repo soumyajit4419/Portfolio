@@ -31,7 +31,7 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Leaf Disease Prediction"
-              description="Used the plant disease dataset from kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves.The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achive an accuracy of 98% by using Resnet34 pretrained model."
+              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
               link="https://github.com/soumyajit4419/Plant_AI"
             />
           </Col>
@@ -52,7 +52,7 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Suicide Ideation Prediction"
-              description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affectd by any mental illness and thus helping in sucide prevention."
+              description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affected by any mental illness and thus helping in sucide prevention."
               link="https://gist.github.com/soumyajit4419/ef44d41fdc510637c7f6730d1bbce2ed"
             />
           </Col>
