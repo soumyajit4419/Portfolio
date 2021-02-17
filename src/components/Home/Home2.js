@@ -37,7 +37,7 @@ function Home2() {
               <i>
                 <b className="purple"> Modern Javascript Frameworks</b>
               </i>
-              like
+                &nbsp; like
               <i>
                 <b className="purple"> Node.js and React.js</b>
               </i>
