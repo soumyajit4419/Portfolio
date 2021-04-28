@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+.idea
 # dependencies
 /node_modules
 /.pnp
@@ -26,4 +26,4 @@ yarn-error.log*
 .eslintcache
 
 Server/node_modules
-Server/config.js
+Server/config.js.idea
