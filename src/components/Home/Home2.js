@@ -1,9 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
-import "../../style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -20,14 +24,16 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Python and Javascript. </b>
+                <b className="purple"> C++, Javascript and Python. </b>
               </i>
               <br />
               <br />
-              My current focus is on &nbsp;
+              My field of Interest's are building new &nbsp;
               <i>
+                <b className="purple">Web Technologies and Products </b> and
+                also in areas related to{" "}
                 <b className="purple">
-                  Deep Learning and Natural Language Processing.
+                  Deep Learning and Natural Launguage Processing.
                 </b>
               </i>
               <br />
@@ -37,7 +43,7 @@ function Home2() {
               <i>
                 <b className="purple"> Modern Javascript Frameworks</b>
               </i>
-                &nbsp; like
+              &nbsp; like
               <i>
                 <b className="purple"> Node.js and React.js</b>
               </i>
@@ -63,7 +69,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-github"></i>
+                  <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
@@ -73,7 +79,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-twitter"></i>
+                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -83,7 +89,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
@@ -93,7 +99,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

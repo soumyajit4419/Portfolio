@@ -1,7 +1,11 @@
 import React from "react";
-import "../style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -22,7 +26,7 @@ function Footer() {
                 href="https://github.com/soumyajit4419"
                 style={{ color: "white" }}
               >
-                <i className="fab fa-github"></i>
+                <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
@@ -30,7 +34,7 @@ function Footer() {
                 href="https://twitter.com/Soumyajit4419"
                 style={{ color: "white" }}
               >
-                <i className="fab fa-twitter"></i>
+                <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
@@ -38,7 +42,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/soumyajit4419/"
                 style={{ color: "white" }}
               >
-                <i className="fab fa-linkedin-in"></i>
+                <FaLinkedinIn />
               </a>
             </li>
             <li className="social-icons">
@@ -46,7 +50,7 @@ function Footer() {
                 href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
                 style={{ color: "white" }}
               >
-                <i className="fab fa-instagram"></i>
+                <AiFillInstagram />
               </a>
             </li>
           </ul>

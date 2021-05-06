@@ -1,12 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import "../../style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
+import Toolstack from "./Toolstack";
 
 function About() {
   return (
@@ -38,30 +37,14 @@ function About() {
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
-        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Techstack iconName="devicon-cplusplus-line" />
-          <Techstack iconName="devicon-python-plain-wordmark " />
-          <Techstack iconName="cib-pytorch" />
-          <Techstack iconName="cib-tensorflow" />
-          <Techstack iconName="devicon-javascript-plain " />
-          <Techstack iconName="devicon-nodejs-plain-wordmark " />
-          <Techstack iconName="devicon-express-original-wordmark" />
-          <Techstack iconName="devicon-react-original-wordmark" />
-          <Techstack iconName="devicon-mongodb-plain-wordmark" />
-          <Techstack iconName="devicon-git-plain-wordmark" />
-          <Techstack iconName="devicon-bootstrap-plain-wordmark" />
-        </Row>
+
+        <Techstack />
+
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Techstack iconName="devicon-linux-plain" />
-          <Techstack iconName="cib-visual-studio-code" />
-          <Techstack iconName="cib-anaconda" />
-          <Techstack iconName="cib-postman" />
-          <Techstack iconName="cib-zeit" />
-          <Techstack iconName="cib-heroku" />
-        </Row>
+        <Toolstack />
+
         <Github />
       </Container>
     </Container>

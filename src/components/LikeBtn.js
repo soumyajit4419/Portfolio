@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
-import "../style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
 function Like() {

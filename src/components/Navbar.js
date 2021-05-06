@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import "../style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { CgGitFork } from "react-icons/cg";
+import {
+  AiFillStar,
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
+
+import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -47,7 +54,7 @@ function NavBar() {
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <i className="fas fa-home"></i> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -56,7 +63,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="far fa-user"></i> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -65,7 +72,10 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="fab fa-codepen"></i> Projects
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Projects
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -74,7 +84,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="far fa-file-alt"></i> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -84,8 +94,8 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <i className="fas fa-code-branch"></i>{" "}
-                <i className="far fa-star"></i>
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
           </Nav>
