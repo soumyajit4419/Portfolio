@@ -39,13 +39,16 @@ function Home2() {
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with
+              with <b className="purple">Node.js</b> and
               <i>
-                <b className="purple"> Modern Javascript Frameworks</b>
+                <b className="purple">
+                  {" "}
+                  Modern Javascript Library and Frameworks
+                </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> Node.js and React.js</b>
+                <b className="purple"> React.js ans Next.js</b>
               </i>
             </p>
           </Col>
