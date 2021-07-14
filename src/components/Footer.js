@@ -25,6 +25,8 @@ function Footer() {
               <a
                 href="https://github.com/soumyajit4419"
                 style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
               >
                 <AiFillGithub />
               </a>
@@ -33,6 +35,8 @@ function Footer() {
               <a
                 href="https://twitter.com/Soumyajit4419"
                 style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
               </a>
@@ -41,6 +45,8 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/soumyajit4419/"
                 style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
               </a>
@@ -49,6 +55,8 @@ function Footer() {
               <a
                 href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
                 style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
               >
                 <AiFillInstagram />
               </a>
