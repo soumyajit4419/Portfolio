@@ -8,30 +8,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
+          We are  <span className="purple">Bright Angel Education Center </span>
+            Located at <span className="purple"> Mulag , Kampala-Uganda.</span>
+            <br />"Bright Angel Education Center is mixed day primary school.
+            It was founded by a group of highly qualified and experienced teachers who have been teaching in top schools in Uganda.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Why you should choose Bright Angels Education Center
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Condusive enviroment favorable for academics
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <ImPointRight /> Affordable fees structure
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Enough space to accomodate many kids
             </li>
+            <li className="about-activity">
+              <ImPointRight /> Well trained staff to equip your kids with knowledge
+            </li>
+            
           </ul>
 
           <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "In God we trust"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Bright Angel Education Center</footer>
         </blockquote>
       </Card.Body>
     </Card>

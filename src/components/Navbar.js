@@ -3,16 +3,17 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
 import {
-  AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+//import {FaChalkboardTeacher} from "react-icons/fa";
+import {GrGallery} from "react-icons/gr"; 
+import { SiCashapp } from "react-icons/si";
+import { MdContactMail } from "react-icons/md";
+import {GiTeacher} from "react-icons/gi";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -50,6 +51,9 @@ function NavBar() {
           <span></span>
           <span></span>
           <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
@@ -72,46 +76,58 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/fees"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <SiCashapp
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Fees
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/admissions"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Admission Form
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumyajit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/teachers"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <GiTeacher style={{ marginBottom: "2px" }} /> Teachers
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/gallery"
+                onClick={() => updateExpanded(false)}
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
+                <GrGallery style={{ marginBottom: "2px" }} /> Gallery
+              </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdContactMail style={{ marginBottom: "2px" }} /> Contact Us
+              </Nav.Link>
+            </Nav.Item>
+
+            
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

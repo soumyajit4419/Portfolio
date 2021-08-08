@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
-  AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+  } from "react-icons/ai";
+  import {FiFacebook} from "react-icons/fi"
+  import {MdEmail} from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -16,13 +16,12 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              <span className="purple"> OUR  </span> VISION
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              To be a leading school in provision of all round education.
               <br />
-              <br />I am fluent in classics like
+              
               <i>
                 <b className="purple"> C++, Javascript and Python. </b>
               </i>
@@ -60,24 +59,14 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>FIND US ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect </span>with us
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/katereggaalex3"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +76,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/alex-kateregga-79ba181b1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +86,22 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+                  href="https://www.facebook.com/Bright-Angeles-Education-center-mulago-1122820904519189/?ref=page_internal"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <FiFacebook />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="katereggaalex0707@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <MdEmail />
                 </a>
               </li>
             </ul>

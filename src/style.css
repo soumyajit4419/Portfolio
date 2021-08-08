@@ -152,8 +152,8 @@ html {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 5.4em !important;
+  width: 5.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -174,7 +174,7 @@ html {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .navbar-nav .nav-item a {
@@ -207,7 +207,7 @@ html {
 /* --------- */
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-duration: 1.1s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
