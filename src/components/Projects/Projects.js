@@ -26,8 +26,8 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="iRead"
+              description="An android app for downloading and reading books."
               link="https://github.com/soumyajit4419/Chatify"
             />
           </Col>
@@ -35,9 +35,9 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              isBlog={true}
+              title="Shopify Project"
+              description="An android app that diplay at displays a Custom Collections list page and a Collection Details page of products of a Merchant. This project was made as a part of shopify Mobile Dev Challenge.This app uses shopify's api to show the items and was built in android studio."
               link="https://github.com/soumyajit4419/Plant_AI"
             />
           </Col>
@@ -46,8 +46,8 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Deep Learning PyTorch"
+              description="This contains jupyter notebooks of implementations of various machine learning topics like transfer learning, inference and validation, maxpooling visualization etc."
               link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>
@@ -56,8 +56,8 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Flower Prediction"
+              description="Trained a CNN classifier using 'VGG19 model' with PyTorch backened. The classifier succesfully predicts the species of flower from input flower image with an accuracy of 85%. "
               link="https://github.com/soumyajit4419/Bits-0f-C0de"
             />
           </Col>
@@ -66,8 +66,8 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="TV-Script-Generator"
+              description="Using Natural Language Processing, trained a recurrent neural network (RNN) that generates small new dialogues for Simpson's TV script"
               link="https://github.com/soumyajit4419/AI_For_Social_Good"
             />
           </Col>

@@ -6,7 +6,10 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import { DiCode } from "react-icons/di";
+import pdf from "../Assets/Soumyajit-Behera.pdf";
+
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -84,21 +87,22 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
+                as="a"
+                href={pdf}
                 onClick={() => updateExpanded(false)}
+                target="_blank"
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} />   Resume
               </Nav.Link>
             </Nav.Item>
-
+            
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumyajit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/skills"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <DiCode style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
             </Nav.Item>
 

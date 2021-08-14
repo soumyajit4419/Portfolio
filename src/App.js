@@ -6,11 +6,12 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
+import Skills from "./components/Skills/Skills"
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/project" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
+          <Route path="/skills" component={Skills} />
         </Switch>
         <Footer />
       </div>
