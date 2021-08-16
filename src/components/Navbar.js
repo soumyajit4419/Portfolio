@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { CgGitFork,CgCodeSlash } from "react-icons/cg";
 import { DiCode } from "react-icons/di";
 import pdf from "../Assets/Soumyajit-Behera.pdf";
 
@@ -15,6 +14,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineFacebook,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -42,7 +42,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <strong  className="main-name">JS</strong>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
