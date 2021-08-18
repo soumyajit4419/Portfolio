@@ -1,43 +1,40 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "../Skills/Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
-import Toolstack from "../Skills/Toolstack";
+import About2 from "./About2";
+import Type from "./Type";
 
 function About() {
   return (
-    <Container fluid className="about-section">
-      <Particle />
-      <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              About <strong className="purple">Me</strong>
-            </h1>
-            <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
-        </Row>
-     
-        <Github />
+    <section>
+      <Container fluid className="home-section" id="home">
+        <Particle />
+        <Container className="home-content">
+          <Row>
+            <Col md={7} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+              </h1>
+
+              <h1 className="heading-name">
+                I'M
+                <strong className="main-name"> JASHANDEEP SINGH</strong>
+              </h1>
+
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
+            </Col>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img src={homeLogo} alt="home pic" className="img-fluid" />
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </Container>
+      <About2 />
+    </section>
   );
 }
 

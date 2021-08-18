@@ -16,16 +16,16 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Backend infrastruture
+              <ImPointRight /> React
             </li>
             <li className="about-activity">
-              <ImPointRight /> React
+              <ImPointRight /> Backend infrastruture
             </li>
             <li className="about-activity">
               <ImPointRight /> Algorithms
             </li>
             <li className="about-activity">
-              <ImPointRight /> Decentralized Apps
+              <ImPointRight /> Concurrent/Parallel programming
             </li>
           </ul>
 

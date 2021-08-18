@@ -1,24 +1,30 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Techstack from "./Techstack";
-import Toolstack from "./Toolstack";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { BiLinkExternal } from "react-icons/bi";
 
 function Skills() {
   return (
     <Container fluid className="about-section">
       <Particle />
       <Container>
-
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
-        <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
+        <Card className="project-card-view">
+          <Card.Body>
+            <Card.Text style={{ textAlign: "justify" }}>
+              <strong>Languages</strong>
+              <div style={{ marginBottom: 20 }}>  Python • JavaScript • Kotlin • Java • Go • C++/C • SQL  • HTML/CSS • R</div>
+
+              <strong>Frameworks/Libraries</strong>
+              <div>React • Node.js • Express • Android Studio • PyTorch  • MongoDb • Git  </div>
+            </Card.Text>
+          </Card.Body>
+        </Card>
 
       </Container>
     </Container>

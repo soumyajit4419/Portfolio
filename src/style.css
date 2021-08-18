@@ -318,6 +318,8 @@ html {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  
+
 }
 
 .home-about-description {
@@ -467,6 +469,12 @@ html {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.project-card-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .blog-card {
