@@ -1,10 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import Particle from "../Particle";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
-
+import Github from "./Github"
 function Skills() {
   return (
     <Container fluid className="about-section">
@@ -25,7 +23,7 @@ function Skills() {
             </Card.Text>
           </Card.Body>
         </Card>
-
+        <Github className="about-section" />
       </Container>
     </Container>
   );

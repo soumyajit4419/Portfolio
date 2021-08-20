@@ -13,7 +13,7 @@ function Github() {
     grade0: "#ecd9fc",
   };
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Row style={{ justifyContent: "center",paddingTop:"150px", paddingBottom: "30px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Github <strong className="purple">Calendar</strong>
       </h1>

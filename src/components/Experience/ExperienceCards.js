@@ -1,8 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
-import { Row, Col } from "react-bootstrap";
 
 function ProjectCards(props) {
     return (

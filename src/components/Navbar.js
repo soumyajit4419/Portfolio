@@ -4,17 +4,15 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork,CgCodeSlash } from "react-icons/cg";
+import { CgGitFork} from "react-icons/cg";
 import { DiCode } from "react-icons/di";
 import pdf from "../Assets/Soumyajit-Behera.pdf";
 
 
 import {
   AiFillStar,
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlineFacebook,
   AiFillRead,
 } from "react-icons/ai";
 

@@ -23,7 +23,7 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={socaCricketLogo}
               isBlog={false}
@@ -82,7 +82,7 @@ function Projects() {
               linkProject="https://github.com/J268sing/TV-Script-Generator"
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={shopifyLogo}
