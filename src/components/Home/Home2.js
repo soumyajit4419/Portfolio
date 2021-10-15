@@ -19,21 +19,23 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I am a DevOps Engineer with over eight years of overall technology experience. I have
+              a proven track record of aligning technology with business objectives and driving organisational success.
+               I think… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
+              <br />I am fluent in Tech stack likes
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> Linux, Windows, Bash, Python, Docker, Jenkins, Ansible, Terraform, GitHub Action, Gitlab CI, Azure DevOPs and Kubernetes. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              Experienced in various SDLC project phases using Agile:&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Requirement/System gathering, Requirement/System Analysis, Functional Specification, Business Logic's, Design, Layered
+                  Architecture, Test plans,  </b> Coding, Code
+                   review, Testing, Performance tuning, {" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                Documentation, Implementation and Maintenance.
                 </b>
               </i>
               <br />
@@ -67,7 +69,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/afolabiomotoso"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +79,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/avurlerby"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +89,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/omotoso-afolabi/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +99,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+                  href="https://www.instagram.com/avurlerby"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

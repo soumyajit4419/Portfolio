@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
+import HomeCard from "./HomeCard";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -18,10 +19,10 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I am
                 <strong className="main-name"> AFOLABI OMOTOSO</strong>
+                <HomeCard />
               </h1>
-
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
