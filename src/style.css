@@ -598,10 +598,6 @@ html {
 /* Resume */
 /* --------- */
 
-.react-pdf__Page__textContent {
-  background-color: #181424;
-  color: rgb(255, 255, 255) !important;
-}
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
