@@ -81,7 +81,7 @@ html {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0rem !important;
   font-size: 1.2rem !important;
 }
 
@@ -152,8 +152,9 @@ html {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 4em !important;
+  width: 4em !important;
+  padding: 2rem 1rem !important;
 }
 
 .navbar-nav .nav-link {
@@ -185,7 +186,6 @@ html {
 }
 
 .navbar-nav .nav-item a::after {
-  content: "";
   position: relative;
   display: block;
   height: 5px;

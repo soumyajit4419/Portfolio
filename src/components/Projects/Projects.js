@@ -26,9 +26,9 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Connect US"
+              description=""
+              link="https://github.com/Cmosley/where-should-we-live/"
             />
           </Col>
 
@@ -36,9 +36,9 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Script Studio"
+              description="ScriptStud.io is a platform which is easy for a casual user to interface with and allows users to upload examples of well-written code with contextual information about use. It will also be presented in an accessible manner which is easy for a user to read with minimal distraction or superfluous on-page content. This will allow engineers to save, share, and find code for their projects efficiently."
+              link="https://github.com/Cmosley/ScriptStud.io-public"
             />
           </Col>
 
@@ -46,9 +46,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Diversify"
+              description="This application focuses on improving diversity in the workplace. Employees can research companies to gage how diverse a certain company is or isn't and check to see if that company is working on improving their Diversity & Inclusion practices. Companies can submit information on their D&I initiatives, take the Diversify D&I Quiz to see what areas they need to improve on, and find resources on how to improve their D&I"
+              link="https://github.com/Cmosley/SS-BIPOC"
             />
           </Col>
 
@@ -56,9 +56,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Auto-GM"
+              description="Business KPI dashboard which plots past sales and predicts future sales using Linear Regression algorithms"
+              link="https://auto-gm.herokuapp.com/"
             />
           </Col>
 
