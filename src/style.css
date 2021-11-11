@@ -11,10 +11,20 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #2faffa;
 }
 
-.purple {
+
+4 #112e8f
+3 #0d38c3
+2 #b265f6
+1 #c084f5
+0 #ecd9fc
+
+
+
+
+.site-color {
   color: var(--imp-text-color) !important;
 }
 
@@ -94,7 +104,7 @@ html {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #6950f4 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -278,17 +288,17 @@ html {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #1e4ee9;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #1e4ee9 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #123fd1 !important;
 }
 
 @media (max-width: 767px) {
@@ -368,7 +378,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #1e4ee9;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -380,9 +390,9 @@ html {
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #1e4ee9;
+  box-shadow: 0 0 5px #1e4ee9;
+  text-shadow: 0 0 2px #1e4ee9;
 }
 
 .social-icons {
@@ -392,7 +402,7 @@ html {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #1e4ee9 !important;
 }
 
 /* --------- */
@@ -514,14 +524,14 @@ html {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #1e4ee9 !important;
+  border-color: #1e4ee9 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #0d38c3 !important;
+  border-color: #0d38c3 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -551,12 +561,12 @@ html {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(88, 85, 228, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(4, 34, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -570,7 +580,7 @@ html {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(14, 7, 110, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -641,14 +651,14 @@ html {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #0d38c3;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #3039865d;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -678,7 +688,7 @@ html {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #0d38c3;
 }
 
 .like-item {
@@ -688,18 +698,18 @@ html {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #5b3bd15e !important;
+  border-color: #5b3bd15e !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
   transition: 0.3s ease !important;
 }
-
+ 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #0d38c3 !important;
+  border-color: #0d38c3 !important;
 }
 
 .animate-like {
@@ -723,7 +733,7 @@ html {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #0d38c3 !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -731,8 +741,8 @@ html {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #0d38c3 !important;
+  border-color: #0d38c3 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
