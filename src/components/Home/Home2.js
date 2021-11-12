@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/link.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -54,7 +54,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid link" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -93,16 +93,6 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

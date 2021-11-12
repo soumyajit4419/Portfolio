@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 
 function Particle() {
   return (
@@ -10,7 +10,7 @@ function Particle() {
             value: 160,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 2000, 
             },
           },
           line_linked: {
@@ -18,7 +18,7 @@ function Particle() {
             opacity: 0.03,
           },
           move: {
-            direction: "right",
+            direction: "bottom",
             speed: 0.05,
           },
           size: {

@@ -11,17 +11,8 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #2faffa;
+  --imp-text-color: #1e4ee9;
 }
-
-
-4 #112e8f
-3 #0d38c3
-2 #b265f6
-1 #c084f5
-0 #ecd9fc
-
-
 
 
 .site-color {
@@ -201,7 +192,7 @@ html {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #6950f4;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -315,6 +306,10 @@ html {
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
+}
+
+.link {
+  border-radius: 50%!important;
 }
 
 @media (max-width: 767px) {

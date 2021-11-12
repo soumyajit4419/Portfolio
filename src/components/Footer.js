@@ -51,16 +51,6 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
           </ul>
         </Col>
       </Row>
