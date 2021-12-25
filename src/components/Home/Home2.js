@@ -65,7 +65,7 @@ function Home2() {
                 <a
                   href="https://github.com/bryanbeltran/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
@@ -75,7 +75,7 @@ function Home2() {
                 <a
                   href="https://twitter.com/bryanbeltranus/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineTwitter />
@@ -85,7 +85,7 @@ function Home2() {
                 <a
                   href="https://www.linkedin.com/in/bryan-beltran/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
@@ -95,7 +95,7 @@ function Home2() {
                 <a
                   href="https://www.instagram.com/bryan.and.maria/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
