@@ -1,0 +1,7 @@
+export const name_1 = "Kaitlin de Chastelain Finnigan"
+export const description_1 = "4th Year Computer Science Student at the "
+export const description_2 = "University of Calgary"
+export const description_3 = ". I've had the opportunity to work in a mulititude of areas including frontend data visualization, backend data management and data analysis for machine learning and comptuer vision. \nI am passionate about accessibility and making solutions for everyone. Check out my portfolio and feel free to connect with me."
+export const linkedin = "https://www.linkedin.com/in/kaitlin-decf/"
+export const github = "https://github.com/kaitlin31415"
+export const ucalgary = "https://science.ucalgary.ca/computer-science"
