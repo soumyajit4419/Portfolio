@@ -27,7 +27,7 @@ function Experience() {
         <ExperienceCard
           title="Petro-Wagon"
           position="Software Engineer"
-          timePeriod="August 2019 - August 2020"
+          timePeriod="August 2019 - September 2020"
           description1="Pioneered the planning and execution for formation of the company's successfull pilot project."
           description2="Developed Android app for a Chandigarh based startup Petrowagon."
           description3="Gained over 200 B2B regular clients in the span of 1 month."

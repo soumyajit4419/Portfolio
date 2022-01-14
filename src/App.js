@@ -5,7 +5,7 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills/Skills"
-import About from "./components/About/About"
+import Home from "./containers/Home"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -30,7 +30,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Switch>
-          <Route path="/" exact component={About} />
+          <Route path="/" exact component={Home} />
           <Route path="/project" component={Projects} />
           <Route path="/Experience" component={Experience} />
           <Route path="/skills" component={Skills} />
