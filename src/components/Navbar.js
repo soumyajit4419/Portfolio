@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork} from "react-icons/cg";
 import { DiCode } from "react-icons/di";
-import pdf from "../Assets/Soumyajit-Behera.pdf";
+import pdf from "../Assets/resume.pdf";
 
 
 import {

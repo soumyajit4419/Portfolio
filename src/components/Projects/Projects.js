@@ -7,6 +7,8 @@ import iReadLogo from "../../Assets/Projects/iRead.jpg";
 import socaCricketLogo from "../../Assets/Projects/socaCricketLogo.jpg";
 import PyTorchLogo from "../../Assets/Projects/PyTorch.png";
 import shopifyLogo from "../../Assets/Projects/shopifylogo.jpg";
+import toDo from "../../Assets/Projects/todo.jpg";
+import Chess from "../../Assets/Projects/Chess.jpg";
 import TVscriptLogo from "../../Assets/Projects/TVscript.png";
 import FlowerPredictionLogo from "../../Assets/Projects/Flower-Prediction.png";
 
@@ -52,6 +54,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Chess}
+              isBlog={false}
+              hasWebsite={false}
+              title="Chess"
+              description="A chess game implemented in C++ by using OOP principles. It uses Min-Max algorithm to generate optimal computer moves to increase level of difficulty."
+              linkProject="https://github.com/J268sing/cpp/tree/master/Game-of-chess"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={PyTorchLogo}
               isBlog={false}
               hasWebsite={false}
@@ -91,6 +104,16 @@ function Projects() {
               title="Shopify Project"
               description="An android app that diplay at displays a Custom Collections list page and a Collection Details page of products of a Merchant. This project was made as a part of shopify Mobile Dev Challenge.This app uses shopify's api to show the items and was built in android studio."
               linkProject="https://github.com/J268sing/shopify-project"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={toDo}
+              isBlog={false}
+              hasWebsite={false}
+              title="To Do"
+              description="A productivity app where users can organize their daily tasks to make the most out of the day consistently"
+              linkProject="https://github.com/J268sing/To-Do-App"
             />
           </Col>
         </Row>
