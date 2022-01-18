@@ -1,5 +1,4 @@
 {
-  "homepage": "http://j268sing.github.io/Portfolio",
   "name": "server",
   "version": "1.0.0",
   "description": "",
@@ -8,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "start-server": "node index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    
   },
   "author": "",
   "license": "ISC",
