@@ -41,7 +41,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/">
-          <strong  className="main-name">JassS</strong>
+          <strong  className="main-name">JS</strong>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -56,7 +56,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#About">
             <Nav.Item>
-              <Nav.Link as={Link} to="/Portfolio" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
