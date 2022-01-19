@@ -40,7 +40,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/Portfolio/">
+        <Navbar.Brand href="/portfolio/">
           <strong  className="main-name">JS</strong>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -56,7 +56,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#About">
             <Nav.Item>
-              <Nav.Link as={Link} to="/Portfolio/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/portfolio/" onClick={() => updateExpanded(false)}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
@@ -64,7 +64,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/Portfolio/Experience"
+                to="/portfolio/Experience"
                 onClick={() => updateExpanded(false)}
               >
                 <AiFillRead style={{ marginBottom: "2px" }} /> Experience
@@ -74,7 +74,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/Portfolio/project"
+                to="/portfolio/project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -98,7 +98,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/Portfolio/skills"
+                to="/portfolio/skills"
                 onClick={() => updateExpanded(false)}
               >
                 <DiCode style={{ marginBottom: "2px" }} /> Skills
