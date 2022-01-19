@@ -98,10 +98,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/jashanskills"
+                to="/skills"
                 onClick={() => updateExpanded(false)}
               >
-                <DiCode style={{ marginBottom: "2px" }} /> Skills
+                <DiCode style={{ marginBottom: "2px" }} /> JashanSkills
               </Nav.Link>
             </Nav.Item>
 
