@@ -64,7 +64,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/Experience"
+                to="/Portfolio/Experience"
                 onClick={() => updateExpanded(false)}
               >
                 <AiFillRead style={{ marginBottom: "2px" }} /> Experience
@@ -74,7 +74,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/Portfolio/project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -98,7 +98,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/skills"
+                to="/Portfolio/skills"
                 onClick={() => updateExpanded(false)}
               >
                 <DiCode style={{ marginBottom: "2px" }} /> Skills
