@@ -41,7 +41,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/">
-          <strong  className="main-name">JS</strong>
+          <strong  className="main-name">JassS</strong>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
