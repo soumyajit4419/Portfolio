@@ -30,10 +30,10 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
-          <Route path="/Experience" component={Experience} />
-          <Route path="/skills" component={Skills} />
+          <Route path="/Portfolio/" exact component={Home} />
+          <Route path="/Portfolio/project" component={Projects} />
+          <Route path="/Portfolio/Experience" component={Experience} />
+          <Route path="/Portfolio/skills" component={Skills} />
         </Switch>
         <Footer />
       </div>
