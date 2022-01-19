@@ -101,7 +101,7 @@ function NavBar() {
                 to="/skills"
                 onClick={() => updateExpanded(false)}
               >
-                <DiCode style={{ marginBottom: "2px" }} /> JashanSkills
+                <DiCode style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
             </Nav.Item>
 
