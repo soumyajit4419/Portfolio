@@ -30,7 +30,8 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Switch>
-          <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Home} />
+        <Route path="/Portfolio" exact component={Home} />
           <Route path="/project" component={Projects} />
           <Route path="/Experience" component={Experience} />
           <Route path="/skills" component={Skills} />
