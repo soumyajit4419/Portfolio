@@ -16,9 +16,9 @@ function Skills() {
           <Card.Body>
             <Card.Text style={{ textAlign: "justify" }}>
               <strong>Languages</strong>
-              <div style={{ marginBottom: 20 }}>  Python • Go • C++ • Kotlin • Java  • C • JavaScript • SQL • R • Bash • HTML/CSS</div>
+              <div style={{ marginBottom: 20 }}>  Python • Golang • C++ • Kotlin • Java  • C • JavaScript • SQL • R • Bash • HTML/CSS</div>
               <strong>Frameworks/Libraries</strong>
-              <div>React • Node.js • Express • Android Studio • PyTorch  • MongoDb • Git • PostgreSQL  </div>
+              <div>React • Node.js • Express • Android Studio • PyTorch  • MongoDb • Git • PostgreSQL • AWS  </div>
             </Card.Text>
           </Card.Body>
         </Card>
