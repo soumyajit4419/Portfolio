@@ -67,7 +67,7 @@ function NavBar() {
                 to="/portfolio/Experience"
                 onClick={() => updateExpanded(false)}
               >
-                <AiFillRead style={{ marginBottom: "2px" }} /> Experience
+                <AiFillRead style={{ marginBottom: "2px" }} /> no experience
               </Nav.Link>
             </Nav.Item>
 
