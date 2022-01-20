@@ -6,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills/Skills"
 import Home from "./containers/Home"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <BrowserRouter basename="/" >
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
@@ -37,7 +37,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
