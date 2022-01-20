@@ -38,7 +38,7 @@ function Experience() {
           title="Stark Softwares"
           position="Software Developer"
           timePeriod="May 2018 - August 2018"
-          description1="Automated testing that will be performed at all layers of programming interfaces and resolved UI/UX issues"
+          description1="Automated testing that will be performed at all layers of programming interfaces and debugged UI/UX issues"
           description2="Maintained existing and functionality during assimilation into ongoing operations of web business"
           description3="Effectively wrote clean and reusable code for designing templates for their clients and performed troubleshooting"
           linkProject="https://github.com/J268sing/iRead"
