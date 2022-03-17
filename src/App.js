@@ -9,8 +9,7 @@ import Resume from "./components/Resume/ResumeNew";
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Redirect,
+  Routes,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -34,13 +33,13 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project" exact component={Projects} />
-          <Route path="/about" exact component={About} />
-          <Route path="/resume" exact component={Resume} />
-          <Redirect to="/" />
-        </Switch>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/project" exact element={<Projects />} />
+          <Route path="/about" exact element={<About />} />
+          <Route path="/resume" exact element={<Resume />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
