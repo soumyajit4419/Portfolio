@@ -18,6 +18,10 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+button:focus {
+  box-shadow: none !important;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -86,7 +90,6 @@ html {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 1.5rem !important;
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
