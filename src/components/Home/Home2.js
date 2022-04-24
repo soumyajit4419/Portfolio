@@ -19,31 +19,23 @@ function Home2() {
               WHAT <span className="orange"> EXCITES </span> ME
             </h1>
             <p className="home-about-body">
-             I'm passionate about web accessibility, functional design, and what makes things "tick." 
+             I'm passionate about web accessibility, functional design, 
+             and what makes things "tick." I love that there is no singular way to
+             create/solve/do when it comes to technology.  
               <br />
-              <br />I enjoy 
+              <br />This site is an experiment using:
               <i>
-                <b className="orange"> HTML, JavaScript, and CSS. </b>
+                <b className="orange"> Node.js, React.js, HTML, JavaScript/JSX, and CSS.</b>
               </i>
               <br />
               <br />
               I'm learning
               <i>
-                <b className="orange"> React.js</b>
-              </i>
+                <b className="orange"> ARIA (Accessible Rich Internet Applications) Markup</b>
+              </i> to improve my accessibility chops. This site is not fully accessible... yet. 
               <br />
               <br />
-               <b className="orange">Node.js</b> and
-              <i>
-                <b className="orange">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="orange"> React.js and Next.js</b>
-              </i>
+          
             </p>
           </Col>
           <Col md={1} className="myAnimation">
