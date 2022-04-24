@@ -39,6 +39,13 @@ function Particle() {
               enable: true,
               mode: "push",
             },
+
+           
+        },
+        particles: {
+          color: {
+            value: "#ffffff",
+          },
           },
           modes: {
             push: {
