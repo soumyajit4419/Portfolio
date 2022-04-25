@@ -9,7 +9,7 @@ function Type() {
           "Developer",
           "Life-Long Learner",
           "Problem-Solver",
-          "Techology Explorer",
+          "Technology Explorer",
         ],
         autoStart: true,
         loop: true,
