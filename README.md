@@ -3,10 +3,10 @@
   
 </h2>
 <div align="center">
-  <img alt="Site Screenshot" src="./Images/readme-img.png" />
+  <img alt="Site Screenshot" src="./Images/readme-sshot.png" />
 </div>
 <div align="center">
-  <img alt="Responsive Screenshot" src="./Images/readme-img1.png" />
+  <img alt="Responsive Screenshot" src="./Images/readme-responsive.png" />
 <br/>
 
 
