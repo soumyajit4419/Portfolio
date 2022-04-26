@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+//https://www.npmjs.com/package/typewriter-effect for customizations and features 
 
 function Type() {
   return (
@@ -13,7 +14,7 @@ function Type() {
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 20,
       }}
     />
   );

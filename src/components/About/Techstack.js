@@ -26,7 +26,7 @@ function Techstack() {
       <Col title="Node" xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
-      <Col title="JReact" xs={4} md={2} className="tech-icons">
+      <Col title="React" xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
