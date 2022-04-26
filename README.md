@@ -22,7 +22,7 @@
 
 **Multi-Page Layout**
 
-**Styled with React-Bootstrap and CSS with customized colors, background React effects, svg effects, and **
+**Styled with React-Bootstrap and CSS with customized colors.**
 
 **Fully Responsive**
 
