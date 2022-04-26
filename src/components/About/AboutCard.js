@@ -8,11 +8,8 @@ function AboutCard() {
       <Card.Body>
         <blockquote className='blockquote mb-0'>
           <p style={{ textAlign: 'justify' }}>
-           Greetings! I am{' '}
-            <span className='orange'>M Chastain Flournoy </span>
-            from <span className='orange'> Richmond, Virginia.</span>
-            <br />
-            I'm a <span className='orange'>Level 1 Apprentice at <a href="https://maxxpotential.com/">MAXX Potential</a></span>. I strive to be a <span className='orange'>Full Stack Web Developer</span> and well-rounded technician.
+           Recently, I've been focused on my current project which involves 
+
             <br />
             <br />
             In addition to my work at MAXX, I'm passionate about:
@@ -32,10 +29,10 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: 'rgb(155 126 172)' }}>
+          <p className='orange'>
             "If you have knowledge, let others light their candle in it."{' '}
           </p>
-          <footer className='blockquote-footer'>Margaret Fuller</footer>
+          <footer className='blockquote-footer' >Margaret Fuller</footer>
         </blockquote>
       </Card.Body>
     </Card>

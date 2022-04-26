@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(12, 12, 12, 0.582),
-    rgba(4, 3, 10, 0.904)
+    rgba(17, 16, 16, 0.678),
+    rgba(16, 5, 1, 0.863)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(16, 5, 1, 0.863)
   );
 
   --imp-text-color: #c34c2d;
@@ -21,6 +21,11 @@ html {
 
 button:focus {
   box-shadow: none !important;
+}
+
+a {
+  color: var(--imp-text-secondary);
+  text-decoration: none;
 }
 
 /* --------- */
@@ -73,11 +78,13 @@ button:focus {
   border-radius: 12px;
 }
 
+
+
 /* --------- */
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #000000a9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -258,7 +265,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background: var(--section-background-color);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -478,6 +485,7 @@ to {
 /***** end MY ANIMATION - bye bye HUBERT! ****/
 
 .home-about-section {
+  background: var(--section-background-color);
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
@@ -567,7 +575,7 @@ to {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(9, 2, 26);
+  background-color: rgb(0, 0, 0);
   bottom: 0 !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important ;
@@ -603,7 +611,7 @@ to {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #ed977f !important;
 }
 /* --------- */
 /* Projects */
@@ -713,6 +721,7 @@ to {
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
+
 
 .tech-icons {
   font-size: 4.5em !important;
@@ -856,8 +865,8 @@ to {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #ee717186 !important;
+  border-color: #e9570e86 !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -866,8 +875,8 @@ to {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #a92d3e86 !important;
+  border-color: #e64e1786 !important;
 }
 
 .animate-like {
@@ -891,7 +900,7 @@ to {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #b74f6c5e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -899,8 +908,8 @@ to {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #ee717186 !important;
+  border-color: #e9570e86 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
