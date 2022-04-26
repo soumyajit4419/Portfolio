@@ -220,7 +220,7 @@ a {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  transform-origin: 70% 70%; /* Pivot around octo-arms*/
   display: inline-block;
 }
 
@@ -326,7 +326,12 @@ a {
   }
 }
 
-/******MY ANIMATION - HUBERT*****/
+
+
+/* --------- */
+/* Hubert the Octopus- My animation. Love him! */
+/* --------- */
+/****** HUBERT*****/
 
 .myAnimation {
   justify-content: center !important;
@@ -340,7 +345,8 @@ a {
   }
 }
 .octopus {
-  width: vmin;
+  width: vmin; /* min between viewport height /width (whichever is smaller). not common. 
+  I might change this to em later for accessibility. */
   animation: walk 4.5s ease-in-out infinite alternate;
   filter: drop-shadow(0.3vmin 0 0.5vmin #030202);
 }
@@ -351,7 +357,7 @@ a {
   height: 17vmin;
   width: 23vmin;
   background: var(--imp-text-color);
-  background: url(./Assets/hubertbg.png) no-repeat center center;
+  background: url(./Assets/hubertbg.png) no-repeat center center; /* Hubert's stylish! */
   background-size: cover;
   border-radius: 50% 50% 40% 30%;
 }
@@ -425,7 +431,7 @@ a {
   content: "";
   top: -2vmin;
   left: 6vmin;
-  background: url(./Assets/hubert-leg.png) no-repeat center center;
+  background: url(./Assets/hubert-leg.png) no-repeat center center; /*very important for alternating colour */
   background-size: cover;
 
 }
@@ -436,7 +442,7 @@ a {
   left: 17vmin;
   box-shadow: -6vmin 0 0 0 #d15c5c;
   transform: rotate(-35deg);
-  background: url(./Assets/hubert-leg.png) no-repeat center center;
+  background: url(./Assets/hubert-leg.png) no-repeat center center; /* very important for alternating colour*/
   background-size: cover;
 }
 @keyframes move-left {
@@ -482,7 +488,7 @@ to {
 }
 
 
-/***** end MY ANIMATION - bye bye HUBERT! ****/
+/***** end Octo-AMAZINGNESS - bye bye HUBERT! ****/
 
 .home-about-section {
   background: var(--section-background-color);
