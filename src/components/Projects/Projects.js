@@ -49,7 +49,7 @@ function Projects() {
               title='Self-Care 8 Ball'
               description='This is a simple React & JavaScript project taking the concept of a magic 8 ball and putting my own spin on it. 
               I wanted a way to explore with JavaScript using a tutorial that I could deconstruct and reimagine.'
-              link='http://localhost:3001/self-care-8-ball'
+              link='http://localhost:3002/self-care-8-ball'
             />
           </Col>
           <Col md={6} className='project-card'>

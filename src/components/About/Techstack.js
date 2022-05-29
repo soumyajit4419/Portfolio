@@ -29,7 +29,7 @@ function Techstack() {
       <Col title="React" xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col title="Git" xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col title="Adobe Illustrator" xs={4} md={2} className="tech-icons">

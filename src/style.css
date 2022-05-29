@@ -357,7 +357,7 @@ a {
   height: 17vmin;
   width: 23vmin;
   background: var(--imp-text-color);
-  background: url(./Assets/hubertbg.png) no-repeat center center; /* Hubert's stylish! */
+  background: url(./Assets/hubertbg.png) no-repeat center center !important; /* Hubert's stylish! */
   background-size: cover;
   border-radius: 50% 50% 40% 30%;
 }
@@ -369,7 +369,7 @@ a {
   height: 2.5vmin;
   background: #1f1d1d;
   border-radius: 50%;
-  animation: blinking 3s ease-in-out infinite alternate;
+  animation: blinking 7s ease-in-out infinite alternate;
 }
 .eyes::after {
   content: "";
