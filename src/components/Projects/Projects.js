@@ -26,7 +26,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="ESPN cricinfo"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches (including liveblogs and scorecards), and StatsGuru, a database of historical matches and players from the 18th century to the present."
               link="https://github.com/snoorbasha50/cricinfo_project"
             />
           </Col>
@@ -35,8 +35,8 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Ajio.com"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Ajio"
+              description=" AJIO, a fashion and lifestyle brand, is Reliance Retail’s digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you’ll find anywhere."
               link="https://github.com/Shreyansh051/AJIO_CLONE"
             />
           </Col>
@@ -45,13 +45,14 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Geekbuying.com"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Geekbuying"
+              description="Geekbuying is become one of the leading E-commerce platforms selling a wide range of consumer electronic gadgets.
+              Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness equipment like treadmills, top of the line home and office furniture, outdoor items"
               link="https://github.com/abhinavBisht94/geekbuying-clone"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -80,7 +81,7 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
