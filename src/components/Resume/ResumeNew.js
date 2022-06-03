@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://docs.google.com/document/d/1gRSq0Wi93GLcumB83aFH0k3wjVCwyb6f/edit";
+  "file:///C:/Users/SHAIK%20NOORBASHA/Downloads/Shaik%20Noorbasha%20fw15_554.docx%20(2).pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
