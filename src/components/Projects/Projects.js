@@ -29,6 +29,7 @@ function Projects() {
               title="ESPN cricinfo"
               description="ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches (including liveblogs and scorecards), and StatsGuru, a database of historical matches and players from the 18th century to the present."
               link="https://github.com/snoorbasha50/cricinfo_project"
+              Techstack="Techstack : HTML,CSS,Javascript"
             />
           </Col>
 
@@ -39,6 +40,7 @@ function Projects() {
               title="Ajio"
               description=" AJIO, a fashion and lifestyle brand, is Reliance Retail’s digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you’ll find anywhere."
               link="https://github.com/Shreyansh051/AJIO_CLONE"
+              Techstack="Techstack : HTML,CSS,Javascript"
             />
           </Col>
 
@@ -50,6 +52,7 @@ function Projects() {
               description="Geekbuying is become one of the leading E-commerce platforms selling a wide range of consumer electronic gadgets.
               Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness equipment like treadmills, top of the line home and office furniture, outdoor items"
               link="https://github.com/abhinavBisht94/geekbuying-clone"
+              Techstack="Techstack : HTML,CSS,Javascript,Reactjs"
             />
           </Col>
 

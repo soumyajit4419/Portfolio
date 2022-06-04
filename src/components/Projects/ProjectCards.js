@@ -16,6 +16,7 @@ function ProjectCards(props) {
           <BiLinkExternal /> &nbsp;
           {props.isBlog ? "View Blog" : "View Project"}
         </Button>
+        <Card.Text>{props.Techstack}</Card.Text> 
       </Card.Body>
     </Card>
   );
