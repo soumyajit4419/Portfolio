@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+//import Skills from "./skills/skills";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -94,11 +95,12 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                 as={Link}
+                 to="/skills"
+                 onClick={() => updateExpanded(false)}
+                
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
             </Nav.Item>
 

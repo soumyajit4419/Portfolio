@@ -23,7 +23,8 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+               imgPath="https://i.imgur.com/l8K8lW2.png"
+              
               isBlog={false}
               title="ESPN cricinfo"
               description="ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches (including liveblogs and scorecards), and StatsGuru, a database of historical matches and players from the 18th century to the present."
@@ -33,7 +34,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath="https://github.com/Shreyansh051/AJIO_CLONE/raw/main/readimages/Screenshot2%20.png"
               isBlog={false}
               title="Ajio"
               description=" AJIO, a fashion and lifestyle brand, is Reliance Retail’s digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you’ll find anywhere."
@@ -43,7 +44,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath="https://camo.githubusercontent.com/12d8a863979ba080c02fe809199f1653aeec9d7e430e04c71f137e6cc866b49f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3730302f312a4b67795a645a4f75336f5730444163475543634567512e706e67"
               isBlog={false}
               title="Geekbuying"
               description="Geekbuying is become one of the leading E-commerce platforms selling a wide range of consumer electronic gadgets.
