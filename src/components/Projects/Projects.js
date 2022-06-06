@@ -14,9 +14,12 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Footer from "../Footer";
+
 
 function Projects() {
   return (
+    <>
     <Container fluid className="project-section">
       <Particle />
       <Container>
@@ -95,6 +98,9 @@ function Projects() {
         </Row>
       </Container>
     </Container>
+    {/* <Footer/> */}
+    </>
+
   );
 }
 
