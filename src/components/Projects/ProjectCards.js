@@ -2,6 +2,12 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function ProjectCards(props) {
   return (
