@@ -14,7 +14,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import Footer from "../Footer";
+//import Footer from "../Footer";
 
 
 function Projects() {

@@ -104,6 +104,17 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                 as={Link}
+                 to="/Contact"
+                 onClick={() => updateExpanded(false)}
+                
+              >
+                 Contact
+              </Nav.Link>
+            </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/snoorbasha50/Portfolio"
