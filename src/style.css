@@ -412,6 +412,7 @@ button:focus {
 }
 
 .footer-body {
+  z-index: 1;
   text-align: center !important;
 }
 
