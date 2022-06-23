@@ -8,6 +8,9 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
+  DiHtml5,
+  DiCss3,
+  
 } from "react-icons/di";
 import {
   SiPytorch,
@@ -18,12 +21,17 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+       <Col xs={4} md={2} className="tech-icons">
+        <DiHtml5 />
+      </Col> 
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
+      
+    {/* <Row style={{ justifyContent: "center", paddingBottom: "50px" }}> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
@@ -33,10 +41,8 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+     
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -47,7 +53,7 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPytorch />
-      </Col>
+      </Col> */}
     </Row>
   );
 }

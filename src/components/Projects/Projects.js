@@ -8,9 +8,18 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+//import Footer from "../Footer";
+
 
 function Projects() {
   return (
+    <>
     <Container fluid className="project-section">
       <Particle />
       <Container>
@@ -23,35 +32,40 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+               imgPath="https://i.imgur.com/l8K8lW2.png"
+              
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="ESPN cricinfo"
+              description="ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches (including liveblogs and scorecards), and StatsGuru, a database of historical matches and players from the 18th century to the present."
+              link="https://github.com/snoorbasha50/cricinfo_project"
+              Techstack="Techstack : HTML,CSS,Javascript"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath="https://github.com/Shreyansh051/AJIO_CLONE/raw/main/readimages/Screenshot2%20.png"
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Ajio"
+              description=" AJIO, a fashion and lifestyle brand, is Reliance Retail’s digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you’ll find anywhere."
+              link="https://github.com/Shreyansh051/AJIO_CLONE"
+              Techstack="Techstack : HTML,CSS,Javascript"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath="https://camo.githubusercontent.com/12d8a863979ba080c02fe809199f1653aeec9d7e430e04c71f137e6cc866b49f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3730302f312a4b67795a645a4f75336f5730444163475543634567512e706e67"
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Geekbuying"
+              description="Geekbuying is become one of the leading E-commerce platforms selling a wide range of consumer electronic gadgets.
+              Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness equipment like treadmills, top of the line home and office furniture, outdoor items"
+              link="https://github.com/abhinavBisht94/geekbuying-clone"
+              Techstack="Techstack : HTML,CSS,Javascript,Reactjs"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -80,10 +94,13 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
+    {/* <Footer/> */}
+    </>
+
   );
 }
 
