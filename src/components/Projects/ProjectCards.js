@@ -12,10 +12,22 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button>
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BiLinkExternal /> &nbsp;
+            {props.isBlog ? "View Blog" : "View GitHub"}
+          </Button>
+          {'\n'}
+          {'\n'}
+
+          {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+
+          {!props.isBlog && props.demoLink &&
+              <Button variant="primary" href={props.demoLink} target="_blank">
+                <BiLinkExternal /> &nbsp;
+                {"View Demo"}
+              </Button>  
+            }
+          
       </Card.Body>
     </Card>
   );
