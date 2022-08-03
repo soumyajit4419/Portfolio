@@ -1,5 +1,5 @@
 name: Accesibility Tests
-on: [pull_request]
+on: [push]
 jobs:
   lighthouse:
     name: Lighthouse CI
