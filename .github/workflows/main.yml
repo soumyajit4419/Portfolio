@@ -1,0 +1,21 @@
+name: Accesibility Tests
+on: [pull_request]
+jobs:
+  lighthouse:
+    name: Lighthouse CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@vw
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
+      - name: Install Dependencies
+        uses: npm install
+      - name: run lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.9.x
+          lhci autorun --config=./lighthouserc-ci.js
+          
