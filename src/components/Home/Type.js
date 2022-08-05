@@ -1,19 +1,16 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-
+import keywords from "../../config/keywords.json";
 function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Developer",
-          "Deep Learning Engineer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+        strings: keywords,
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 100,
+        cursor: " |",
+        devMode: process.env.NODE_ENV !== "production",
       }}
     />
   );

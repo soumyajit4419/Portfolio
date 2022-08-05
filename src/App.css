@@ -1,18 +1,24 @@
+/* A CSS file. */
+/* Centering the text. */
 .App {
   text-align: center;
 }
 
+/* Setting the height of the logo to 40vmin and pointer-events to none. */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* A media query that checks if the user prefers reduced motion. If they do, it will not spin the logo. */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Setting the background color, min-height, display, flex-direction, align-items, justify-content,
+font-size, and color of the header. */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +30,12 @@
   color: white;
 }
 
+/* Setting the color of the link to #61dafb. */
 .App-link {
   color: #61dafb;
 }
 
+/* A CSS animation that rotates the logo. */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -2,13 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
+// import bitsOfCode from "../../Assets/Projects/blog.png";
+import projects from "../../config/projects.json";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,7 +16,25 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {projects.map(function (project) {
+            return (
+              <Col md={4} className="project-card" key={project.title}>
+                <ProjectCard
+                  imgPath={"/projects/" + project.path}
+                  isBlog={project.isBlog ? project.isBlog : false}
+                  title={project.title}
+                  description={project.description}
+                  ghLink={
+                    project.isBlog
+                      ? project.github
+                      : "https://github.com/" + project.github
+                  }
+                  demoLink={project.url}
+                />
+              </Col>
+            );
+          })}
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
@@ -86,7 +99,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

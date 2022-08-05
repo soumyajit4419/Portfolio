@@ -1,8 +1,13 @@
+/* Importing the font Raleway from Google Fonts. */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+/* Setting the font to Raleway, the background color to a gradient, and the text to be antialiased. */
 body {
+  /* Setting the margin to 0. */
   margin: 0;
+  /* Setting the font to Raleway, the background color to a gradient, and the text to be antialiased. */
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Setting the background color to a gradient. */
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }

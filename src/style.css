@@ -1,23 +1,30 @@
-html {
+/* Documented css file */
+
+/* Defining the variables for the CSS. */
+:root {
+  /* Setting the background color of the section to a linear gradient. */
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
   );
 
+  /* Creating a gradient that will be applied to the image. */
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
 
+  /* Setting the color of the text to purple. */
   --imp-text-color: #c770f0;
 }
-
+/* Setting the color of the text to purple. */
 .purple {
   color: var(--imp-text-color) !important;
 }
 
+/* Removing the box-shadow from the button when it is focused. */
 button:focus {
   box-shadow: none !important;
 }
@@ -25,6 +32,8 @@ button:focus {
 /* --------- */
 /*  Preloader */
 /* --------- */
+
+/* Creating a preloader for the website. */
 #preloader {
   position: fixed;
   top: 0;
@@ -38,10 +47,12 @@ button:focus {
   background-position: center;
 }
 
+/* Hiding the preloader. */
 #preloader-none {
   opacity: 0;
 }
 
+/* Preventing the page from scrolling. */
 #no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -51,22 +62,26 @@ button:focus {
 /*Scrollbar   */
 /* --------- */
 
+/* Setting the width of the scrollbar to 7px. */
 ::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
+/* Setting the background color of the scrollbar track. */
 ::-webkit-scrollbar-track {
   background: #2d1950;
 }
 
 /* Handle */
+/* Styling the scrollbar. */
 ::-webkit-scrollbar-thumb {
   background: rgba(178, 121, 216, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
+/* Making the scrollbar thumb hoverable. */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(222, 130, 235, 0.911);
   border-radius: 12px;
@@ -75,6 +90,7 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+/* Adding a background color to the navbar when it is scrolled down. */
 .sticky {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -82,6 +98,7 @@ button:focus {
   backdrop-filter: blur(15px) !important;
 }
 
+/* Making the navbar fixed and making the transition smooth. */
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
@@ -89,12 +106,14 @@ button:focus {
   font-size: 1.2rem !important;
 }
 
+/* Making the navbar-toggler transparent. */
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
 }
 
+/* Changing the color of the hamburger menu to purple. */
 .navbar-toggler span {
   display: block !important;
   background-color: #be50f4 !important;
@@ -107,6 +126,7 @@ button:focus {
   opacity: 1 !important;
 }
 
+/* Removing the outline from the navbar-toggler when it is focused or active. */
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: 0 !important;
@@ -604,6 +624,7 @@ button:focus {
 
 .resume-section {
   position: relative !important;
+  height: 1vh;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;

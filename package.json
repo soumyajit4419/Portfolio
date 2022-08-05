@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "sd-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,19 +20,18 @@
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.42.2",
     "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zip-cli": "^0.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "package": "zip-cli -i build -o build.zip"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "lint-staged": {
+    "**/*": "npx prettier --write --ignore-unknown"
   },
   "browserslist": {
     "production": [
@@ -45,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
   }
 }

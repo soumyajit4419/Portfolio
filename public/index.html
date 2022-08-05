@@ -1,41 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" class="theme-color" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="theme-color" content="#fff" class="theme-color" />
+    <title>Loading...</title>
+    <meta
+      name="description"
+      content="Self Developed personal website build with React.js"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>S0umyajit | Portfolio</title>
-  <meta name="description" content="Self Developed personal website build with React.js">
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Saahil" />
+    <meta
+      itemprop="description"
+      content="Self Developed personal website build with React.js"
+    />
+    <meta
+      itemprop="image"
+      content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"
+    />
 
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="S0umyajit | Portfolio">
-  <meta itemprop="description" content="Self Developed personal website build with React.js">
-  <meta itemprop="image"
-    content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://saahild.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saahil" />
+    <meta
+      property="og:description"
+      content="Self Developed personal website build with React.js"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"
+    />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://soumyajit.vercel.app">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="S0umyajit | Portfolio">
-  <meta property="og:description" content="Self Developed personal website build with React.js">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saahil" />
+    <meta
+      name="twitter:description"
+      content="Self Developed personal website build with React.js"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"
+    />
+    <style>
+      /* body {font-family: Arial, Helvetica, sans-serif;} */
+      /* The Modal (background) */
+      .my-modal {
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        -webkit-animation-name: fadeIn; /* Fade in the background */
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s;
+      }
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="S0umyajit | Portfolio">
-  <meta name="twitter:description" content="Self Developed personal website build with React.js">
-  <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
-</head>
+      /* Modal Content */
+      .my-modal-content {
+        position: fixed;
+        bottom: 0;
+        background-color: #fefefe;
+        width: 100%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s;
+      }
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-</body>
+      /* The Close Button */
+      .my-close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
 
+      .my-close:hover,
+      .my-close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .my-modal-header {
+        padding: 2px 16px;
+        background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35))
+          /*#5cb85c */;
+        color: white;
+      }
+
+      .my-modal-body {
+        padding: 2px 16px;
+      }
+
+      .my-modal-footer {
+        padding: 2px 16px;
+        /* background-color: #5cb85c; */
+        background-image: linear-gradient(
+          to left,
+          rgb(27 20 41),
+          rgb(20 15 35)
+        );
+        color: white;
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes slideIn {
+        from {
+          bottom: -300px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          bottom: -300px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <!-- <script type="text/javascript">
+    atOptions = {
+      'key' : '71dc240529bf37dbe2cda5bd015d6e4d',
+      'format' : 'iframe',
+      'height' : window.innerHeight,
+      'width' : window.innerWidth,
+      'params' : {}
+    };
+  </script> -->
+  <!-- <script src="ad.js"></script> -->
+  <body>
+    <noscript>
+      <div class="my-modal-content">
+        <div class="my-modal-header">
+          <span class="my-close"><a href="/">&times;</a> </span>
+          <h2>Please enable javascript</h2>
+        </div>
+        <div class="my-modal-body">
+          <p>You need to enable JavaScript to run this app.</p>
+        </div>
+        <div class="my-modal-footer">
+          <h3>Reload page once you have enabled javascript</h3>
+        </div>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <!-- <script type="text/javascript">
+    atOptions = {
+      'key' : '71dc240529bf37dbe2cda5bd015d6e4d',
+      'format' : 'iframe',
+      'height' : window.innerHeight,
+      'width' : window.innerWidth,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://ordisposableado.com/71dc240529bf37dbe2cda5bd015d6e4d/invoke.js"></scr' + 'ipt>');
+  </script> -->
+  </body>
 </html>

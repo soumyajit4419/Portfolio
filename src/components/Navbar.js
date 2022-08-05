@@ -3,12 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+// import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
+  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -16,6 +16,17 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
+// window.atOptions = {
+//   'key' : '71dc240529bf37dbe2cda5bd015d6e4d',
+//   'format' : 'iframe',
+//   'height' : 60,
+//   'width' : 768,
+//   'params' : {}
+// };
+/**
+ * It renders a navbar with a logo, a few links and a button.
+ * @returns A Navbar component.
+ */
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -35,12 +46,14 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="md"
+      id="navbar"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
+        <div id="navbar-ad"></div>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -94,7 +107,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
+                href="https://blog.saahild.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -102,7 +115,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
@@ -111,8 +124,9 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
+          <script defer>window.spawnAd()</script>
         </Navbar.Collapse>
       </Container>
     </Navbar>

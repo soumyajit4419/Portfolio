@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/dist
 # misc
 .DS_Store
 .env
@@ -27,3 +27,6 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+#Zip 
+*.tgz
+*.zip

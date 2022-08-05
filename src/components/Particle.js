@@ -1,3 +1,8 @@
+/**
+ * This function returns a Particles component that has a bunch of parameters that are used to create a
+ * particle effect.
+ * @returns A function that returns a Particles component.
+ */
 import React from "react";
 import Particles from "react-tsparticles";
 
