@@ -44,3 +44,7 @@ font-size, and color of the header. */
     transform: rotate(360deg);
   }
 }
+.chart {
+  text-align: center;
+  margin: auto;
+}

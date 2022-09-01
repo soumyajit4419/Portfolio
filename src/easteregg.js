@@ -1,7 +1,7 @@
 // SHH!
 import config from "./config/config.json";
 const WORD_1 = "CODE";
-const WORD_2 = "CODE_FOR_LIFE";
+const WORD_2 = "GOGAURDIAN";
 let keys = "";
 window.addEventListener("keypress", function (e) {
   // console.log("keycode", e.keyCode)
@@ -13,9 +13,11 @@ window.addEventListener("keypress", function (e) {
     setTimeout(() => {
       document.title = config.title;
     }, 10500);
+  } else if (keys.includes(WORD_1) && keys.includes(WORD_2)) { 
+    window["Z29nYXVyZGlhbg"](WORD_2)
   }
 });
-window["ZWFzdGVyRWdn"] = (code) => {
+window["Z29nYXVyZGlhbg"] = (code) => {
   if (code === WORD_2) {
     document.title = "E: Hacker mode";
     const old_inner = [];

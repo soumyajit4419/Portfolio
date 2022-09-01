@@ -5,5 +5,51 @@
     "path": "blog.png",
     "isBlog": true,
     "github": "https://blog.saahild.com"
+  }, 
+  {
+    "title": "Conspiracy Theories",
+    "description": "My website made & hosted on replit. I made this website on consipiracy theories.",
+    "path": "cth.png",
+    "isBlog": false,
+    "url": "https://lass-site.neongamerbotqk.repl.co/",
+    "github": "NeonGamerBot-QK/ConspiracyTheories"
+  }, 
+  {
+    "title": "Stop Pollution and Global Warming",
+    "description": "My website made & hosted on replit. I made this website on Global warming.",
+    "path": "globalwarming.jpeg",
+    "isBlog": false,
+    "url": "https://global-warming.neongamerbotqk.repl.co/",
+    "github": "NeonGamerBot-QK/Global-Warming"
+  }, 
+  {
+    "title": "Envelopes",
+    "description": "A private envelope system used to send digital letters.",
+    "path": "envelope.png",
+    "isBlog": true,
+    "github": "https://envelope.saahild.com"
+  },
+  {
+    "title": "Passion Project",
+    "description": "This is my passion project i made for my 7th grade final project. \n I made this using react and the topic i choose was website development history.",
+    "path": "passion.png",
+    "isBlog": false,
+    "url": "https://passionproject.saahild.com",
+    "github": "NeonGamerBot-QK/passionproject"
+  },
+  {
+    "title": "Password Generator.",
+    "description": "Password generator made via react.",
+    "path": "password.png",
+    "isBlog": false,
+    "url": "https://passwordgenerator2.vercel.app/",
+    "github": "NeonGamerBot-QK/passwordgenerator"
+  },
+  {
+    "title": "Wallpaper ",
+    "description": "open source wallpaper project, ",
+    "path": "wallpaper.png",
+    "isBlog": true,
+    "url": "https://wallpaper.saahild.com/index.php"
   }
 ]
