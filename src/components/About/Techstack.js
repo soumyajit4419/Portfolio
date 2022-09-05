@@ -13,6 +13,7 @@ import {
   SiPytorch,
   SiFirebase,
   SiNextdotjs,
+  SiFlutter,
 } from "react-icons/si";
 
 function Techstack() {
@@ -41,6 +42,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />

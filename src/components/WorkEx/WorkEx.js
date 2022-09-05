@@ -9,16 +9,16 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
-function Projects() {
+function WorkEx() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Projects </strong>
+          My <strong className="purple">Work Experience </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are my past and current work experiences
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {/* 
@@ -94,4 +94,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default WorkEx;
