@@ -13,8 +13,8 @@ window.addEventListener("keypress", function (e) {
     setTimeout(() => {
       document.title = config.title;
     }, 10500);
-  } else if (keys.includes(WORD_1) && keys.includes(WORD_2)) { 
-    window["Z29nYXVyZGlhbg"](WORD_2)
+  } else if (keys.includes(WORD_1) && keys.includes(WORD_2)) {
+    window["Z29nYXVyZGlhbg"](WORD_2);
   }
 });
 window["Z29nYXVyZGlhbg"] = (code) => {

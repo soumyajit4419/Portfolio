@@ -5,7 +5,7 @@
     "path": "blog.png",
     "isBlog": true,
     "github": "https://blog.saahild.com"
-  }, 
+  },
   {
     "title": "Conspiracy Theories",
     "description": "My website made & hosted on replit. I made this website on consipiracy theories.",
@@ -13,7 +13,7 @@
     "isBlog": false,
     "url": "https://lass-site.neongamerbotqk.repl.co/",
     "github": "NeonGamerBot-QK/ConspiracyTheories"
-  }, 
+  },
   {
     "title": "Stop Pollution and Global Warming",
     "description": "My website made & hosted on replit. I made this website on Global warming.",
@@ -21,7 +21,7 @@
     "isBlog": false,
     "url": "https://global-warming.neongamerbotqk.repl.co/",
     "github": "NeonGamerBot-QK/Global-Warming"
-  }, 
+  },
   {
     "title": "Envelopes",
     "description": "A private envelope system used to send digital letters.",
