@@ -32,13 +32,14 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-               imgPath="https://i.imgur.com/l8K8lW2.png"
+               imgPath="https://i.imgur.com/q5KPrWB.png"
               
               isBlog={false}
-              title="ESPN cricinfo"
-              description="ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches (including liveblogs and scorecards), and StatsGuru, a database of historical matches and players from the 18th century to the present."
-              link="https://github.com/snoorbasha50/cricinfo_project"
-              Techstack="Techstack : HTML,CSS,Javascript"
+              title="Kindmeal.my"
+              description="KindMeal.my is Malaysia's pioneering meat-free lifestyle platform. We provide an effective platform to promote compassionate dining in a fun and effective way, that would allow you to save precious animal lives, improve your health, enjoy a cleaner environment and of course, save your hard-earned money. "
+              link="https://github.com/Devashishsaurabh/meaty-hands-288"
+              link1="https://kindmealmy-masai.netlify.app/"
+              Techstack=" HTML,CSS,Javascript,React,Redux"
             />
           </Col>
 
@@ -49,7 +50,8 @@ function Projects() {
               title="Ajio"
               description=" AJIO, a fashion and lifestyle brand, is Reliance Retail’s digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you’ll find anywhere."
               link="https://github.com/Shreyansh051/AJIO_CLONE"
-              Techstack="Techstack : HTML,CSS,Javascript"
+              link1="https://rad-wisp-02436f.netlify.app/"
+              Techstack=" HTML,CSS,Javascript"
             />
           </Col>
 
@@ -61,7 +63,8 @@ function Projects() {
               description="Geekbuying is become one of the leading E-commerce platforms selling a wide range of consumer electronic gadgets.
               Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness equipment like treadmills, top of the line home and office furniture, outdoor items"
               link="https://github.com/abhinavBisht94/geekbuying-clone"
-              Techstack="Techstack : HTML,CSS,Javascript,Reactjs"
+              link1="https://geekbuying-clone.netlify.app/home"
+              Techstack=" HTML,CSS,Javascript,React"
             />
           </Col>
 

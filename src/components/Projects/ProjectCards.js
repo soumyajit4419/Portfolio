@@ -18,11 +18,19 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
+        <Button style={{marginRight:"10px",marginBottom:"10px"}}variant="primary" href={props.link} target="_blank">
           <BiLinkExternal /> &nbsp;
           {props.isBlog ? "View Blog" : "View Project"}
         </Button>
-        <Card.Text>{props.Techstack}</Card.Text> 
+        <Button style={{marginRight:"10px",marginBottom:"10px"}} variant="primary" href={props.link1} target="_blank">
+          <BiLinkExternal /> &nbsp;
+          {props.isBlog ? "View Blog" : "Live"}
+        </Button>
+        
+        <Card.Text>{props.Techstack}</Card.Text>
+        
+        
+
       </Card.Body>
     </Card>
   );

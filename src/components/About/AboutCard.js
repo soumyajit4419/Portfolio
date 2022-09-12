@@ -16,31 +16,32 @@ function AboutCard() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME  INTRODUCE  MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              {/* I fell in love with programming and I have at least learnt
+              something, I think… 🤷‍♂️ */}
               <br />
-              <br />I am fluent in classics like
+              <br /> Fluent in classics like HTML,CSS and Javascript
               <i>
-                <b className="purple"> HTML,CSS and Javascript </b>
+                {/* <b className="purple"> HTML,CSS and Javascript </b> */}
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are building new Web Technologies and Products and
+                also in areas related to Frontend and Backend&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                {/* <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
                   Frontend and Backend
-                </b>
+                </b> */}
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
+              with Node.js and Modern Javascript Library and Frameworks like React.js 
+              {/* <i>
                 <b className="purple">
                   {" "}
                   Modern Javascript Library and Frameworks
@@ -49,7 +50,7 @@ function AboutCard() {
               &nbsp; like
               <i>
                 <b className="purple"> React.js and Next.js</b>
-              </i>
+              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
