@@ -46,6 +46,14 @@
     "github": "NeonGamerBot-QK/passwordgenerator"
   },
   {
+    "title": "Fake blog on the hobbit",
+    "description": "A fake blog for school, this  blog is on the hobbit!",
+    "path": "hobbit.png",
+    "isBlog": false,
+    "url": "https://hobbitblog.vercel.app/",
+    "github": "NeonGamerBot-QK/hobbitblog"
+  },
+  {
     "title": "Wallpaper ",
     "description": "open source wallpaper project, ",
     "path": "wallpaper.png",

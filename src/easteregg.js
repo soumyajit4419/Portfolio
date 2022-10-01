@@ -1,12 +1,12 @@
 // SHH!
 import config from "./config/config.json";
 const WORD_1 = "CODE";
-const WORD_2 = "GOGAURDIAN";
+const WORD_2 = "PUMPKIN";
 let keys = "";
 window.addEventListener("keypress", function (e) {
   // console.log("keycode", e.keyCode)
   keys += e.key;
-  // console.log(keys);
+  //console.log(keys);
   if (keys.includes(WORD_1)) {
     // console.log("");
     document.title = "E: " + WORD_2;
@@ -14,12 +14,29 @@ window.addEventListener("keypress", function (e) {
       document.title = config.title;
     }, 10500);
   } else if (keys.includes(WORD_1) && keys.includes(WORD_2)) {
-    window["Z29nYXVyZGlhbg"](WORD_2);
+    window["aGFsb3dlZW4"](WORD_2);
   }
 });
-window["Z29nYXVyZGlhbg"] = (code) => {
+window["aGFsb3dlZW4"] = (code) => {
   if (code === WORD_2) {
     document.title = "E: Hacker mode";
+    window.activated = true;
+    alert(`
+    .,'
+ .'\`.'
+.' .'
+_.ood0Pp._ ,'  \`.~ .q?00doo._
+.od00Pd0000Pdb._. . _:db?000b?000bo.
+.?000Pd0000PP?000PdbMb?000P??000b?0000b.
+.d0000Pd0000P'  \`?0Pd000b?0'  \`?000b?0000b.
+.d0000Pd0000?'     \`?d000b?'     \`?00b?0000b.
+d00000Pd0000Pd0000Pd00000b?00000b?0000b?0000b
+?00000b?0000b?0000b?b    dd00000Pd0000Pd0000P
+\`?0000b?0000b?0000b?0b  dPd00000Pd0000Pd000P'
+\`?0000b?0000b?0000b?0bd0Pd0000Pd0000Pd000P'
+\`?000b?00bo.   \`?P'  \`?P'   .od0Pd000P'
+\`~?00b?000bo._  .db.  _.od000Pd0P~'
+\`~?0b?0b?000b?0Pd0Pd000PdP~'`)
     const old_inner = [];
     const items = Array.from(document.getElementsByClassName("get-hacked"));
     items.forEach((item, index) => {
@@ -116,6 +133,7 @@ window["Z29nYXVyZGlhbg"] = (code) => {
         clearInterval(inter);
         meta.setAttribute("content", "#fff");
         document.title = config.title;
+    window.activated = false;
       }
     }, 50);
   } else {

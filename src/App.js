@@ -15,18 +15,39 @@ import {
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
+import Minionframes from "./MinionFrames";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Analytics from "./components/Analytics";
 import io from "socket.io-client";
-
+import Modal from "react-bootstrap/Modal";
+import { useRef } from "react";
 const querys = new URLSearchParams(window.location.search);
 function App() {
   const [load, upadateLoad] = useState(true);
   const [isBlocked, updateBlocked] = useState(false);
   const [socket, setSocket] = useState(null);
   const [socketConnected, setSocketConnected] = useState(false);
+  const [isModelOpen, setModelOpen] = React.useState(false);
+const effectRef = useRef({})
+  const showModal = () => {
+    setModelOpen(true);
+  };
 
+  const hideModal = () => {
+    setModelOpen(false);
+  };
+
+useEffect(() => {
+ const interval = setInterval(()=> {
+  if(window.activated) {
+    showModal();
+  } else {
+    hideModal();
+  }
+ })
+ return ()  => clearInterval(interval)
+})
   // establish socket connection
   useEffect(() => {
     setSocket(
@@ -92,7 +113,18 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-
+useEffect(async () => {
+ 
+const play = async () => {
+  if(! effectRef.current) return;
+  for (var i = 0; i < Minionframes.length; i++) {
+    effectRef.current.innerHTML = Minionframes[i]
+     await new Promise(r => setTimeout(r, 40));
+ }
+play()
+}
+play();
+})
   return (
     <>
       <Router>
@@ -101,12 +133,22 @@ function App() {
         <div className="App" id={load !== "done" ? "no-scroll" : "scroll"}>
           <Navbar />
           <ScrollToTop />
+          <Modal show={isModelOpen} style={{ width: "100vh", height: "100vh" }} centered >
+      <Modal.Header>Happy Halloween</Modal.Header>
+      <Modal.Body>
+<pre ref={effectRef}> </pre>     
+                      </Modal.Body>
+      <Modal.Footer>
+      <button onClick={hideModal}>Cancel</button>
+      </Modal.Footer>
+    </Modal>
           <Routes>
             {isBlocked ? (
               <Route path="*" element={<Blocked reason={isBlocked} />} />
             ) : (
               <>
                 {" "}
+                
                 <Route path="/" element={<Home />} />
                 <Route path="/project" element={<Projects />} />
                 <Route path="/about" element={<About />} />
