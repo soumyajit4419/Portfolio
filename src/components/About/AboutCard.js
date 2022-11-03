@@ -14,17 +14,17 @@ function AboutCard() {
             Mesra.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from coding, these are some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <ImPointRight /> Writing Tech Blogs
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Traveling
             </li>
           </ul>
 
