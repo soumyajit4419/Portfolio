@@ -25,10 +25,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Mission Oxygen Team"
+              description="MOT is an biomedical equipment management system used for mananging the biomedical equipment and other resources of hospital. It connects the biomedical engineer, vendor and hospital and own by the Health Ministry office of Nepal Goverment."
+              ghLink="https://github.com/ramtamang-2058/"
+              demoLink="http://missionoxygenteam.org/"
             />
           </Col>
 
@@ -36,10 +36,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="VSOLUTION"
+              description="It is an Questing and answering platform for school and college. It will manage the all information for educational organization. Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/Ramtamang-2058/QA_vsolution_java"
+              demoLink="https://github.com/Ramtamang-2058/QA_vsolution_java/blob/main/README.md"
             />
           </Col>
 
@@ -47,10 +47,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Ecommerce"
+              description="This ecommerce side provides platform for the vendor and customer where vendor can sell thier product and customer can select and buy required items from the system. It also provide the online payment plaform."
+              ghLink="#"
+              demoLink="#"              
             />
           </Col>
 
@@ -58,10 +58,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Personal Blog | Portfolio"
+              description="Blog web Application where people can add thier blog articles and people. After registering account people can also post their article on site. It's like public site and personal site where persons work as admin and others are user. It provide the user profiling, notification and free writting platform where anyone can post thier articles and content."
+              ghLink="https://github.com/Ramtamang-2058/Portfolio"
+              demoLink="http://futurenews.herokuapp.com/"
             />
           </Col>
 
@@ -69,10 +69,10 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Digital SHE"
+              description="Digital SHE is government program. Digital SHE system provides the API and program Shedules, events and others organizational and goverment program where girls can join program. DigitalSHE connect the govermental organization and girls who want to involve in technology like robotics and digitalization. It is project govern by the UNDP (United Nation Development Program."
+              ghLink="https://github.com/ramtamang-2058/"
+              demoLink="https://digitalshe.ran.org.np/"
             />
           </Col>
 
@@ -83,7 +83,7 @@ function Projects() {
               title="Face Recognition and Emotion Detection"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              ghLink="https://github.com/ramtamang-2058"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
