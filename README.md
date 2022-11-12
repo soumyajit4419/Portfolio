@@ -27,7 +27,7 @@
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/ram-tamang.com.np/Portfolio). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Ramtamang](https://github.com/ram-tamang.com.np/Portfolio). Thanks!
 
 ## Built With
 
