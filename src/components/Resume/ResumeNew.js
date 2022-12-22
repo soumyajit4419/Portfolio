@@ -28,13 +28,14 @@ function ResumeNew() {
       <h2>Roles in which I am <span className="purple"> Currently Seeking Opportunities </span>-</h2>
       <hr/>
       <ol>
-        <li className="list_item_roles" >Software Engineer</li>
-        <li className="list_item_roles" >Machine Learning Engineer</li>
-        <li className="list_item_roles" >Data Scientist</li> 
-        <li className="list_item_roles" >Data Engineer</li> 
-        <li className="list_item_roles" >Data Analyst</li>
-        <li className="list_item_roles" >Web Developer</li> 
-        <li className="list_item_roles" >MERN Stack Developer</li> 
+        
+        <li className="list_item_roles" >Machine Learning Engineer.</li>
+        <li className="list_item_roles" >Data Scientist.</li> 
+        <li className="list_item_roles" >Data Engineer.</li> 
+        <li className="list_item_roles" >Data Analyst.</li>
+        <li className="list_item_roles" >Software Engineer.</li>
+        <li className="list_item_roles" >Web Developer.</li> 
+        <li className="list_item_roles" >MERN Stack Developer.</li> 
 
       </ol>
     

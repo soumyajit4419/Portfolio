@@ -785,11 +785,22 @@ button:focus {
   margin: 10px;
 }
 .list_item_roles{
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 50px;
 }
+.about_list_group{
+  border-radius: 20px !important;
+}
+.about_list_item{
+  text-align: justify;
+}
+
 @media only screen and (max-width: 600px) {
   .Cert_card_btns{
     margin: 10px !important;
   }
+  .about_list_item{
+    font-size: 1em !important;
+  }
+  
 }
