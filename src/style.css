@@ -260,8 +260,9 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  height: 100vh;
+  /* padding-bottom: 100px !important;
+  padding-top: 100px !important; */
 }
 
 .home-content {
@@ -316,11 +317,23 @@ button:focus {
     padding-bottom: 2em !important;
   }
 }
+.supporting_text{
+  color: cyan;
+  font-size: 0.8rem;
+}
+
+.home_my_img{
+  margin:auto;    
+  display: block;
+  border-radius: 20px;
+
+  width: 90%;
+}
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 150px !important;
+  padding-top: 150px !important;
 }
 
 .home-about-description {
@@ -331,7 +344,7 @@ button:focus {
 }
 
 .home-about-body {
-  padding-top: 50px;
+  padding-top: 20px;
   font-size: 1.2em !important;
   text-align: left;
 }
@@ -740,4 +753,43 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.about_links{
+  text-decoration: none !important;
+  color: #0c0513;
+}
+.main_color{
+  background-color:  #8200cdf7;
+}
+.dark_color{
+  color: #8200cdf7 ;
+}
+.education_listgrp{
+  display: flex !important;
+}
+
+.certification_img{
+  text-align: center;
+  width: 80% !important;
+  border-radius: 50px !important;
+  margin: auto;    
+  display: block;
+  cursor: pointer !important
+  
+} 
+.certification_card{
+  background-color: transparent !important;
+}
+.Cert_card_btns{
+  margin: 10px;
+}
+.list_item_roles{
+  font-size: 1.2em;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .Cert_card_btns{
+    margin: 10px !important;
+  }
 }

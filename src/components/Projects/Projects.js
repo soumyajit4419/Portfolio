@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import heart from "../../Assets/Projects/human-heart.png";
+import imgcla from "../../Assets/Projects/Img_classifier.jpg";
+import fd from "../../Assets/Projects/fraud-detection.png";
+import NLP from "../../Assets/Projects/NLP.jpg"
+import instaClone from "../../Assets/Projects/instagramclone.png";
+import MB from "../../Assets/Projects/MovieBlitz.png";
 
 function Projects() {
   return (
@@ -23,71 +23,78 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={heart}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Heart Failure Prediction Web App"
+              description="
+              Machine Learning model that can predict if patient has a chance of heart failure or not with the help of the infomation entered by the user. Our Model works on Random Forest Classification which is around 94 % accuracte in my case.
+              "
+              ghLink="https://github.com/EshanJairath/ML_Heart-Failure"
+            
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={imgcla}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Image Classifer"
+              description="A CNN (Convolution Neural Network) model trained on the CIFAR-10 dataset which gives 86% on the test set and manages to predict random images from every category in the dataset correctly."
+              ghLink="https://github.com/EshanJairath/CNN-image-Classifier-on-CIFAR-10"
+              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={fd}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="SOM Fraud Detection "
+              description="
+              The goal of SOM is to provide a data visualization tool that aids in the understanding of high-dimensional data by minimizing the dimension of data to map. SOM also represents the concept of clustering by grouping similar data together. I created a simple project using SOM to identify credit card fraud and return the customer IDs of the fraudulent customers."
+              ghLink="https://github.com/EshanJairath/SOM_fraud-detection"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={NLP}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Restaurant Review Prediction"
+              description="A fully functional review prediction system that uses NLP to detect positive and negative reviews of a restaurant. Technologies used - Deep Learning, Natural Language Processing, SVM, Python"
+              ghLink="https://github.com/EshanJairath/Restaurant-review-prediction-"
+              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={instaClone}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Instagram Clone - Pics-Watch"
+              description="An Instagram clone web application made with react.js and firebase for user authentication, data storage and hosting."
+              ghLink="https://github.com/EshanJairath/PicsWatch-Insta-clone"
+              demoLink="https://instagram-clone-picswatch.web.app/" 
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={MB}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="MovieBlitzz"
+              description="React Web Application that uses the movie database (TMDB) to showcase lastest Movies and TV shows "
+              ghLink="https://github.com/EshanJairath/MovieBlitz"
+              demoLink="https://movieblitz-7feda.web.app/"       
             />
           </Col>
         </Row>
+        <h1 className="project-heading">
+          To view more of my <strong className="purple"> Projects </strong>
+        </h1>
+        <p style={{ color: "cyan" }}>
+        checkout my GitHub.
+        </p>
       </Container>
     </Container>
   );

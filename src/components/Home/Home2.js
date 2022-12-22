@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/myImg.jpg";
+import ai_900 from "../../Assets/Certifications/AI-900.png"
 import Tilt from "react-parallax-tilt";
+import Certifications from "../About/Certifications";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -19,42 +21,64 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Python. </b>
-              </i>
+            Intelligent, ambitious, and talented software engineer with exceptional computer science skills and a master's degree in Artificial Intelligence. Worked for small start-ups in Artificial Intelligence, Machine Learning, Data science, and software engineering departments. Gained experience in managing teams and building software applications from scratch by working on a variety of small and large-scale projects. 
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
+              <b> My top skills include - </b>
+              <br/>
+              <ul className="mt-3">
+                <li>
+                Programming - <span className="purple">  Python, JavaScript.</span> 
+                </li>
+                
+                <li>
+                Data Structures and Algorithms
+                </li>
+                <li>Artificial Intelligence and Digital Technologies</li>
+                <li>
+                Machine learning & deep learning – <span className="purple"> Scikit-learn, 
+                TensorFlow, Pandas, computer vision, Neural 
+                Networks, NLP, Reinforcement learning, ELT 
+                pipelines.</span>
+                </li>
+                <li>
+                Database - <span className="purple"> MongoDB, SQL, Firebase.</span> 
+                </li>
+
+                <li>
+                Cloud - <span className="purple"> Microsoft Azure</span> <span className="supporting_text">(Certified).</span> 
+                </li>
+
+                <li>
+                Version Control – <span className="purple"> Git and GitHub</span> 
+                </li>
+
+                <li>
+                Data Visualization – <span className="purple"> Microsoft Power BI.</span> 
+                </li>
+
+                <li>
+                System Analysis and Design
+                </li>
+
+                <li>
+                Web - <span className="purple">React.js (Redux and context API), Node, Express.js, REST API.</span> 
+                </li>
+
+                <li>
+                Problem Solving.
+                </li>
+
+                
+
+              </ul>
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid home_my_img" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,7 +91,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/EshanJairath"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -75,19 +99,10 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+    
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/eshan-jairath/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +112,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/eshan_jairath/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -109,6 +124,7 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+      
     </Container>
   );
 }
