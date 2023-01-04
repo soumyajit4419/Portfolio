@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/self.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -16,40 +16,42 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              A Brief  <span className="purple"> SELF-INTRODUCTION </span> 
+              A Brief  <span className="blue"> SELF-INTRODUCTION </span> 
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Previously, I am a Machine Learning guy. My research interests include Natural Language processing, Data Mining and Muti-modal tasks.
+              Now, I expand my area of knowledge to software development. 
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="blue"> C++, JAVA and Python. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I am eager to build new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="blue">Web Technologies and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                <b className="blue">
+                  Data Mining and Natural Launguage Processing.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I also enjoy development with <b className="blue">Node.js</b> and
               <i>
-                <b className="purple">
+                <b className="blue">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Modern Library and Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="blue"> React.js and Django</b>
               </i>
+              <br/>
+              <br />
+              I am always open-minded. If you are interested in researching or developing together with me, please DM me.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -62,7 +64,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="blue">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
