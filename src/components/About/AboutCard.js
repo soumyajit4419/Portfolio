@@ -29,11 +29,6 @@ function AboutCard() {
               <ImPointRight /> Steam Games
             </li>
           </ul>
-
-          {/* <p style={{ color: "rgba(57, 75, 213, 0.883)" }}>
-            "There is more to come!"{" "}
-          </p>
-          <footer className="blockquote-footer">Jiahang Li</footer> */}
         </blockquote>
       </Card.Body>
     </Card>
