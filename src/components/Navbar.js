@@ -14,6 +14,9 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
+import {
+  SiGooglescholar,
+} from "react-icons/si";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -108,7 +111,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBook style={{ marginBottom: "2px" }} /> Google Scholar
+                <SiGooglescholar style={{ marginBottom: "2px" }} /> Google Scholar
               </Nav.Link>
             </Nav.Item>
             {/* <Nav.Item className="fork-btn">
