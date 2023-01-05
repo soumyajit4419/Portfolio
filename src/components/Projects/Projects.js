@@ -18,17 +18,22 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are several projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="A Sequence-to-Sequence Model for Large-scale Chinese Abbreviation Database Construction"
+              description=" In this paper, we propose to formalize the Chinese abbreviation prediction task as a sequence generation problem, 
+              and a novel sequence-to-sequence model is designed. To boost the performance of our deep model, we further propose a multi-level 
+              pre-trained model that incorporates character, word, and concept-level embeddings. To evaluate our methods, a new dataset for 
+              Chinese abbreviation prediction is automatically built, which contains 81,351 pairs of full forms and abbreviations. 
+              Finally, we conduct extensive experiments on a public dataset and the built dataset, and the experimental results on both datasets show that our model outperforms the state-of-the-art methods."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              
+              demoLink="http://kw.fudan.edu.cn/ddemos/abbr/"
             />
           </Col>
 
