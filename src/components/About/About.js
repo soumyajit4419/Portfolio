@@ -4,9 +4,9 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/hobby.jpg";
 import Toolstack from "./Toolstack";
-
+import Language  from "./Language";
 function About() {
   return (
     <Container fluid className="about-section">
@@ -31,9 +31,14 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={laptopImg} alt="about" className="img-fluid" width={270} height={450}/>
           </Col>
         </Row>
+        <h1 className="project-heading">
+          Familiar <strong className="blue">Languages </strong>
+        </h1>
+
+        <Language />
         <h1 className="project-heading">
           Professional <strong className="blue">Skillset </strong>
         </h1>

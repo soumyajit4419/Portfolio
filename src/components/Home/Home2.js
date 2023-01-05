@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -56,7 +57,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" width={300} height={300}/>
             </Tilt>
           </Col>
         </Row>
@@ -77,16 +78,16 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
+              <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/HannahLee0311"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li> */}
+              </li>
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/jiahang-li-218811217/"
@@ -97,16 +98,24 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              {/* <li className="social-icons">
+              <li className="social-icons">
+              
+              {/* <AiOutlineMail className = "icon-colour home-social-icons" 
+                                target="_blank"
+                                rel="noreferrer"
+              onClick={() => window.open("mailto:jiahangli0311@gmail.com")}>
+              
+              </AiOutlineMail> */}
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  onClick={() => window.open("mailto:jiahangli0311@gmail.com")}
                 >
-                  <AiFillInstagram />
+                  <AiOutlineMail/>
                 </a>
-              </li> */}
+                
+              </li>
             </ul>
           </Col>
         </Row>

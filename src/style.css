@@ -62,13 +62,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(48, 57, 228, 0.959);
+  background: rgba(61, 69, 220, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(66, 57, 236, 0.911);
+  background: rgba(68, 60, 222, 0.911);
   border-radius: 12px;
 }
 
@@ -97,7 +97,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #4a48ed !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;

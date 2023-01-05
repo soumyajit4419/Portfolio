@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -31,16 +32,16 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
-            {/* <li className="social-icons">
+            <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
+                href="https://twitter.com/HannahLee0311"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
               </a>
-            </li> */}
+            </li>
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/jiahang-li-218811217/"
@@ -51,16 +52,16 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            {/* <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li> */}
+            <li className="social-icons">
+            <a
+                  target="_blank"
+                  style={{ color: "white" }}
+                 
+                  onClick={() => window.open("mailto:jiahangli0311@gmail.com")}
+                >
+                  <AiOutlineMail/>
+                </a>
+            </li>
           </ul>
         </Col>
       </Row>

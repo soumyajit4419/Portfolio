@@ -4,10 +4,13 @@ import {
   SiLinux,
   SiVisualstudiocode,
   SiPostman,
-  SiHeroku,
+  SiGitlab,
   SiVercel,
 } from "react-icons/si";
-
+import {
+  DiGit,
+  DiDocker,
+} from "react-icons/di";
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -21,10 +24,13 @@ function Toolstack() {
         <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <DiDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGitlab />
       </Col>
     </Row>
   );
