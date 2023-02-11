@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImArrowRight2 } from "react-icons/im";
 
 function AboutCard() {
   return (
@@ -8,30 +8,29 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
+            Hi Everyone, I am <span className="purple">Andrea Jasper </span>
+            with a passion for<span className="purple"> problem solving.</span>
+            <br />Currently, I'm brushing up on JavaScript and React.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from coding, I enjoy...
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImArrowRight2 /> Playing Video Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <ImArrowRight2 /> Surfing and Wakeboarding
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImArrowRight2 /> Horseback Riding
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Andrea</footer>
         </blockquote>
       </Card.Body>
     </Card>
