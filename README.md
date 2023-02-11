@@ -17,14 +17,6 @@
 ![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
 
 </center>
-
-<h3 align="center">
-    🔹
-    <a href="https://github.com/jerrryisuwamakeri/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/jerryisuwamakeri/Portfolio/issues">Request Feature</a>
-</h3>
-
 ## TL;DR
 This project was built using these technologies.
 
