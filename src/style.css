@@ -155,8 +155,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 7em !important;
+  width: 12.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -307,7 +307,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 15em !important;
 }
 
 @media (max-width: 767px) {
