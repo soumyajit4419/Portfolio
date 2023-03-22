@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar-1.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming in a high school course that never taught coding.
+              I fell in love with programming while working as a project manager for a tech company.
               <br />
               <br />I am fluent in
               <i>

@@ -23,7 +23,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Job Tracker"
-              description="Personal project to track my job hunt activities and status of each applications. It kees me on track for follow ups and where I'm at in the interview process. <br><b>Stack:</b> Linux, Rails and Tailwind CSS."
+              description="Personal project to track my job hunt activities and the status of each application. It was also an excuse to work on implementing authentication into an app. Stack: Linux, Rails and Bootstrap."
               ghLink="https://github.com/AndreaJasper/job-tracker"
               // demoLink="https://chatify-49.web.app/"
             />
@@ -45,9 +45,20 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="DnD Character Archive"
-              description="I love playing Dungeons and Dragon, the problem is, I end up with alot of lose paper for each character. While I could use online sources like DnD Beyond, I wanted to practice my coding skills, so I built my own character archive so I can ditch the paper. Built using Rails and Bootstrap."
+              description="I love playing Dungeons and Dragon, the problem is, I end up with alot of character sheets. To practice my coding skills, I built a character archive so I can ditch the paper, but save my character stats. Stack: Rails and Bootstrap."
               ghLink="https://github.com/AndreaJasper/dnd-character-tracker"
               // demoLink="https://editor.soumya-jit.tech/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Practice Portfolio"
+              description="To stay fresh on my HTML and CSS, I like to write raw code, sans frameworks. Stack: HTML, CSS, Responsive design, Flexbox."
+              ghLink="https://github.com/AndreaJasper/daily-reads"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
         </Row>
