@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import skillShare from "../../Assets/Projects/skillshare.png";
 
 function Projects() {
   return (
@@ -53,11 +54,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={skillShare}
               isBlog={false}
               title="Practice Portfolio"
               description="To stay fresh on my HTML and CSS, I like to write raw code, sans frameworks. Stack: HTML, CSS, Responsive design, Flexbox."
-              ghLink="https://github.com/AndreaJasper/daily-reads"
+              ghLink="https://github.com/AndreaJasper/old-skillshare-portfolio"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
