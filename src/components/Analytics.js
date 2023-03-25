@@ -207,7 +207,7 @@ const Analytics = (props) => {
                 <br />
                 <br />
                 <Col md={6}>
-                  <h1> Refferers</h1>
+                  <h1> Referrers</h1>
                   <br />
                   <Doughnut
                     data={{
@@ -244,7 +244,7 @@ const Analytics = (props) => {
                   ></Doughnut>
                 </Col>
                 <Col md={6}>
-                  <h1> All Refferers used</h1>
+                  <h1> All Referer used</h1>
                   <ul>
                     {dailyData.refs?.label.map((label, index) => {
                       let amount = dailyData.refs.numbers[index];
@@ -266,7 +266,7 @@ const Analytics = (props) => {
                             }}
                           >
                             {" "}
-                            Use this reffer{" "}
+                            Use this refer{" "}
                           </button>
                         </li>
                       );

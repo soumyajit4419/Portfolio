@@ -2,8 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillRedEnvelope, AiOutlineVerticalAlignTop } from "react-icons/ai";
+import { SiReplit  } from "react-icons/si";
 import config from "../../config/config.json";
+import { BsFillEnvelopeFill } from "react-icons/bs";
 
 function Home2() {
   return (
@@ -52,7 +54,7 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvatar">
             <Tilt>
               <img
                 src={myImg}
@@ -80,6 +82,26 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href={`https://replit.com/@NeonGamerBotQK`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiReplit />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href={`mailto:neon@saahild.com`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <BsFillEnvelopeFill />
                 </a>
               </li>
               {/* <li className="social-icons">

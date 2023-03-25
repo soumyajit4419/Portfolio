@@ -22,6 +22,7 @@ import Analytics from "./components/Analytics";
 import io from "socket.io-client";
 import Modal from "react-bootstrap/Modal";
 import { useRef } from "react";
+import Particle from "./components/Particle";
 const querys = new URLSearchParams(window.location.search);
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -153,6 +154,7 @@ play();
                 <Route path="/project" element={<Projects />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
+                <Route path="/particles" element={<Particle />} />
                 {querys.get("password") === process.env.REACT_APP_PASSWORD ? (
                   <Route path="/analytics" element={<Analytics />} />
                 ) : null}

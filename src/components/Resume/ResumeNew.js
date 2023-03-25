@@ -40,7 +40,7 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            Comming soon
+            Coming soon
           </Button>
         </Row> */}
         <Row style={{ justifyContent: "center", position: "relative" }}>

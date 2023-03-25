@@ -6,10 +6,14 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import config from "../../config/config.json";
 function Home() {
-  return (
-    <section>
+  return (<>
+    <div >
+    <Particle />
+    </div>
+
+    <section >
+
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -47,7 +51,8 @@ function Home() {
       </Container>
       <Home2 />
     </section>
-  );
+    
+    </>);
 }
 
 export default Home;
