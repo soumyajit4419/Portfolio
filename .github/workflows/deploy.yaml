@@ -1,10 +1,12 @@
 name: remote ssh command
 on: [push]
+
 jobs:
 
   build:
     name: Build
     runs-on: ubuntu-latest
+    environment: production
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.8
