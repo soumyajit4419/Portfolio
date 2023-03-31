@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import tracker from "../../Assets/Projects/jobTracker.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import skillShare from "../../Assets/Projects/skillshare.png";
 
@@ -21,11 +21,11 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={tracker}
               isBlog={false}
-              title="Job Tracker"
-              description="Personal project to track my job hunt activities and the status of each application. It was also an excuse to work on implementing authentication into an app. Stack: Linux, Rails and Bootstrap."
-              ghLink="https://github.com/AndreaJasper/job-tracker"
+              title="Job Application Tracker"
+              description="Personal project to track my job hunt activities and the status of each application. It was also an excuse to work on implementing authentication. Stack: Linux, Rails and Bootstrap."
+              ghLink="https://github.com/AndreaJasper/application-tracker"
               // demoLink="https://chatify-49.web.app/"
             />
           </Col>
@@ -34,9 +34,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Daily Reads"
-              description="I have several interests and I'm looking for updates on a daily basis. Instead of going to individual sites, I wanted to play around with site scrapping to pull data from my favorites sites into one location. Built using Node.js and Puppeteer."
-              ghLink="https://github.com/AndreaJasper/daily-reads"
+              title="Workorder App"
+              description="This project was inspired by husband's complaints that his work order tracking system was out of date."
+              ghLink="https://github.com/AndreaJasper/rails-workorder-app"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
