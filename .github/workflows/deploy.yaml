@@ -17,4 +17,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
             cd /root
-            sudo bash ./deploy.sh
+            bash ./deploy.sh
