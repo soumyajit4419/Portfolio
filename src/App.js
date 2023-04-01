@@ -62,7 +62,7 @@ useEffect(() => {
     );
   }, []);
  //ackee
- useAckee(window.location.hash, {
+ useAckee(window.location.pathname, {
 	server: 'https://ackee.saahild.com',
 	domainId: 'c082bd15-f9d8-414f-aa10-926e1d66a5d6'
 }, {
