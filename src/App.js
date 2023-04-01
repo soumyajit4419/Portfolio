@@ -23,6 +23,7 @@ import io from "socket.io-client";
 import Modal from "react-bootstrap/Modal";
 import { useRef } from "react";
 import Particle from "./components/Particle";
+import useAckee from "use-ackee"
 const querys = new URLSearchParams(window.location.search);
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -60,7 +61,17 @@ useEffect(() => {
       )
     );
   }, []);
-  // subscribe to the socket event
+ //ackee
+ useAckee(window.location.hash, {
+	server: 'https://ackee.saahild.com',
+	domainId: 'c082bd15-f9d8-414f-aa10-926e1d66a5d6'
+}, {
+	detailed: false,
+	ignoreLocalhost: true,
+	ignoreOwnVisits: true
+})
+ 
+ // subscribe to the socket event
   useEffect(() => {
     if (!socket) return;
 
