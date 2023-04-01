@@ -15,7 +15,7 @@ function TimeLine() {
             <div class="cd-timeline-img cd-picture">
             </div>
             <div class="cd-timeline-content">
-                <h2>Freelance</h2>
+                <h2>Freelance Software Developer</h2>
                 <div class="timeline-content-info">
                     <span class="timeline-content-info-title">
                         <i class="fa fa-certificate" aria-hidden="true"></i>
@@ -26,11 +26,12 @@ function TimeLine() {
                         February 2023 - Present
                     </span>
                 </div>
-                <p>Worked alongside lead developer on green field project, architected the database, and implemented new features.</p>
+                <p>Building Ruby on Rails project and the occassional React on Rails.</p>
                 <ul class="content-skills">
                     <li>Rails</li>
                     <li>React</li>
-                    <li>Docker</li>
+                    <li>HTML</li>
+                    <li>CSS3</li>
                 </ul>
             </div>
         </div>
@@ -47,6 +48,9 @@ function TimeLine() {
                 <ul class="content-skills">
                     <li>Rails</li>
                     <li>React</li>
+                    <li>jQuery</li>
+                    <li>HTML</li>
+                    <li>CSS3</li>
                     <li>Docker</li>
                 </ul>
                 <span class="cd-date">2022</span>
@@ -71,10 +75,11 @@ function TimeLine() {
                 <span class="timeline-content-info-title">
                     Software Developer
                 </span>
-                <p>Lead a team of developer that implemented new features, updated out-of-date codebases, and integrated React with Rails.</p>
+                <p>Led a team of developer that implemented new features, updated out-of-date codebases, and integrated React with Rails.</p>
                 <ul class="content-skills">
                     <li>Rails</li>
                     <li>React</li>
+                    <li>jQuery</li>
                     <li>SASS</li>
                     <li>TDD</li>
                     <li>Agile</li>
@@ -97,6 +102,8 @@ function TimeLine() {
                     <li>Rails</li>
                     <li>SQLite</li>
                     <li>TDD</li>
+                    <li>HTML</li>
+                    <li>CSS3</li>
                 </ul>
                 <span class="cd-date">2020</span>
             </div>
@@ -110,10 +117,10 @@ function TimeLine() {
                 <span class="timeline-content-info-title">
                     Project Manager/Web Developer
                 </span>
-                <p>Built full-stack projects in Ruby on Rails, exposed to React, Redux, and Node.</p>
+                <p>Built Wordpress websites with custom ACF, built custom themes, and managed project end-to-end.</p>
                 <ul class="content-skills">
                     <li>HTML</li>
-                    <li>CSS</li>
+                    <li>CSS3</li>
                     <li>WordPress</li>
                     <li>Project Management</li>
                 </ul>

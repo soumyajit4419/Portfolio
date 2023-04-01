@@ -786,7 +786,7 @@ Main components
   left: 25px;
   height: 100%;
   width: 4px;
-  background: #7E57C2;
+  background: #9867c1;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -840,11 +840,11 @@ Main components
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #7E57C2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #9867c1, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img {
-  background: #673AB7;
+  background: #623686;
 }
 
 @media only screen and (min-width: 1170px) {
