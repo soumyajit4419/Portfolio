@@ -34,7 +34,7 @@
     "use-analytics": "^0.0.5",
     "web-vitals": "^2.1.4",
     "zip-cli": "^0.0.0",
-    "use-ackee": "3.0.1",
+    "use-ackee": "3.0.1"
     },
   "scripts": {
     "start": "react-scripts start",
