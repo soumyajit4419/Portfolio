@@ -1,42 +1,47 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  SiGit,
-  SiVisualstudiocode,
-  SiPostman,
-  SiGithub,
-  SiDocker,
-  SiAmazonaws
+  DiPython,
+  DiGit,
+} from "react-icons/di";
+import { 
+  SiPandas, 
+  SiNumpy, 
+  SiPlotly,
+  // SiSeaborn,
+  // SiScikitLearn,
+  // MatPLotLib,
+  SiTensorflow,
+  SiOpencv,
+  SiOpenai,
 } from "react-icons/si";
 
-function Toolstack() {
+function DataScience() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAmazonaws />
+        <SiPandas />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
+        <SiNumpy />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiPlotly />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
+        <SiTensorflow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGit />
+        <SiOpencv />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiOpenai />
       </Col>
     </Row>
   );
 }
 
-export default Toolstack;
+export default DataScience;

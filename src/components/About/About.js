@@ -2,10 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
-import Techstack from "./Techstack";
+// import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import WebDev from "./WebDev";
+import DataScience from "./DataScience";
 
 function About() {
   return (
@@ -22,7 +24,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Learn more about <strong className="purple">me</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -35,13 +37,24 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Web <strong className="purple">Development </strong>
         </h1>
 
-        <Techstack />
+        <WebDev />
+        <h1 className="project-heading">
+          Data <strong className="purple">Engineering </strong>
+        </h1>
+
+        <DataScience />
+{/* 
+        <h1 className="project-heading">
+          It doesn't <strong className="purple">end there </strong>
+        </h1>
+
+        <Techstack /> */}
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          Tool<strong className="purple">kit</strong>
         </h1>
         <Toolstack />
 
