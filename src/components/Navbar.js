@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiTwotoneBulb
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -75,10 +76,25 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
+                <AiTwotoneBulb
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                <br></br>
+                Research and Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/work-experience"
+                onClick={() => updateExpanded(false)}
+              >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                <br></br>
+                Work Experience
               </Nav.Link>
             </Nav.Item>
 
@@ -104,7 +120,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/Wolfgang9999/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
