@@ -11,7 +11,10 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #7da2a9;
+  --main-color: #7da2a9;
+  --dk-gray: #3a3a3a;
+  --lt-gray: #f7f7f7;
 }
 
 .purple {
@@ -160,7 +163,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--dk-gray) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -194,7 +197,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--main-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -257,7 +260,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -266,7 +269,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: var(--dk-gray);
   text-align: left;
 }
 
@@ -281,17 +284,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--imp-text-color) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--imp-text-color) !important;
 }
 
 @media (max-width: 767px) {
@@ -318,13 +321,14 @@ button:focus {
 }
 
 .home-about-section {
+  background: var(--lt-gray);
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--dk-gray);
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -337,13 +341,11 @@ button:focus {
 }
 
 .home-about-social {
-  text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: var(--dk-gray);
 }
 
 .home-about-social-links {
-  justify-content: center !important;
   padding-top: 15px !important;
   display: inline-block !important;
   position: relative !important;
@@ -358,7 +360,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: var(--main-color);
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -371,7 +373,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: var(--main-color);
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +381,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px var(--dk-gray);
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: var(--dk-gray);
+  box-shadow: 0 0 5px var(--dk-gray);
+  text-shadow: 0 0 2px var(--dk-gray);
 }
 
 .social-icons {
@@ -395,7 +397,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: var(--lt-gray) !important;
 }
 
 /* --------- */
@@ -518,8 +520,8 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
 }
 
 .btn-primary:hover {
@@ -727,7 +729,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #bccacd !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,8 +737,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #91afb6 !important;
+  border-color: #91afb6 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
