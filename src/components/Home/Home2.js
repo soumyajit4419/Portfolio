@@ -22,32 +22,17 @@ function Home2() {
               I fell in love with programming while working as a project manager for a tech company.
               <br />
               <br />I am fluent in
-              <i>
-                <b className="purple"> Rails and Javascript.</b>
-              </i>
+              <i className="purple"> Rails and Javascript.</i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Website and App development.
-                </b>
-              </i>
+              <i className="purple">Web Technologies, Products, and Website and App development.</i>
               <br />
               <br />
               Whenever possible, I also expand my passion for developing products with
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
+              <i className="purple">Modern Javascript Library and Frameworks</i>
               &nbsp; like
-              <i>
-                <b className="purple"> React.js</b>
-              </i>
+              <i className="purple"> React.js</i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -58,7 +43,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h2><span class="purple">Find</span> ME ON</h2>
+            <h2><span class="purple">FIND</span> ME ON</h2>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a

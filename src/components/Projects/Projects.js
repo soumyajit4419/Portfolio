@@ -19,7 +19,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={tracker}
               isBlog={false}
@@ -30,7 +30,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
@@ -41,7 +41,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={editor}
               isBlog={false}
@@ -52,7 +52,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={skillShare}
               isBlog={false}

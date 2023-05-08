@@ -17,6 +17,14 @@ html {
   --lt-gray: #f7f7f7;
 }
 
+body {
+  color: var(--dk-gray);
+}
+
+a {
+  color: var(--main-color) !important;
+}
+
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -79,10 +87,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  box-shadow: 0px 10px 10px 0px rgba(125, 162, 169, 0.171) !important;
+  backdrop-filter: blur(15px) !important; 
 }
 
 .navbar {
@@ -100,7 +107,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--main-color) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -147,14 +154,23 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: var(--lt-gray) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: var(--dk-gray) !important;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  color: var(--dk-gray);
+}
+
+.navbar-brand span, .home-header span {
+  font-weight: 700;
 }
 
 .logo {
@@ -279,7 +295,7 @@ button:focus {
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 5em !important;
   padding-left: 45px !important;
 }
 
@@ -404,7 +420,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  border: 1.7px solid rgba(126, 162, 169, 0.64) !important;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -430,7 +446,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--dk-gray) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -450,7 +466,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
 }
 
 .project-card {
@@ -462,17 +477,15 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  border: 1.7px solid rgba(126, 162, 169, 0.64) !important;
+  box-shadow: 4px 5px 4px 3px rgba(125, 162, 169, 0.2) !important;
   background-color: transparent !important;
-  /* opacity: 0.9 !important; */
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
 .blog-card {
@@ -525,9 +538,9 @@ button:focus {
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: var(--main-color) !important;
+  background-color: #fff !important;
+  border-color: var(--main-color) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -574,8 +587,8 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(145, 175, 182, 0.883) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -785,7 +798,7 @@ Main components
   left: 25px;
   height: 100%;
   width: 4px;
-  background: #9867c1;
+  background: #7da2a9;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -839,11 +852,11 @@ Main components
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #9867c1, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #7da2a9, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img {
-  background: #623686;
+  background: #bccacd;
 }
 
 @media only screen and (min-width: 1170px) {
