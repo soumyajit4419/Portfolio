@@ -23,8 +23,9 @@ function Projects() {
             <ProjectCard
               imgPath={tracker}
               isBlog={false}
-              title="Job Application Tracker"
-              description="Personal project to track my job hunt activities and the status of each application. It was also an excuse to work on implementing authentication. Stack: Linux, Rails and Bootstrap."
+              title="Job Trackr"
+              description="A personal Job Tracking app to monitor my job search endeavors, including the progress of every application. In addition, this project provided me with an opportunity to hone my skills in implementing authentication."
+              stack="Linux, Rails and Bootstrap."
               ghLink="https://github.com/AndreaJasper/application-tracker"
               // demoLink="https://chatify-49.web.app/"
             />
@@ -34,8 +35,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Workorder App"
-              description="This project was inspired by husband's complaints that his work order tracking system was out of date."
+              title="WorkMate"
+              description="Inspired by my husband's grievances about his antiquated work order tracking system, I developed a project that incorporates comprehensive CRUD funcationality and authentication."
+              stack="Rails and Bootstrap"
               ghLink="https://github.com/AndreaJasper/rails-workorder-app"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -45,8 +47,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="DnD Character Archive"
-              description="I love playing Dungeons and Dragon, the problem is, I end up with alot of character sheets. To practice my coding skills, I built a character archive so I can ditch the paper, but save my character stats. Stack: Rails and Bootstrap."
+              title="RollCall"
+              description="As an avid Dungeons and Dragons player, I often accumulate a large number of character sheets. To enhance my coding abilities, I developed a character archive that enables me to do away with paper records while preserving my character's statistics."
+              stack="Rails and Bootstrap"
               ghLink="https://github.com/AndreaJasper/dnd-character-tracker"
               // demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -57,7 +60,8 @@ function Projects() {
               imgPath={skillShare}
               isBlog={false}
               title="Practice Portfolio"
-              description="To stay fresh on my HTML and CSS, I like to write raw code, sans frameworks. Stack: HTML, CSS, Responsive design, Flexbox."
+              description="In order to kep my HTML and CSS skills up-to-date, I prefer to write code from scratch, wihtout relying on frameworks. This particular site is designed with responsive layout in mind, emphasizing the use of flex-box."
+              stack="HTML, CSS, Responsive Design"
               ghLink="https://github.com/AndreaJasper/old-skillshare-portfolio"
               // demoLink="https://blogs.soumya-jit.tech/"
             />

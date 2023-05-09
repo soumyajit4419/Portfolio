@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main-1.svg";
 import Particle from "../Particle";
@@ -13,17 +14,26 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi, my name is
-              </h1>
+              <h3 className="heading">
+                I'm a
+              </h3>
 
               <h1 className="heading-name">
-                Andrea
+                Full Stack <br/>
+                Developer<span className="purple">.</span>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+            <Button
+              variant="primary"
+              href="/project"
+              style={{ margin: "20px 50px" }}
+            >
+              {"Recent Projects"}
+            </Button>
+
+              {/* <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
-              </div>
+              </div> */}
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

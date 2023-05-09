@@ -1,9 +1,9 @@
 html {
-  --section-background-color: linear-gradient(
+  /* --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
-  );
+  ); */
 
   --image-gradient: linear-gradient(
     to bottom left,
@@ -14,6 +14,7 @@ html {
   --imp-text-color: #7da2a9;
   --main-color: #7da2a9;
   --dk-gray: #3a3a3a;
+  --md-gray: #999999;
   --lt-gray: #f7f7f7;
 }
 
@@ -273,12 +274,15 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.home-header a {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+
 .home-section {
   position: relative;
   z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
-  background-position: top center;
-  background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -292,11 +296,17 @@ button:focus {
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
+  font-weight: 700;
+  color: var(--md-gray);
 }
 
 .heading-name {
+  font-family: Lora,serif;
   font-size: 5em !important;
   padding-left: 45px !important;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .main-name {
