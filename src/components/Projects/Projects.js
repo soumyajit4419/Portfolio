@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
-import tracker from "../../Assets/Projects/jobTracker.png";
+import tracker from "../../Assets/Projects/job-tracker.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import skillShare from "../../Assets/Projects/skillshare.png";
 
