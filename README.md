@@ -3,7 +3,7 @@
   <a href="https://soumyajit.vercel.app/" target="_blank">edi.dev</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./Images/edireadmeimage.png" />
 </div>
 
 <br/>
