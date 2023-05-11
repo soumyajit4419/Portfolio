@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -145,6 +148,10 @@ button:focus {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
+    @apply flex items-center justify-between;
+  }
+  .navbar-nav .nav-item {
+    width: 150px;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -166,6 +173,8 @@ button:focus {
 }
 
 .nav-link {
+  display: flex;
+  flex-direction: row;
   padding: 0.8rem 1rem !important;
 }
 
@@ -740,4 +749,8 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.tech_stack {
+  @apply grid gap-5 grid-cols-5 mobile:grid-cols-2 laptop:grid-cols-5;
 }

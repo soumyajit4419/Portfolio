@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
   SiVisualstudiocode,
@@ -10,23 +9,23 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
-      </Col>
-    </Row>
+    <div className="justify-center text-center tech_stack">
+      <div className="rounded-md border-2 border-purple-900 w-full p-4 flex justify-center items-center">
+        <SiLinux size={90} />
+      </div>
+      <div className="rounded-md border-2 border-purple-900 w-full p-4 flex justify-center items-center">
+        <SiVisualstudiocode size={90} />
+      </div>
+      <div className="rounded-md border-2 border-purple-900 w-full p-4 flex justify-center items-center">
+        <SiPostman size={90} />
+      </div>
+      <div className="rounded-md border-2 border-purple-900 w-full p-4 flex justify-center items-center">
+        <SiVercel size={90} />
+      </div>
+      <div className="rounded-md border-2 border-purple-900 w-full p-4 flex justify-center items-center">
+        <SiHeroku size={90} />
+      </div>
+    </div>
   );
 }
 
