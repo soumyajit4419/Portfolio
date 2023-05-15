@@ -11,7 +11,12 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer contact-section">
+      <Row>
+        <h1 style={{ fontSize: "2.6em" }}>
+          Contact
+        </h1>
+      </Row>
       <Row>
         <Col md="4" className="footer-copywright">
           <h3>Designed and Developed by <a href="https://github.com/soumyajit4419/Portfolio">Soumyajit Behera</a></h3>

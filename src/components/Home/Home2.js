@@ -14,59 +14,15 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              ABOUT<span className="purple"> ME</span>
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming while working as a project manager for a tech company.
-              <br />
-              <br />I am fluent in
-              <i className="purple"> Rails and Javascript.</i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i className="purple">Web Technologies, Products, and Website and App development.</i>
-              <br />
-              <br />
-              Whenever possible, I also expand my passion for developing products with
-              <i className="purple">Modern Javascript Library and Frameworks</i>
-              &nbsp; like
-              <i className="purple"> React.js</i>
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h2><span class="purple">FIND</span> ME ON</h2>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/AndreaJasper"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/andrea-jasper/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-            </ul>
-          </Col>
+          <h1 style={{ fontSize: "2.6em" }}>
+            About me
+          </h1>
+          <p className="home-about-body">
+            I fell in love with programming while working as a project manager for a tech company. I am fluent in Rails and Javascript.
+            My field of Interest's are building new &nbsp; Web Technologies, Products, and Website and App development.
+            Whenever possible, I also expand my passion for developing products with Modern Javascript Library and Frameworks
+            &nbsp; like React.js
+          </p>
         </Row>
       </Container>
     </Container>

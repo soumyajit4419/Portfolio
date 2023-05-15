@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main-1.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import Techstack from "../About/Techstack";
+import RecentProjects from "../Projects/RecentProjects";
 import Type from "./Type";
 
 function Home() {
@@ -47,7 +49,26 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Container fluid className="about-section" id="about">
+        <Home2 />
+      </Container>
+      <Container fluid className="home-tech-section" id="skill">
+        <Container>
+          <Row>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: 50}}>
+              My skills
+            </h1>
+            <Techstack />
+          </Row>
+        </Container>
+        <Container fluid className="home-portfolio-section" id="portfolio">
+          <Container>
+            <Row>
+              <RecentProjects />
+            </Row>
+          </Container>
+        </Container>
+      </Container>
     </section>
   );
 }

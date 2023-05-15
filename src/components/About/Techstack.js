@@ -16,31 +16,31 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <DiRuby />
+        Ruby
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
+        Rail
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiCss3Full />
+        React
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        Javascript
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        HTML
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
+        CSS
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiSqllite />
+        SASS
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        GIT
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiWordpress />
+        NPM
       </Col>
     </Row>
   );
