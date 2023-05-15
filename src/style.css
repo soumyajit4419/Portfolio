@@ -565,6 +565,20 @@ button:focus {
   padding-bottom: 30px !important;
 }
 
+.home-tech-icons {
+  color: #fff;
+  background: blue;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 50%;
+  width: 100px !important;
+  height: 100px;
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
@@ -584,9 +598,12 @@ button:focus {
   .tech-icons {
     margin: 10px !important;
   }
+  .home-tech-icons {
+    margin: 10px !important;
+  }
 }
 
-.tech-icons:hover {
+.tech-icons:hover, .home-tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
 }

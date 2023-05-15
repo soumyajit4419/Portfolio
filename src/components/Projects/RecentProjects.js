@@ -15,9 +15,9 @@ function Projects() {
         <h1 className="project-heading">
           Portfolio
         </h1>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={6} lg={4} className="project-card">
-            <Card
+        <Row style={{ justifyContent: "center" }}>
+        <Col md={6} lg={4} className="">
+            <ProjectCard
               imgPath={jobtrackr}
             />
           </Col>
