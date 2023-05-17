@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
 import tracker from "../../Assets/Projects/jobtrackr.jpg";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import skillShare from "../../Assets/Projects/skillshare.png";
+import workMate from "../../Assets/Projects/workmate.jpg";
+import skillShare from "../../Assets/Projects/skillshare.jpg";
+import rollcall from "../../Assets/Projects/rollcall.jpg";
 
 function Projects() {
   return (
@@ -15,9 +15,6 @@ function Projects() {
         <h1 className="project-heading">
           Portfolio
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
@@ -33,7 +30,7 @@ function Projects() {
 
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={workMate}
               isBlog={false}
               title="WorkMate"
               description="Inspired by my husband's grievances about his antiquated work order tracking system, I developed a project that incorporates comprehensive CRUD funcationality and authentication."
@@ -45,7 +42,7 @@ function Projects() {
 
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={rollcall}
               isBlog={false}
               title="RollCall"
               description="As an avid Dungeons and Dragons player, I often accumulate a large number of character sheets. To enhance my coding abilities, I developed a character archive that enables me to do away with paper records while preserving my character's statistics."

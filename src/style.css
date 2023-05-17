@@ -552,7 +552,6 @@ button:focus {
 }
 
 .card-img-top {
-  opacity: 0.8 !important;
   border-radius: 10px !important;
 }
 
