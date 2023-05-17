@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
-import tracker from "../../Assets/Projects/job-tracker.png";
+import tracker from "../../Assets/Projects/jobtrackr.jpg";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import skillShare from "../../Assets/Projects/skillshare.png";
 
@@ -13,7 +13,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Portfolio
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.

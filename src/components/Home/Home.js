@@ -5,7 +5,7 @@ import homeLogo from "../../Assets/home-main-1.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Techstack from "../About/Techstack";
-import RecentProjects from "../Projects/RecentProjects";
+import Projects from "../Projects/Projects";
 import Type from "./Type";
 
 function Home() {
@@ -64,7 +64,7 @@ function Home() {
         <Container fluid className="home-portfolio-section" id="portfolio">
           <Container>
             <Row>
-              <RecentProjects />
+              <Projects />
             </Row>
           </Container>
         </Container>

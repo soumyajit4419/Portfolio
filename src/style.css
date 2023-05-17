@@ -337,7 +337,7 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
+  padding-bottom: 30px !important;
   padding-top: 70px !important;
 }
 
@@ -466,7 +466,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 70px !important;
   padding-bottom: 30px !important;
 }
 
@@ -479,15 +479,25 @@ button:focus {
 }
 
 .project-card-view {
-  border: 1.7px solid rgba(126, 162, 169, 0.64) !important;
   box-shadow: 4px 5px 4px 3px rgba(125, 162, 169, 0.2) !important;
-  background-color: transparent !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  border-radius: 10px !important;
+
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
+}
+
+.card-img-overlay {
+  opacity: 0;
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+  background-color: #262626;
+  transition: all 0.5s ease 0s !important;
+  color: var(--lt-gray)
 }
 
 .blog-card {
@@ -522,7 +532,6 @@ button:focus {
 }
 
 .card-img-top {
-  padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
 }
@@ -561,7 +570,7 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 70px !important;
   padding-bottom: 30px !important;
 }
 
