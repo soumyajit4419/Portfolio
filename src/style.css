@@ -495,10 +495,30 @@ button:focus {
 }
 .card:hover .card-img-overlay {
   opacity: 1;
-  background-color: #262626;
-  transition: all 0.5s ease 0s !important;
-  color: var(--lt-gray)
+  
 }
+
+
+@media(min-width: 769px) {
+  .card-body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: calc(.25rem - 1px);
+    opacity: 0;
+  }
+
+  .card-body:hover {
+    opacity: 1;
+    background-color: rgba(18, 18, 18, 0.85);
+    transition: 1s !important;
+    color: var(--lt-gray)
+  }
+}
+
 
 .blog-card {
   padding-top: 50px !important;
