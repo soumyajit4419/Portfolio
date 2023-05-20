@@ -1,0 +1,37 @@
+.skills {
+  background-color: #18191a;
+  padding-bottom: 60px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  @include phone {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include phone {
+      margin: 10px;
+    }
+  }
+
+    &__text {
+      margin-top: 15px;
+    }
+
+    & i {
+      color: $accent-color;
+      font-size: 100px;
+    }
+}

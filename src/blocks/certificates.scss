@@ -1,0 +1,19 @@
+.certificates {
+  background-color: #18191a;
+  padding-bottom: 60px;
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+
+    @include phone {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px;
+    }
+    
+    & img {
+      width: 100%;
+    }
+  }
+}

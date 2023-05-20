@@ -1,0 +1,88 @@
+.works {
+  padding-bottom: 50px;
+}
+
+.works-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include phone {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__item {
+    border-radius: 15px;
+    background-color: #18191a;
+  }
+
+  &__img {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  &__content {
+
+    padding: 15px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $accent-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  &__tools {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 5px;
+    height: 25px;
+
+      @include tablet {
+        height: 20px;
+    }
+  }
+
+  &__description {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    height: 70px;
+    padding-top: 7px;
+    @include tablet {
+      height: 50px;
+    }
+    @include phone {
+      height: 60px;
+    }
+  }
+
+  &__git {
+    background-color: $accent-color;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 25px;
+    border: 1px solid $accent-color;
+    transition: .2s linear;
+    margin-top: 15px;
+    display: inline-block;
+
+    &:hover {
+      background-color: $bg-color;
+      color: $accent-color;
+    }
+  }
+}
