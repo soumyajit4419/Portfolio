@@ -1,0 +1,21 @@
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+  color: $primary-color;
+  background-color: $bg-color;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 60px;
+}

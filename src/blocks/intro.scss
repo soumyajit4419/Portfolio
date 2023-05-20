@@ -1,0 +1,126 @@
+.intro {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 40px 0 20px 0;
+    }
+  }
+
+  &__greeting {
+    font-size: 35px;
+    margin-bottom: 10px;
+
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+
+  &__img img {
+    width: 90%;
+
+    @include tablet {
+      width: 400px;
+    }
+
+    @include tablet {
+      width: 350px;
+      margin-top: 40px;
+    }
+  }
+
+  &__name {
+    color: $accent-color;
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 35px;
+
+    @include tablet {
+      font-size: 55px;
+    }
+
+    @include phone {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__work {
+    font-size: 22px;
+    font-weight: 500;
+    color: $secondary-color;
+    margin-bottom: 20px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__summary {
+    font-size: 20px;
+    color: $secondary-color;
+    margin-bottom: 60px;
+    width: 90%;
+
+    @include tablet {
+      font-size: 17px;
+    }
+
+    @include phone {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.intro-socials {
+
+  &__link {
+    color: $secondary-color;
+    font-size: 40px;
+    margin-right: 10px;
+    transition: .2s linear;
+
+    @include tablet {
+      font-size: 37px;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.intro-CV {
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 30px;
+  }
+
+  &__link {
+    background-color: $accent-color;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 25px;
+    border: 1px solid $accent-color;
+    margin-right: 20px;
+    transition: .2s linear;
+
+    @include tablet {
+      font-size: 17px;
+    }
+
+    &:hover {
+      background-color: $bg-color;
+      color: $accent-color;
+    }
+  }
+}

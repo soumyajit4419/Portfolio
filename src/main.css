@@ -1,0 +1,430 @@
+.certificates {
+  background-color: #18191a;
+  padding-bottom: 60px;
+}
+.certificates__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+}
+@media (max-width: 768px) {
+  .certificates__images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+}
+.certificates__images img {
+  width: 100%;
+}
+
+.intro__inner {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .intro__inner {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 40px 0 20px 0;
+  }
+}
+.intro__greeting {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  .intro__greeting {
+    font-size: 28px;
+  }
+}
+.intro__img img {
+  width: 90%;
+}
+@media (max-width: 1200px) {
+  .intro__img img {
+    width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .intro__img img {
+    width: 350px;
+    margin-top: 40px;
+  }
+}
+.intro__name {
+  color: #ffb400;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+@media (max-width: 1200px) {
+  .intro__name {
+    font-size: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .intro__name {
+    margin-bottom: 10px;
+  }
+}
+.intro__work {
+  font-size: 22px;
+  font-weight: 500;
+  color: #837f87;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .intro__work {
+    font-size: 18px;
+  }
+}
+.intro__summary {
+  font-size: 20px;
+  color: #837f87;
+  margin-bottom: 60px;
+  width: 90%;
+}
+@media (max-width: 1200px) {
+  .intro__summary {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .intro__summary {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.intro-socials__link {
+  color: #837f87;
+  font-size: 40px;
+  margin-right: 10px;
+  transition: 0.2s linear;
+}
+@media (max-width: 1200px) {
+  .intro-socials__link {
+    font-size: 37px;
+  }
+}
+.intro-socials__link:hover {
+  color: #ffb400;
+}
+
+.intro-CV {
+  margin-top: 40px;
+}
+@media (max-width: 1200px) {
+  .intro-CV {
+    margin-top: 30px;
+  }
+}
+.intro-CV__link {
+  background-color: #ffb400;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px 25px;
+  border: 1px solid #ffb400;
+  margin-right: 20px;
+  transition: 0.2s linear;
+}
+@media (max-width: 1200px) {
+  .intro-CV__link {
+    font-size: 17px;
+  }
+}
+.intro-CV__link:hover {
+  background-color: #242526;
+  color: #ffb400;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.skills {
+  background-color: #18191a;
+  padding-bottom: 60px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 1200px) {
+  .skills-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.skills-list__item {
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .skills-list__item {
+    margin: 10px;
+  }
+}
+.skills-list__text {
+  margin-top: 15px;
+}
+.skills-list i {
+  color: #ffb400;
+  font-size: 100px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #242526;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+
+.works {
+  padding-bottom: 50px;
+}
+
+.works-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+@media (max-width: 1200px) {
+  .works-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .works-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.works-list__item {
+  border-radius: 15px;
+  background-color: #18191a;
+}
+.works-list__img {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.works-list__content {
+  padding: 15px 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+}
+.works-list__title {
+  color: #ffb400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.works-list__tools {
+  color: #837f87;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 5px;
+  height: 25px;
+}
+@media (max-width: 1200px) {
+  .works-list__tools {
+    height: 20px;
+  }
+}
+.works-list__description {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  height: 70px;
+  padding-top: 7px;
+}
+@media (max-width: 1200px) {
+  .works-list__description {
+    height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .works-list__description {
+    height: 60px;
+  }
+}
+.works-list__git {
+  background-color: #ffb400;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px 25px;
+  border: 1px solid #ffb400;
+  transition: 0.2s linear;
+  margin-top: 15px;
+  display: inline-block;
+}
+.works-list__git:hover {
+  background-color: #242526;
+  color: #ffb400;
+}
+
+/*# sourceMappingURL=main.css.map */
