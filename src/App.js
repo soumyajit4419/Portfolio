@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import GHProjects from "./components/Projects/Github/Projects";
 import Footer from "./components/Footer";
 import Blocked from "./components/Blocked";
 import Resume from "./components/Resume/ResumeNew";
@@ -163,6 +164,7 @@ play();
                 
                 <Route path="/" element={<Home />} />
                 <Route path="/project" element={<Projects />} />
+                <Route path="/ghproject" element={<GHProjects />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/particles" element={<Particle />} />

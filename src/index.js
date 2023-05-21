@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import config from "./config/config.json";
 import "./easteregg";
 import Analytics from "analytics";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { AnalyticsProvider, AnalyticsConsumer } from "use-analytics";
 // require('dotenv').config()
