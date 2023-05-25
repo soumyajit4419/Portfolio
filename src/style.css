@@ -1,9 +1,10 @@
 :root {
-  --imp-text-color: #7da2a9;
-  --main-color: #7da2a9;
+  --imp-text-color: #8488b5;
+  --main-color: #8488b5;
+  --lt-purple: #dedeea;
   --dk-gray: #3a3a3a;
   --md-gray: #999999;
-  --lt-gray: #eeeeee;
+  --lt-gray: #fbfbfb;
 }
 
 body {
@@ -78,7 +79,7 @@ button:focus {
 /* --------- */
 .sticky {
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(125, 162, 169, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(25, 26, 41, 0.171) !important;
   backdrop-filter: blur(15px) !important; 
 }
 
@@ -595,7 +596,7 @@ button:focus {
 
 .home-tech-icons {
   color: #fff;
-  background: blue;
+  background: var(--main-color);
   padding: 30px;
   margin: 15px;
   border-radius: 50%;
@@ -779,6 +780,15 @@ button:focus {
   }
 }
 
+.fork-btn-inner.btn.btn-primary {
+  color: var(--main-color) !important;
+}
+
+.fork-btn-inner.btn.btn-primary:hover {
+  color: var(--lt-purple) !important;
+}
+
+
 .fork-btn {
   font-size: 1.1em !important;
   padding-top: 10px !important;
@@ -786,7 +796,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #bccacd !important;
+  background-color: var(--lt-purple) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -794,8 +804,9 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #91afb6 !important;
-  border-color: #91afb6 !important;
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  color: var(--lt-purple);
 }
 .fork-btn-inner::after {
   display: none !important;

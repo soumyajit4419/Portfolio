@@ -17,7 +17,7 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h3 className="heading">
-                I'm a
+                Hello! My name is Andrea and I'm a
               </h3>
 
               <h1 className="heading-name">
@@ -55,9 +55,6 @@ function Home() {
       <Container fluid className="home-tech-section" id="skill">
         <Container>
           <Row>
-            <h1 style={{ fontSize: "2.6em", paddingBottom: 50}}>
-              My skills
-            </h1>
             <Techstack />
           </Row>
         </Container>

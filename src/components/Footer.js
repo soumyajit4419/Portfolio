@@ -13,9 +13,9 @@ function Footer() {
   return (
     <Container fluid className="footer contact-section">
       <Row>
-        <h1 style={{ fontSize: "2.6em" }}>
+        {/* <h1 style={{ fontSize: "2.6em" }}>
           Contact
-        </h1>
+        </h1> */}
       </Row>
       <Row>
         <Col md="4" className="footer-copywright">
