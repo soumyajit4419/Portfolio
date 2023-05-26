@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import tracker from "../../Assets/Projects/jobtrackr.jpg";
 import workMate from "../../Assets/Projects/workmate.jpg";
 import skillShare from "../../Assets/Projects/skillshare.jpg";
@@ -10,7 +9,6 @@ import rollcall from "../../Assets/Projects/rollcall.jpg";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           Portfolio

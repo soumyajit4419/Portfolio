@@ -59,18 +59,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #1d282b;
+  background: #1d1e30;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(188, 202, 205, 0.959);
+  background: rgba(132, 136, 181, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(125, 162, 169, 0.911);
+  background: rgba(88, 93, 147, 0.911);
   border-radius: 12px;
 }
 
@@ -78,6 +78,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
+  color: var(--dk-gray);
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(25, 26, 41, 0.171) !important;
   backdrop-filter: blur(15px) !important; 
@@ -252,16 +253,11 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-#tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-}
 
 .home-header {
   padding-top: 80px !important;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .home-header a {
@@ -271,10 +267,12 @@ button:focus {
 }
 
 .home-section {
-  position: relative;
-  z-index: -1;
+  background-image: url('../src/Assets/hero-1800x800.jpg') !important;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
 }
 
 .home-content {
@@ -284,10 +282,14 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 3.5em !important;
+  padding-bottom: 50px;
   font-weight: 700;
-  color: var(--md-gray);
+  color: var(--lt-gray);
+}
+
+.heading span {
+  color: #9f9fc1;
 }
 
 .heading-name {
@@ -423,7 +425,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  border: 1.7px solid rgba(126, 162, 169, 0.64) !important;
+  border-top: 1.7px solid var(--main-color);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -480,7 +482,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 4px 5px 4px 3px rgba(125, 162, 169, 0.2) !important;
+  box-shadow: 4px 5px 4px 3px rgba(25, 26, 41, 0.121) !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
   border-radius: 10px !important;
