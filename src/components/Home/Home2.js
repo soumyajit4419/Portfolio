@@ -17,12 +17,9 @@ function Home2() {
           <h1 style={{ fontSize: "2.6em" }}>
             About me
           </h1>
-          <p className="home-about-body">
-            I fell in love with programming while working as a project manager for a tech company. I am fluent in Rails and Javascript.
-            My field of Interest's are building new &nbsp; Web Technologies, Products, and Website and App development.
-            Whenever possible, I also expand my passion for developing products with Modern Javascript Library and Frameworks
-            &nbsp; like React.js
-          </p>
+          <Col md={10} className="home-about-body">
+              During my tenure as a project manager at a tech company, I discovered my profound passion for programming. This love stemmed from my exposure to various projects and technologies. I have acquired fluency in both Rails and Javascript, allowing me to effectively navigate these programming languages. I'm continuously expanding my skills and knowledge in these areas is a priority for me, as I strive to stay abreast of the latest trends and best practices in the world of programming.
+          </Col>
         </Row>
       </Container>
     </Container>

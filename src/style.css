@@ -354,6 +354,7 @@ button:focus {
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
+  margin: 0 auto !important;
 }
 
 .home-about-social {
