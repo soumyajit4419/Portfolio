@@ -8,6 +8,10 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import hmp from "../../Assets/Projects/hmp.png";
+import smartnaka from "../../Assets/Projects/smartnaka.png";
+import gc from "../../Assets/Projects/gc.png";
+import wiss from "../../Assets/Projects/wiss.png";
 
 function Projects() {
   return (
@@ -23,68 +27,45 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={gc}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="AirBorneX"
+              description="AirBorneX is a web application developed for a drone delivery company to facilitate efficient and timely deliveries. This web application provides a user-friendly interface for users to request drone deliveries and track their packages in real-time. The application also provides admins with the necessary tools to manage all delivery requests efficiently and ensure timely deliveries."
+              ghLink="https://github.com/SamMathelete/gc-webathon"
+              demoLink="https://gc-webathon.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={hmp}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Hostel Management Portal"
+              description="The Hostel Management Portal streamlines complaint lodging for students, ensuring fast and efficient processing. Students can track complaint status (Accepted/Rejected/Pending) while administrators can monitor and act on complaints. Escalation to higher-ranked officers is possible when needed. This portal enhances complaint management, transparency, and prompt resolution."
+              ghLink="https://github.com/lalit-mohanani/Hostel-Complain-Portal"
+              demoLink="https://hmp.webnd-iitbbs.org/index.php"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={smartnaka}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Smart Naka"
+              description="Smart Naka is an app designed for the Ethos Hackathon - IIT Guwahati's Smart Naka Problem Statement. It provides real-time access to a central government database of stolen vehicles, allowing users to verify if a queried vehicle is stolen. The app offers two search options: Searching by Registration Number and Advanced Search, where users can manually input vehicle details. With its intuitive interface, Smart Naka enables efficient and accurate identification of stolen vehicles. Click on the install button after opening demo in your mobile."
+              ghLink="https://github.com/hv789/smart-naka"
+              demoLink="https://expo.dev/accounts/hv789/projects/smart-naka/builds/ce701497-2a84-4bd1-b93b-01bb7d6e226e"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={wiss}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Wissenaire '23"
+              description="Was a frequent contributor to the Wissenaire '23 app. Wissenaire is the annual techno-management fest of IIT Bhubaneswar."
+              ghLink=""
+              demoLink="wissenaire.org"
             />
           </Col>
         </Row>

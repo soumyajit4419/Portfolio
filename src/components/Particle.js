@@ -15,8 +15,8 @@ function Particle() {
             },
           },
           line_linked: {
-            enable: false,
-            opacity: 0.03,
+            enable: true,
+            opacity: 0.04,
           },
           move: {
             direction: "right",
@@ -28,7 +28,7 @@ function Particle() {
           opacity: {
             anim: {
               enable: true,
-              speed: 1,
+              speed: 1.5,
               opacity_min: 0.05,
             },
           },
