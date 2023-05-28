@@ -9,7 +9,7 @@ function Type() {
           "Software Developer",
           "MERN Stack Developer",
           "React-Native Developer",
-          "Click anywhere to see magic ✨",
+          "Click anywhere to see stars ✨",
         ],
         autoStart: true,
         loop: true,
