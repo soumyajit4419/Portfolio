@@ -1,7 +1,0 @@
-name: CI
-on: [push]
-jobs:
-  eslint:
-    name: Lint code base
-    run-on: ubuntu-latest
-
