@@ -103,6 +103,17 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
+              <img
+                src={
+                  "https://hits.sh/soumyajit.vercel.app.svg?style=for-the-badge&label=Views&color=555555&labelColor=711ea6"
+                }
+                className="img-fluid hits"
+                alt="brand"
+              />
+              {/* Visit https://github.com/silentsoft/hits for more info. */}
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
