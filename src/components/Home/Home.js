@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import pdf from "../../Assets/../Assets/Andrea-Jasper-Resume.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
 import Techstack from "../About/Techstack";
@@ -17,10 +19,12 @@ function Home() {
               </h1>
             <Button
               variant="primary"
-              href="/project"
+              href={pdf}
+              target="_blank"
               style={{ margin: "20px 50px" }}
             >
-              {"Recent Projects"}
+              <AiOutlineDownload />
+              &nbsp;Download CV
             </Button>
             </Col>
           </Row>
@@ -29,13 +33,13 @@ function Home() {
       <Container fluid className="about-section" id="about">
         <Home2 />
       </Container>
-      <Container fluid className="home-tech-section" id="skill">
+      <Container fluid className="home-tech-section" id="skills">
         <Container>
           <Row>
             <Techstack />
           </Row>
         </Container>
-        <Container fluid className="home-portfolio-section" id="portfolio">
+        <Container fluid className="home-portfolio-section" id="projects">
           <Container>
             <Row>
               <Projects />
