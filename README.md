@@ -3,7 +3,7 @@
   <a href="https://andreajasper.com" target="_blank">Andrea Jasper</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./Images/readme-img.png" />
 </div>
 
 <br/>
@@ -13,7 +13,7 @@
 
 ## Built With
 
-My personal portfolio <a href="https://andreajasper.com/" target="_blank">andrea jasper</a> which features some of my github projects as well as my resume and technical skills.<br/> Built using <a href="https://github.com/soumyajit4419/Portfolio">Soumyajit</a>
+My personal portfolio <a href="https://andreajasper.com/" target="_blank">andrea jasper</a> which features some of my github projects as well as my resume and technical skills. Built using <a href="https://github.com/soumyajit4419/Portfolio">Soumyajit</a> as a base, then modified to my own design.
 
 This project was built using these technologies.
 
