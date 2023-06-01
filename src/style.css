@@ -78,10 +78,15 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  color: var(--dk-gray);
+  color: var(--dk-gray) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(25, 26, 41, 0.171) !important;
-  backdrop-filter: blur(15px) !important; 
+  /* backdrop-filter: blur(15px) !important;  */
+  background: var(--lt-gray);
+}
+
+.sticky .navbar-brand, .sticky .navbar-brand span, .sticky .navbar-nav .nav-link {
+  color: var(--dk-gray) !important;
 }
 
 .navbar {
@@ -153,12 +158,12 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: var(--dk-gray) !important;
+  color: var(--lt-gray) !important;
   letter-spacing: 1px;
 }
 
 .navbar-brand span {
-  color: var(--dk-gray);
+  color: var(--lt-gray);
 }
 
 .navbar-brand span, .home-header span {
@@ -171,7 +176,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: var(--dk-gray) !important;
+  color: var(--lt-gray) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
