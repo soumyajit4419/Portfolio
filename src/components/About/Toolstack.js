@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiHeroku,
+
 } from "react-icons/si";
 import {
   DiDocker,
@@ -13,6 +14,8 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
+        <SiMacos />
+      </Col>
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -22,7 +25,7 @@ function Toolstack() {
         <DiJira />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <SiVercel />
       </Col>
     </Row>
   );
