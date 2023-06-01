@@ -55,7 +55,7 @@ function Projects() {
               imgPath={skillShare}
               isBlog={false}
               title="Practice Portfolio"
-              description="In order to kep my HTML and CSS skills up-to-date, I prefer to write code from scratch, wihtout relying on frameworks. This particular site is designed with responsive layout in mind, emphasizing the use of flex-box."
+              description="In order to keep my HTML and CSS skills up-to-date, I prefer to write code from scratch, without relying on frameworks. This particular site is designed with responsive layout in mind, emphasizing the use of flex-box."
               stack="HTML, CSS, Responsive Design"
               ghLink="https://github.com/AndreaJasper/old-skillshare-portfolio"
               // demoLink="https://blogs.soumya-jit.tech/"
