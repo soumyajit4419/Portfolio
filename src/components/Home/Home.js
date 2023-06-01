@@ -1,47 +1,52 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+import pdf from "../../Assets/../Assets/Andrea-Jasper-Resume.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
+import Techstack from "../About/Techstack";
+import Projects from "../Projects/Projects";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+            <Col md={10} className="home-header">
+              <h1 className="heading">
+                Hello! My name is Andrea <br/>and I'm a <span>full-stack developer.</span>
               </h1>
-
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-            </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Button
+              variant="primary"
+              href={pdf}
+              target="_blank"
+              style={{ margin: "20px 50px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Container fluid className="about-section" id="about">
+        <Home2 />
+      </Container>
+      <Container fluid className="home-tech-section" id="skills">
+        <Container>
+          <Row>
+            <Techstack />
+          </Row>
+        </Container>
+        <Container fluid className="home-portfolio-section" id="projects">
+          <Container>
+            <Row>
+              <Projects />
+            </Row>
+          </Container>
+        </Container>
+      </Container>
     </section>
   );
 }

@@ -1,90 +1,64 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import tracker from "../../Assets/Projects/jobtrackr.jpg";
+import workMate from "../../Assets/Projects/workmate.jpg";
+import skillShare from "../../Assets/Projects/skillshare.jpg";
+import rollcall from "../../Assets/Projects/rollcall.jpg";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Portfolio
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={tracker}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Job Trackr"
+              description="A personal Job Tracking app to monitor my job search endeavors, including the progress of every application. In addition, this project provided me with an opportunity to hone my skills in implementing authentication."
+              stack="Linux, Rails and Bootstrap."
+              ghLink="https://github.com/AndreaJasper/application-tracker"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={workMate}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="WorkMate"
+              description="Inspired by my husband's grievances about his antiquated work order tracking system, I developed a project that incorporates comprehensive CRUD funcationality and authentication."
+              stack="Rails and Bootstrap"
+              ghLink="https://github.com/AndreaJasper/rails-workorder-app"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={rollcall}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="RollCall"
+              description="As an avid Dungeons and Dragons player, I often accumulate a large number of character sheets. To enhance my coding abilities, I developed a character archive that enables me to do away with paper records while preserving my character's statistics."
+              stack="Rails and Bootstrap"
+              ghLink="https://github.com/AndreaJasper/dnd-character-tracker"
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={skillShare}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Practice Portfolio"
+              description="In order to keep my HTML and CSS skills up-to-date, I prefer to write code from scratch, without relying on frameworks. This particular site is designed with responsive layout in mind, emphasizing the use of flex-box."
+              stack="HTML, CSS, Responsive Design"
+              ghLink="https://github.com/AndreaJasper/old-skillshare-portfolio"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
         </Row>

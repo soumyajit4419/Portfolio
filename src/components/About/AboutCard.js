@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImArrowRight2 } from "react-icons/im";
 
 function AboutCard() {
   return (
@@ -8,33 +8,29 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br /> I am a final year student pursuing an Integrated MSc (IMSc)
-            in Maths and Computing at BIT Mesra.
+            <br />Hi Everyone, I am <span className="purple">Andrea Jasper </span>
+            with a passion for<span className="purple"> problem solving.</span>
             <br />
-            Additionally, I am currently employed as a software developer at
-            Juspay.
+            <br />After spending years as a project manager in the tech world, I decided it was time to go back to my roots, web development.
             <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            <br />Apart from coding, I enjoy...
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImArrowRight2 /> Playing Video Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImArrowRight2 /> Surfing and Wakeboarding
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImArrowRight2 /> Horseback Riding
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p class="purple">
+            "I have not failed. I've just found 10,000 ways that won't work"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Thomas A. Edison</footer>
         </blockquote>
       </Card.Body>
     </Card>
