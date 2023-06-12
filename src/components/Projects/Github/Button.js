@@ -19,7 +19,7 @@ export default function SpeedDialTooltipOpen({ info }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const actions = [
-    { icon: <BsGithub />, name: "Repo URL", onClick: openPage(info.url) }
+    { icon: <BsGithub />, name: "Repo URL", onClick: openPage(info.url) },
     { icon:  <AiOutlineFork />, name: 'Copy', onClick: () => { window.open("https://saahild.com", "_blank")} },
     { icon: <SaveIcon />, name: 'Save' },
     { icon:  <CgWebsite />, name: 'Print' },
