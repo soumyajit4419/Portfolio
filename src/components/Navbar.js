@@ -12,6 +12,9 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineLink
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -92,26 +95,23 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
+                            <Button
+                                href="https://www.linkedin.com/in/wen-wu-377b2997/?originalSubdomain=au"
+                                target="_blank"
+                               
+                            >
+                                {/*<CgGitFork style={{ fontSize: "1.2em" }} />{" "}*/}
+                                <AiFillLinkedin style={{ fontSize: "1.1em" }} />
+                            </Button>
+                            {" "}
+                            <Button
+                                href="https://github.com/mobiusww"
+                                target="_blank"
+                                >
+                                    <AiFillGithub style={{ fontSize: "1.1em" }} />
+                                </Button>
+                        </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
