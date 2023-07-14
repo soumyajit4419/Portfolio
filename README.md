@@ -3,8 +3,8 @@
   <a href="https://ngtuthanhan.github.io" target="_blank">https://ngtuthanhan.github.io</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  Designed and Developed by Soumyajit Behera
 </div>
 
-Designed and Developed by Soumyajit Behera
+
  
