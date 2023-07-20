@@ -16,6 +16,8 @@ html {
 
 .purple {
   color: var(--imp-text-color) !important;
+  background: beige;
+  padding: 10px;
 }
 
 button:focus {
@@ -144,7 +146,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: rgba(212, 170, 255, 0.83) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -265,23 +267,29 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0 0rem !important;
   color: whitesmoke;
-  text-align: left;
+  text-align: center;
+
 }
 
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 2.2em !important;
+  padding-bottom: 50px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 2.2em !important;
+  padding-bottom: 55px !important;
 }
 
 .main-name {
   color: #cd5ff8;
+  font-size: 5rem; /* Adjust the value as needed */
+  align-items: center;
+  padding-bottom: 45px !important;
+
+
 }
 
 .Typewriter__wrapper {
@@ -321,6 +329,8 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background: #8a49a8;
+  text-align: left;
 }
 
 .home-about-description {
