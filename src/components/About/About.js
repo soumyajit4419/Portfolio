@@ -39,6 +39,7 @@ function About() {
         </Row>
 
       </Container>
+        <Features />
     </Container>
   );
 }

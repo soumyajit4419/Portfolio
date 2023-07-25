@@ -412,13 +412,15 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: ghostwhite;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
+  padding: 5% !important ;
 }
 .footer-copywright {
-  text-align: center !important;
+  text-align: left !important;
+  text-decoration-color: #0c0513;
 }
 
 .footer-body {

@@ -24,7 +24,7 @@ function NavBar() {
           expand="md"
           expanded={expand}
           className={navColor ? "sticky" : "navbar-dark"}
-          style={{ padding: '10%' }}
+          style={{ padding: '20%' }}
       >
         <Container fluid>
           <Navbar.Brand href="/" className="d-flex">

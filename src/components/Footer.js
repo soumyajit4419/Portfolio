@@ -6,6 +6,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import logo from "../Assets/logo.png";
+
 
 function Footer() {
   let date = new Date();
@@ -13,13 +15,14 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
+        <Col md="8" className="footer-copywright">
+          <img src={logo} className="img-fluid" alt="brand" style={{ maxWidth: '8%' }} />
+          <h4> Envisioning an India where all women are engaged in fulfilling and financially rewarding work</h4>
+
+          <h3>Copyright © {year} FindHer</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
+        <Col md="2" className="footer-body">
+          <h2> Contact  us</h2>
           <ul className="footer-icons">
             <li className="social-icons">
               <a
