@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../Assets/logo.png";
-import "./navbar.css"
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
@@ -38,8 +38,8 @@ function NavBar() {
               }}
           />
 
-          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-            <Nav className="me-auto" defaultActiveKey="#home">
+          <Navbar.Collapse id="collapse navbar-collapse justify-content-center" className="justify-content-end">
+            <Nav className="navbar-nav" defaultActiveKey="#home">
               <Nav.Item>
                 <Nav.Link href="#home" onClick={() => updateExpanded(false)}>
                   Home

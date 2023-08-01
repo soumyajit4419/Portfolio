@@ -281,6 +281,7 @@ button:focus {
 .heading-name {
   font-size: 2.2em !important;
   padding-bottom: 55px !important;
+  color: #000000;
 }
 
 .main-name {

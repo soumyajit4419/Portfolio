@@ -1,0 +1,205 @@
+/* Styles for the Home component */
+
+/* Main section styles */
+#home {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+.home-content {
+    text-align: left;
+    justify-content: left;/* Align text to the left */
+    min-width: 73%;
+}
+
+/* Heading styles */
+.main-name {
+
+    padding-bottom: 15px;
+    text-align: left;
+    color: #000000;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-size: 45px;
+    font-weight: 400;
+
+
+
+}
+.main-name .text-wrapper {
+    font-weight: 700;
+}
+
+.main-name .span {
+    font-family: "DM Sans-BoldItalic", Helvetica;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Styles for the Home component */
+
+/* Main section styles */
+#home {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+.home-content {
+    text-align: left; /* Align text to the left */
+
+}
+
+/* Heading styles */
+.main-name {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.heading-name {
+    font-size: 24px;
+    text-align: left;
+}
+
+/* Email form styles */
+.email-form {
+    margin-top: 20px;
+}
+
+.email-form .form-control {
+    width: 100%; /* Make the input field take the full width */
+}
+
+/* Button styles */
+.btn-lg {
+    margin-top: 10px;
+    width: 100%; /* Make the button take the full width */
+}
+
+/* Image styles */
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Custom styles for the second column (containing the image) */
+#home .col-md-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.heading-name {
+    font-size: 24px;
+}
+
+/* Email form styles */
+.email-form {
+    margin-top: 20px;
+}
+
+.email-form .form-control {
+    width: 100%; /* Make the input field take the full width */
+}
+
+/* Button styles */
+.btn-lg {
+    margin-top: 10px;
+    width: 100%; /* Make the button take the full width */
+}
+
+/* Image styles */
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Custom styles for the second column (containing the image) */
+#home .col-md-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the Group component */
+/* Styles for the Group component */
+
+/* Main group styles */
+.group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Overlap group styles */
+.overlap-group {
+    position: relative;
+}
+
+/* Styles for the form container */
+.form-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Email form styles */
+.email-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 0; /* Remove padding */
+}
+
+.email-form-container .form-control {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 8px 16px; /* Add padding to the input field */
+}
+
+.email-form-container .form-control::placeholder {
+    color: #bdbdbd;
+}
+
+/* Submit button styles */
+.btn-lg {
+    display: block;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px; /* Add padding to the button */
+    border-radius: 0; /* Remove rounded pill effect */
+    cursor: pointer;
+}
+
+/* Make the button overlay the input field when input length reaches 90% */
+#submitButton {
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .email-form-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .email-form-container .form-control {
+        margin-bottom: 8px;
+    }
+
+    .btn-lg {
+        position: static;
+        width: 100%;
+        margin-top: 8px;
+    }
+}
