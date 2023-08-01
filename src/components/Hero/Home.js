@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import Image from "/Users/anyueow/Desktop/FindHer-Landing-V2/src/Assets/hero.png";
 import Button from "react-bootstrap/Button";
@@ -7,6 +7,17 @@ import About from "../About/About";
 import "./homestyle.css"; // Import the custom CSS file here
 
 function Home() {
+    const [email, setEmail] = useState("");
+
+    const handleChange = event => {
+        setEmail(event.target.value);
+    }
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        console.log(`Email is ${email}`);
+    }
+
     return (
         <section>
             <Container fluid id="home">
@@ -24,22 +35,20 @@ function Home() {
                             <h3 className="heading-name">
                                 Learn what it’s like to work at a company from the women who have been there.
                             </h3>
-                            <div className='group'>
-                                <div className='overlap-group'>
-                                    <div className="form-container">
-                                        <Form className="email-form">
-                                            <Form.Group controlId="formEmail" className="mb-0">
-                                                <Form.Control type="email" placeholder="Your Email Address" />
-                                            </Form.Group>
-                                        </Form>
-                                        <Button
-                                            id="submitButton"
-                                            variant="primary"
-                                            type="submit"
-                                        >
-                                            Get Access
+                            <div className="group">
+                                <div className="overlap-group">
+                                    <Form onSubmit={handleSubmit} className="rectangle">
+                                        <Form.Control
+                                            className="your-email-address"
+                                            type="email"
+                                            placeholder="Your email address"
+                                            value={email}
+                                            onChange={handleChange}
+                                        />
+                                        <Button className="div" type="submit">
+                                            <div className="get-access">get access</div>
                                         </Button>
-                                    </div>
+                                    </Form>
                                 </div>
                             </div>
                         </Col>
