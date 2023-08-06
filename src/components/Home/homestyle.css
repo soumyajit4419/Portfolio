@@ -131,6 +131,15 @@
 }
 
 .home-about-body {
-    color: #800080; /* Change it to your preferred color for the subtitle */
+
     font-size: 1.5em; /* Increase the size of the subtitle text */
+    min-width: 75%;
+    min-height: 90%;
+
 }
+
+.home-about-section {
+    min-width: 100%;
+    min-height: 90%;
+}
+

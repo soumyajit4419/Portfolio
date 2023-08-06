@@ -8,7 +8,7 @@ import Toolstack from "./Toolstack";
 
 function About() {
   return (
-    <Container fluid>
+    <Container fluid className="full-height center-contents">
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>

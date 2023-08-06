@@ -1,22 +1,34 @@
 html {
   --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+          to bottom left,
+          rgb(255, 255, 255),
+          rgb(255, 255, 255)
   );
 
-  --image-gradient: linear-gradient(
+
+
+--image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: rgba(226, 11, 60, 0.83);
 }
 
+
+.full-height {
+  height: 103vh;
+}
+
+.center-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .purple {
   color: var(--imp-text-color) !important;
-  background: beige;
+  background: #bad343;
   padding: 10px;
 }
 
@@ -34,8 +46,8 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-color: rgb(186, 211, 67, 0.8);
+  background-image: url(./Assets/prev.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -59,18 +71,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: rgba(70, 87, 0, 0.65);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgb(214, 222, 174);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgb(186, 211, 67);
   border-radius: 12px;
 }
 
@@ -78,75 +90,31 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: rgba(255, 255, 255, 0.29) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.42) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+  padding: 2rem !important;
+  font-size: 2rem !important;
+  margin-bottom: 100%;
+
 }
 
-.navbar-toggler {
-  position: relative !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
+.navbar-nav {
+  min-width: 20%;
 }
 
-.navbar-toggler span {
-  display: block !important;
-  background-color: #be50f4 !important;
-  height: 4px !important;
-  width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  transform: rotate(0deg) !important;
-  left: 0 !important;
-  opacity: 1 !important;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active {
-  outline: 0 !important;
-}
-
-.navbar-toggler span:nth-child(1),
-.navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(135deg) !important;
-  opacity: 0.9 !important;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 12px !important;
-  visibility: hidden !important;
-  background-color: transparent !important;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(-135deg) !important;
-  opacity: 0.9 !important;
-}
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: rgba(212, 170, 255, 0.83) !important;
+
+    font-size: 2rem !important;
+    background-color: rgb(255, 255, 255) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -162,14 +130,12 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  color: #000000 !important;
+font-weight: 500;
+  font-family: "League Spartan", Helvetica;
+
 }
 
-.nav-link {
-  padding: 0.8rem 1rem !important;
-}
 
 @media (max-width: 767px) {
   .nav-link {
@@ -193,10 +159,10 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 8px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: rgba(226, 11, 60, 0.83);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -210,210 +176,492 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
+/* Add other styles if needed */
+
+
+.text-left {
+  text-align: left;
 }
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
-}
-#tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
+.d-flex {
+  display: flex;
 }
 
-.home-header {
-  padding-top: 80px !important;
+.justify-content-end {
+  justify-content: flex-end;
 }
 
-.home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-}
-
-.home-content {
-  padding: 9rem 0 0rem !important;
-  color: whitesmoke;
-  text-align: center;
-
-}
-
-.heading {
-  font-size: 2.2em !important;
-  padding-bottom: 50px !important;
-}
-
-.heading-name {
-  font-size: 2.2em !important;
-  padding-bottom: 55px !important;
-  color: #000000;
+.align-items-center {
+  align-items: center;
 }
 
 .main-name {
-  color: #cd5ff8;
-  font-size: 5rem; /* Adjust the value as needed */
-  align-items: center;
-  padding-bottom: 45px !important;
+  color: black;
+  font-family: "League Spartan-SemiBold", Helvetica;
+  font-size:600%;
+  font-weight: 400;
+  letter-spacing: 0;
 
-
-}
-
-.Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
-}
-.Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
-}
-
-@media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
-  }
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
-
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-}
-
-.home-about-section {
-  position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
-  background: #8a49a8;
+  padding-bottom: 5%;
   text-align: left;
+
 }
 
-.home-about-description {
-  color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
+.home-content {
+  margin-top: 3.5%;
+
+  text-align: left;
+  justify-content: left;/* Align text to the left */
+  min-width: 73%;
+  min-height: auto;
+
+
+}
+.home-content-sect {
+  margin-top: 3.5%;
+  text-align: left;
+  justify-content: left;/* Align text to the left */
+
+
+}
+
+.main-name .text-wrapper {
+  font-weight: 900;
+}
+.main-name .text-wrapper-2 {
+  font-weight: 700;
+  color: rgba(226, 11, 60, 0.83);
+
+}
+
+.main-name .span {
+  font-family: "League Spartan-SemiBold", Helvetica;
+  font-style: italic;
+  font-weight: 700;
+}
+.margin{
+  margin-top: 25%;
+}
+.margin2{
+  margin-top: 10%;
+}
+.text-deco {
+  text-decoration: underline;
+  text-decoration-color: #ee2c5b;
+  text-decoration-thickness: 15px;
+}
+
+.heading-name {
+  padding-top: 1.5%;
+  font-size: 3rem;
+  text-align: left;
+  font-family: "Montserrat-Regular", Helvetica;
+  margin-bottom: 5%;
+}
+.sign-up-btn {
+  width: 35%;
+  height: 100px;
+  background-color: #ee2c5b;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: "League Spartan-SemiBold", sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding: 12px 20px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%/* Adding shadow */
 }
 
-.home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
-  text-align: left;
+/* Optional hover effect */
+.sign-up-btn:hover {
+  background-color: #f74271;
 }
 
-.home-about-social {
-  text-align: center !important;
-  padding-top: 25px;
-  color: white !important;
+.hoverOne {
+  top: 25%;
+  left: 3%;
+  position: relative;
+  z-index: 3;
+  height: 35%;
+}
+.hoverTwo {
+  top:10%;
+  left: 40%;
+  position: relative;
+  z-index: 3;
+  height: 22%;
+}
+.hoverThree {
+  top: 5%;
+right: 25%;
+  position: relative;
+  z-index: 3;
+  height: 60%;
 }
 
-.home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
+.base {
+
+  position: absolute;
+  top: 20%;
+  left: 63%;
+  z-index: 2;
+  height: 70%;
+
+
 }
 
-.home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
+
+
+/* Animation */
+/* Keyframes animation for floating effect */
+@keyframes floatAnimationBig {
+  0% { transform: translateY(4px) translateX(0); }
+  50% { transform: translateY(10px) translateX(10px); }
+  100% { transform: translateY(4px) translateX(0); }
 }
 
-.home-social-icons::before {
+@keyframes floatAnimationSmall {
+  0% { transform: translateY(10px) translateX(0); }
+  50% { transform: translateY(5px) translateX(15px); }
+  100% { transform: translateY(10px) translateX(0); }
+}
+
+@keyframes floatAnimationSmallTwo {
+  0% { transform: translateY(0px) translateX(0); }
+  50% { transform: translateY(10px) translateX(15px); }
+  100% { transform: translateY(0px) translateX(0); }
+}
+
+.hoverThree {
+  position: relative;
+  z-index: 3;
+  animation: floatAnimationBig 3s infinite; /* Adjust the animation duration as needed */
+}
+
+.hoverOne {
+  position: relative;
+  z-index: 3;
+  animation: floatAnimationSmall 3s infinite; /* Adjust the animation duration as needed */
+}
+
+.hoverTwo {
+  position: relative;
+  z-index: 3;
+  animation: floatAnimationSmallTwo 3s infinite; /* Adjust the animation duration as needed */
+}
+
+/* Section 1  */
+/* Section 1  */
+.shade {
+  background-color: rgba(223, 224, 119, 0.17);
+  min-width: 100%;
+  position: absolute;
+  box-shadow: inset 0px 0px 45px 5px rgba(0, 0, 0, 0.23);
+ overflow: hidden;
+
+}
+
+.shade:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
+  height: 10px; /* Adjust the height of the top shadow */
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(15px); /* Adjust the blur factor as needed */
   z-index: -1;
+  padding-bottom: -10%;
 }
 
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+.shade:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the bottom shadow */
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(15px); /* Adjust the blur factor as needed */
+  z-index: -1;
+  padding-bottom: -10%;
 }
 
-.home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+.shade2 {
+  vertical-align: middle;
+  background-color: rgba(223, 224, 119, 0.17);
+  min-width: 100%;
+  position: relative;
+  box-shadow: inset 0px 0px 45px 5px rgba(0, 0, 0, 0.23);
+
 }
 
-.social-icons {
-  display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+.shade2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the top shadow */
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(15px); /* Adjust the blur factor as needed */
+  z-index: -1;
+  padding-bottom: -10%;
 }
 
-.icon-colour {
-  color: #700c86 !important;
+.shade2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the bottom shadow */
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(15px); /* Adjust the blur factor as needed */
+  z-index: -1;
+  padding-bottom: -10%;
+}
+.main-name-sect {
+  color: rgb(0, 0, 0);
+  font-family: "League Spartan-SemiBold", "DM Sans-Bold", Helvetica;
+  font-size: 550%;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0;
+
+  text-align: left;
+
+  z-index: 0;
 }
 
+.main-name-secttwo {
+  color: rgb(0, 0, 0);
+  font-family: "League Spartan-SemiBold", "DM Sans-Bold", Helvetica;
+  font-size: 450%;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0;
+  align-items: flex-start;
+  text-align: left;
+
+  z-index: 0;
+}
+
+.main-name-sect .text-wrapper {
+  font-weight: 700;
+  color: rgba(226, 11, 60, 0.83);
+}
+
+.main-name-secttwo .span {
+  font-weight: 700;
+  color: rgba(226, 11, 60, 0.83);
+}
+
+.questions {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 10%;
+  opacity: 0.5;
+
+}
+
+.questions2 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: left;
+  padding-top: 1%;
+  left: -80px;
+  overflow: hidden;
+  position: relative;
+}
+.white {
+  background-color: white;
+}
+.questions3 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: right;
+  padding-top: 1%;
+  bottom: 350px;
+  right: 180px;
+  overflow: hidden !important;
+  position: relative;
+  opacity: 0.2;
+
+}
+.questions4 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: right;
+  padding-top: 5%;
+  bottom: 350px;
+
+  overflow: hidden;
+  position: relative;
+  opacity: 0.5;
+}
+.questions5 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: right;
+  padding-top: 1%;
+  bottom: 350px;
+  right: 420px;
+  overflow: hidden;
+  position: relative;
+}
+.rectangle {
+  display: inline-block;
+  padding: 20px 60px; /* Adjust padding as needed */
+  border-radius: 50px; /* Border corner radius */
+  background-color: #DFE077;
+
+
+}
+.sometimes-you-re {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  color: #000000;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 280%;
+  font-weight: 400;
+
+}
+
+.sometimes-you-re .text-wrapper {
+  color: #000000;
+  font-family: "Montserrat-Regular", Helvetica;
+
+  font-weight: 400;
+
+}
+
+.sometimes-you-re .span {
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+}
+
+/* Sect two */
+
+
+
+
+.Sub  {
+  color: #000000;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 300%;
+  line-height: 125%;
+  font-weight: 400;
+
+}
+
+.Sub .span {
+  font-weight: 700;
+  text-decoration: underline;
+
+}
+
+
+
+.hoverOne2 {
+  top: -115%;
+  left: 10%;
+  position: relative;
+  z-index: 3;
+  height: 25%;
+}
+.hoverTwo2 {
+  top: -85%;
+  left: 53%;
+  position: relative;
+  z-index: 3;
+  height: 40%;
+}
+.hoverThree2 {
+  top: -148%;
+  left: 78%;
+  position: relative;
+  z-index: 3;
+  height: 38%;
+}
+
+.base2 {
+
+  position: relative;
+  top: -15%;
+  left: 10%;
+  z-index: 2;
+  height: 110%;
+
+}
+
+.imgs-base {
+  margin-bottom: 15%;
+
+}
+.imgs-base2 {
+  margin-bottom: -25%;
+}
+
+/* Animation */
+/* Keyframes animation for floating effect */
+@keyframes floatAnimationBig {
+  0% { transform: translateY(4px) translateX(0); }
+  50% { transform: translateY(10px) translateX(10px); }
+  100% { transform: translateY(4px) translateX(0); }
+}
+
+@keyframes floatAnimationSmall {
+  0% { transform: translateY(10px) translateX(0); }
+  50% { transform: translateY(5px) translateX(15px); }
+  100% { transform: translateY(10px) translateX(0); }
+}
+
+@keyframes floatAnimationSmallTwo {
+  0% { transform: translateY(0px) translateX(0); }
+  50% { transform: translateY(10px) translateX(15px); }
+  100% { transform: translateY(0px) translateX(0); }
+}
+
+.hoverThree2 {
+  position: relative;
+  z-index: 3;
+  animation: floatAnimationBig 3s infinite; /* Adjust the animation duration as needed */
+}
+
+.hoverOne2 {
+  position: relative;
+  z-index: 3;
+  animation: floatAnimationSmall 3s infinite; /* Adjust the animation duration as needed */
+}
+
+.hoverTwo2 {
+  position: relative;
+  z-index: 3;
+  animation: floatAnimationSmallTwo 3s infinite; /* Adjust the animation duration as needed */
+}
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: ghostwhite;
+  background-color: #DFE077;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -422,8 +670,16 @@ button:focus {
 .footer-copywright {
   text-align: left !important;
   text-decoration-color: #0c0513;
+  font-size: 1.5rem;
 }
-
+.Footerhed{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: left !important;
+  text-decoration-color: #0c0513;
+  font-size: 2.5rem;
+  max-width: 80%;
+}
 .footer-body {
   z-index: 1;
   text-align: center !important;
@@ -439,21 +695,13 @@ button:focus {
   }
 }
 
-.footer h3 {
-  font-size: 1em;
-  color: white !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-}
 .footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+
   padding: 0 !important;
+  list-style: none; /* Remove bullet points */
 }
 
-.blockquote-footer {
-  color: #a588c0 !important;
-}
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -559,69 +807,136 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
-.tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+.card-head {
+
+  font-size: 3.5rem;
+  font-family: "League Spartan", Helvetica;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-weight: 700;
+
+}
+.cardSub {
+
+  font-size: 2.5rem;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  margin-top: 5%;
+  padding: 10px;
+  font-weight: 500;
+
+
 }
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
+.space {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 5%;}
+.cardSub .span {
+font-weight: bold}
+
+.home-content-about {
+  margin-top: 3.5%;
+  padding-bottom: 6.5%;
+  text-align: left;
+  justify-content: left;/* Align text to the left */
+  min-width: 80%;
+
+}
+.tech-icons {
+  margin: 30px;
+  padding: 25px;
+  width: 70px; /* Adjust the width as needed */
+  opacity: 0.93;
+  background-color: #dfe077;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 65px;
+  box-shadow: 4px 5px 4px 3px rgba(83, 86, 61, 0.73) !important;
+  transition: all 0.4s ease 0s;
+}
+
+.img-card {
+  /* Remove min-height property */
+  /* min-height: 280%; */
+
+  width: 500px;
+}
+.img-card2 {
+  width: 600px;
 }
 
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+  background-color: rgba(238, 44, 91, 0.8); /* Change the last value (0.8) to control opacity */
+
+
 }
 
-.quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
-}
 
-.about-activity {
-  list-style: none !important;
-  text-align: left !important;
-  padding-left: 1px !important;
-}
 
-@media (max-width: 767px) {
-  .about-img {
-    padding-top: 0 !important;
-  }
-}
 /* --------- */
-/* Resume */
+/* Testimonial */
 /* --------- */
 
-.resume-section {
-  position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+.home-content-testi{
+  text-align: left;
+  justify-content: left;/* Align text to the left */
+  min-width: 73%;
+  min-heigh: 80%
 }
+.header {
+  font-size: 4.5rem;
+  font-family: "League Spartan", Helvetica;
+
+  margin-top: 3%;
+  font-weight: 700;
+}
+.subhead {
+  font-size: 3.4rem;
+  font-family: "League Spartan", Helvetica;
+   color: #ee2c5b;
+  font-weight: 700;
+}
+
+
+.testi-img {
+  width: 60%;
+  justify-content: center;
+  margin-left: 15%;
+}
+
+.testimonial {
+  min-width: 95%;
+  background-color: rgba(223, 224, 119, 0.13);
+  padding: 5%;
+  border-radius: 70px;
+  justify-content: center;
+  vertical-align: middle;
+margin-bottom: 10%;
+}
+/* Add this CSS to your stylesheet */
+.opalescent-arrow {
+  /* Customize the color, size, and other styles of the arrows */
+  color: rgba(238, 44, 91, 0.7);
+  font-size: 24px;
+}
+
+.arrow-button {
+
+
+  /* Remove default button styles */
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  /* Add any additional styles you want for the arrow buttons */
+
+}
+
 
 .resume {
   padding-top: 50px;
