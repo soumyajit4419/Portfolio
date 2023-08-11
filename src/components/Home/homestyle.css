@@ -1,0 +1,145 @@
+/* Styles for the Home component */
+
+
+.home-content {
+    margin-top: 3.5%;
+    text-align: left;
+    justify-content: left;/* Align text to the left */
+    min-width: 73%;
+}
+
+/* Heading styles */
+.main-name {
+
+    padding-bottom: 15px;
+    text-align: left;
+    color: #000000;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-size: 45px;
+    font-weight: 400;
+
+
+
+}
+.main-name .text-wrapper {
+    font-weight: 700;
+}
+
+.main-name .span {
+    font-family: "DM Sans-BoldItalic", Helvetica;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+.heading-name {
+    font-size: 24px;
+    text-align: left;
+}
+
+/* Image styles */
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Custom styles for the second column (containing the image) */
+#home .col-md-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+/* Image styles */
+#home img {
+    max-width: 120%;
+    height: 150%;
+    margin-top: 20px;
+}
+
+/* Custom styles for the second column (containing the image) */
+#home .col-md-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    height: 50px;
+    width: 500px;
+}
+
+.group .overlap-group {
+    height: 50px;
+    position: relative;
+}
+
+
+
+.group .div {
+
+    border: 1px solid;
+
+    border-radius: 45px;
+    height: 50px;
+    left: 250px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
+
+.group .get-access {
+    color: #fff8f8;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    left: 370px;
+    letter-spacing: 0;
+
+}
+
+.group .your-email-address {
+    color: rgba(0, 0, 0, 0);
+    font-family: "DM Sans-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    height: 48px;
+    border-radius: 30px;
+
+    letter-spacing: 0;
+    line-height: 21px;
+    position: absolute;
+    top: 2px;
+    width: 300px;
+    border: none;
+}
+
+
+/* home 2 css */
+
+.purple {
+    color: #800080; /* Change it to your preferred purple color */
+}
+
+.title {
+    font-size: 3em; /* Change it to your preferred font size */
+}
+
+.home-about-body {
+
+    font-size: 1.5em; /* Increase the size of the subtitle text */
+    min-width: 75%;
+    min-height: 90%;
+
+}
+
+.home-about-section {
+    min-width: 100%;
+    min-height: 90%;
+}
+
