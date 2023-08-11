@@ -568,7 +568,22 @@ button:focus {
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
   }
+}
+
+.tech-icons .text {
+  opacity: 0;
+  margin-top: -10px;
+  text-align: center !important;
+  font-size: large !important;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
 }
 
 .tech-icons:hover {
@@ -576,6 +591,13 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
+.tech-icons:hover .text {
+  opacity: 1;
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
