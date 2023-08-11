@@ -33,7 +33,6 @@ function sectTwo() {
                             <img alt="mobile" src={base} className="base2"
                                 style={{ maxWidth: "100%", width: "100%", height: "100%", objectFit: "contain" }}
                             />
-
                             <img alt="chat1" src={ImgOne} className="hoverOne2" />
                             <img alt="chat2" src={ImgTwo} className="hoverTwo2" />
                             <img alt="chat3" src={ImgThree} className="hoverThree2" />
