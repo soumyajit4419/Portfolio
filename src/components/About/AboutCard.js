@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import Image from "/Users/anyueow/Desktop/FindHer-Landing-V2/src/Assets/demo.png";
+import Image from "../../Assets/demo.png";
 
 function AboutCard() {
   return (

@@ -23,6 +23,7 @@ html {
 
 .center-contents {
   display: flex;
+  
   justify-content: center;
   align-items: center;
 }
@@ -99,20 +100,22 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 2rem !important;
+  padding: 1rem !important;
+  width: 100%;
   font-size: 2rem !important;
-  margin-bottom: 100%;
-
+    z-index: 9999;
 }
 
 .navbar-nav {
   min-width: 20%;
 }
-
+.sectionTwoContainer{
+  overflow: hidden;
+  min-height: 900px;
+}
 
 @media (max-width: 767px) {
   .navbar {
-
     font-size: 2rem !important;
     background-color: rgb(255, 255, 255) !important;
   }
@@ -121,26 +124,38 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  /* color: rgb(250, 250, 250) !important; */
+}
+.mobileHeroImage{
+  display: none;
+  position: relative;
 }
 
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}}
 .logo {
   height: 1.4em !important;
   width: 2.5em !important;
 }
-
 .navbar-nav .nav-link {
   color: #000000 !important;
 font-weight: 500;
   font-family: "League Spartan", Helvetica;
-
 }
-
 
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+  .desktopHeroImage{
+    display: none;
+    flex:1;
+  }
+  .mobileHeroImage{
+  display: block;
+}
 }
 
 .navbar-nav .nav-item {
@@ -153,6 +168,7 @@ font-weight: 500;
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;
+  font-size: 20px;
 }
 
 .navbar-nav .nav-item a::after {
@@ -178,9 +194,16 @@ font-weight: 500;
 /* --------- */
 /* Add other styles if needed */
 
-
+.hero-banner {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
 .text-left {
   text-align: left;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .d-flex {
@@ -198,31 +221,45 @@ font-weight: 500;
 .main-name {
   color: black;
   font-family: "League Spartan-SemiBold", Helvetica;
-  font-size:600%;
-  font-weight: 400;
+  font-size:45px;
+  line-height: 1.2;
+  font-weight: 600;
   letter-spacing: 0;
-
-  padding-bottom: 5%;
   text-align: left;
 
 }
-
-.home-content {
-  margin-top: 3.5%;
-
+.section-content {
+  color: black;
+  font-family: "League Spartan-SemiBold", Helvetica;
+  font-size: 50px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0;
   text-align: left;
-  justify-content: left;/* Align text to the left */
-  min-width: 73%;
-  min-height: auto;
+  /* padding:0px 24px; */
 
+}
+.section-content .text-wrapper {
+  font-weight: 900;
+}
+.section-content .text-wrapper-2 {
+  font-weight: 700;
+  color: rgba(226, 11, 60, 0.83);
 
+}
+
+.section-content .span {
+  font-family: "League Spartan-SemiBold", Helvetica;
+  font-style: italic;
+  font-weight: 700;
+}
+.home-content {
+position:relative;
 }
 .home-content-sect {
   margin-top: 3.5%;
   text-align: left;
   justify-content: left;/* Align text to the left */
-
-
 }
 
 .main-name .text-wrapper {
@@ -231,7 +268,6 @@ font-weight: 500;
 .main-name .text-wrapper-2 {
   font-weight: 700;
   color: rgba(226, 11, 60, 0.83);
-
 }
 
 .main-name .span {
@@ -248,33 +284,35 @@ font-weight: 500;
 .text-deco {
   text-decoration: underline;
   text-decoration-color: #ee2c5b;
-  text-decoration-thickness: 15px;
+  text-decoration-thickness: 5px;
 }
-
+.text-deco1 {
+  text-decoration: underline;
+  text-decoration-color:#fff;
+  text-decoration-thickness: 5px;
+}
 .heading-name {
   padding-top: 1.5%;
-  font-size: 3rem;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: left;
   font-family: "Montserrat-Regular", Helvetica;
   margin-bottom: 5%;
 }
 .sign-up-btn {
-  width: 35%;
-  height: 100px;
-  background-color: #ee2c5b;
-  border: none;
-  border-radius: 50px;
-  color: #ffffff;
-  font-family: "League Spartan-SemiBold", sans-serif;
-  font-size: 2.3rem;
-  font-weight: bold;
-  padding: 12px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5%/* Adding shadow */
+ background-color: #ee2c5b;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: "League Spartan-SemiBold", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 17%);
 }
 
 /* Optional hover effect */
@@ -283,39 +321,37 @@ font-weight: 500;
 }
 
 .hoverOne {
-  top: 25%;
-  left: 3%;
-  position: relative;
+  top: 6%;
+  right: 2%;
+  position: absolute;
   z-index: 3;
-  height: 35%;
+ max-height: 35%;
 }
 .hoverTwo {
-  top:10%;
-  left: 40%;
-  position: relative;
+  top:23%;
+  /* left: 40%; */
+  right: 0%;
+  position: absolute;
   z-index: 3;
-  height: 22%;
+  max-height: 22%;
 }
 .hoverThree {
-  top: 5%;
-right: 25%;
-  position: relative;
+  bottom: 8%;
+  right: 0%;
+  position: absolute;
   z-index: 3;
-  height: 60%;
+  max-height: 50%;
 }
 
 .base {
-
-  position: absolute;
-  top: 20%;
-  left: 63%;
-  z-index: 2;
-  height: 70%;
-
-
+  position: relative;
+  height: auto;
+  max-width: 100%;
 }
 
-
+.image-top{
+  width:900px;
+}
 
 /* Animation */
 /* Keyframes animation for floating effect */
@@ -338,19 +374,19 @@ right: 25%;
 }
 
 .hoverThree {
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   animation: floatAnimationBig 3s infinite; /* Adjust the animation duration as needed */
 }
 
 .hoverOne {
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   animation: floatAnimationSmall 3s infinite; /* Adjust the animation duration as needed */
 }
 
 .hoverTwo {
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   animation: floatAnimationSmallTwo 3s infinite; /* Adjust the animation duration as needed */
 }
@@ -360,12 +396,15 @@ right: 25%;
 .shade {
   background-color: rgba(223, 224, 119, 0.17);
   min-width: 100%;
-  position: absolute;
-  box-shadow: inset 0px 0px 45px 5px rgba(0, 0, 0, 0.23);
+  /* position: absolute; */
+  box-shadow: inset 0px 0px 45px 5px rgba(0, 0, 0, 2%);
  overflow: hidden;
+ min-height:600px;
 
 }
-
+.section-container{
+padding-top:50px;
+}
 .shade:before {
   content: "";
   position: absolute;
@@ -429,13 +468,12 @@ right: 25%;
 .main-name-sect {
   color: rgb(0, 0, 0);
   font-family: "League Spartan-SemiBold", "DM Sans-Bold", Helvetica;
-  font-size: 550%;
-  line-height: 150%;
-  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.4;
+  font-weight: 600;
   letter-spacing: 0;
-
+padding-top:24px;
   text-align: left;
-
   z-index: 0;
 }
 
@@ -448,7 +486,6 @@ right: 25%;
   letter-spacing: 0;
   align-items: flex-start;
   text-align: left;
-
   z-index: 0;
 }
 
@@ -465,11 +502,8 @@ right: 25%;
 .questions {
   color: #000000;
   font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 50px;
-  font-weight: 500;
   text-align: left;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 8%;
   opacity: 0.5;
 
 }
@@ -477,11 +511,9 @@ right: 25%;
 .questions2 {
   color: #000000;
   font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 50px;
-  font-weight: 500;
   text-align: left;
   padding-top: 1%;
-  left: -80px;
+  margin-left: -12px;
   overflow: hidden;
   position: relative;
 }
@@ -491,134 +523,120 @@ right: 25%;
 .questions3 {
   color: #000000;
   font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 50px;
-  font-weight: 500;
   text-align: right;
   padding-top: 1%;
-  bottom: 350px;
-  right: 180px;
   overflow: hidden !important;
-  position: relative;
   opacity: 0.2;
+position:absolute;
+  top: 10%;
+    right: 12%;
+}
+.card-btn-head{
+  font-family: 'DM Sans', sans-serif;
+text-align:center;
+font-weight:700px;
+line-height:35px;
+font-size:24px;
+color:#FFFFFF;
+}
 
+.btn-section1{
+  display: none !important;;
+}
+.display-none{
+  display: none !important;;
+}
+.card-btn{
+  background:#EA394A;
+  padding:16px 48px;
+  border:none;
+  outline:none;
+  border-radius:20px;
 }
 .questions4 {
   color: #000000;
   font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 50px;
-  font-weight: 500;
   text-align: right;
-  padding-top: 5%;
-  bottom: 350px;
-
+  right: -60px;
+    bottom: 28%;
+    position:absolute;
   overflow: hidden;
-  position: relative;
   opacity: 0.5;
 }
 .questions5 {
   color: #000000;
   font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 50px;
-  font-weight: 500;
   text-align: right;
   padding-top: 1%;
-  bottom: 350px;
-  right: 420px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+    bottom: 16%;
+    right: 6%;
+    z-index: -1;
 }
 .rectangle {
   display: inline-block;
-  padding: 20px 60px; /* Adjust padding as needed */
-  border-radius: 50px; /* Border corner radius */
+  /* padding: 20px 60px; */ /* Adjust padding as needed */
+  border-radius: 16px; /* Border corner radius */
   background-color: #DFE077;
-
-
+font-size:20px;
+font-weight: 600;
+    padding: 12px 48px;
 }
 .sometimes-you-re {
-  padding-top: 2%;
-  padding-bottom: 5%;
   color: #000000;
   font-family: "Montserrat-Regular", Helvetica;
-  font-size: 280%;
-  font-weight: 400;
-
+  font-size: 24px;
+  font-weight: 700;
+line-height:33.6px;
+text-align: left;
+display:block;
 }
 
 .sometimes-you-re .text-wrapper {
   color: #000000;
   font-family: "Montserrat-Regular", Helvetica;
-
   font-weight: 400;
-
 }
-
 .sometimes-you-re .span {
   font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
 }
-
 /* Sect two */
-
-
-
-
-.Sub  {
-  color: #000000;
-  font-family: "Montserrat-Regular", Helvetica;
-  font-size: 300%;
-  line-height: 125%;
-  font-weight: 400;
-
+.Sub {
+    color: #000000;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: left;
+    width: 368px;
+    margin-top: 40px;
 }
 
-.Sub .span {
-  font-weight: 700;
+.underline{
   text-decoration: underline;
 
 }
-
-
+.grid-subsection .col-md-6{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
 
 .hoverOne2 {
-  top: -115%;
-  left: 10%;
-  position: relative;
-  z-index: 3;
-  height: 25%;
+    top: 22%;
+    left: -5%;
+    position: absolute;
+    z-index: 3;
+    height: 10%;
 }
-.hoverTwo2 {
-  top: -85%;
-  left: 53%;
-  position: relative;
-  z-index: 3;
-  height: 40%;
-}
-.hoverThree2 {
-  top: -148%;
-  left: 78%;
-  position: relative;
-  z-index: 3;
-  height: 38%;
-}
-
 .base2 {
-
-  position: relative;
-  top: -15%;
-  left: 10%;
-  z-index: 2;
-  height: 110%;
-
+  height: auto;
+  width:100%;
 }
 
-.imgs-base {
-  margin-bottom: 15%;
-
-}
-.imgs-base2 {
-  margin-bottom: -25%;
-}
 
 /* Animation */
 /* Keyframes animation for floating effect */
@@ -639,23 +657,38 @@ right: 25%;
   50% { transform: translateY(10px) translateX(15px); }
   100% { transform: translateY(0px) translateX(0); }
 }
-
-.hoverThree2 {
-  position: relative;
+.hoverThree2 { 
+  position: absolute;
   z-index: 3;
-  animation: floatAnimationBig 3s infinite; /* Adjust the animation duration as needed */
+  bottom: 24%;
+    right: 0%;
+     height:auto;
+    width: 40%;
+  animation: floatAnimationBig 3s infinite;  
+  /* Adjust the animation duration as needed */
 }
+.hoverTwo2 {
+       position: absolute;
+top: 16%;
+    right: 6%;
+    z-index: 3;
+    height:auto;
+    width: 30%;
+    animation: floatAnimationSmallTwo 3s infinite;   /* Adjust the animation duration as needed */
+ } 
 
 .hoverOne2 {
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   animation: floatAnimationSmall 3s infinite; /* Adjust the animation duration as needed */
 }
 
-.hoverTwo2 {
-  position: relative;
-  z-index: 3;
-  animation: floatAnimationSmallTwo 3s infinite; /* Adjust the animation duration as needed */
+
+.section-description{
+  font-family: "Montserrat-SemiBold", Helvetica;
+font-size:15px;
+line-height:24px;
+display:none;
 }
 /* --------- */
 /* Footer */
@@ -677,26 +710,74 @@ right: 25%;
   margin-bottom: 3%;
   text-align: left !important;
   text-decoration-color: #0c0513;
-  font-size: 2.5rem;
+  font-size: 18px;
   max-width: 80%;
+  font-weight:400;
+  line-height:24px;
+}
+.Footerhed1{
+   font-size: 25px;
+
+  font-weight:700;
+  line-height:35px;
 }
 .footer-body {
   z-index: 1;
   text-align: center !important;
 }
+@media (max-width: 1024px) {
+  .main-name-sect {
+  font-size: 40px;
+  line-height: 1.4;}
 
+}
 @media (max-width: 767px) {
   .footer-copywright {
     text-align: center !important;
   }
+.imgs-base {
+flex-direction: column;
 
+}
   .footer-body {
     text-align: center !important;
   }
+  .section-description{
+  font-family: "Montserrat-SemiBold", Helvetica;
+font-size:16px;
+line-height:24px;
+display:block;
+text-align:left;
+/* margin:0; */
+}
+.card-btn-head{
+  font-family: 'DM Sans', sans-serif;
+text-align:center;
+font-weight:700px;
+line-height:35px;
+font-size:24px;
+color:#FFFFFF;
+}
+.btn-section{
+  display:none !important;
+}
+.btn-section1{
+  display:block !important;
+}
+.card-btn{
+  background:#EA394A;
+  /* padding:16px 48px; */
+  width: 300px;
+    margin: 10px 0px;
+  border:none;
+  outline:none;
+  border-radius:20px;
+}
 }
 
 .footer-icons {
-
+ margin-top: 3% !important;
+  margin-bottom: 3%;
   padding: 0 !important;
   list-style: none; /* Remove bullet points */
 }
@@ -812,22 +893,31 @@ right: 25%;
 
 .card-head {
 
-  font-size: 3.5rem;
-  font-family: "League Spartan", Helvetica;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  font-size: 30px;
+  line-height:42px;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 8%;
+  margin-top: 8%;
   font-weight: 700;
 
 }
+
+.inCustomed{    
+    position: absolute;
+    right: 0px;
+   max-width: 58%;
+    top: 45%;
+    transform: translateY(-50%);
+    /* overflow: hidden; */
+  }
 .cardSub {
-
-  font-size: 2.5rem;
-  font-family: "Montserrat-SemiBold", Helvetica;
-  margin-top: 5%;
-  padding: 10px;
+  font-size: 20px; 
+  padding: 20px;
   font-weight: 500;
-
-
+  line-height:26px;
+  margin-top: auto;
+  font-family: 'DM Sans', sans-serif;
+  text-align: left;
 }
 
 .space {
@@ -846,23 +936,31 @@ font-weight: bold}
 
 }
 .tech-icons {
-  margin: 30px;
-  padding: 25px;
-  width: 70px; /* Adjust the width as needed */
-  opacity: 0.93;
-  background-color: #dfe077;
-  vertical-align: middle;
-  text-align: center;
-  border-radius: 65px;
-  box-shadow: 4px 5px 4px 3px rgba(83, 86, 61, 0.73) !important;
-  transition: all 0.4s ease 0s;
+    background-color: #dfe077;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 4px 5px 12px 3px rgba(0, 0, 0, 0.10) !important;
+    transition: all 0.4s ease 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        padding: 0px 32px !important;
+
 }
-
+.card-section{
+  gap:24px;
+  display:flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.image-container{
+ height:100%;
+}
 .img-card {
-  /* Remove min-height property */
-  /* min-height: 280%; */
-
-  width: 500px;
+  width:100%;
+  height:100%;
+  object-fit: contain;
 }
 .img-card2 {
   width: 600px;
@@ -875,7 +973,15 @@ font-weight: bold}
 
 
 }
+/*---------------- job-posting-section----------*/
+/* .job-posting-section{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+ background-color: rgba(223, 224, 119, 0.17);
 
+} */
 
 
 /* --------- */
@@ -886,7 +992,7 @@ font-weight: bold}
   text-align: left;
   justify-content: left;/* Align text to the left */
   min-width: 73%;
-  min-heigh: 80%
+  min-height: 80%;
 }
 .header {
   font-size: 4.5rem;
@@ -902,7 +1008,9 @@ font-weight: bold}
   font-weight: 700;
 }
 
-
+.rotate{
+  transform: rotate(180deg);
+}
 .testi-img {
   width: 60%;
   justify-content: center;
@@ -910,9 +1018,9 @@ font-weight: bold}
 }
 
 .testimonial {
-  min-width: 95%;
+  /* min-width: 95%;
   background-color: rgba(223, 224, 119, 0.13);
-  padding: 5%;
+  padding: 5%; */
   border-radius: 70px;
   justify-content: center;
   vertical-align: middle;
@@ -926,8 +1034,6 @@ margin-bottom: 10%;
 }
 
 .arrow-button {
-
-
   /* Remove default button styles */
   background: none;
   border: none;
@@ -936,7 +1042,6 @@ margin-bottom: 10%;
   /* Add any additional styles you want for the arrow buttons */
 
 }
-
 
 .resume {
   padding-top: 50px;
@@ -951,7 +1056,42 @@ margin-bottom: 10%;
 .resume-right {
   padding-left: 80px !important;
 }
+@media (max-width: 767px) {
 
+  .image-section {
+    margin-top: 20px;
+  }
+
+  .image-child-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.card-head {
+
+  font-size: 25px;
+  line-height:35px;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 8%;
+  margin-top: 8%;
+  font-weight: 700;
+
+}
+.cardSub {
+  font-size: 15px; 
+  padding: 20px;
+  font-weight: 500;
+  line-height:21px;
+  margin-top: auto;
+  font-family: 'DM Sans', sans-serif;
+}
+
+  .position-image {
+    order: -1; /* Position the first image on top */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 767px) {
   .resume-left {
     padding-right: 15px !important;
@@ -1052,7 +1192,12 @@ margin-bottom: 10%;
   font-size: 1.1em !important;
   padding-top: 10px !important;
 }
+ .section-heading{
+font-size:28px;
+font-weight:600;
+  font-family: "League Spartan", Helvetica;
 
+    }  
 .fork-btn-inner {
   line-height: 1.4em !important;
   background-color: #934cce5e !important;
@@ -1068,4 +1213,325 @@ margin-bottom: 10%;
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+.slick-list{
+  max-width: 1040px !important;
+  margin:0 auto !important;
+}
+   .Sub1 {
+    color: #000000;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+     
+    text-align: left;
+
+    margin-top: 20px;
+}
+.grid-section {
+  padding: 80px 0;
+  position: relative;
+}
+.card-mobile-section{
+  display: none;
+}
+.card-desktop-section{
+display:block;
+}
+.card-desktop{
+display: block;
+}
+.card-mobile{
+display: none;
+}
+@media  screen and (max-width: 768px) {
+  .card-desktop{
+display: none;
+}
+.card-mobile{
+display: block;
+}
+  .Footerhed{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: left !important;
+  text-decoration-color: #0c0513;
+  font-size: 18px;
+  max-width: 100%;
+  font-weight:400;
+  line-height:24px;
+}
+    .carousel-indicators #gf{
+  width:10px;
+  height:10px;
+  border-radius:30px;
+  background:pink;
+  }
+.card-mobile-section{
+  display: block;
+}
+.card-desktop-section{
+display:none;
+}
+.footer-gap{
+  gap:24px;
+}
+.Sub1 {
+    color: #000000;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+        /* padding: 0px 24px; */
+    text-align: center;
+
+    margin-top: 20px;
+}
+.carousel-card{
+    background-color: rgba(223, 224, 119, 0.17);
+    border-radius:30px;
+    padding:24px;
+}
+  
+    .inCustomed{    
+    position: absolute;
+    right: 0px;
+    max-width: 96%;
+    top: 56%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-banner {
+  min-height: auto;
+}
+.mobileImageMb{
+  margin-bottom: -90px;
+}
+  .shade {
+ min-height:0px;
+
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.header{
+
+  font-size: 25px;
+  font-family: "League Spartan", Helvetica;
+
+  margin-top: 3%;
+  font-weight: 600;
+
+}
+.subhead {
+  font-size: 25px;
+  font-family: "League Spartan", Helvetica;
+   color: #ee2c5b;
+  font-weight: 600;
+}
+.sectionTwoContainer{
+  min-height: auto;
+}
+.main-name {
+  font-size:30px;
+  line-height: 1.3;
+}
+.text-deco{
+  text-decoration-thickness: 4px;
+}
+.heading-name{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.main-name-sect{
+ font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.sign-up-btn {
+  font-size: 20px;
+  padding: 8px 32px;
+  width: 100%;
+}
+
+
+.section-content {
+  color: black;
+  font-family: "League Spartan-SemiBold", Helvetica;
+  font-size:30px;
+  line-height: 42px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: left;
+  /* padding:0px 24px; */
+
+}
+.Sub {
+    color: #000000;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+        /* padding: 0px 24px; */
+    text-align: left;
+    width: 100%;
+    margin-top: 40px;
+
+}
+.mb-40{
+  margin-bottom: 20px !important;
+}
+.main-name-sect {
+  color: rgb(0, 0, 0);
+  font-family: "League Spartan-SemiBold", "DM Sans-Bold", Helvetica;
+  font-size: 25px !important;
+  line-height: 35px !important;
+  font-weight: 600;
+  letter-spacing: 0;
+padding-top:14px;
+  text-align: center;
+  z-index: 0;
+}
+.rectangle {
+  display: inline-block;
+  /* padding: 20px 60px; */ /* Adjust padding as needed */
+  border-radius: 16px; /* Border corner radius */
+  background-color: #DFE077;
+font-size:8px !important;
+font-weight: 600;
+    padding: 6px 20px;
+}
+.questions {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  text-align: left;
+  margin-bottom: 0% !important;
+  margin-left: 8%;
+  opacity: 0.5;
+}
+
+.questions2 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  text-align: left;
+  padding-top: 1%;
+  margin-left: -32px!important;
+  overflow: hidden;
+  position: relative;
+}
+.questions3 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  text-align: right;
+  padding-top: 1%;
+  overflow: hidden !important;
+  opacity: 0.2;
+position:absolute;
+  top: 10%;
+    right: 12%;
+}
+.questions4 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  text-align: right;
+  right: -px;
+    bottom: 26% !important;
+    position:relative;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.questions5 {
+  color: #000000;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  text-align: right;
+  padding-top: 1%;
+  overflow: hidden;
+  position: relative;
+    bottom: 18% !important;
+    right: 6%;
+}
+.sometimes-you-re {
+display:none !important;
+}
+}
+ .card-section .tech-icons{
+    flex: 0 0 auto;
+    width: calc(33.33333333% - 16px);
+}
+
+    @media screen and (max-width: 576px) {
+     .card-section .tech-icons{
+    flex: 0 0 auto;
+     width: calc(100% - 16px);
+    max-width: 335px;
+}
+    }
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+/* testimonial slider */
+.testimonialSlide{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.testimonialContent{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.slick-dots {
+    bottom: 11px !important;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 18px !important;
+    line-height: 1.5;
+    color: #f0235b !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #f0235b !important;
+}
+button.SliderPrevArrows, button.SliderNextArrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+button.SliderPrevArrows{
+  right: -50px;
+}
+button.SliderNextArrows{
+  left: -55px;
+}
+@media  screen and (max-width: 768px) {
+  .testimonialSlide{
+    flex-direction: column;
+  }
+  .testimonialCardImage{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+  .testimonialContent{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       background-color: rgba(223, 224, 119, 0.17);
+    border-radius:30px;
+    padding:24px;
+  }
+  .cardSub{
+    text-align: center;
+  }
 }

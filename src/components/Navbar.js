@@ -18,27 +18,25 @@ function NavBar() {
     window.addEventListener("scroll", scrollHandler);
 
     return (
-        <Navbar
-            fixed="top"
-            expand="md"
-            className={navColor ? "sticky navbar-dark" : "navbar-dark"}
-            style={{ padding: '20%' }}
-        >
+
+
+        <Navbar expand="lg" className={navColor ? "sticky navbar-dark" : "navbar-dark g-body-tertiary"}>
             <Container fluid>
-                <Navbar.Brand href="/" className="d-flex">
-                    <img src={logo} className="img-fluid" alt="brand" style={{ maxWidth: '10%' }} />
-                </Navbar.Brand>
-                <Nav className="navbar-nav" defaultActiveKey="#home">
-                    <Nav.Item>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link href="#about">About</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link href="#pricing">Contact Us</Nav.Link>
-                    </Nav.Item>
-                </Nav>
+                <Navbar.Brand href="#home"><img src={logo} alt="brand" height={'46px'} /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className='hamburger-icon' style={{ background: "#ee2c5b" }} />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav>
+                        <Nav.Item>
+                            <Nav.Link href="#home">Home</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#about">How it works</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#footer">Contact </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     );
