@@ -15,10 +15,10 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  var prev_selected="home"
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -27,8 +27,16 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+  function active_selected(id){
+    document.getElementById(id).style.backgroundColor="blueviolet"
+    document.getElementById(prev_selected).style.backgroundColor=""
+    prev_selected=id
+    
+   
+  }
 
   window.addEventListener("scroll", scrollHandler);
+  
 
   return (
     <Navbar
@@ -54,8 +62,9 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link  as={Link}  to="/" id="home" style={{backgroundColor:"blueviolet"}}
+                  onClick={() => {updateExpanded(false);active_selected("home")}} >
+                <AiOutlineHome style={{ marginBottom: "2px"} } /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -63,7 +72,9 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                onClick={() => updateExpanded(false)}
+                id="about"
+                onClick={() => {updateExpanded(false);active_selected("about")}}
+               
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -72,8 +83,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                id="projects"
                 to="/project"
-                onClick={() => updateExpanded(false)}
+                onClick={() =>{updateExpanded(false);active_selected("projects")}}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -85,8 +97,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                id="resume"
                 to="/resume"
-                onClick={() => updateExpanded(false)}
+                onClick={() =>{updateExpanded(false);active_selected("resume")}}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
@@ -97,6 +110,7 @@ function NavBar() {
                 href="https://soumyajitblogs.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
+                
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
