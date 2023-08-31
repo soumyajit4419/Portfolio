@@ -16,8 +16,6 @@ jobs:
       - name: Allow unsecure commands
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
-
-      - uses: actions/checkout@v2
       - uses: ngduc/vercel-deploy-action@master
         with:
           vercel-token: fhnq4sKG7Jv1ghA6tKg0W94z
