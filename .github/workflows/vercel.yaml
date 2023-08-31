@@ -16,15 +16,17 @@ jobs:
       - name: Allow unsecure commands
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
-      - uses: ngduc/vercel-deploy-action@master
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build application
+        run: npm run build
+    
+      - name: Deploy to Staging
+        id: deploy-vercel-staging
+        uses: amondnet/vercel-action@v20
         with:
-          vercel-cli: vercel
-          github-token: ${{ secrets.TOKEN }}
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
-          working-directory: ./ #Your Working Directory, Optional
-            
-      - name: preview-url
-        run: |
-          echo ${{ steps.vercel-action.outputs.preview-url }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_TL_ENGINE }}
+          scope: ${{ secrets.VERCEL_ORG_ID }}
