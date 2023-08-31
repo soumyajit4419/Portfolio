@@ -25,7 +25,7 @@ jobs:
           github-token: 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
           vercel-org-id: UKcP3gyAufa0VYg2PqFcdq8l
           vercel-project-id: prj_A5Ub2Tq2T7DvhbT5o3spSeFOUDVW 
-          working-directory: ./build #Your Working Directory, Optional
+          working-directory: ./ #Your Working Directory, Optional
           alias-domains: | #Optional
             staging.angular.vercel-action.amond.dev
             pr-{{PR_NUMBER}}.angular.vercel-action.amond.dev
