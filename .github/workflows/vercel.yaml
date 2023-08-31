@@ -12,13 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build application
-        run: npm run build
-
+        
       - name: Allow unsecure commands
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
@@ -33,3 +27,7 @@ jobs:
           alias-domains: | #Optional
             staging.angular.vercel-action.amond.dev
             pr-{{PR_NUMBER}}.angular.vercel-action.amond.dev
+            
+      - name: preview-url
+        run: |
+          echo ${{ steps.vercel-action.outputs.preview-url }}
