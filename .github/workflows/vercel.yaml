@@ -19,13 +19,12 @@ jobs:
       - name: Deploy to Vercel Action
         uses: BetaHuhn/deploy-to-vercel-action@v1.9.12    
         with:
-          vercel-token: fhnq4sKG7Jv1ghA6tKg0W94z
-          vercel-cli: vercel
-          github-token: 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
-          vercel-org-id: UKcP3gyAufa0VYg2PqFcdq8l
-          vercel-project-id: prj_A5Ub2Tq2T7DvhbT5o3spSeFOUDVW 
-          working-directory: ./ #Your Working Directory, Optional
-          alias-domains: | #Optional
+          VERCEL_TOKEN: fhnq4sKG7Jv1ghA6tKg0W94z
+          GITHUB_TOKEN: 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
+          VERCEL_ORG_ID: UKcP3gyAufa0VYg2PqFcdq8l
+          VERCEL_PROJECT_ID: prj_A5Ub2Tq2T7DvhbT5o3spSeFOUDVW 
+          WORKING_DIRECTORY: ./ #Your Working Directory, Optional
+          ALIAS_DOMAINS: | #Optional
             staging.angular.vercel-action.amond.dev
             pr-{{PR_NUMBER}}.angular.vercel-action.amond.dev
             
