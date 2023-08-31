@@ -24,9 +24,6 @@ jobs:
           vercel-org-id: UKcP3gyAufa0VYg2PqFcdq8l
           vercel-project-id: prj_A5Ub2Tq2T7DvhbT5o3spSeFOUDVW 
           working-directory: ./ #Your Working Directory, Optional
-          alias-domains: | #Optional
-            staging.angular.vercel-action.amond.dev
-            pr-{{PR_NUMBER}}.angular.vercel-action.amond.dev
             
       - name: preview-url
         run: |
