@@ -23,7 +23,6 @@ jobs:
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
       - name: deploy
-        uses: ngduc/vercel-deploy-action@master
         with:
           vercel-token: fhnq4sKG7Jv1ghA6tKg0W94z
           vercel-cli: vercel
