@@ -31,6 +31,14 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC}}
           scope: ${{ secrets.VERCEL_ORG_ID }}
 
-      - name: preview-url
+      - name: Extract Preview URL
+        id: extract-preview-url
         run: |
-          echo ${{ steps.deploy-vercel-staging.outputs.preview-url }}
+          preview_url=${{ steps.deploy-vercel-staging.outputs.preview-url }}
+          echo "::set-output name=preview-url::$preview_url"
+          
+      - name: Comment Preview URL
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body "Preview URL: ${{ steps.extract-preview-url.outputs.preview-url }}"
