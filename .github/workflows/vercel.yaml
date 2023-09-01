@@ -40,12 +40,12 @@ jobs:
       - name: Comment Preview URL
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          run: |
-             pr_number="${{ github.event.pull_request.number }}"
-             preview_url="${{ steps.extract-preview-url.outputs.preview-url }}"
+        run: |
+           pr_number="${{ github.event.pull_request.number }}"
+           preview_url="${{ steps.extract-preview-url.outputs.preview-url }}"
     
-             # Create a formatted comment with an emoji and a clickable link
-             comment=":rocket: **Preview URL**: [View the Preview](${preview_url})"
+           # Create a formatted comment with an emoji and a clickable link
+           comment=":rocket: **Preview URL**: [View the Preview](${preview_url})"
     
-             # Post the comment to the pull request
-             gh pr comment "$pr_number" --body "$comment"
+           # Post the comment to the pull request
+           gh pr comment "$pr_number" --body "$comment"
