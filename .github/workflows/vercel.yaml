@@ -1,9 +1,9 @@
 name: Vercel Deployment
 
 on:
-  push:
-    branches:
-      - master  # Adjust this to your main branch name
+  pull_request:
+    types:
+      - opened
 
 jobs:
   deploy:
