@@ -1,10 +1,9 @@
 name: Vercel Deployment
 
 on:
-  pull_request:
-    types:
-      - opened
-
+  push:
+    branches:
+      - preview/fix
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,12 +15,6 @@ jobs:
       - name: Allow unsecure commands
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build application
-        run: npm run build
-    
       - name: Deploy to Staging
         id: deploy-vercel-staging
         uses: amondnet/vercel-action@v20
@@ -30,22 +23,3 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC}}
           scope: ${{ secrets.VERCEL_ORG_ID }}
-
-      - name: Extract Preview URL
-        id: extract-preview-url
-        run: |
-          preview_url=${{ steps.deploy-vercel-staging.outputs.preview-url }}
-          echo "::set-output name=preview-url::$preview_url"
-          
-      - name: Comment Preview URL
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-           pr_number="${{ github.event.pull_request.number }}"
-           preview_url="${{ steps.extract-preview-url.outputs.preview-url }}"
-    
-           # Create a formatted comment with an emoji and a clickable link
-           comment=":rocket: **Preview URL**: [View the Preview](${preview_url})"
-    
-           # Post the comment to the pull request
-           gh pr comment "$pr_number" --body "$comment"
