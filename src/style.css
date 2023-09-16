@@ -254,6 +254,13 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.home-row {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-section {
   position: relative;
   z-index: -1;
@@ -265,9 +272,9 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  height: 100vh !important;
 }
 
 .heading {
