@@ -195,6 +195,7 @@ button:focus {
   width: 0;
   border-radius: 16px;
   background: #c95bf5;
+  top:10px;
   bottom: 1px;
   left: 0;
   z-index: -1;
