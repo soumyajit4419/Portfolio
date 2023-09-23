@@ -9,6 +9,7 @@ import competitiveprogramming from "../../Assets/Projects/competitiveprogramming
 import socialmedia from "../../Assets/Projects/socialmedia.jpg"
 import tour2 from "../../Assets/Projects/tour2.jpg"
 import gender from "../../Assets/Projects/gender2.jpg"
+import eye from "../../Assets/Projects/eye2.jpg"
 
 
 function Projects() {
@@ -23,6 +24,16 @@ function Projects() {
           Here are a few projects, including some of my recent competitive programming works, that I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={eye}
+              isBlog={false}
+              title="Trachoma Detection"
+              description="We created a trachoma detection system integrated with a mobile app. It uses image analysis to identify trachoma, enabling early intervention for this eye disease."
+              ghLink="https://github.com/natiyeshi/clearSight"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bookstore}
