@@ -1,69 +1,44 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+
+import Python from "../../Assets/icons8-python-480.png";
+import Java from "../../Assets/java.png";
+import CPP from "../../Assets/icons8-c-480.png";
+import HTML from "../../Assets/html.png";
+import CSS from "../../Assets/icons8-css-logo-480.png";
+import REACT from "../../Assets/react.png";
+import Node from "../../Assets/node.png";
+import JS from "../../Assets/icons8-javascript-240.png";
+
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+      <img src={Python} alt="Python" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <img src={Java} alt="Java" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+      <img src={CPP} alt="CPP" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <img src={HTML} alt="HTML" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <img src={CSS} alt="CSS" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+      <img src={REACT} alt="React" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <img src={Node} alt="Node" className="img-fluid" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <img src={JS} alt="JavaScript" className="img-fluid" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
+      
     </Row>
   );
 }
