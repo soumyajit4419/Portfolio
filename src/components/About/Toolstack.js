@@ -1,30 +1,33 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import Github from "./Github";
 import {
   SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
+  SiAdobephotoshop,
+  SiVisualstudio
 } from "react-icons/si";
+import {
+  AiFillGithub,
+  AiOutlineStock
+} from "react-icons/ai";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+      <AiFillGithub/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+      <SiVisualstudiocode/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+      <SiAdobephotoshop/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+       <SiVisualstudio/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <AiOutlineStock/>
       </Col>
     </Row>
   );
