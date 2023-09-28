@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import Github from "./Github";
+
 import {
   SiVisualstudiocode,
   SiAdobephotoshop,

@@ -35,7 +35,14 @@ function Home2() {
                 </b>
               </i>
               <br />
-              
+              <br />
+              <b className="purple">Mission Statement </b> <br/>
+              My mission in Prosper Career Independent Study is to gain first hand experience and insights into the software industry, and possibly pursue an internship. Furthermore, I would like to advance my networking skills, communication, and presentation skills in the program. I will work with my mentor to research and create software-related projects, and hopefully develop a thorough understanding of the software engineering field. 
+              <br />
+              <br />
+              <b className="purple">Career Forecast </b> <br/>
+              Software engineering is one of, if not the fastest growing career today. The median salary is around $120,000, and the career typically has flexible hours. Software engineers typically have remote work, and therefore, are able to travel or live internationally. However, the career requires continuous learning and staying up-to-date with the latest technological developments. Most software engineering roles require a bachelor’s degree, however it’s entirely possible to self-study programming and land a job. Some software engineers will also pursue their master’s or bachelor’s for more specialized fields such as artificial intelligence or quantum computing. Furthermore, it’s essential that any programmer has proficiency in a coding language and certifications are a bonus such as AWS, Cloud Developer certifications, or CyberSecurity certifications. On top of that, software engineers have high job security due to increasing technological development and therefore higher demand. Additionally, nearly all industries from finance to healthcare require software engineers to maintain their data and services. Overall, software engineers contribute to the future of technology and create innovative solutions for the world.
+
             </p>
           </Col>
           <Col md={4} className="myAvtar">

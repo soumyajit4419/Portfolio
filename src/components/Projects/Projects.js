@@ -4,8 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import DataAPI from "../../Assets/AnalyticsCode.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ChoreManager from "../../Assets/choremanager.png";
 
 function Projects() {
   return (
@@ -32,11 +31,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ChoreManager}
               isBlog={false}
               title="Chore Management System"
               description="A chore management proram designed to simplify household task management and allocation."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              ghLink="https://github.com/Okuhama/Chore-Manager"
               
             />
           </Col>

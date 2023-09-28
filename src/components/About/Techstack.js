@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+
 import Python from "../../Assets/icons8-python-480.png";
 import Java from "../../Assets/java.png";
 import CPP from "../../Assets/icons8-c-480.png";
