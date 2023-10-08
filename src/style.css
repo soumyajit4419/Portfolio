@@ -155,8 +155,9 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+    font-size: 1.4em !important;
+      color: var(--imp-text-color);
+      font-weight: 700;
 }
 
 .navbar-nav .nav-link {
