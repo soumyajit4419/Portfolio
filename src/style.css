@@ -5,6 +5,8 @@ html {
     rgba(12, 8, 24, 0.904)
   );
 
+  --navbar-height: 90px;
+
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
@@ -87,9 +89,14 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  height: var(--navbar-height);
 }
 
 .navbar-toggler {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
@@ -98,12 +105,12 @@ button:focus {
 .navbar-toggler span {
   display: block !important;
   background-color: #be50f4 !important;
-  height: 4px !important;
+  height: 2px !important;
   width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
   transform: rotate(0deg) !important;
-  left: 0 !important;
+  /* left: 0 !important; */
   opacity: 1 !important;
 }
 
@@ -112,7 +119,14 @@ button:focus {
   outline: 0 !important;
 }
 
+.navbar-toggler span:nth-child(2) {
+  width: 40px !important;
+  margin: 0 !important;
+  transform: translateX(0%) !important;
+}
+
 .navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(2),
 .navbar-toggler span:nth-child(3) {
   transition: transform 0.35s ease-in-out !important;
   transition: transform 0.35s ease-in-out !important;
@@ -121,42 +135,48 @@ button:focus {
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
   left: 12px !important;
-  top: 10px !important;
+  /* top: 10px !important; */
   transform: rotate(135deg) !important;
   opacity: 0.9 !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
   height: 12px !important;
-  visibility: hidden !important;
+  /* visibility: hidden !important; */
   background-color: transparent !important;
+  transform: translateX(300%) !important;
+  /* width: 27px !important; */
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute !important;
   left: 12px !important;
-  top: 10px !important;
+  /* top: 10px !important; */
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
+    padding: 0rem 1rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
+    height: auto;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
+  }
+
+  .navbar-nav span:nth-child(2) {
+    width: 30px !important;
   }
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
 
-.logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+#logo-container > * {
+  width: 11.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -172,6 +192,14 @@ button:focus {
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
+  }
+
+  #logo-container > * {
+    width: 11rem !important;
+  }
+
+  .navbar-toggler {
+    padding: 0rem 0rem !important;
   }
 }
 
@@ -254,6 +282,13 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.home-row {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-section {
   position: relative;
   z-index: -1;
@@ -265,9 +300,9 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  height: 100vh !important;
 }
 
 .heading {
@@ -438,9 +473,21 @@ button:focus {
   padding: 0 !important;
 }
 
+.quote {
+  color: rgb(155 126 172) !important;
+  text-align: start;
+}
+
 .blockquote-footer {
   color: #a588c0 !important;
+  text-align: end;
 }
+
+@media (max-width: 767px) {
+  .blockquote {
+    font-size: 1rem !important;
+  }
+  }
 /* --------- */
 /* Projects */
 /* --------- */
@@ -452,8 +499,8 @@ button:focus {
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
@@ -544,13 +591,33 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  /* padding-top: 150px !important; */
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
+.about-section-main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .about-section-main {
+    height: 100% !important;
+  }
+}
+
+.about-section-main > .row {
+  padding-top: var(--navbar-height);
+}
+
 .tech-icons {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
@@ -559,7 +626,7 @@ button:focus {
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
-  display: table !important;
+  /* display: table !important; */
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
@@ -574,8 +641,9 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  /* border: 2.2px solid rgba(197, 115, 230, 0.883) !important; */
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -585,6 +653,10 @@ button:focus {
   border: none !important;
   color: white !important;
   background-color: transparent !important;
+}
+
+.quote-card-view ul {
+  padding-left: 0rem !important;
 }
 
 .about-activity {
@@ -598,6 +670,16 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+#skills {
+  padding-top: var(--navbar-height) !important;
+}
+
+/* @media (max-width: 767px) {
+  #skills {
+    padding-top: 0 !important;
+  } 
+} */
 /* --------- */
 /* Resume */
 /* --------- */
