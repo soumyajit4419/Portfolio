@@ -35,7 +35,7 @@ function NavBar() {
     'outline': <CgFileDocument style={{ marginBottom: "2px" }} />
   },
   {
-    'href': 'https://soumyajitblogs.vercel.app/',
+    'href': 'https://androiabledroid.blogspot.com/',
     'name': 'Blogs',
     'outline': <ImBlog style={{ marginBottom: "2px" }} />
   }];
@@ -57,9 +57,12 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container style={{ paddingInline: "1.25rem" }}>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={data.logo} className="img-fluid logo" alt="brand" />
+          <div id="logo-container" className="img-fluid">
+          {data.logo}
+          </div>
+          {/* <img src={data.logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -101,7 +104,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href={data.projectLink}
                 target="_blank"
                 className="fork-btn-inner"
               >

@@ -4,7 +4,7 @@ import { data } from "../../Constants";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "space-evenly", paddingBottom: "50px" }}>
       {data.techStack.map((stack, index) => {
         return (
           <Col xs={4} md={2} className="tech-icons" key={index}>

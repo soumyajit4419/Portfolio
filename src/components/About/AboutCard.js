@@ -23,7 +23,7 @@ function AboutCard() {
             }
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p className="quote">
             {data.quote}{" "}
           </p>
           <footer className="blockquote-footer">{data.name}</footer>
