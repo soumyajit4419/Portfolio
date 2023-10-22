@@ -575,6 +575,7 @@ button:focus {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  background-color: rgba(200, 137, 230, 0.637);
 }
 .tech-icon-images {
   padding: 20px !important;
