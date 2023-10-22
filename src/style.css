@@ -562,7 +562,7 @@ button:focus {
   display: table !important;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all 0.5s ease !important;
 }
 
 @media (max-width: 767px) {
@@ -575,6 +575,8 @@ button:focus {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  background-color: rgb(190, 196, 212);
+  color: rgba(89, 4, 168) ;
 }
 .tech-icon-images {
   padding: 20px !important;
