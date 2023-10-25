@@ -16,24 +16,25 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              Allow me <span className="purple"> introduce </span> myself
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            A Nigerian polymath, I navigate the worlds of business development and software engineering 
+            with an unwavering passion for environmental innovation. A chess-playing, pan-Africanist wordsmith, 
+            my journey blends technology, politics, and spirituality on a quest to inspire and impact the world.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I am fluent in classics like<i>
+                <b className="purple"> C++, Javascript and Go. </b> I speak <b className="purple"> English and German </b>
+              </i> 
+              <br />
+              <br />
+              My field of interests include &nbsp;
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Web Technologies and Products </b> as well 
+                {" "}
                 <b className="purple">
-                  Blockchain.
+                  Environmental Advocacy
                 </b>
               </i>
               <br />
@@ -67,7 +68,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/captainpaago"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +78,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/dbpaago"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +88,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/dbpaago42/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +98,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/delepaago"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
