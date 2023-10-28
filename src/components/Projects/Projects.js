@@ -21,7 +21,7 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects, including some of my recent competitive programming works, that I've worked on.
+          Here are a few projects that I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
@@ -44,7 +44,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={competitiveprogramming}
               isBlog={false}
@@ -52,7 +52,7 @@ function Projects() {
               description="As a passionate competitive programmer, I have successfully tackled nearly 500 programming questions, Improvong my skills and gaining a deep understanding of various algorithms and data structures along the way."
               ghLink="https://github.com/fuad-miftah/competitive-programing"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -69,7 +69,7 @@ function Projects() {
               imgPath={blog}
               isBlog={false}
               title="Personal Blog Webapp using Node.js"
-              description="this is a personal blog webapp build with node.js and express.js. It uses ejs as a templating engine and mongodb as a database. It includes a convenient Google login and signup feature"
+              description="This is a personal blog webapp build with node.js and express.js. It uses ejs as a templating engine and mongodb as a database. It includes a convenient Google login and signup feature"
               ghLink="https://github.com/fuad-miftah/personal-blog-webapp-node.js"
             />
           </Col>
@@ -94,7 +94,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bmi}
               isBlog={false}
@@ -102,7 +102,7 @@ function Projects() {
               description="I created a BMI calculator using Node.js, following core principles, to provide a simple and efficient way for users to calculate their Body Mass Index (BMI)."
               ghLink="https://github.com/fuad-miftah/bmi-calculator-node"
             />
-          </Col>
+          </Col> */}
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
