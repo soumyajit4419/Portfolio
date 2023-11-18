@@ -9,27 +9,40 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiAws,
+  DiMysql,
+  DiNginx,
+  DiHeroku,
+  DiHtml5,
+  DiCss3,
 } from "react-icons/di";
 import {
   SiRedis,
   SiFirebase,
   SiNextdotjs,
   SiSolidity,
-  SiPostgresql,
+  SiAzureartifacts,
+  SiExpress,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
+import { AzurePlain } from 'devicons-react';
+import { FaAws } from "react-icons/fa";
+import { SiMicrosoftazure } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <FaAws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftazure />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -38,32 +51,33 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <SiExpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiNginx />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <DiHeroku />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <DiHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <DiCss3 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
-      </Col>
+      </Col> */}
     </Row>
   );
 }
