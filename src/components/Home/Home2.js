@@ -16,41 +16,45 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              ALLOW ME TO <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I learned how to code during a full-stack coding bootcamp through UC Berkeley.
+              I learned how to code during a full-stack coding bootcamp at UC Berkeley.
               <br />
               <br />
-              I've mainly learned <i>
-                <b className="purple"> Javascript </b>
-              </i> and its derivations, like
+              I started out my career as an <i>
+                <b className="purple"> Account Executive </b>
+              </i> in high tech, where I learned I had a passion for
               <i>
-                <b className="purple"> Node.JS, Express.JS and React.JS. </b>
+                <b className="purple"> software. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I attended UC Berkeley's coding bootcamp so that I could go
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple"> deeper </b>{" "}
+              </i>into the technology industry, either as a{" "}
+              <i>
                 <b className="purple">
-                  Blockchain.
+                  solutions engineer
                 </b>
+              </i>{" "}
+              or
+              <i>
+                <b className="purple"> software engineer.</b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I'm looking forward to
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  building new things
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; and
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> helping new customers.</b>
               </i>
             </p>
           </Col>
