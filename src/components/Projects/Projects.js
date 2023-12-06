@@ -26,8 +26,8 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Chatify"
-              description="Personal site or profile to share relevant project/resources from academic background or real world project i work on. build using Ruby and Jekyll."
-              ghLink="https://github.com/Babigdk/Babigdk.github.io"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              ghLink="https://github.com/Babigdk/Chatify"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
@@ -38,8 +38,8 @@ function Projects() {
               isBlog={false}
               title="Bits-0f-C0de"
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/Babigdk/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              ghLink="https://github.com/Babigdk/coddingblogs"
+              demoLink="https://babigdkblogs.vercel.app/"
             />
           </Col>
 
