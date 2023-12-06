@@ -19,37 +19,39 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+            I am a user-centric developer with 1.8 years of combined internship experience in software engineering. I've contributed to projects for over 6 clients, including 
+            <i>
+              <b className="purple"> Google, DBS, OCBC and Singpass </b>
+            </i> 
+            , developing software that has reached over 
+            <i>
+              <b className="purple"> 20,000 users</b>
+            </i> .
+            <br />
+            <br />
+            Some examples include:<br />
+            1. At HelloHolo, as a software engineer intern, I collaborated closely with the development team to deliver 
+            <i>
+              <b className="purple"> 2 mobile and 2 web applications </b>
+            </i> 
+            , enhancing the event experience for more than 
+            <i>
+              <b className="purple"> 15,000 </b>
+            </i> 
+            attendees by providing easy access to information.<br /><br />
+            2. In partnership with Google and Dnata, I helped develop an automated news collection and sharing platform, reducing the time employees spend accessing valuable news by 
+            <i>
+              <b className="purple"> 70% </b>
+            </i> 
+            . I led a 6-person Agile team and was primarily responsible for designing the software system.<br /><br />
+            3. I developed a Java-based Android application that fostered community interaction among residents, which won 
+            <i>
+              <b className="purple"> 3rd place in the Singtel X SUTD award </b>
+            </i> 
+            .
+            <br /><br />
+            I am passionate about opportunities to develop applications that can impact billions of users.
+           
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +69,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/jsonggan"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,32 +79,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/chin-song/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>
