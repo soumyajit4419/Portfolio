@@ -12,9 +12,7 @@ function AboutCard() {
             from <span className="purple"> Kilimanjaro, Tanzania.</span>
             <br />
             I am currently a software developer and Medical Professional.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing 
-            <br />
+            <br /> 
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
