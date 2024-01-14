@@ -2,9 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,11 +17,11 @@ function Home2() {
             <p className="home-about-body">
               I have a passion for cutting-edge technology, and my portfolio
               reflects my dedication to staying at the forefront of the digital
-              landscape. With a strong focus on{" "}
+              landscape, with a strong focus on{" "}
               <span className="purple">mobile development. </span>
               Furthermore, I've delved into the fascinating realms of
               <span className="purple">
-                Augmented Reality (AR), Virtual Reality (VR) and Machine
+                &nbsp;Augmented Reality (AR), Virtual Reality (VR) and Machine
                 Learning.
               </span>
               <br></br>
