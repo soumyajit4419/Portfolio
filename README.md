@@ -13,21 +13,21 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/your-username/your-repo-name?color=blue&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/your-username/your-repo-name?color=blue&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/ankush2410/react-sample-app?color=blue&logo=github&style=for-the-badge) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/ankush2410/react-sample-app?color=blue&logo=github&style=for-the-badge)
 
 </center>
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/your-username/your-repo-name/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/ankush2410/react-sample-app/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/your-username/your-repo-name/issues">Request Feature</a>
+    <a href="https://github.com/ankush2410/react-sample-app/issues">Request Feature</a>
 </h3>
 
 ## TL;DR
 
-Fork this repo to modify and make changes of your own. Give proper credit by linking back to [your-username](https://github.com/your-username/your-repo-name). Thanks!
+Fork this repo to modify and make changes of your own. Give proper credit by linking back to [ankush2410](https://github.com/ankush2410/react-sample-app). Thanks!
 
 ## Requirements
 
