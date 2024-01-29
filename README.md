@@ -27,30 +27,30 @@
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give proper credit by linking back to [your-username](https://github.com/your-username/your-repo-name). Thanks!
+Fork this repo to modify and make changes of your own. Give proper credit by linking back to [your-username](https://github.com/your-username/your-repo-name). Thanks!
 
 ## Requirements
 
-Before using this GitHub Action, make sure you have the following set up:
+Before using this GitHub Action, ensure you have the following set up:
 
-- Vercel account: Sign up for a Vercel account at [https://vercel.com](https://vercel.com).
-- Vercel token: Generate a Vercel token with appropriate permissions in your Vercel account settings. Add the token as a secret named `VERCEL_TOKEN` in your GitHub repository.
-- Vercel organization ID: Obtain your Vercel organization ID and add it as a secret named `VERCEL_ORG_ID` in your GitHub repository.
-- Vercel project ID: Obtain the project ID for your Vercel project and add it as a secret named `VERCEL_PROJECT_ID_STATIC` in your GitHub repository.
+- Vercel account: Sign up at [https://vercel.com](https://vercel.com).
+- Vercel token: Generate a token in your Vercel account settings. Add it as a secret named `VERCEL_TOKEN` in your GitHub repository.
+- Vercel organization ID: Obtain your organization ID and add it as a secret named `VERCEL_ORG_ID`.
+- Vercel project ID: Obtain the project ID and add it as a secret named `VERCEL_PROJECT_ID_STATIC`.
 
 ## Workflow Details
 
-The GitHub Action workflow is triggered on every push to the `preview/fix` branch. Here's an overview of the workflow steps:
+The workflow is triggered on every push to the `preview/fix` branch. Overview of the steps:
 
-1. **Checkout code:** This step checks out the repository code for the workflow to run on.
+1. **Checkout code:** This step checks out the repository code.
 
-2. **Allow unsecure commands:** This step sets an environment variable to allow unsecure commands during the workflow.
+2. **Allow unsecure commands:** This step enables unsecure commands during the workflow.
 
-3. **Deploy to Staging:** This step uses the Vercel GitHub Action (`amondnet/vercel-action`) to deploy the React application to Vercel. It requires the Vercel token, organization ID, project ID, and scope as secret inputs.
+3. **Deploy to Staging:** Uses the Vercel GitHub Action (`amondnet/vercel-action`) to deploy the React application to Vercel. Requires the Vercel token, organization ID, project ID, and scope as secret inputs.
 
 ## Usage
 
-To use this GitHub Action in your repository, create a YAML file (e.g., `.github/workflows/vercel.yaml`) and copy the provided workflow code into it. Make sure to set up the required secrets in your GitHub repository settings.
+Create a YAML file (e.g., `.github/workflows/vercel.yaml`) and copy the provided workflow code into it. Set up required secrets in your GitHub repository settings.
 
 ```yaml
 name: Vercel Deployment
@@ -79,12 +79,3 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC}}
           scope: ${{ secrets.VERCEL_ORG_ID }}
-Feel free to customize the workflow according to your deployment needs.
-
-License
-This GitHub Action is licensed under the MIT License.
-
-javascript
-Copy code
-
-Replace `your-username` and `your-repo-name` with your GitHub username and
