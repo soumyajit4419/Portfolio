@@ -9,6 +9,7 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiGithub,
 } from "react-icons/di";
 import {
   SiRedis,
@@ -16,53 +17,71 @@ import {
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiTypescript,
+  SiFastify,
+  SiPython,
+  SiVuedotjs,
+  SiCplusplus,
+  SiC,
+  SiDocker,
+  SiPrisma,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import {
+  TbBrandGolang,
+  TbBrandReactNative,
+  TbHexagonLetterC,
+} from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <p style={{ fontSize: 15 }}>Javascript</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+        <p style={{ fontSize: 15 }}>NodeJs</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
+        <p style={{ fontSize: 15 }}>React/React-native</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <SiTypescript />
+        <p style={{ fontSize: 15 }}>Typescript</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiFastify />
+        <p style={{ fontSize: 15 }}>Fastify</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
+        <p style={{ fontSize: 15 }}>NextJs</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <SiPython />
+        <p style={{ fontSize: 15 }}>Python</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiVuedotjs />
+        <p style={{ fontSize: 15 }}>VueJs</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiPrisma />
+        <p style={{ fontSize: 15 }}>Prisma</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiCplusplus />
+        <p style={{ fontSize: 15 }}>C++</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <SiC />
+        <p style={{ fontSize: 15 }}>C programming</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiDocker />
+        <p style={{ fontSize: 15 }}>Docker</p>
       </Col>
     </Row>
   );
