@@ -1,0 +1,221 @@
+:root {
+  --primary-color: #bb86fc;
+  --button-hover-color: #6a00bbd2;
+  --black: #000;
+  --white: #fff;
+  --grey: rgb(58, 58, 58);
+  --footer-icon-bg: #2b2a2a;
+  --footer-icon-shadow: rgb(30 20 30/ 20%);
+}
+.social-wrapper {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 2rem;
+  place-items: center;
+  justify-content: center;
+}
+.ic {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: 0.5s !important;
+}
+.ic:hover {
+  color: #87209e;
+  box-shadow: 0 0 20px #87209e;
+  text-shadow: 0 0 2px #87209e;
+}
+.ic .twitter,
+.ic .github,
+.ic .linkedin {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.twitter,
+.linkedin,
+.instagram,
+.github {
+  /* margin-right: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.twitter-icon-footer {
+  /* margin-bottom: 6px; */
+  width: 30px;
+}
+
+.linkedin-icon-footer {
+  /* margin-bottom: 8px; */
+  width: 30px;
+}
+
+.github-icon-footer {
+  /* margin-bottom: 8px; */
+  width: 30px;
+  fill: #700c86;
+}
+.linkedin:hover .linkedin-icon-footer > rect {
+  animation: rect-up 0.3s linear infinite;
+}
+@keyframes rect-up {
+  50% {
+    y: 10px;
+    height: 11px;
+  }
+  0% {
+    y: 13px;
+    height: 8px;
+  }
+}
+.linkedin:hover .linkedin-icon-footer > circle {
+  animation: bounce 0.4s linear infinite;
+}
+
+@keyframes bounce {
+  75% {
+    cy: 8px;
+  }
+  50% {
+    cy: 4px;
+  }
+  0% {
+    cy: 4px;
+  }
+}
+
+.inst/* agram-icon-footer {
+      width: 70px;
+      padding-right: 24px;
+      padding-bottom: 8px;
+    } */
+  
+    .st0 {
+  fill: #700c86;
+  stroke: #ef4649;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+/*
+      ---------------------------
+         TWITTER MICROANIMATION
+      ---------------------------
+      */
+
+.twitter-icon {
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1 {
+  transform-origin: center;
+  animation: flap 0.4s ease-out infinite alternate;
+}
+
+.twitter:hover #wing2 {
+  transform-origin: center;
+  animation: flap 0.4s ease-in infinite alternate;
+}
+
+@keyframes flap {
+  50% {
+    transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+  }
+}
+
+/*
+      --------------------------
+         GITHUB MICROANIMATION
+      --------------------------
+      */
+
+.github-icon {
+  width: 40px;
+  /* margin-left: 12px;
+    margin-top: 5px; */
+  fill: #700c86;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+/*
+      ---------------------------
+         INSTAGRAM MICROANIMATION
+      ---------------------------
+      */
+
+.instagram-icon {
+  width: 90px !important;
+}
+
+.st0 {
+  fill: none;
+  stroke: #700c86 !important;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.instagram:hover #shutter {
+  stroke-dasharray: 150;
+}
+
+.instagram #shutter {
+  display: none;
+}
+
+.instagram:hover #shutter {
+  display: block;
+  animation: shutter 1s linear infinite;
+}
+
+.instagram:hover #lens {
+  fill: #700c86 !important;
+  animation: lens 1.5s linear infinite;
+}
+
+@keyframes shutter {
+  0%,
+  50% {
+    stroke-dashoffset: 150;
+  }
+  75% {
+    fill: #700c86 !important;
+    stroke-dashoffset: 0;
+    stroke-width: 11;
+  }
+}
+
+@keyframes lens {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
