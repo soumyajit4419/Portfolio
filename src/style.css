@@ -159,6 +159,11 @@ button:focus {
   width: 2.5em !important;
 }
 
+.hits {
+  height: 1.4em !important;
+  width: 4.4em !important;
+}
+
 .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
