@@ -64,6 +64,13 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
+## 🚀 To deploy using gh-pages module on GitHub page run the following command.
+
+1. In package.json update ``"homepage": "<YOUR GITHUB PAGE URL>/#"`` by replacing <YOUR GITHUB PAGE URL> with your GitHub page url.
+2. ``npm run deploy``
+3. Go to settings -> pages -> build and deployment -> choose ``gh-pages`` as root branch
+
+
 ## Usage Instructions
 
 Open the project folder and Navigate to `/src/components/`. <br/>
