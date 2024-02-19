@@ -191,7 +191,8 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 3px;
+  top:10px;
   width: 0;
   border-radius: 16px;
   background: #c95bf5;
