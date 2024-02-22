@@ -284,17 +284,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--theme-color-200)
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--theme-color-200) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--theme-color-200) !important;
 }
 
 @media (max-width: 767px) {
