@@ -11,10 +11,14 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --theme-color-100: #DCF2F1;
+  --theme-color-200: #7FC7D9;
+  --theme-color-300: #365486;
+  --theme-color-400: #0F1035;
+  --imp-text-color: var(--theme-color-200);
 }
 
-.purple {
+.highlighted-text {
   color: var(--imp-text-color) !important;
 }
 
@@ -57,18 +61,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--theme-color-200);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--theme-color-300);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--theme-color-100);
   border-radius: 12px;
 }
 
