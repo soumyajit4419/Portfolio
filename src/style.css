@@ -320,6 +320,12 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .hideOnSmallScreen {
+      display: none;
+  }
+}
+
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;

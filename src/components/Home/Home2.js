@@ -4,7 +4,6 @@ import myImg from "../../Assets/avatar2.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -14,7 +13,7 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvtar hideOnSmallScreen">
             <Tilt>
               <img src={myImg} className="img-fluid avatar" alt="avatar" />
             </Tilt>
