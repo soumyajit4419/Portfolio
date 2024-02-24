@@ -602,6 +602,20 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  margin-bottom: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.external-link {
+  color: var(--theme-color-200) !important;
+}
+
+.external-link-icon {
+  padding-bottom: 4px !important;
+}
+
+.emoji {
+  padding-left: 4px !important;
 }
 
 @media (max-width: 767px) {
