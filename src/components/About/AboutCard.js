@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { FaBullseye } from "react-icons/fa6";
+
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function AboutCard() {
   return (
@@ -8,26 +10,25 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="highlighted-text">Soumyajit Behera </span>
-            from <span className="highlighted-text"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="highlighted-text">Paulo Henriques </span>
+            from <span className="highlighted-text"> Portugal.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I am currently working as <span className="highlighted-text">Software Engineer</span> at <a className="external-link" href="https://epilot.cloud/en/">Epilot<FaExternalLinkAlt size={19} className="external-link-icon" /></a>.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I'm also <span className="highlighted-text">Founder</span> and maintainer of <a className="external-link" href="https://www.specialclinic.pt/">Special Clinic<FaExternalLinkAlt size={19} className="external-link-icon" /></a>.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Besides programming, there are several other <span className="highlighted-text">hobbies</span> I really enjoy!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <FaBullseye /> Sports <span className="emoji">⚽</span>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <FaBullseye /> F1 <span className="emoji">🏎️</span>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <FaBullseye /> Travelling <span className="emoji">✈️</span>
             </li>
           </ul>
         </blockquote>
