@@ -24,37 +24,17 @@ function Home2() {
               MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Programming has become a passion of mine, sparking a journey filled with endless learning and discovery.
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="highlighted-text"> C++, Javascript and Go. </b>
-              </i>
+              <br />My expertise lies in the timeless programming languages like <b className="highlighted-text">JavaScript</b>.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="highlighted-text">
-                  Web Technologies and Products{" "}
-                </b>{" "}
-                and also in areas related to{" "}
-                <b className="highlighted-text">Blockchain.</b>
-              </i>
+
+              I am deeply invested in pioneering new <b className="highlighted-text">web technologies</b> and <b className="highlighted-text">products</b>.
+
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="highlighted-text">Node.js</b> and
-              <i>
-                <b className="highlighted-text">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="highlighted-text"> React.js and Next.js</b>
-              </i>
+              I channel my enthusiasm into creating innovative solutions using <b className="highlighted-text">Node.js</b> and the latest JavaScript libraries and frameworks, including <b className="highlighted-text">React</b> and <b className="highlighted-text">NestJS</b>.
             </p>
           </Col>
         </Row>
