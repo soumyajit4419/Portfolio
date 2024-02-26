@@ -6,7 +6,7 @@ import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
 import {
-  AiOutlineHome,
+  AiOutlineLaptop,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
@@ -63,20 +63,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiOutlineLaptop
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
@@ -85,13 +75,13 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
