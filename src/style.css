@@ -262,6 +262,7 @@ button:focus {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  height: 100lvh;
 }
 
 .home-content {
