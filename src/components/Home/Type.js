@@ -11,6 +11,8 @@ function Type() {
           "Life-Long Learner",
           "Problem-Solver",
           "Technology Explorer",
+          "Engineer",
+          "Thought Leader",
         ],
         autoStart: true,
         loop: true,
