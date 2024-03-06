@@ -20,15 +20,15 @@ function AboutCard() {
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
-            <li className="about-activity">
+            {/* <li className="about-activity">
               <ImPointRight /> Playing Games
-            </li>
+            </li> */}
             {/* <li className="about-activity">
               <ImPointRight /> Writing Tech Blogs
             </li> */}
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
+            {/* <li className="about-activity">
+              <ImPointRight /> 
+            </li> */}
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
