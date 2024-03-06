@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import JavaScriptAppWrapper from './components/Projects/self-care-8-ball/JavaScriptAppWrapper';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -40,6 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path='/self-care-8-ball' component={JavaScriptAppWrapper} />
         </Routes>
         <Footer />
       </div>
