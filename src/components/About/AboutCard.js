@@ -9,8 +9,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className='blockquote mb-0'>
           <p style={{ textAlign: 'justify' }}>
-            Here's where and how I'm spending my time challenging myself on my
-            journey through development:
+            Learning
           </p>
           <ul>
             <li className='about-activity'>

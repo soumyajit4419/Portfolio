@@ -17,7 +17,7 @@ function Home2() {
               WHAT <span className="orange"> EXCITES </span> ME
             </h1>
             <p className="home-about-body">
-             I'm passionate about web accessibility, functional design, 
+             I'm passionate about user experience, web accessibility, functional design, 
              and what makes things "tick." I love that there is no singular way to
              create/solve/do when it comes to technology.  
               <br />
