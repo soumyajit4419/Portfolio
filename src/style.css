@@ -537,6 +537,14 @@ button:focus {
   font-weight: 500 !important;
   padding-top: 10px !important;
 }
+/*Contact */
+.contact-section{
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 500px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
 
 /* --------- */
 /* About */

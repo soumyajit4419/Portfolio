@@ -18,22 +18,24 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            So, I've fallen head over heels for programming. I mean, who wouldn't? It's like solving puzzles all day while pretending to be a wizard. 🧙‍♂️ Now, do I actually know what I'm doing? Well, let's just say my code sometimes looks like a Picasso painting... abstract, to say the least. But hey, isn't that how masterpieces are made? 💻😅 So here's to stumbling through syntax errors and pretending I'm a coding genius! 🥂 #ProgrammerLife
               <br />
-              <br />I am fluent in classics like
+              <br />My name is
               <i>
-                <b className="purple"> React, Javascript, Ruby and Ruby on Rails. </b>
+                <b className="purple"> Yoshihiro Yamada from San Diego, California. </b>
+              </i>
+              <br />
+              <br />
+              I am fluent in 
+              <i>
+                <b className="purple"> React and Ruby.</b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple">Web Technologies and Products.</b>
+                
               </i>
               <br />
               <br />
@@ -59,10 +61,8 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">CONNECT </span>with me
-            </p>
+            <h1>CONNECT WITH ME</h1>
+            
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
