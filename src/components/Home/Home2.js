@@ -7,6 +7,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { ImPointRight } from  "react-icons/im";
 
 function Home2() {
   return (
@@ -26,7 +27,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              I am fluent in 
+              I am fluent with 
               <i>
                 <b className="purple"> React and Ruby.</b>
               </i>
@@ -51,7 +52,20 @@ function Home2() {
               <i>
                 <b className="purple"> React.js and Rails.</b>
               </i>
+              <br />
+              Apart from coding, some other activities that I love to do
             </p>
+            <ul>
+            <li className="about-activity">
+              <ImPointRight /> Snowboarding
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Walking with my dog
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Hanging out with friends
+            </li>
+          </ul>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
