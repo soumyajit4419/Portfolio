@@ -2,8 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
+import kanji from "../../Assets/Projects/kanji.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import CatTinder from "../../Assets/Projects/CatTinder.png"
+
 
 function Projects() {
   return (
@@ -19,11 +21,21 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={tictactoe}
+              imgPath={kanji}
               isBlog={false}
-              title="Tic-Tac-Toe"
-              description="A turn based Tic-Tac-Toe game created in Javascript using React and CSS."
-              ghLink="https://github.com/yoshihiroyamada23/Tic-Tac-Toe"
+              title="Kanji"
+              description="Kanji is a capstone project where it showcase full-stack developer using React and Ruby on Rails. It is a website for rare collectibles which showcases full CRUD functionalities."
+              ghLink="https://github.com/orgs/RarityKanji/repositories"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={CatTinder}
+              isBlog={false}
+              title="Cat Tinder"
+              description="Cat Tinder is a full-stack application which showcases both front-end and back-end using React and Ruby on Rails. It is an application which showcases full CRUD functionalities and user friendly"
+              ghLink="https://github.com/yoshihiroyamada23/cat-tinder-front-end"
             />
           </Col>
 

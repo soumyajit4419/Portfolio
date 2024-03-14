@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import  Contact from "./components/Contact/Contact";
+
 import {
   BrowserRouter as Router,
   Route,
