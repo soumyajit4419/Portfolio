@@ -58,9 +58,9 @@ function Projects() {
             <ProjectCard
               imgPath={gasPrices}
               title="Gas-Prices"
-              description="A mobile app in React-Native linked to an Api that I've also created. You will be able to enter your itinerary in the app and you will see all the gas stations around your path along with their prices. Go the the cheapest one to save some money ! (Release planned on March 2024)"
+              description="A mobile app in React-Native linked to an Api that I've also created. You will be able to enter your itinerary in the app and you will see all the gas stations around your path along with their prices. Go the the cheapest one to save some money !"
               ghLink="https://github.com/titi0267/GasPrices"
-              // playstoreLink="https://play.google.com/store/apps/details?id=com.opticarbu&hl=en-MY"
+              playstoreLink="https://play.google.com/store/apps/details?id=com.opticarbu&hl=fr-FR"
             />
           </Col>
 
