@@ -3,8 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillMail } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Particle from "../Particle";
-import {useForm} from 'react-hook-form'
-
 
 function Contact () {
     return(
