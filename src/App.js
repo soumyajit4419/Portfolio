@@ -17,6 +17,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+//this fucntion is used to call the App
 function App() {
   const [load, upadateLoad] = useState(true);
 
