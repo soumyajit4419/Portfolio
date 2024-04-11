@@ -332,6 +332,7 @@ button:focus {
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
+  margin-right: 50px;
 }
 
 .home-about-body {
@@ -721,7 +722,7 @@ button:focus {
 #avatar {
   border-radius: 50%;
   border: 2px solid #4635e0;
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 #avatar:hover {
