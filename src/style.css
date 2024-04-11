@@ -736,6 +736,6 @@ button:focus {
 
 #attribution {
   align-self: center;
-  opacity: 0.4;
-  font-size: smaller;
+  opacity: 0.6;
+  font-size: x-small;
 }

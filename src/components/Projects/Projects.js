@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import generichat from "../../Assets/Projects/generichat.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import portfolio from "../../Assets/Projects/portfolio.png";
 import maze from "../../Assets/Projects/maze.png"
 import carcar from "../../Assets/Projects/carcar.png"
 
@@ -19,6 +19,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              title="Personal Portfolio"
+              description="A personal portfolio website (which you are probably viewing now!), forked from a publicly shared template, and modified to fit my own needs and aesthetic."
+              ghLink="https://github.com/funksy/portfolio"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={generichat}

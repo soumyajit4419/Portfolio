@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Tilt from "react-parallax-tilt";
 import homeLogo from "../../Assets/home-main.svg";
 import myImg from "../../Assets/headshot.jpg";
 import Particle from "../Particle";
@@ -32,7 +32,6 @@ function Home() {
                 <Type />
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <div id="storyset">
                 <img
@@ -41,13 +40,13 @@ function Home() {
                   className="img-fluid"
                   style={{ maxHeight: "450px" }}
                 />
-                <Link id="attribution"
-                  to="https://storyset.com/web"
-                  // target="_blank"
-                  // rel="license">
+                <p id="attribution">Illustration by {" "}
+                  <a
+                    href="https://storyset.com/web"
                   >
-                  Illustration by Storyset
-                </Link>
+                  Storyset
+                  </a>
+                </p>
               </div>
             </Col>
           </Row>
