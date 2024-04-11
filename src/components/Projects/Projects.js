@@ -34,6 +34,7 @@ function Projects() {
               title="generiChat"
               description="An online chatroom using websockets which requires user authentication to participate in."
               ghLink="https://github.com/funksy/generiChat"
+              demoLink="https://module-3-chat-the-furious-five-cd981305b7e8dd2f1268cf5844abef49.gitlab.io/"
             />
           </Col>
 
