@@ -14,7 +14,7 @@ function AboutCard() {
             Previously, I spent 20 years in and retired from the US Air Force. I worked in IT support, diplomacy, intelligence, and security. I was fortunate to work around the world in those capacities, and have lived in 6 different countries on 4 continents.
             <br />
             <br />
-            As developer, I have a passion for learning new technologies and building new products. I particularly love deciphering the inner workings of things to see what I can learn from them and if they can be leveraged in different ways.
+            As a developer, I have a passion for learning new technologies and building new products. I particularly love deciphering the inner workings of things to see what I can learn from them and if they can be leveraged in different ways.
             <br />
             <br />
             When I'm not coding, here are some other activities that I love to do!
