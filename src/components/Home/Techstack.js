@@ -9,10 +9,9 @@ import {
   SiGit,
   SiPostgresql,
   SiFastapi,
-  SiBootstrap,
-  SiTailwindcss,
   SiDjango,
   SiJsonwebtokens,
+  SiVuedotjs,
 } from "react-icons/si"
 
 function Techstack() {
@@ -35,6 +34,9 @@ function Techstack() {
           <SiReact />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
+          <SiVuedotjs />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
           <SiGit />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
@@ -45,12 +47,6 @@ function Techstack() {
         </Col>
         <Col xs={4} md={2} className="tech-icons">
           <SiJsonwebtokens />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiTailwindcss />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiBootstrap />
         </Col>
       </Row>
     </IconContext.Provider>
