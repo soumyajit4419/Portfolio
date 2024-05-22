@@ -6,6 +6,7 @@ import generichat from "../../Assets/Projects/generichat.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import maze from "../../Assets/Projects/maze.png"
 import carcar from "../../Assets/Projects/carcar.png"
+import css_perspective_playground from "../../Assets/Projects/css_perspective_playground.png"
 
 function Projects() {
   return (
@@ -19,6 +20,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={css_perspective_playground}
+              title="CSS Perspective Playground"
+              description="A very basic use of Vue's tools to dynamically modify CSS properties"
+              ghLink="https://github.com/funksy/css_perspective_playground"
+              demoLink="https://funksy.github.io/css_perspective_playground/"
+            />
+          </Col>
+        
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={portfolio}
