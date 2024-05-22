@@ -16,40 +16,20 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+             <span className="purple">Passionate Developer building Web  </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I began my journey in software development, like many, captivated by its potential to create and solve problems. From there, my passion only grew, leading me to hone my skills in languages. Today, I leverage this foundation to craft innovative web applications and explore the exciting realm mobile technology.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              Whether it's building user-friendly interfaces with React and React Native or leveraging the power of Node.js for robust backends, I'm constantly seeking new challenges and opportunities to learn and grow.
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+              <br />
+              <br />
+                <b className="purple">Driven by a collaborative spirit and a desire to create real-world impact, I'm always eager to connect with fellow developers and explore exciting projects. Let's chat and see if we can build something amazing together!</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +47,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/maxiSorichetti"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +57,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/maximilianosorichetti/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +67,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/maxisorichetti/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
