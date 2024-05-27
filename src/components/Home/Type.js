@@ -9,6 +9,7 @@ function Type() {
           "Fullstack Software Developer",
           "Art Enthusiast",
           "Meme Connoisseur",
+          "!Pineapple on pizza",
         ],
         autoStart: true,
         loop: true,
