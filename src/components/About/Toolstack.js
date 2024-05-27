@@ -4,9 +4,9 @@ import {
   SiDocker,
   SiVisualstudiocode,
   SiPostman,
-  SiHeroku,
   SiVercel,
-  SiPostgresql
+  SiPostgresql,
+  SiNetlify
 } from "react-icons/si";
 
 function Toolstack() {
@@ -26,6 +26,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNetlify />
       </Col>
     </Row>
   );
