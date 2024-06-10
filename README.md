@@ -1,22 +1,12 @@
 this is saraswoti khadka changes to readme
-- React.js
+- React.jis
 - Node.js
 - Express.js
 - CSS3
 - VsCode
 - Vercel
 
-## Features
-
-**📖 Multi-Page Layout**
-
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
-
-**📱 Fully Responsive**
-
-## Getting Started
-
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+##another test for pull request
 
 ## 🛠 Installation and Setup Instructions
 
