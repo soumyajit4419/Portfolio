@@ -194,7 +194,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #FFEA00;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -379,13 +379,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #FFEA00;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #FFEA00;
+  box-shadow: 0 0 5px #FFEA00;
+  text-shadow: 0 0 2px #FFEA00;
 }
 
 .social-icons {
@@ -517,15 +517,15 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: black !important;
+  background-color: #FFEA00 !important;
+  border-color: #FFEA00 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #FFEA00 !important;
+  border-color: #FFEA00 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -645,7 +645,7 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #FFEA00;
   position: relative;
 }
 
@@ -682,7 +682,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #FFEA00;
 }
 
 .like-item {
@@ -702,8 +702,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #FFEA00 !important;
+  border-color: #FFEA00 !important;
 }
 
 .animate-like {
@@ -727,7 +727,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #FFEA00 !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,8 +735,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #FFEA00 !important;
+  border-color: #FFEA00 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
