@@ -11,7 +11,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #FDDA0D;
 }
 
 .purple {
@@ -281,17 +281,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #FFD700;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: white !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #FCF55F !important;
 }
 
 @media (max-width: 767px) {
@@ -312,8 +312,8 @@ button:focus {
 
 @media (max-width: 767px) {
   .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
   }
 }
 
