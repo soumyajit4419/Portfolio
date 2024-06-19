@@ -1,7 +1,7 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
+    rgba(17, 16, 16, 0.555), #color changed for test
     rgba(12, 8, 24, 0.904)
   );
 
