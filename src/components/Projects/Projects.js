@@ -6,7 +6,7 @@ import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import ai from "../../Assets/Projects/ai.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import { BsRobot } from "react-icons/bs";
 import { alignPropType } from "react-bootstrap/esm/types";
@@ -69,17 +69,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
@@ -95,7 +84,7 @@ function Projects() {
               isBlog={false}
               title="AI Business Manager"
               description="The AI Time Manager is a productivity tool that uses AI to organize daily tasks, estimate completion times, and generate performance reports. With features like task entry, AI-driven reorganization, and real-time updates, it provides a personalized and efficient time management solution for professionals and students alike."
-              //ghLink="https://github.com/soumyajit4419/Plant_AI"
+              // ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://ai-time-manager.bubbleapps.io/version-test"
             />
           </Col>
