@@ -21,7 +21,7 @@ import {
   SiFastapi,
   SiTailwindcss,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { TbBrandGithub, TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -30,13 +30,13 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiDjango />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFastapi />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -44,17 +44,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFastapi />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+            <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDjango />
+        <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <TbBrandGithub />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
