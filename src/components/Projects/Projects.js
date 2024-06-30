@@ -85,7 +85,7 @@ function Projects() {
               title="AI Business Manager"
               description="The AI Time Manager is a productivity tool that uses AI to organize daily tasks, estimate completion times, and generate performance reports. With features like task entry, AI-driven reorganization, and real-time updates, it provides a personalized and efficient time management solution for professionals and students alike."
               // ghLink="https://github.com/soumyajit4419/Plant_AI"
-              // demoLink="https://ai-time-manager.bubbleapps.io/version-test"
+              demoLink="https://ai-time-manager.bubbleapps.io/version-test"
             />
           </Col>
         </Row>
