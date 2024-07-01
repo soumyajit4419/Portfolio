@@ -108,7 +108,7 @@ function NavBar() {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contactform
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
