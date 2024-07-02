@@ -37,7 +37,14 @@ function ContactForm() {
   };
 
   return (
-    <Container fluid className="contact-section">
+    <Container fluid className="contact-section" style={{
+      backgroundImage: `url(${laptopImg})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      minHeight: "100vh",
+      padding: "50px 0",
+    }}>
       <Row style={{ justifyContent: "center", padding: "10px" }}>
         <Col
           md={7}
@@ -82,14 +89,7 @@ function ContactForm() {
               </Form>
             )}
           </Formik>
-        </Col>
-        <Col
-          md={5}
-          style={{ paddingTop: "120px", paddingBottom: "50px" }}
-          className="contact-img"
-        >
-          <img src={laptopImg} alt="contact" className="img-fluid" />
-        </Col>
+        </Col>        
       </Row>
     </Container>
   );
