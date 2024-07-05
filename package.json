@@ -28,7 +28,7 @@
     "preinstall": "npx npm-force-resolutions"
   },
   "resolutions": {
-    "yargs-parser": "^13.1.2"
+    "yargs-parser": "13.1.2"
   },
   "eslintConfig": {
     "extends": [
