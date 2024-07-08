@@ -19,7 +19,6 @@ function ProjectCards(props) {
         </Button>
         {"\n"}
         {"\n"}
-        
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"

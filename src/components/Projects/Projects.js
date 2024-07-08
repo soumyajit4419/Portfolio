@@ -36,11 +36,9 @@ function Projects() {
               demoLink="https://zdnchxstore.000webhostapp.com/ZDNCH"
             />
           </Col>  
-        
         </Row>
       </Container>
     </Container>
   );
 }
-
 export default Projects;
