@@ -11,6 +11,7 @@ import {
   SiDocker,
   SiAmazonaws,
   SiRedbubble,
+  SiOpenai,
 } from "react-icons/si";
 
 function Toolstack() {
