@@ -42,13 +42,10 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Java Library and Frameworks
+                  Modern Java Library and Frameworks.
                 </b>
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js </b>
-              </i>
+              &nbsp;
             </p>
           </Col>
           <Col md={4} className="myAvtar">
