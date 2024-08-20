@@ -48,7 +48,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Rock, Paper, Scissor Game"
-              description=""Rock, Paper, Scissors" is a simple and classic hand game that has been adapted into a Java program. In this game, the player competes against the computer, with each round requiring the player to choose between rock, paper, or scissors. The computer also makes a random choice. The rules are straightforward:
+              description="Rock, Paper, Scissors is a simple and classic hand game that has been adapted into a Java program. In this game, the player competes against the computer, with each round requiring the player to choose between rock, paper, or scissors. The computer also makes a random choice. The rules are straightforward:
               Rock crushes Scissors
               Scissors cut Paper
               Paper covers Rock"
