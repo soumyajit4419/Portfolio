@@ -3,11 +3,8 @@
   <a href="https://soumyajit.vercel.app/" target="_blank">Rohal Jamal</a>
 </h2>
 <div align="center">
-<<<<<<< HEAD
-  <img alt="Demo" src="./Images/Untitled design-2.png />
-=======
+
   <img alt="Demo" src="./Images/readme.png" />
->>>>>>> 54a6d9b (updated navbar.)
 </div>
 
 <br/>
