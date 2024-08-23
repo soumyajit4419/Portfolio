@@ -387,7 +387,9 @@ button:focus {
 
 .home-social-icons {
   position: relative !important;
-  display: inline-block !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px !important;
   height: 40px !important;
   text-align: center !important;
@@ -406,7 +408,6 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -425,6 +426,13 @@ button:focus {
 
 .social-icons {
   display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.social-icons-nav {
+  display: flex !important;
+  align-items: center;
   padding-right: 15px;
   padding-left: 15px;
 }

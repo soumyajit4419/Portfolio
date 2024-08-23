@@ -102,16 +102,18 @@ function NavBar() {
               );
             })}
 
-            <Nav.Item className="fork-btn">
-              <Button
-                href={data.projectLink}
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
+            {data.socialMedia.map((link, index) => {
+              return (
+                <Nav.Item className="social-icons-nav" key={index}>
+                  <a href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="home-social-icons icon-colour">
+                    {link.icon}
+                  </a>
+                </Nav.Item>
+              );
+            })}
           </Nav>
         </Navbar.Collapse>
       </Container>
