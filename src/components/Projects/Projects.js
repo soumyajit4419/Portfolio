@@ -16,7 +16,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {data.projects.map((project, index) => {
+          {data.projects.length > 0 ? data.projects.map((project, index) => {
             return (
               <Col md={4} className="project-card">
                 <ProjectCard
@@ -29,7 +29,12 @@ function Projects() {
                 />
               </Col>
             )
-          })}
+          }) : 
+          <Container style={{ minHeight: "auto"}}>
+            <h1 className="project-heading">
+              Yet to be Added
+            </h1>
+            </Container>}
         </Row>
       </Container>
     </Container>
