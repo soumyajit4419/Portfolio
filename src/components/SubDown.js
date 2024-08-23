@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { HashLink } from "react-router-hash-link";
 import DownArrow from "../Assets/down-arrow.svg"
@@ -8,9 +8,14 @@ const SubDown = (props) => {
     const [first, update] = useState(true);
     const style = {
         width: "75%",
-        transform: !first ? 'rotate(180deg)' : '', 
-        transition: 'transform 500ms ease', // smooth transition
+        animation: "rotation linear",
+        animationTimeline: "scroll()"
        }
+    useEffect(()=> {
+        window.addEventListener('scroll', () => 
+        console.log(window.scrollY, window.innerHeight)
+        )
+    }, [])
     return (
         <HashLink
             scroll={(el) => el.scrollIntoView({ behavior: "auto" })}
@@ -18,7 +23,6 @@ const SubDown = (props) => {
             onClick={
                 () =>{
                     if (!first) {
-
                         nav(-1);
                     }
                     update(!first)

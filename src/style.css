@@ -831,3 +831,9 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+@keyframes rotation {
+  to {
+    transform: rotate(180deg);
+  }
+}
