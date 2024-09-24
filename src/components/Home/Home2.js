@@ -29,7 +29,7 @@ function Home2() {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">Backend Development </b> and
                 also in areas related to{" "}
                 <b className="purple">
                   Cloud computing.
@@ -38,11 +38,11 @@ function Home2() {
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              with <b className="purple">Java</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Jav and JavaFX
+                  JavaFX
                 </b>
               </i>
               &nbsp; and now I'm improve my skills at
