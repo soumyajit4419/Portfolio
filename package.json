@@ -25,7 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d dist",
+    "build-gh": "react-scripts build --public-url 'https://alielesawy.github.io/myPortfolio'", 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
