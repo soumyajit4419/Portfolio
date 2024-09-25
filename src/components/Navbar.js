@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://ali.tech/"
+                href="https://blog.aliesmail.tech/"
                 target="_blank"
                 rel="noreferrer"
               >
