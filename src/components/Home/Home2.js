@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import { SiTelegram } from "react-icons/si";
 import {
   AiFillGithub,
 
@@ -82,10 +83,18 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
+                <a
+                  href="https://t.me/alielesawy"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiTelegram />
+                </a>
               </li>
             </ul>
           </Col>

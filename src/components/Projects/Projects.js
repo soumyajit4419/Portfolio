@@ -47,7 +47,7 @@ function Projects() {
               isBlog={false}
               title="Paint App"
               description="JAVA AND JAVAFX FOR PAINT APP."
-              //ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              //ghLink="https://github.com/alieslesawy/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>

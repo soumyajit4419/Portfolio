@@ -5,6 +5,8 @@ import {
   
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiWhatsapp , SiTelegram } from "react-icons/si";
+import logo from "../Assets/logo.png";
 
 function Footer() {
   let date = new Date();
@@ -13,10 +15,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3> Ali Esmail </h3>
+          <img src={logo} className="img-fluid logo" alt="brand" />
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
+          <h3>Copyright <b className="purple"> Ali Esmail </b> © {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -41,7 +43,26 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-           
+           <li className="social-icons">
+              <a
+                href="https://t.me/alielesawy"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiTelegram />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://wa.me/01555344220"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiWhatsapp />
+              </a>
+            </li>
           </ul>
         </Col>
       </Row>
