@@ -3,7 +3,7 @@
 
 - The resource code from [**Soumyajit Behera**](https://github.com/soumyajit4419)
 - I Just customiz , build and deploy with Alibab Cloud Service
-- Visit the website [Here](https://www.aliesmail.tech/))
+- Visit the website [Here](https://www.aliesmail.tech/)
   
 ## Built With
 
