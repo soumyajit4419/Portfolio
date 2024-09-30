@@ -483,6 +483,12 @@ button:focus {
   box-shadow: 0 4px 4px 5px var(--theme-color-200) !important;
 }
 
+.project-card-list-item {
+  background-color: transparent !important;
+  color: white !important;
+  border: 0 !important;
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;

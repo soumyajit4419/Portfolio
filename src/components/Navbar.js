@@ -4,10 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
 import {
   AiOutlineLaptop,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 
@@ -63,13 +61,26 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/portfolio"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineLaptop
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Portfolio
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/media"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineLaptop
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Media
               </Nav.Link>
             </Nav.Item>
 

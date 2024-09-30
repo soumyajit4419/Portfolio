@@ -2,33 +2,33 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
+import { FaYoutube } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa";
 
-function ProjectCards(props) {
+import YoutubeButton from "./YoutubeButton/YoutubeButton";
+import SpotifyButton from "./SpotifyButton/SpotifyButton";
+
+function MediaCard(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title><b>{props.title}</b></Card.Title>
-        <Card.Text>
-          {props.description}
-        </Card.Text>
       </Card.Body>
-      <ListGroup>
-        <ListGroup.Item className="project-card-list-item"><b>Role:</b> {props.role}</ListGroup.Item>
-      </ListGroup>
       <Card.Footer>
-        <Button
+        <YoutubeButton></YoutubeButton>
+        <SpotifyButton></SpotifyButton>
+        {/* <Button
           variant="primary"
           href={props.demoLink}
           target="_blank"
           style={{ marginLeft: "10px" }}
         >
-          <CgWebsite /> &nbsp;
-          {"Link"}
-        </Button>
+          <FaSpotify /> &nbsp;
+          {"Spotify"}
+        </Button> */}
       </Card.Footer>
     </Card>
   );
 }
-export default ProjectCards;
+export default MediaCard;
