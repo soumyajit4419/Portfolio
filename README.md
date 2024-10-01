@@ -1,76 +1,74 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
+# Portfolio Website - v3.0
+
+## [View Live Demo](https://saad-bhatti.github.io/soumyajit4419Portfolio/)
+
+<!-- Demo Image -->
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./images/readme.png" />
 </div>
 
-<br/>
-
+<!-- Badges -->
 <center>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+  [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+  [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
+  [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
+  ![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+  ![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
 
 </center>
 
+<!-- Action buttons -->
 <h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
+  <a href="https://github.com/saad-bhatti/soumyajit4419Portfolio/issues">Report a Bug</a>
+  🔹
+  <a href="https://github.com/saad-bhatti/soumyajit4419Portfolio/issues">Request a New Feature</a>
 </h3>
 
-## TL;DR
+## Overview
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+This repository provides a fully customizable template for building personal portfolio websites. It includes a sleek, multi-page layout showcasing projects, technical skills, and more. The template is designed with React.js, making it easy for developers to adapt it to their own portfolios.
+
+Whether you're a developer, designer, or anyone needing an online portfolio, this template offers a responsive and visually appealing foundation to highlight your work and skills.
 
 ## Built With
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+This portfolio template is built using modern web technologies, ensuring scalability, performance, and ease of customization. Below are the key technologies used:
 
-This project was built using these technologies.
-
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+- **React.js**: A JavaScript library for building user interfaces.
+- **CSS3**: For styling the portfolio with custom themes.
+- **React-Bootstrap**: A library for responsive, reusable components.
+- **GitHub Pages**: For hosting and deploying the portfolio.
+- **GitHub Actions**: For automating tasks like testing and deployment.
+- **Jest**: JavaScript testing framework for ensuring code quality.
+- **Code Climate**: For maintaining code quality and test coverage.
 
 ## Features
 
-**📖 Multi-Page Layout**
+This portfolio template includes several useful features to help you showcase your work effectively:
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+- **📖 Multi-Page Layout**: Clean and well-structured pages for showcasing your projects, resume, and contact information.
+- **🎨 Easy Customization**: Built with React-Bootstrap and CSS, allowing users to easily change colors, styles, and layout.
+- **📱 Fully Responsive**: Optimized for different devices, including mobile, tablet, and desktop.
+- **✉️ Contact Form**: A functional contact form allowing visitors to reach out directly via email.
+- **🚀 Fast and Lightweight**: Built with performance in mind, ensuring fast load times.
+- **✅ Tested with Jest**: Comes with unit tests to ensure code quality.
+- **🌐 Easy Deployment**: Quickly deploy your portfolio to GitHub Pages for free hosting with minimal configuration.
 
-**📱 Fully Responsive**
+## Documentation
 
-## Getting Started
+This repository includes additional guides to help you set up and customize the portfolio to your needs. You can find the detailed documentation in the `docs/` folder, including:
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+- **Installation and Setup Guide**: Step-by-step instructions for cloning, installing, and running the application locally.
+- **File Structure**: Detailed explanation of the project’s file organization and how to navigate the codebase.
+- **Customization Guide**: A comprehensive guide on how to modify the template to match your personal style and content.
 
-## 🛠 Installation and Setup Instructions
+Check the `docs/` folder for all necessary details!
 
-1. Installation: `npm install`
+## Show your support
 
-2. In the project directory, you can run: `npm start`
+If you enjoy using this template, please consider giving it a ⭐ to show your support!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+You can also buy me a coffee if you'd like to support the work:
 
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="80px" width="320px" ></a>

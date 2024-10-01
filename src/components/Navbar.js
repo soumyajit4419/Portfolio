@@ -1,122 +1,98 @@
-import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import React, { useEffect, useState } from 'react'
+import { Button, Container, Nav, Navbar } from 'react-bootstrap'
+import { AiFillStar } from 'react-icons/ai'
+import { CgGitFork } from 'react-icons/cg'
+import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
+import navBarItems from '../data/navBarItems.js'
+import '../styles/NavBar.css'
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [expand, updateExpanded] = useState(false)
+  const [navColour, updateNavbar] = useState(false)
 
+  /* Scroll handler to update the navbar when user scrolls */
   function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
+    updateNavbar(window.scrollY >= 20)
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  /* Add scroll event listener */
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandler)
+    return () => {
+      window.removeEventListener('scroll', scrollHandler)
+    }
+  }, [])
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={navColour ? 'sticky' : 'navbar'}
+      data-testid="navbar"
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
+        {/* Home icon */}
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className="d-flex"
+          children={<img src={logo} className="img-fluid logo" alt="brand" />}
+          data-testid="navbar-brand"
+        />
+
+        {/* Toggle for mobile view */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
-            updateExpanded(expand ? false : "expanded");
+            updateExpanded(!expand)
           }}
+          data-testid="navbar-toggle"
         >
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
+
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          data-testid="navbar-collapse"
+        >
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+            {/* Navbar items */}
+            {navBarItems.map((item, index) => (
+              <Nav.Item key={index}>
+                <Nav.Link
+                  as={item.isExternalLink ? 'a' : Link}
+                  to={item.to}
+                  href={item.to}
+                  target={item.isExternalLink ? '_blank' : ''}
+                  onClick={() => updateExpanded(false)}
+                  data-testid={`navbar-link-${item.text}`}
+                >
+                  {item.icon} {item.text}
+                </Nav.Link>
+              </Nav.Item>
+            ))}
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
+            {/* Fork button */}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://saad-bhatti.github.io/soumyajit4419Portfolio/"
                 target="_blank"
                 className="fork-btn-inner"
+                data-testid="fork-link"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: '1.2em' }} />{' '}
+                <AiFillStar style={{ fontSize: '1.1em' }} />
               </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar
