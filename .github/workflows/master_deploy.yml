@@ -1,8 +1,8 @@
-name: MainDeploy
+name: MasterDeploy
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy_to_gh_pages:
     runs-on: ubuntu-latest
