@@ -1,6 +1,7 @@
 {
+  "homepage": "https://saad-bhatti.github.io/soumyajit4419Portfolio",
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "bootstrap": "^5.1.3",
+    "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.1",
     "react-dom": "^17.0.2",
@@ -25,8 +27,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "CI=true react-scripts test --watchAll=false --runInBand --detectOpenHandles --forceExit",
+    "eject": "react-scripts eject",
+    "format": "prettier --config .prettierrc --write \"src/**/*.{js,jsx,json,css,html,md}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.3.3"
   }
 }

@@ -1,0 +1,38 @@
+name: MainDeploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy_to_gh_pages:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      # Step 1: Checkout the repository using the latest version
+      - uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js using the latest version
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # Step 3: Install dependencies
+      - name: Install Packages
+        run: npm install
+
+      # Step 4: Run Tests
+      - name: Run Tests
+        run: npm test -- --coverage
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email ${{secrets.EMAIL}}
+          git config --global user.name ${{secrets.USERNAME}}
+          git remote set-url origin https://${{secrets.PERSONAL_TOKEN}}@github.com/${{secrets.USERNAME}}/soumyajit4419Portfolio.git
+          npm run deploy

@@ -1,0 +1,32 @@
+name: CodeClimateTests
+on: pull_request
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository using the latest version
+      - uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js using the latest version
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Set up Code Climate's Test Reporter
+      - name: Setup Code Climate Reporter
+        uses: remarkablemark/setup-codeclimate@v2
+
+      # Step 5: Run Tests and Upload Coverage to Code Climate
+      - name: Run Tests and Upload Coverage
+        run: |
+          cc-test-reporter before-build
+          npm test -- --coverage
+          cc-test-reporter after-build --exit-code $? --coverage-input-type lcov --prefix .
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}

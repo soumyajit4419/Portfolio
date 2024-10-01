@@ -1,0 +1,39 @@
+.contact-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+/*************************/
+/* ContactForm component */
+/*************************/
+.form-section {
+  display: flex !important;
+  flex-direction: column !important;
+  margin: 15px 0 !important;
+}
+
+.form-label {
+  font-weight: bold !important;
+  align-self: flex-start !important;
+  margin-bottom: 10px !important;
+}
+
+.toast-custom-success {
+  color: #fff !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+
+/********************************/
+/* AlternativeContact component */
+/********************************/
+.social-icons-container {
+  justify-content: center !important;
+  padding-top: 15px !important;
+  display: inline-block !important;
+  position: relative !important;
+  padding-inline-start: 0 !important;
+}
