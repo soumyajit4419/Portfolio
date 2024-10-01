@@ -18,15 +18,6 @@ function MediaCard(props) {
       <Card.Footer>
         <YoutubeButton></YoutubeButton>
         <SpotifyButton></SpotifyButton>
-        {/* <Button
-          variant="primary"
-          href={props.demoLink}
-          target="_blank"
-          style={{ marginLeft: "10px" }}
-        >
-          <FaSpotify /> &nbsp;
-          {"Spotify"}
-        </Button> */}
       </Card.Footer>
     </Card>
   );

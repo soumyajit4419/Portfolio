@@ -9,7 +9,7 @@ function YoutubeButton(props) {
   return (
     <Button
       variant="youtube"
-      href={''}
+      href={'https://www.youtube.com/'}
       target="_blank"
       style={{ marginLeft: "10px" }}
     >

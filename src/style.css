@@ -17,6 +17,11 @@ html {
   --theme-color-400: #0F1035;
   --theme-color-500: #010218;
   --imp-text-color: var(--theme-color-200);
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 .highlighted-text {
@@ -267,6 +272,7 @@ button:focus {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  height: 100vh;
 }
 
 .home-content {
@@ -452,6 +458,18 @@ button:focus {
 .blockquote-footer {
   color: #a588c0 !important;
 }
+
+/* --------- */
+/* Media */
+/* --------- */
+.media-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  height: 100vh;
+}
+
 /* --------- */
 /* Projects */
 /* --------- */
