@@ -16,8 +16,8 @@ function MediaCard(props) {
         <Card.Title><b>{props.title}</b></Card.Title>
       </Card.Body>
       <Card.Footer>
-        <YoutubeButton></YoutubeButton>
-        <SpotifyButton></SpotifyButton>
+        <YoutubeButton href={props.youtubeLink}></YoutubeButton>
+        <SpotifyButton href={props.spotifyLink}></SpotifyButton>
       </Card.Footer>
     </Card>
   );

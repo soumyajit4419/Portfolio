@@ -9,7 +9,7 @@ function SpotifyButton(props) {
   return (
     <Button
       variant="spotify"
-      href={''}
+      href={props.href}
       target="_blank"
       style={{ marginLeft: "10px" }}
     >

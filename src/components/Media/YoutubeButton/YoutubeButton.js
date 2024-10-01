@@ -4,12 +4,11 @@ import { FaYoutube } from "react-icons/fa";
 
 import "./YoutubeButton.css";
 
-
 function YoutubeButton(props) {
   return (
     <Button
       variant="youtube"
-      href={'https://www.youtube.com/'}
+      href={props.href}
       target="_blank"
       style={{ marginLeft: "10px" }}
     >
