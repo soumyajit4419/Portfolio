@@ -1,9 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import ListGroup from 'react-bootstrap/ListGroup';
-import Button from "react-bootstrap/Button";
-import { FaYoutube } from "react-icons/fa";
-import { FaSpotify } from "react-icons/fa";
 
 import YoutubeButton from "./YoutubeButton/YoutubeButton";
 import SpotifyButton from "./SpotifyButton/SpotifyButton";
