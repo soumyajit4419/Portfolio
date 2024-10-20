@@ -18,6 +18,22 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.returnMemorialBTN {
+  background-color: #c770f0; /* Color de fondo morado */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor a puntero */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.returnMemorialBTN:hover {
+  background-color: #b260d5; /* Color de fondo al pasar el mouse (opcional) */
+}
+
+
 button:focus {
   box-shadow: none !important;
 }
