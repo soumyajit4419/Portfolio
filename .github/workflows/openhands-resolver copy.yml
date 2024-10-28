@@ -1,0 +1,19 @@
+name: Resolve Issues with OpenHands
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  call-openhands-resolver:
+    uses: All-Hands-AI/openhands-resolver/.github/workflows/openhands-resolver.yml@main
+    if: github.event.label.name == 'fix-me'
+    with:
+      issue_number: ${{ github.event.issue.number }}
+    secrets:
+      PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      PAT_USERNAME: ${{ secrets.PAT_USERNAME }}
+
+      LLM_MODEL: ${{ secrets.LLM_MODEL }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
