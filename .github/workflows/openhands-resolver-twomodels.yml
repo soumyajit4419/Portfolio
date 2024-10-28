@@ -39,6 +39,20 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Debug Secrets
+        run: |
+          echo "MODEL_LIST: ${{ secrets.MODEL_LIST }}"
+          echo "API_KEY_LIST: ${{ secrets.API_KEY_LIST }}"
+      
+      - name: Parse Models with jq
+        run: |
+          echo "Parsing MODEL_LIST and API_KEY_LIST"
+          MODELS=$(echo "${{ secrets.MODEL_LIST }}" | jq -r '.[]') || echo "Parsing failed" && exit 1
+          API_KEYS=$(echo "${{ secrets.API_KEY_LIST }}" | jq -r '.[]') || echo "Parsing failed" && exit 1
+          echo "Parsed Models: ${MODELS[@]}"
+          echo "Parsed API Keys: ${API_KEYS[@]}"
+
+
       - name: Parse and Select Models
         id: select_models
         run: |
@@ -81,7 +95,7 @@ jobs:
       - name: Check resolution result for Model 1
         id: check_result_model_1
         run: |
-          if cd /tmp && grep -q '"success":true' output/output.jsonl; then
+          if cd /tmp && grep -q '"success":true' output/output_model_1.jsonl; then
             echo "RESOLUTION_SUCCESS_MODEL_1=true" >> $GITHUB_OUTPUT
           else
             echo "RESOLUTION_SUCCESS_MODEL_1=false" >> $GITHUB_OUTPUT
@@ -119,7 +133,7 @@ jobs:
       - name: Check resolution result for Model 2
         id: check_result_model_2
         run: |
-          if cd /tmp && grep -q '"success":true' output/output.jsonl; then
+          if cd /tmp && grep -q '"success":true' output/output_model_2.jsonl; then
             echo "RESOLUTION_SUCCESS_MODEL_2=true" >> $GITHUB_OUTPUT
           else
             echo "RESOLUTION_SUCCESS_MODEL_2=false" >> $GITHUB_OUTPUT
