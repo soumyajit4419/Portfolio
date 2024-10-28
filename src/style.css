@@ -1,3 +1,6 @@
+body {
+  background-color: orange !important;
+}
 html {
   --section-background-color: linear-gradient(
     to bottom left,
