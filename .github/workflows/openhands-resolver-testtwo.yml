@@ -1,23 +1,6 @@
 name: Auto-Fix Tagged Issues with OpenHands
 
 on:
-  workflow_call:
-    inputs:
-      issue_number:
-        required: true
-        type: number
-    secrets:
-      MODEL_LIST:
-        required: true # JSON string list of models
-      API_KEY_LIST:
-        required: true # JSON string list of corresponding API keys
-      LLM_BASE_URL:
-        required: false
-      PAT_TOKEN:
-        required: true
-      PAT_USERNAME:
-        required: true
-
   issues:
     types: [labeled]
 
@@ -28,7 +11,7 @@ permissions:
 
 jobs:
   auto-fix:
-    if: github.event_name == 'workflow_call' || github.event.label.name == 'fix-me-twomodel'
+    if: github.event.label.name == 'fix-me-twomodel'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -60,7 +43,7 @@ jobs:
           echo "API_KEY_2=$SELECTED_API_KEY_2" >> $GITHUB_ENV
 
       - name: Set issue number
-        run: echo "ISSUE_NUMBER=${{ github.event.issue.number || inputs.issue_number }}" >> $GITHUB_ENV
+        run: echo "ISSUE_NUMBER=${{ github.event.issue.number }}" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: |
