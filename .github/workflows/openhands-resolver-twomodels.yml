@@ -47,9 +47,9 @@ jobs:
       - name: Parse Models with jq
         run: |
           echo "Parsing MODEL_LIST and API_KEY_LIST"
-          MODELS=$(echo "${{ secrets.MODEL_LIST }}" | jq -r '.[]') || echo "Parsing failed" && exit 1
-          API_KEYS=$(echo "${{ secrets.API_KEY_LIST }}" | jq -r '.[]') || echo "Parsing failed" && exit 1
+          MODELS=$(echo "${{ secrets.MODEL_LIST }}" | jq -r '.[]') || echo "MODELS Parsing failed" && exit 1
           echo "Parsed Models: ${MODELS[@]}"
+          API_KEYS=$(echo "${{ secrets.API_KEY_LIST }}" | jq -r '.[]') || echo "API_KEYS Parsing failed" && exit 1
           echo "Parsed API Keys: ${API_KEYS[@]}"
 
 
