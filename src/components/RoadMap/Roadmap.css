@@ -70,3 +70,16 @@
     transform: scale(1); /* Regresa a 100% */
   }
 }
+
+
+
+
+/* Roadmap.css */
+
+
+/* Oculta las imágenes si el ancho de la pantalla es menor a 768px (típico en móviles) */
+@media (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

@@ -84,11 +84,63 @@ function Roadmap() {
         const nextPage = (currentOffset + 1) % 4; // Cambia 4 por el número total de páginas
         parallax.current.scrollTo(nextPage);
       }
-    }, 8000); // 5000 ms = 5 segundos
+    }, 100000); // 5000 ms = 5 segundos
   
     // Limpieza del intervalo cuando el componente se desmonta
     return () => clearInterval(scrollInterval);
   }, []);
+
+
+  const [styleEdificio, setStyleEdificio] = useState({
+    width: '50%',
+    marginLeft: '50%',
+    marginTop: '8%',
+    opacity: 1,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 480) {
+        // Oculta la imagen en pantallas menores a 480px
+        setStyleEdificio({
+          display: 'none',
+        });
+      } else if (window.innerWidth <= 1923 && window.innerWidth > 1200) {
+        setStyleEdificio({
+          width: '40%',
+          marginLeft: '45%',
+          marginTop: '10%',
+          opacity: 1,
+        });
+      } else if (window.innerWidth <= 1200 && window.innerWidth > 768) {
+        setStyleEdificio({
+          width: '30%',
+          marginLeft: '40%',
+          marginTop: '12%',
+          opacity: 1,
+        });
+      } else if (window.innerWidth <= 768) {
+        setStyleEdificio({
+          width: '80%',
+          marginLeft: '10%',
+          marginTop: '60%',
+          opacity: 1,
+        });
+      } else {
+        setStyleEdificio({
+          width: '50%',
+          marginLeft: '50%',
+          marginTop: '8%',
+          opacity: 1,
+        });
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Ejecuta al montar el componente
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
   return (
     <div className='containerParallax'>
@@ -151,13 +203,13 @@ function Roadmap() {
                   src={LogoMuertos}
                   alt="home pic"
                   className="wave"
-                  style={{ maxHeight: "350px" }}
+                  style={{ width: "100%" }}
                 />
               </Col>
             </Row>
-            <Row style={{width: '30vw'}}> {deploy && (
+            <div className='contador'> {deploy && (
                     <TiempoRestante />
-            )}</Row>
+            )}</div>
           </Container>
         </ParallaxLayer>
 
@@ -177,28 +229,24 @@ function Roadmap() {
           <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '75%' }} alt="Cloud" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.2} style={{ opacity: 1 }}>
-          <img src={camino} style={{ width: '100%', marginTop: '64%' }} alt="Cloud" />
+        <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 1 }}>
+          <img src={camino} className='hide-on-mobile' style={{ width: '100vw', marginTop: '10vh' }} alt="Cloud" />
         </ParallaxLayer>
         {/** rreemplazar estas pr los arboles */}
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 1 }}>
-          <img src={arbol1} style={{ width: '7%', marginLeft: '-70%', marginTop: '-3%', opacity: 0.65}} alt="Cloud" />
+          <img src={arbol1} className='hide-on-mobile' style={{ width: '7%', marginLeft: '-70%', marginTop: '-3%', opacity: 0.65}} alt="Cloud" />
         </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.2} style={{ opacity: 0.9 }}>
-          <img src={arbol3} style={{width: '12%', marginLeft: '-90%', marginTop: '32%', opacity: 1}} alt="Cloud" />
+          <img src={arbol3} className='hide-on-mobile' style={{width: '12%', marginLeft: '-90%', marginTop: '32%', opacity: 1}} alt="Cloud" />
         </ParallaxLayer>
         
         <ParallaxLayer offset={1} speed={0.6} style={{ opacity: 1 }}>
-          <img src={arbol2} style={{width: '14%', marginLeft: '-45%', marginTop: '29%', opacity: 1}} alt="Cloud" />
+          <img src={arbol2} className='hide-on-mobile' style={{width: '14%', marginLeft: '-45%', marginTop: '29%', opacity: 1}} alt="Cloud" />
         </ParallaxLayer>
 
 
         <ParallaxLayer offset={1.3} speed={0.3} style={{ pointerEvents: 'none' }}>
-          <img src={posgrado} style={{ 
-            width: '50%', 
-            marginLeft: '50%',
-            marginTop: '8%',
-            opacity: 1 }} alt="Satellite" />
+          <img src={posgrado} className='edificio' style={styleEdificio} alt="Satellite" />
         </ParallaxLayer>
 
         {/* VISITA EL ALTAR */}
