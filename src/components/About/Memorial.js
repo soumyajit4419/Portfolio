@@ -7,6 +7,8 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
+import covid from "../../Assets/covid.png";
+
 function MemorialPage() {
   return (
     <Container fluid className="about-section">
@@ -28,16 +30,17 @@ function MemorialPage() {
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "90px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={covid} alt="about" className="img-fluid" />
           </Col>
         </Row>
         
         <h1 className="project-heading">
-          <strong className="purple">Explora</strong> los testimonios de quienes enfrentaron la pandemia
+          <strong className="purple">Explora</strong> las diferentes comunidades duronte la pandemia
         </h1>
+        <br />
         <Toolstack />
 
        

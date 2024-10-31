@@ -565,36 +565,75 @@ button:focus {
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
-
 .tech-icons {
-  font-size: 4.5em !important;
+  font-size: 4em !important;
   margin: 15px !important;
-  padding: 10px !important;
+  padding: 20px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  vertical-align: middle !important;
+  border: 1.7px solid rgba(255, 255, 255, 0.116) !important;
   text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  border-radius: 20% !important; /* Mantiene la forma redondeada */
+  display: inline-block !important;
+  width: 200px !important; /* Ajusta el tamaño */
+  height: 200px !important; /* Ajusta el tamaño */
+  line-height: 90px !important; /* Centra verticalmente el icono */
+ 
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
-}
+  cursor: pointer;
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
+  /* Agregar fondo translúcido y blur */
+  background: rgba(255, 255, 255, 0.055); /* Fondo translúcido */
+  backdrop-filter: blur(10px); /* Efecto de blur en el fondo */
+  -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
 }
 
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  background-color: #801f95;
+  border: 2.2px solid rgba(238, 98, 5, 0.883) !important;
+  color: rgb(238, 96, 14);
+  
 }
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+
+
+.icon-text {
+  margin-top: -10px !important;
+  font-size: 0.3em !important;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 100;
+}
+
+.icon-image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+    width: 100px !important;
+    height: 100px !important;
+    line-height: 70px !important;
+    font-size: 2.5em !important;
+  }
+  .icon-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+  }
+
+  .icon-text {
+    display: none !important;
+  }
+}
+
+.btn:hover{
+  cursor: pointer;
 }
 
 .quote-card-view {
@@ -756,4 +795,154 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+
+
+/* --------- */
+.Container-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ce410000;
+  background-image: url('https://www.transparenttextures.com/patterns/skulls.png'); /* Ejemplo de patrón de calaveras */
+  background-size: 220px 220px; /* Tamaño de las calaveras */
+  background-repeat: repeat; /* Repetir el patrón */
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.nickname-section,
+.score-section,
+.question-section {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-form {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #8500b9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-form:hover {
+  background-color: #530268;;
+}
+
+.timer {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.question-count {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer-button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #8500b9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
+}
+.answer-button:active{
+  scale: 0.9;
+}
+
+.answer-button:hover {
+  background-color: #8500b9;
+  color: white;
+}
+
+.answer-button.selected {
+  background-color: #8500b9;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .answer-button {
+    width: 100%;
+  }
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 1s linear; /* Transición lineal de 1 segundo */
+  border-radius: 8px;
+}
+
+.score-section button {
+  background-color: #3e98c7; /* Color del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+.score-section button:hover {
+  background-color: #2a7b99; /* Color del botón al pasar el mouse */
 }

@@ -1,0 +1,72 @@
+.containerParallax{
+  background-color: rgb(39, 4, 59);
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* styles.css */
+@keyframes slideIn {
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-top: -8%;
+  }
+}
+
+.img-slide-in {
+  animation: slideIn 1s ease forwards; /* Duración de 1 segundo */
+}
+
+
+/* styles timer */
+/* styles timer */
+.countdown-timer {
+  width: auto;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 204, 0, 0.8); /* Color dorado */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.time-unit {
+  margin: 0 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: purple; /* Color de texto vibrante */
+  position: relative; /* Posicionamiento relativo para el efecto */
+  overflow: hidden; /* Para ocultar el contenido que sale del área */
+}
+
+.time-unit span {
+  display: block;
+  font-size: 0.5em; /* Tamaño del texto para las etiquetas */
+  color: rgba(0, 0, 0, 0.6); /* Color más claro para las etiquetas */
+}
+
+.appear {
+  animation: bounce 0.4s forwards; /* Duración de la animación ajustada a 0.5s */
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0; /* Comienza invisible */
+    transform: scale(0); /* Comienza escalado a 0 */
+  }
+  50% {
+    opacity: 1; /* Se vuelve completamente visible */
+    transform: scale(1.2); /* Escala a 120% para el efecto de rebote */
+  }
+  70% {
+    transform: scale(0.9); /* Rebote a 90% */
+  }
+  100% {
+    transform: scale(1); /* Regresa a 100% */
+  }
+}

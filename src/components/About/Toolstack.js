@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -9,6 +8,12 @@ import {
   SiVercel,
   SiMacos,
 } from "react-icons/si";
+
+import { MdOutlineScience } from "react-icons/md";
+import { GiHealthNormal } from "react-icons/gi";
+import { FaPersonCirclePlus } from "react-icons/fa6";
+import { MdOutlineSick } from "react-icons/md";
+import { ImEarth } from "react-icons/im";
 
 function Toolstack() {
   const navigate = useNavigate();
@@ -25,28 +30,33 @@ function Toolstack() {
   const handlePacientes = () => {
     navigate("/memorial/pacientes");
   };
-  const handlePlaneta= () => {
+  const handlePlaneta = () => {
     navigate("/memorial/planeta");
   };
 
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons" onClick={handleCientificos}>
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode onClick={handleMedicos}/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman onClick={handleVoluntarios}/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack onClick={handlePacientes}/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel onClick={handlePlaneta}/>
-      </Col>
-    </Row>
+    <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", paddingBottom: "50px" }}>
+      <div className="tech-icons" onClick={handleCientificos}>
+        <MdOutlineScience className="icon-image" />
+        <p className="icon-text">Científicos</p>
+      </div>
+      <div className="tech-icons" onClick={handleMedicos}>
+        <GiHealthNormal className="icon-image" />
+        <p className="icon-text">Médicos</p>
+      </div>
+      <div className="tech-icons" onClick={handleVoluntarios}>
+        <FaPersonCirclePlus className="icon-image" />
+        <p className="icon-text">Voluntarios</p>
+      </div>
+      <div className="tech-icons" onClick={handlePacientes}>
+        <MdOutlineSick className="icon-image" />
+        <p className="icon-text">Pacientes</p>
+      </div>
+      <div className="tech-icons" onClick={handlePlaneta}>
+        <ImEarth className="icon-image" />
+        <p className="icon-text">Planeta</p>
+      </div>
+    </div>
   );
 }
 

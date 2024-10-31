@@ -3,9 +3,9 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import MemorialPage from "./components/About/Memorial";
-import Projects from "./components/Projects/Projects";
+import Quiz from "./components/Quiz/Quiz";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+import TopScorePage from "./components/TopScore/TopScorePage";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,6 +22,12 @@ import TestimonioSalud from "./components/About/Salud/PersonalSalud";
 import TestimonioVoluntarios from "./components/About/Voluntarios/Voluntarios";
 import TestimonioPacientes from "./components/About/Pacientes/Pacientes";
 import TestimonioPlaneta from "./components/About/Planeta/Planeta";
+
+import Roadmap from "./components/RoadMap/Roadmap";
+
+import Game from "./components/Quiz/Game";
+
+import TiempoRestante from "./components/timer/Timer";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -41,10 +47,10 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Roadmap />} />
           <Route path="/memorial" element={<MemorialPage />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/resume" element={<TopScorePage />} />
           <Route path="*" element={<Navigate to="/"/>} />
 
           <Route path="/memorial/cientificos" element={<TestimonioCientificos />} />
@@ -52,6 +58,12 @@ function App() {
           <Route path="/memorial/voluntarios" element={<TestimonioVoluntarios />} />
           <Route path="/memorial/pacientes" element={<TestimonioPacientes />} />
           <Route path="/memorial/planeta" element={<TestimonioPlaneta />} />
+
+          <Route path="/roadmap" element={<Roadmap />} />
+
+          <Route path="/quiz/game" element={<Game />} />
+
+          <Route path="/timer" element={<TiempoRestante />} />
 
 
         </Routes>
