@@ -1,0 +1,60 @@
+.list-group {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .list-group-item {
+    background-color: rgb(238, 238, 238); /* Fondo semi-transparente */
+    border: 1px solid #ffb6c1; /* Bordes suaves */
+    border-radius: 10px;
+    color: #ffe5b4; /* Color de texto alusivo */
+    font-family: 'Caveat', cursive; /* Tipografía decorativa */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Espacio entre elementos */
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .list-group-item:hover {
+    color: aliceblue;
+    background-color: rgba(128, 11, 224, 0.856); /* Fondo más claro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala */
+  }
+  
+  .icon {
+    font-size: 1.5rem; /* Tamaño del ícono */
+    margin-right: 15px; /* Espacio entre ícono y texto */
+  }
+  
+  .trophy-gold {
+    color: #ffd700; /* Oro */
+  }
+  
+  .trophy-silver {
+    color: #c0c0c0; /* Plata */
+  }
+  
+  .trophy-bronze {
+    color: #cd7f32; /* Bronce */
+  }
+  
+  .play-button {
+    background-color: #ff6347; /* Color alusivo (rojo vibrante) */
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+  }
+  
+  .play-button:hover {
+    background-color: #ffa07a;
+    transform: scale(1.1);
+  }
+  

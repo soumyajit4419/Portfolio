@@ -3,7 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import Home3 from "./Home3";
 import Type from "./Type";
+import LogoMuertos from "../../Assets/logoDia.png";
 
 function Home() {
   return (
@@ -14,15 +16,15 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                ¡Welcome!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                💀
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                ALTAR DE
+                <strong className="main-name"> MUERTOS</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -32,16 +34,18 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={LogoMuertos}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                className="wave"
+                style={{ maxHeight: "350px" }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
       <Home2 />
+      <Home3 />
+      
     </section>
   );
 }

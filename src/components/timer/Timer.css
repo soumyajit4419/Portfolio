@@ -1,0 +1,47 @@
+/* Timer.css */
+
+.timer-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.timer-header {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.timer-value {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.timer-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-segment p {
+    margin: 5px 0;
+}
+
+.timer-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+  

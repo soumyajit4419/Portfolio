@@ -1,0 +1,99 @@
+{
+  "questions": [
+    {
+      "question": "¿Quién formuló las leyes del movimiento y la ley de gravitación universal?",
+      "options": ["Galileo Galilei", "James Clerk Maxwell", "Isaac Newton", "Albert Einstein"],
+      "correct_answer": "Isaac Newton",
+      "score": 10
+    },
+    {
+      "question": "¿Cuál de estos científicos es conocido por proponer la teoría de la evolución por selección natural?",
+      "options": ["Charles Darwin", "Marie Curie", "Stephen Hawking", "Johannes Kepler"],
+      "correct_answer": "Charles Darwin",
+      "score": 10
+    },
+    {
+      "question": "Marie Curie fue la primera persona en recibir dos premios Nobel en campos diferentes.",
+      "options": ["Verdadero", "Falso"],
+      "correct_answer": "Verdadero",
+      "score": 10
+    },
+    {
+      "question": "¿Qué científico descubrió las lunas de Júpiter y los anillos de Saturno?",
+      "options": ["James Clerk Maxwell", "Galileo Galilei", "Johannes Kepler", "Stephen Hawking"],
+      "correct_answer": "Galileo Galilei",
+      "score": 10
+    },
+    {
+      "question": "¿Cuál es el legado principal de las leyes de Kepler?",
+      "options": [
+        "La consolidación del método científico",
+        "El establecimiento de las bases para la teoría de la gravedad de Newton",
+        "La introducción de la teoría de la relatividad",
+        "La formulación de la teoría del electromagnetismo"
+      ],
+      "correct_answer": "El establecimiento de las bases para la teoría de la gravedad de Newton",
+      "score": 10
+    },
+    {
+      "question": "¿Qué científico formuló las ecuaciones que unificaron la electricidad, el magnetismo y la luz?",
+      "options": ["Isaac Newton", "James Clerk Maxwell", "Albert Einstein", "Marie Curie"],
+      "correct_answer": "James Clerk Maxwell",
+      "score": 10
+    },
+    {
+      "question": "¿Qué teoría es más conocida de Albert Einstein, que revolucionó la comprensión del espacio y el tiempo?",
+      "options": ["Teoría de la evolución", "Teoría de la relatividad", "Teoría del electromagnetismo", "Teoría de la selección natural"],
+      "correct_answer": "Teoría de la relatividad",
+      "score": 10
+    },
+    {
+      "question": "La contribución de Rosalind Franklin fue clave para determinar la estructura de doble hélice del ADN.",
+      "options": ["Verdadero", "Falso"],
+      "correct_answer": "Verdadero",
+      "score": 10
+    },
+    {
+      "question": "¿Quién es conocido por desarrollar el cálculo diferencial e integral?",
+      "options": ["Galileo Galilei", "Johannes Kepler", "Isaac Newton", "James Clerk Maxwell"],
+      "correct_answer": "Isaac Newton",
+      "score": 10
+    },
+    {
+      "question": "¿Qué científico propuso que los agujeros negros emiten radiación?",
+      "options": ["Stephen Hawking", "Albert Einstein", "Marie Curie", "Charles Darwin"],
+      "correct_answer": "Stephen Hawking",
+      "score": 10
+    },
+    {
+      "question": "¿Quién es considerado el 'padre de la ciencia moderna' debido a su insistencia en la observación empírica y el método experimental?",
+      "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Johannes Kepler"],
+      "correct_answer": "Galileo Galilei",
+      "score": 10
+    },
+    {
+      "question": "Las contribuciones de Johannes Kepler ayudaron a corroborar el modelo heliocéntrico de Copérnico.",
+      "options": ["Verdadero", "Falso"],
+      "correct_answer": "Verdadero",
+      "score": 10
+    },
+    {
+      "question": "¿Qué científico trabajó en la teoría cinética de gases y la teoría del electromagnetismo?",
+      "options": ["Albert Einstein", "Charles Darwin", "James Clerk Maxwell", "Rosalind Franklin"],
+      "correct_answer": "James Clerk Maxwell",
+      "score": 10
+    },
+    {
+      "question": "¿Qué científico mejoró el telescopio y fue uno de los primeros en usarlo para observaciones astronómicas?",
+      "options": ["Stephen Hawking", "Johannes Kepler", "Galileo Galilei", "Marie Curie"],
+      "correct_answer": "Galileo Galilei",
+      "score": 10
+    },
+    {
+      "question": "La teoría de la relatividad especial y la famosa ecuación E=mc² fueron presentadas por Albert Einstein en 1905.",
+      "options": ["Verdadero", "Falso"],
+      "correct_answer": "Verdadero",
+      "score": 10
+    }
+  ]
+}
