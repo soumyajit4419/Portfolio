@@ -14,40 +14,37 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              More <span className="purple"> About </span> Me
-            </h1>
-            <p className="home-about-body">
-            I developed a strong passion for data engineering and 
-            have accumulated significant knowledge over time. 
-              <br />
-              <br />I am proficient in languages such as
-              <i>
-                <b className="purple"> Python, SQL, Java, Php and R. </b>
-              </i>
-              <br />
-              <br />
-              My areas of interest include building ,  &nbsp;
-              <i>
-                <b className="purple">robust data pipelines, implementing ETL processes</b> and
-                and working with{" "}
-                <b className="purple">
-            big data technologies.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my skills to developing data solutions using tools and frameworks like 
-              <b className="purple">Apache Spark, Hadoop,</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  cloud platforms such as AWS and Azure.
-                </b>
-              </i>
-            </p>
-          </Col>
+        <Col md={8} className="home-about-description">
+  <h1 style={{ fontSize: "2.6em" }}>
+    More <span className="purple"> About </span> Me
+  </h1>
+  <p className="home-about-body">
+    I am a passionate <b className="purple">Data Engineer</b> with a strong focus on building scalable and reliable data solutions.
+    <br />
+    <br />I am proficient in programming languages such as
+    <i>
+      <b className="purple"> Python, SQL, Java, PHP, </b> and <b className="purple">R</b>.
+    </i>
+    <br />
+    <br />
+    My key interests include designing and implementing&nbsp;
+    <i>
+      <b className="purple">ETL processes</b>, building robust&nbsp;
+      <b className="purple">data pipelines</b>, and working with&nbsp;
+      <b className="purple">big data technologies</b>.
+    </i>
+    <br />
+    <br />
+    I have hands-on experience developing data solutions using frameworks like&nbsp;
+    <b className="purple">Apache Spark</b> and <b className="purple">Hadoop</b>, as well as cloud platforms such as&nbsp;
+    <i>
+      <b className="purple">AWS</b> and <b className="purple">Azure</b>.
+    </i>
+    <br />
+    <br />
+    I enjoy solving complex data challenges and transforming raw data into valuable insights that drive decision-making.
+  </p>
+</Col>
           <Col md={4} className="myAvtar">
             <Tilt>
             <img src={myImg} className="img-fluid" alt="avatar" style={{ width: "70%", height: "70%" }} />
