@@ -5,37 +5,37 @@ import { ImPointRight } from "react-icons/im";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi I am <span className="purple">Selenge Tulga </span>
-            from <span className="purple"> Ulaanbaatar, Mongoliaå.</span>
-            <br />
-            I am currently intern as a data enginer at URMC motion lab.
-            <br />
-            I'm pursuing MS in Data Science at University of Rochester
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Cinephile
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
+     <Card.Body>
+  <blockquote className="blockquote mb-0">
+    <p style={{ textAlign: "justify" }}>
+      Hello, I’m <span className="purple">Selenge Tulga</span> from&nbsp;
+      <span className="purple">Ulaanbaatar, Mongolia</span>.
+      <br />
+      I finished my <b className="purple">Master's in Data Science</b> at the&nbsp;
+      <span className="purple">University of Rochester. </span>.
+      <br />
+      <br />
+      Beyond coding and data engineering, I am passionate about a variety of activities that enrich my creativity and perspective:
+    </p>
+    <ul>
+      <li className="about-activity">
+        <ImPointRight /> Exploring Films and Cinematic Art
+      </li>
+      <li className="about-activity">
+        <ImPointRight /> Writing Technical and Personal Blogs
+      </li>
+      <li className="about-activity">
+        <ImPointRight /> Traveling to Discover New Cultures and Ideas
+      </li>
+    </ul>
 
-          <p style={{ color: "#FDDA0D" }}>
-            "And when you want something, all the universe conspires to help you achieve it!"{" "}
-          </p>
-          <footer className="blockquote-footer"></footer>
-        </blockquote>
-      </Card.Body>
+    <p style={{ color: "#FDDA0D" }}>
+      "And when you want something, all the universe conspires to help you achieve it!"{" "}
+    </p>
+    <footer className="blockquote-footer">Paulo Coelho</footer>
+  </blockquote>
+</Card.Body>
+
     </Card>
   );
 }
