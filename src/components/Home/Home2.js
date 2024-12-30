@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> JavaScipt, React, Node JS, and TypeScript </b>
               </i>
               <br />
               <br />
@@ -33,7 +33,7 @@ function Home2() {
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  finance and helping others.
                 </b>
               </i>
               <br />
@@ -43,7 +43,7 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Learning newer modern Javascript Library and Frameworks
                 </b>
               </i>
               &nbsp; like
@@ -54,7 +54,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src="https://png.pngtree.com/png-vector/20241118/ourmid/pngtree-smiling-girl-in-hijab-sticker-art-png-image_14484922.png" className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
