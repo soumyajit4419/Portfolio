@@ -85,7 +85,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ResumeCard
               title="Justworks - Software Engineer Intern"
-              date="July - August 2023"
+              date="January 2023"
               description="Collaborated with 50+ interns to optimize data transfer to Drupal, leveraging HTML, CSS, Bootstrap, SaaS, and React to enhance accessibility, improve UI consistency, and deliver faster, inclusive solutions for 100+ clients."
             />
           </Col>

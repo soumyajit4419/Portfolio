@@ -2,24 +2,34 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import axios from "axios"; // Import axios for API calls
 
 function ContactCard(props) {
-  const [formData, setFormData] = useState({ email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState(""); // Track form submission status
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { email, message } = formData;
+    const { name, email, message } = formData;
 
-    // Replace this with your backend logic or email service
-    alert(`Message sent! Email: ${email}, Message: ${message}`);
-    
-    // Clear the form
-    setFormData({ email: "", message: "" });
+    try {
+      setStatus("Sending...");
+      const response = await axios.post("http://localhost:5000/send", { name, email, message });
+      if (response.data.status === "success") {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" }); // Clear the form
+      } else {
+        setStatus("Failed to send the message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setStatus("An error occurred. Please try again later.");
+    }
   };
 
   return (
@@ -35,6 +45,17 @@ function ContactCard(props) {
           {props.description}
         </Card.Text>
         <Form onSubmit={handleSubmit}>
+          <Form.Group className="mb-3" controlId="formName">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              required
+            />
+          </Form.Group>
           <Form.Group className="mb-3" controlId="formEmail">
             <Form.Label>Email</Form.Label>
             <Form.Control
@@ -61,6 +82,7 @@ function ContactCard(props) {
           <Button variant="primary" type="submit">
             Send Message
           </Button>
+          {status && <p style={{ marginTop: "10px", color: "white" }}>{status}</p>}
         </Form>
       </Card.Body>
     </Card>
