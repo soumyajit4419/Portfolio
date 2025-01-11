@@ -79,6 +79,19 @@ function ContactCard(props) {
               required
             />
           </Form.Group>
+          <p style={{ color: "white" }}>
+              In the meantime, feel free to reach out to me on{" "}
+              <a
+                href="https://linkedin.com/in/hafeefasultan"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+                className="purple"
+              >
+                LinkedIn
+              </a>
+              !
+            </p>
           <Button variant="primary" type="submit">
             Send Message
           </Button>
