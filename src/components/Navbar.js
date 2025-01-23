@@ -98,13 +98,13 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> Services
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/Dave-Vermeulen"
                 target="_blank"
                 className="fork-btn-inner"
               >
