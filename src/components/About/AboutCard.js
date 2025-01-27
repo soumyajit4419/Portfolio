@@ -23,17 +23,20 @@ function AboutCard() {
               <ImPointRight /> Playing with my daughter
             </li>
             <li className="about-activity">
-              <ImPointRight /> Trail Running
+              <ImPointRight /> Trail Running solo in the mountains
             </li>
             <li className="about-activity">
               <ImPointRight /> Connecting with Allah SWT
             </li>
+            <li className="about-activity">
+              <ImPointRight /> The Beach, laying in the sun, a good read and dips in the ocean.
+            </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Service to others combats the innate selfishness of man"{" "}
+            "How did it get so late so soon? It's night before it's afternoon. December is here before it's June. My goodness how the time has flewn. How did it get so late so soon?"{" "}
           </p>
-          <footer className="blockquote-footer">Dawūd</footer>
+          <footer className="blockquote-footer">Dr. Seuss </footer>
         </blockquote>
       </Card.Body>
     </Card>

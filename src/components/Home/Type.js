@@ -12,7 +12,12 @@ function Type() {
           "Open Source Contributor",
           "Father",
           "Husband",
-          "Servant of Allah SWT"
+          "Servant of Gol Al",
+          "OOP is life",
+          "Learner",
+          "Teacher",
+          "Mentor",
+          "Freelancer",
         ],
         autoStart: true,
         loop: true,

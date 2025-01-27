@@ -16,15 +16,17 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hello World!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                👋
                 </span>
               </h1>
 
               <h1 className="heading-name">
                 I'm
-                <strong className="main-name"> Dave-Vermeulen</strong>
+                <strong className="main-name"> Dawūd Vermeulen</strong>
+                <br />
+                  <span className="emoji-pallet" role="img" aria-labelledby="emoji-pallet">🌊🥑🇿🇦📿🕌👨‍👩‍👧</span>
               </h1>
-
+              
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
