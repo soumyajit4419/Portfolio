@@ -520,6 +520,7 @@ button:focus {
   color: #fff !important;
   background-color: #623686 !important;
   border-color: #623686 !important;
+  margin: 3px !important;
 }
 
 .btn-primary:hover {
