@@ -19,7 +19,7 @@ function Home2() {
               ALLOW ME TO<span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with problem solving at a young age, this coupled with a knack for breaking things has set me up to be a builder of things. I am a passionate Full Stack Developer eager to make a positive impact on the world. 
+              I fell in love with problem solving at a young age, this coupled with a knack for breaking things has set me up to be a builder. I am a passionate Full Stack Developer eager to make a positive impact on the world. 
               <br />
               <br />I am fluent in classics like
               <i>
@@ -27,12 +27,11 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's are building innovative &nbsp;
+              My field of Interests are building innovative 👷 &nbsp;
               <i>
-                <b className="purple">Tech solutions and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Tech solutions and Products, </b> a lover of user stories and following a progressive roadmap, picking the right tools to{" "}
                 <b className="purple">
-                  Blockchain.
+                get the job done.
                 </b>
               </i>
               <br />
