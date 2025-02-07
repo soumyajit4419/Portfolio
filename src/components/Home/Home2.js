@@ -19,7 +19,7 @@ function Home2() {
     More <span className="purple"> About </span> Me
   </h1>
   <p className="home-about-body">
-    I am a passionate <b className="purple">Data Engineer</b> with a strong focus on building scalable and reliable data solutions.
+    I am a<b className="purple">Data Engineer</b> with a strong focus on building scalable and reliable data solutions.
     <br />
     <br />I am proficient in programming languages such as
     <i>
@@ -36,9 +36,9 @@ function Home2() {
     <br />
     <br />
     I have hands-on experience developing data solutions using frameworks like&nbsp;
-    <b className="purple">Apache Spark</b> and <b className="purple">Hadoop</b>, as well as cloud platforms such as&nbsp;
+    <b className="purple">Apache Spark</b> and <b className="purple">Snowflake, Airflow, Databricks, dbt, Kafka, Flink</b>, as well as cloud platforms such as&nbsp;
     <i>
-      <b className="purple">AWS</b> and <b className="purple">Azure</b>.
+      <b className="purple">AWS</b> , <b className="purple">Azure</b> and <b className="purple">GCP</b>.
     </i>
     <br />
     <br />
