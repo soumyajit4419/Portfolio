@@ -8,13 +8,12 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple">Mateusz Oleksy </span>
+            from <span className="purple"> Krakow, Poland.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+             I specialize in building modern web applications and backend systems, focusing on performance and scalability.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I am currently working on e-commerce projects and real estate platforms, optimizing SEO and developing efficient backend solutions.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -24,7 +23,7 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Limited Sneakers
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling
@@ -32,9 +31,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Build things that not only work but also make a meaningful impact."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Mateusz Oleksy 🚀</footer>
         </blockquote>
       </Card.Body>
     </Card>
