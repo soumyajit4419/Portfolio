@@ -26,9 +26,9 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description="Chatify is a powerful and seamless real-time messaging application built with the MERN stack(MongoDB, Express, React, Node.js). It allows users to engage in instant, real-time chats with features that support both one-on-one conversations. The app leverages Socket.IO for live messaging and notifications, ensuring that users can communicate without delays."
+              ghLink="https://github.com/harpreetkaur7879/chat-app"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -36,10 +36,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Weather App"
+              description="Weather App is a sleek and intuitive application that provides real-time weather information, built with React, Material UI, and integrated with a weather API. Whether you're planning your day or traveling to a new location, the app gives you accurate, up-to-date weather forecasts, including current conditions, temperature, humidity, wind speed, and more."
+              ghLink="https://github.com/harpreetkaur7879/Weather-Application"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -47,10 +47,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Password Generator"
+              description="The Password Generator App allows users to generate strong, random passwords based on a specified length. The app provides a Download to Clipboard functionality to easily copy the password, ensuring it can be securely pasted wherever necessary. Built using React hooks and Tailwind CSS."
+              ghLink="https://github.com/harpreetkaur7879/Generate-Password"
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -58,10 +58,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Currency Convertor"
+              description="The Currency Converter App enables users to convert one currency to another using live exchange rates from an external API. Built with React, Tailwind CSS, and React Hooks, this app provides a seamless and intuitive user experience. It features a currency swapping functionality that allows users to easily swap between the From and To currencies with a simple click, making it convenient for quick conversions."
+              ghLink="https://github.com/harpreetkaur7879/currencyConvertor"
+            //   demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -69,9 +69,9 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Spotify Prototype"
+              description="The Spotify Clone is a user interface design that mimics the look and feel of the popular music streaming platform, Spotify. This project is created using HTML and CSS only and focuses on replicating the visual components of Spotify's app, such as the navigation bar, playlists, music controls, and album covers. It also includes a stylish custom scrollbar to enhance the user experience."
+              ghLink="https://github.com/harpreetkaur7879/SpotifyPrototype"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
@@ -80,10 +80,10 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="SimonSays Game"
+              description="The Simon Says game is a memory game where players must follow a sequence of colored lights and sounds in the correct order. The game will provide a sequence of colors and sounds, and the player must repeat that sequence. As the game progresses, the sequence gets longer and more complex. The game will be built using HTML, CSS, and JavaScript"
+            
+              ghLink="https://github.com/harpreetkaur7879/SimonSay-Game"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
