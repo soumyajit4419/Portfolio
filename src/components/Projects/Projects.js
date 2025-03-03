@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import notesApp from "../../Assets/Projects/notesApp.png";
 import emotion from "../../Assets/Projects/emotion.png";
+import justForToday from "../../Assets/Projects/justForToday.png";
 import editor from "../../Assets/Projects/codeEditor.png";
+import gmail_inbox_cleaner from "../../Assets/Projects/gmail_inbox_cleaner.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -33,29 +35,29 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={notesApp}
               isBlog={false}
               title="Notes App"
               description="A minimalistic notes app built using React, Tailwind CSS, and Firebase."
               ghLink="https://github.com/Dave-Vermeulen/Notes-App"
-              demoLink="https://quicknotes.run.place"
+              //demoLink="https://quicknotes.run.place"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={justForToday}
               isBlog={false}
               title="Just For Today"
               description="JustForToday is a revolutionary productivity app designed specifically for individuals with ADHD. We understand the challenges of managing tasks, staying focused, and maintaining a healthy routine."
               ghLink="https://github.com/Dave-Vermeulen/Just_For_Today"
-              demoLink="https://www.justfortoday.work.gd"              
+              //demoLink="https://www.justfortoday.work.gd"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={gmail_inbox_cleaner}
               isBlog={false}
               title="Gmail Inbox Cleaner"
               description="A Node.js application that helps clean up your Gmail inbox by automatically processing unread emails containing 'unsubscribe' links. It uses the Gmail API to access your inbox and the Natural Language Processing API to process the emails."
