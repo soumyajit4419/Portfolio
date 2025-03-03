@@ -25,6 +25,19 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col
+              md={4}
+              className="project-card"
+          >
+            <ProjectCard
+                imgPath={mazer}
+                title="Mazer"
+                description="A site that visualizes the algorithmic generating and solving of mazes.  Options are provided for choosing generating and solving algorithms, as well as the dimensions of the maze and the starting and finishing points for finding a solution"
+                ghLink="https://github.com/funksy/rust_mazes"
+                demoLink="https://mazer.johnlukich.me"
+            />
+          </Col>
+
+          <Col
             md={4}
             className="project-card"
           >
