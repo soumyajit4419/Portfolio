@@ -23,13 +23,13 @@ function Home2() {
               je suis à la recherche d'une opportunité professionnelle en tant que 
               <b className="purple"> développeur web</b>.
               <br />
-              <br />Mes compétences principales sont concentrées autour de
+              <br />Mes compétences principales sont axées sur
               <i>
                 <b className="purple"> PHP, Symfony et JavaScript </b>.
               </i>
               <br />
               <br />
-              Je suis toute fois toujours intéressé à l'idée d'apprendre de 
+              Toutefois, je reste toujours curieux et motivé à l'idée d'apprendre de
               <b className="purple"> nouvelles technologies</b> !
             </p>
           </Col>
