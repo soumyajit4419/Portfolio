@@ -35,13 +35,13 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card appli-card">
+          <Col md={4} className="appli-card project-card">
             <ProjectCard
               imgPath={appliScan}
               isBlog={false}
               title="Application Android de scan de code barre"
               description="Création d'une application Android permettant de scanner les codes-barres des visiteurs à l'entrée d'un salon d'exposition de machines industrielles.
-              Réalisée en 2023 dans le cadre de mon stage de deuxième année de BUT Informatique."         
+              Réalisée en 2023 dans le cadre de mon stage de deuxième année de BUT Informatique. Application uniquement utilisée en interne."         
             />
           </Col>
 

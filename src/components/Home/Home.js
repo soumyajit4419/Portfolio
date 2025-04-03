@@ -12,7 +12,7 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Bien le bonjour !{" "}
+                Bonjour et bienvenue !{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -25,8 +25,15 @@ function Home() {
 
               <h1 className="heading-name">
                 Développeur web
-                <strong className="main-name"> Full-Stack </strong>
+                <strong className="main-name"> Full-Stack</strong>.
+              
               </h1>
+
+              <br />
+              <h2 className="heading-name">
+                Vous retrouverez sur ce site mes compétences et mes projets !
+                
+              </h2>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

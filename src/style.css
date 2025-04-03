@@ -156,10 +156,10 @@ button:focus {
 }
 
 .logo {
-  /* height: 1.4em !important;
-  width: 2.5em !important; */
-  height: 15% !important;
-  width: 15% !important;
+  height: 3.4em !important;
+  width: 4.5em !important; 
+ /*  height: 15% !important;
+  width: 15% !important;*/
 }
 
 .navbar-nav .nav-link {
@@ -462,8 +462,9 @@ button:focus {
   height: auto !important;
 }
 
-.appli-card {
+.appli-card img {
   height: 50% !important;
+  width: 50% !important;
   align-self: center !important;
 }
 
