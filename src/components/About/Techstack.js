@@ -18,6 +18,7 @@ import {
   SiPostgresql,
   SiKotlin,
   SiTypescript,
+  SiTailwindcss,
 } from "react-icons/si";
 
 
@@ -32,6 +33,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="Bootstrap">
         <DiBootstrap />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Tailwind CSS">
+        <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="PHP">
         <DiPhp />

@@ -11,7 +11,7 @@ html {
     rgba(11, 57, 72, 1)
   );
 
-  --imp-text-color: #416165;
+  --imp-text-color: #181a27;
 }
 
 .purple {
@@ -32,7 +32,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #416165;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -197,7 +197,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #ACB0BD; /* navbar hover color */
+  background: #181a27; /* navbar hover color */
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -469,7 +469,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(24, 26, 39, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -479,7 +479,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(39, 42, 61, 0.561) !important;
 }
 
 .blog-card {
@@ -493,7 +493,7 @@ button:focus {
 .blog-card-view {
   background-color: transparent !important;
   box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  color: #272a3d !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -527,14 +527,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #181a27 !important;
+  border-color: #181a27 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #272a3d !important;
+  border-color: #272a3d !important;
 }
 .btn:focus {
   outline: none !important;
@@ -560,6 +560,7 @@ button:focus {
 }
 
 .tech-icons {
+  background-color: #181a27 !important;
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
