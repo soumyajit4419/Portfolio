@@ -87,14 +87,14 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: rgba(0, 5, 5, 0.9) !important;
+  background-color: var(--dark-color) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(142, 120, 255, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
 .navbar {
-  background-color: var(--dark-color) !important;
+  
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
@@ -476,8 +476,8 @@ button:focus {
 }
 
 .appli-card img {
-  height: 45% !important;
-  width: 45% !important;
+  height: 50% !important;
+  width: 50% !important;
   align-self: center !important;
 }
 
@@ -568,7 +568,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /*background-image: var(--section-background-color) !important;*/
   color: var(--primary-color);
 }
 
@@ -763,4 +763,46 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Error 404 */
+/* --------- */
+
+.error-404-section {
+  display: flex !important;
+  flex: 1 !important; 
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: var(--primary-color) !important;
+  text-align: center !important;
+  padding: 100px 0 !important;
+}
+
+.error-404-section h1 {
+  font-size: 5rem;
+  color: var(--accent-color);
+}
+
+.error-404-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.error-404-section p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.error-404-section .btn-primary {
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.error-404-section .btn-primary:hover {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
 }

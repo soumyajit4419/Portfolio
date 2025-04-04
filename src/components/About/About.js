@@ -10,6 +10,8 @@ function About() {
   return (
     <Container fluid className="about-section">
       <Container>
+        <div className="about-header">
+
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -31,19 +33,22 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+        </div>
         
-        <h1 className="project-heading">
-          <strong className="purple">Connaissances</strong> techniques
-        </h1>
+        <div className="about-footer">
 
-        <Techstack />
+          <h1 className="project-heading">
+            <strong className="purple">Connaissances</strong> techniques
+          </h1>
 
-        <h1 className="project-heading">
-          <strong className="purple">Outils</strong>
-        </h1>
-        <Toolstack />
+          <Techstack />
 
-     
+          <h1 className="project-heading">
+            <strong className="purple">Outils</strong>
+          </h1>
+          <Toolstack />
+        </div>
+            
       </Container>
     </Container>
   );

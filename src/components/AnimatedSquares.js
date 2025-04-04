@@ -11,6 +11,7 @@ function AnimatedSquares() {
 
     const squares = [];
     const numSquares = 50;
+    const maxSpeed = 1.5; // Vitesse maximale des carrés
 
     // Palette de couleurs
     const colors = ["#3B3355", "#5D5D81", "#BFCDE0"];
@@ -21,8 +22,8 @@ function AnimatedSquares() {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         size: 20 + Math.random() * 30,
-        dx: (Math.random() - 0.5) * 2,
-        dy: (Math.random() - 0.5) * 2,
+        dx: (Math.random() - 0.5) * maxSpeed, // Limite la vitesse horizontale
+        dy: (Math.random() - 0.5) * maxSpeed, // Limite la vitesse verticale
         color: colors[Math.floor(Math.random() * colors.length)], // Couleur aléatoire de la palette
       });
     }

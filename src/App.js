@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Error404 from "./components/Error404";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -41,7 +42,8 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/"/>} /> 
+          {/*<Route path="*" element={<Error404 />} />*/}ppm
         </Routes>
         <Footer />
       </div>
