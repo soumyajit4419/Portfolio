@@ -9,7 +9,7 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section">
-      <Container>
+      <Container >
         <div className="about-header">
 
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -22,7 +22,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Qui <strong className="purple">je suis</strong>
+              Qui <strong className="purple">suis-je </strong>?
             </h1>
             <Aboutcard />
           </Col>
@@ -34,7 +34,7 @@ function About() {
           </Col>
         </Row>
         </div>
-        
+       
         <div className="about-footer">
 
           <h1 className="project-heading">

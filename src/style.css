@@ -25,7 +25,11 @@ body {
 }
 
 .purple {
-  color: var(--imp-text-color) !important;
+  color: var(--background-color) !important;
+}
+
+.home-text {
+  color: var(--secondary-color) !important;
 }
 
 button:focus {
@@ -353,7 +357,7 @@ button:focus {
 
 .home-about-body {
   padding-top: 50px;
-  font-size: 1.2em !important;
+  font-size: 1.8em !important;
   text-align: left;
 }
 
@@ -576,6 +580,13 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  color: var(--primary-color);
+}
+
+.about-section-footer {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
   color: var(--primary-color);
 }
 

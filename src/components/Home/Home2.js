@@ -16,21 +16,21 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> Introduction </span> 
+              <span className="home-text"> Introduction </span> 
             </h1>
             <p className="home-about-body">
-              Récemment diplômé d'un <b className="purple">BUT Informatique</b>, 
+              Récemment diplômé d'un <b className="home-text">BUT Informatique</b>, 
               je suis à la recherche d'une opportunité professionnelle en tant que 
-              <b className="purple"> développeur web</b>.
+              <b className="home-text"> développeur web</b>.
               <br />
               <br />Mes compétences principales sont axées sur
               <i>
-                <b className="purple"> PHP, Symfony et JavaScript </b>.
+                <b className="home-text"> PHP, Symfony et JavaScript </b>.
               </i>
               <br />
               <br />
               Toutefois, je reste toujours curieux et motivé à l'idée d'apprendre de
-              <b className="purple"> nouvelles technologies</b> !
+              <b className="home-text"> nouvelles technologies</b> !
             </p>
           </Col>
           <Col md={4} className="myAvtar">
