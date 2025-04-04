@@ -31,6 +31,7 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+        
         <h1 className="project-heading">
           <strong className="purple">Connaissances</strong> techniques
         </h1>
