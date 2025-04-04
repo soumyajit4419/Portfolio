@@ -578,14 +578,15 @@ button:focus {
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  background-position: top center;
+  background-repeat: no-repeat;
   color: var(--primary-color);
 }
 
 .about-section-footer {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 50px !important;
   padding-bottom: 30px !important;
   color: var(--primary-color);
 }
