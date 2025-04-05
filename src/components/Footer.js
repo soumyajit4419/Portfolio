@@ -6,6 +6,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiLetterboxd } from "react-icons/si";
+
 
 function Footer() {
   let date = new Date();
@@ -44,6 +46,17 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
+
+            <li className="social-icons">
+               <a
+                 href="https://letterboxd.com/Sorane42/"
+                 style={{ color: "white" }}
+                 target="_blank" 
+                 rel="noopener noreferrer"
+               >
+                 <SiLetterboxd />
+               </a>
+             </li>
             
           </ul>
         </Col>
