@@ -43,7 +43,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} /> 
-          {/*<Route path="*" element={<Error404 />} />*/}ppm
+          {/*<Route path="*" element={<Error404 />} />*/}
         </Routes>
         <Footer />
       </div>
