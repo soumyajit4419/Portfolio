@@ -35,7 +35,6 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Analytics />
         <AnimatedSquares />
         <Navbar />
         <ScrollToTop />
@@ -48,6 +47,7 @@ function App() {
           {/*<Route path="*" element={<Error404 />} />*/}ppm
         </Routes>
         <Footer />
+        <Analytics />
       </div>
       
     </Router>
