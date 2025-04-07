@@ -20,7 +20,7 @@ function Projects() {
             <ProjectCard
               imgPath={bmo}
               isBlog={false}
-              title="La Bourse Machine de la Outil"
+              title="La Bourse de la Machine Outil"
               description="Refonte totale du site de la Bourse de la Machine-Outil.
               Le site permet aux utilisateurs de créer un compte et de s'y connecter afin de mettre en vente des machines industrielles. Il offre également la possibilité de consulter les revues de l'entreprise.
               Réalisé en 2024 dans le cadre de mon alternance de troisième année de BUT Informatique."
