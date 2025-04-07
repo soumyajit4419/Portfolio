@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import AnimatedSquares from "./components/AnimatedSquares";
-import { Analytics } from "@vercel/analytics/react";
 import {
   BrowserRouter as Router,
   Route,
@@ -47,7 +46,6 @@ function App() {
           {/*<Route path="*" element={<Error404 />} />*/}ppm
         </Routes>
         <Footer />
-        <Analytics />
       </div>
       
     </Router>
