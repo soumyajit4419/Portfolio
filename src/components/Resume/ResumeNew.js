@@ -18,6 +18,13 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section" id="resume">
+
+      <h1 style={{ fontSize: "2.6em" }}>
+              <strong className="home-text">Consultez mon Curriculum Vitae </strong> 
+            </h1>
+
+            <br />
+            <br />
  
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -27,11 +34,12 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Télécharger CV
+            &nbsp;Cliquez ici
           </Button>
         </Row>
 
-        <Row className="resume">
+{/*
+        <Row className="resume">  
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
@@ -48,6 +56,8 @@ function ResumeNew() {
             &nbsp;Télécharger CV
           </Button>
         </Row>
+ */}
+
       </Container>
     </div>
   );

@@ -382,7 +382,7 @@ button:focus {
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+ 
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -677,12 +677,19 @@ button:focus {
 /* --------- */
 
 .resume-section {
+  height: 30vh; 
+  width: 100%; 
+  
+ 
+  justify-content: center; 
+  text-align: center;
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   /*background-image: var(--section-background-color) !important;*/
   color: white !important;
 }
+
 
 .resume {
   padding-top: 50px;
@@ -856,4 +863,35 @@ button:focus {
 .error-404-section .btn-primary:hover {
   background-color: var(--dark-color);
   border-color: var(--dark-color);
+}
+
+/* --------- */
+/* Contact */
+/* --------- */
+
+.contact-section {
+  padding: 50px 0;
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info {
+  padding: 20px;
+  color: var(--secondary-color);
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
 }

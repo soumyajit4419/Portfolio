@@ -14,10 +14,11 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              <span className="home-text"> Introduction </span> 
+          <h1 style={{ fontSize: "2.6em" }}>
+              <strong className="home-text">Introduction </strong> 
             </h1>
+          <Col md={8} className="home-about-description">
+           
             <p className="home-about-body">
               Récemment diplômé d'un <b className="home-text">BUT Informatique</b>, 
               je suis à la recherche d'une opportunité professionnelle en tant que 
