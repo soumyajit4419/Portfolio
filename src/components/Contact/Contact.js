@@ -77,7 +77,10 @@ function Contact() {
                   required
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              
+            </Col>
+            
+            <Button variant="primary" type="submit">
                 Envoyer
               </Button>
               {success && (
@@ -90,8 +93,11 @@ function Contact() {
                   Une erreur est survenue. Veuillez réessayer.
                 </Alert>
               )}
-            </Col>
           </Row>
+
+          <hr style={{ margin: '20px', color: '#BFCDE0', borderWidth: '3px' }} />
+
+         
           <Row>
             <span md={6} className="contact-info">
               <h3>Informations de contact</h3>

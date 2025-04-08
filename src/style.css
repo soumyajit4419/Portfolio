@@ -679,14 +679,11 @@ button:focus {
 .resume-section {
    
   width: 100%; 
-  
- 
   justify-content: center; 
   text-align: center;
   position: relative !important;
   padding-top: 60px !important;
   padding-bottom: 60px !important;
-  /*background-image: var(--section-background-color) !important;*/
   color: white !important;
 }
 
@@ -887,9 +884,17 @@ button:focus {
   border-radius: 10px;
 }
 
+.contact-form input{
+  height: 50px;
+}
+
+.contact-form textarea {
+  height: 145px;
+  resize: none;
+}
 .contact-info {
   padding: 20px;
-  color: var(--secondary-color);
+  color: white;
 }
 
 .contact-info h3 {
