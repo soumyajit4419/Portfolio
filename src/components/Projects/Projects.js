@@ -7,7 +7,7 @@ import appliScan from "../../Assets/Projects/appli_scan.png";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" id="projects">
       <Container>
         <h1 className="project-heading">
           Mes précédents <strong className="purple">projets </strong>

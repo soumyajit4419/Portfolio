@@ -10,7 +10,7 @@ import About2 from "./About2";
 function About() {
   return (
     <section>
-      <Container fluid className="about-section">
+      <Container fluid className="about-section" id="about">
         <Container >
           <div className="about-header">
 

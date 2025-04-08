@@ -8,7 +8,6 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiLetterboxd } from "react-icons/si";
 
 function Home2() {
   return (
@@ -40,47 +39,7 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>Retrouvez moi sur</h1>
-            
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/Sorane42"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/sacha-desquesnes/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-
-              <li className="social-icons">
-                <a
-                  href="https://letterboxd.com/Sorane42/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <SiLetterboxd />
-                </a>
-              </li>
-              
-            </ul>
-          </Col>
-        </Row>
+       
       </Container>
     </Container>
   );

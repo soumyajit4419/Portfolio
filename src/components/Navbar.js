@@ -15,6 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -38,7 +39,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand href="#home" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -54,46 +55,32 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Accueil
+              <Nav.Link>
+                <ScrollLink
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => updateExpanded(false)}
+                >
+                  Accueil
+                </ScrollLink>
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> À propos
+              <Nav.Link href="#about" onClick={() => updateExpanded(false)}>
+                À propos
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+              <Nav.Link href="#projects" onClick={() => updateExpanded(false)}>
                 Projets
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+              <Nav.Link href="#resume" onClick={() => updateExpanded(false)}>
+                CV
               </Nav.Link>
             </Nav.Item>
-
-            
-
           </Nav>
         </Navbar.Collapse>
       </Container>

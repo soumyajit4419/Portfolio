@@ -1,16 +1,17 @@
 html {
+  
+  --section-background-color-home: linear-gradient(
+    to bottom left,
+    rgba(93, 93, 129, 0.5),
+    rgba(93, 93, 129, 0.5)
+  ); 
+
   --section-background-color: linear-gradient(
     to bottom left,
-    #5D5D81,
-    #3B3355
+    rgba(72,60,108, 0.8),
+    rgba(72,60,108, 0.8)
+    
   );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    #5D5D81,
-    #3B3355
-  );
-
   --imp-text-color: #FEFCFD;
   --primary-color: #FEFCFD;
   --secondary-color: #BFCDE0;
@@ -282,17 +283,26 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
+  background-image: var(--section-background-color-home), url(./Assets/home-bg.jpg);
+  background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
   color: var(--primary-color);
-  text-align: left;
+  text-align: center;
 }
 
 .heading {
@@ -300,18 +310,19 @@ button:focus {
   padding-left: 50px !important;
 }
 
-.heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+.main-name {
+  color: #ffffff;
+  font-size: 1.7em !important;
 }
 
-.main-name {
-  color: #ACB0BD;
+.main-job {
+  color: #ffffff;
+  font-size: 1.2em !important;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: var(--accent-color) !important;
+  color: #fff !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
@@ -321,12 +332,18 @@ button:focus {
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
+    font-size: 0.8em !important;
     font-weight: 500 !important;
-    position: absolute !important;
+    
   }
   .Typewriter__cursor {
     display: none !important;
+  }
+
+ 
+
+  .home-content h1 {
+    font-size: 2rem;
   }
 }
 
@@ -339,13 +356,28 @@ button:focus {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+    display: none !important;
   }
 }
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; 
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+@media (max-width: 767px) {
+  .home-about-section {
+    height: 110vh; 
+  }
 }
 
 .home-about-description {

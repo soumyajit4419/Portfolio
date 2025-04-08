@@ -13,7 +13,7 @@ function AboutCard() {
               j'ai 21 ans et j'habite sur <span className="purple"> Caen</span> dans le Calvados.
               <br />
               <br />
-              Depuis plusieurs années, je suis passionné par le développement web, ce qui m’a permis de développer des compétences solides et une forte motivation à progresser constamment
+              Depuis plusieurs années, je suis passionné par le développement web, ce qui m’a permis de développer des compétences solides et une forte motivation à progresser constamment.
               <br />
               <br />
               En dehors de la programmation, je m'intéresse à d'autres activités, notamment :

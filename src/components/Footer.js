@@ -1,12 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiLetterboxd } from "react-icons/si";
 
 
 function Footer() {
@@ -25,16 +20,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/Sorane42"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
+       
            
             <li className="social-icons">
               <a
@@ -47,16 +33,7 @@ function Footer() {
               </a>
             </li>
 
-            <li className="social-icons">
-               <a
-                 href="https://letterboxd.com/Sorane42/"
-                 style={{ color: "white" }}
-                 target="_blank" 
-                 rel="noopener noreferrer"
-               >
-                 <SiLetterboxd />
-               </a>
-             </li>
+            
             
           </ul>
         </Col>
