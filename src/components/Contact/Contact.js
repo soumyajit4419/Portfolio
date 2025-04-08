@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import { IoMdPerson } from "react-icons/io";
+import { MdOutlineAlternateEmail, MdOutlineMessage } from "react-icons/md";
+
 
 function Contact() {
   const formRef = useRef();
@@ -37,43 +40,46 @@ function Contact() {
       <Container fluid className="contact-section">
         <Container>
           <h1 className="contact-heading">
-            <strong className="purple">Contactez-moi</strong>
+            Contactez-<strong className="purple">moi</strong>
           </h1>
           <Row>
             <Col md={6} className="contact-form">
               <Form ref={formRef} onSubmit={sendEmail}>
                 <Form.Group className="mb-3" controlId="formName">
-                  <Form.Label>Nom</Form.Label>
+                  <Form.Label ><IoMdPerson /> Nom et prénom</Form.Label>
                   <Form.Control
                     type="text"
-                    name="user_name"
-                    placeholder="Votre nom"
+                    name="name"
+                    placeholder="Votre nom et prénom"
                     required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formEmail">
-                  <Form.Label>Email</Form.Label>
+                  <Form.Label><MdOutlineAlternateEmail /> Email</Form.Label>
                   <Form.Control
                     type="email"
-                    name="user_email"
+                    name="email"
                     placeholder="Votre email"
                     required
                   />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formMessage">
-                  <Form.Label>Message</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    rows={5}
-                    name="message"
-                    placeholder="Votre message"
-                    required
-                  />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                  Envoyer
-                </Button>
               </Form>
+            </Col>
+
+            <Col md={6} className="contact-form">
+              <Form.Group className="mb-3" controlId="formMessage">
+                <Form.Label><MdOutlineMessage /> Message</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={5}
+                  name="message"
+                  placeholder="Votre message"
+                  required
+                />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Envoyer
+              </Button>
               {success && (
                 <Alert variant="success" className="mt-3">
                   Message envoyé avec succès !
@@ -85,12 +91,14 @@ function Contact() {
                 </Alert>
               )}
             </Col>
-            <Col md={6} className="contact-info">
+          </Row>
+          <Row>
+            <span md={6} className="contact-info">
               <h3>Informations de contact</h3>
-              <p>Email : <strong>sacha.desquesnes@example.com</strong></p>
-              <p>Téléphone : <strong>+33 6 12 34 56 78</strong></p>
+              <p>Email : <strong>sacha.desquesnes@gmail.com</strong></p>
+              <p>Téléphone : <strong>+33 7 82 42 80 11</strong></p>
               <p>Localisation : <strong>Caen, France</strong></p>
-            </Col>
+            </span>
           </Row>
         </Container>
       </Container>

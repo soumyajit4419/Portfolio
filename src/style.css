@@ -677,15 +677,15 @@ button:focus {
 /* --------- */
 
 .resume-section {
-  height: 30vh; 
+   
   width: 100%; 
   
  
   justify-content: center; 
   text-align: center;
   position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
   /*background-image: var(--section-background-color) !important;*/
   color: white !important;
 }
@@ -882,7 +882,7 @@ button:focus {
 }
 
 .contact-form {
-  background-color: rgba(255, 255, 255, 0.1);
+  
   padding: 20px;
   border-radius: 10px;
 }
@@ -894,4 +894,11 @@ button:focus {
 
 .contact-info h3 {
   margin-bottom: 20px;
+}
+
+.contact-form label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
