@@ -12,17 +12,17 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Remplacez par votre Service ID EmailJS
-        "YOUR_TEMPLATE_ID", // Remplacez par votre Template ID EmailJS
+        "service_6tzf2ef", // Remplacez par votre Service ID EmailJS
+        "template_wqld613", // Remplacez par votre Template ID EmailJS
         formRef.current,
-        "YOUR_PUBLIC_KEY" // Remplacez par votre clé publique EmailJS
+        "6ZIhlYo8H8PheTEIr" // Remplacez par votre clé publique EmailJS
       )
       .then(
         (result) => {
           console.log(result.text);
           setSuccess(true);
           setError(false);
-          formRef.current.reset(); // Réinitialise le formulaire
+          formRef.current.reset(); 
         },
         (error) => {
           console.log(error.text);
