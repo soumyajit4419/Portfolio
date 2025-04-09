@@ -15,20 +15,18 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_6tzf2ef", 
-        "template_wqld613",
-        formRef.current,
-        "6ZIhlYo8H8PheTEIr" 
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
-          console.log(result.text);
           setSuccess(true);
           setError(false);
           formRef.current.reset();
         },
         (error) => {
-          console.log(error.text);
           setError(true);
           setSuccess(false);
         }
