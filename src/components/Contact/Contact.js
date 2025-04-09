@@ -15,10 +15,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_6tzf2ef", // Remplacez par votre Service ID EmailJS
-        "template_wqld613", // Remplacez par votre Template ID EmailJS
+        "service_6tzf2ef", 
+        "template_wqld613",
         formRef.current,
-        "6ZIhlYo8H8PheTEIr" // Remplacez par votre clé publique EmailJS
+        "6ZIhlYo8H8PheTEIr" 
       )
       .then(
         (result) => {
@@ -40,8 +40,11 @@ function Contact() {
       <Container fluid className="contact-section">
         <Container>
           <h1 className="contact-heading">
-            Contactez-<strong className="purple">moi</strong>
+            Contact
           </h1>
+            <p className="contact-description">
+                N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
+            </p>
           <Form ref={formRef} onSubmit={sendEmail}>
             <Row>
               {/* Colonne gauche : Nom et Email */}

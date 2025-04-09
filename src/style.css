@@ -92,7 +92,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: var(--dark-color) !important;
+  background-color: rgba(59, 51, 85, 0.5) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(142, 120, 255, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -349,13 +349,17 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  
 }
 
 @media (max-width: 767px) {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+    display: none !important;
+  }
+
+  .img-fluid {
     display: none !important;
   }
 }
@@ -499,6 +503,7 @@ button:focus {
 
 .blockquote-footer {
   color: #a588c0 !important;
+  
 }
 /* --------- */
 /* Projects */
@@ -516,12 +521,16 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  transition: transform 0.2s;
 }
 
 .appli-card img {
-  height: 50% !important;
-  width: 50% !important;
   align-self: center !important;
+}
+
+.project-img-modal {
+  width: -webkit-fill-available !important;
+
 }
 
 .project-card-view {
@@ -533,7 +542,7 @@ button:focus {
   height: 100% !important;
 }
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  transform: scale(1.05) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(39, 42, 61, 0.561) !important;
 }
@@ -906,4 +915,60 @@ button:focus {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+
+
+/* --------- */
+/* Modal */
+/* --------- */
+.custom-modal .modal-content {
+  background-color: rgba(30, 30, 47, 0.8); 
+  
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 10px; 
+  border: none; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.custom-modal .modal-header {
+  border-bottom: 1px solid #6c757d; 
+}
+
+.custom-modal .modal-title {
+  font-size: 1.5rem; 
+  font-weight: bold;
+}
+
+.custom-modal .modal-dialog {
+  max-width: 80%; 
+}
+
+.custom-modal .modal-body {
+  font-size: 1rem; 
+  line-height: 1.5; 
+}
+
+.custom-modal .btn-primary {
+  background-color: #6c63ff; 
+  border: none;
+}
+
+.custom-modal .btn-primary:hover {
+  background-color: #5a54e0; 
+}
+
+.custom-modal .btn-secondary {
+  background-color: #444; 
+  border: none;
+}
+
+.custom-modal .btn-secondary:hover {
+  background-color: #333;
 }

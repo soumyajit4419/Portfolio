@@ -14,17 +14,26 @@ function About() {
         <Container >
           <div className="about-header">
 
-          <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Qui <strong className="purple">suis-je </strong>?
-              </h1>
+          <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" }}>
+            À propos de <strong className="purple">moi </strong>
+          </h1>
 
           <Row style={{ justifyContent: "center", padding: "10px" }}>
+            <Col>
+              <img
+                src={laptopImg}
+                alt="about"
+                className="img-fluid"
+                style={{ maxWidth: "500px", maxHeight: "500px" }}
+              />
+            </Col>
             <Col
               md={7}
               style={{
                 justifyContent: "center",
                 paddingTop: "30px",
                 paddingBottom: "50px",
+              
               }}
             >
               
