@@ -12,23 +12,21 @@ function About() {
     <section>
       <Container fluid className="about-section" id="about">
         <Container >
-          <div className="about-header">
 
-          <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" }}>
-            À propos de <strong className="purple">moi </strong>
-          </h1>
-
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <Col>
+          <Row style={{ justifyContent: "center" }}>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" }}>
+              À propos de <strong className="purple">moi </strong>
+            </h1>
+            <Col md={4} className="about-img">
               <img
                 src={laptopImg}
                 alt="about"
                 className="img-fluid"
-                style={{ maxWidth: "500px", maxHeight: "500px" }}
+                style={{ maxWidth: "100%" }}
               />
             </Col>
             <Col
-              md={7}
+              md={8}
               style={{
                 justifyContent: "center",
                 paddingTop: "30px",
@@ -41,10 +39,7 @@ function About() {
             </Col>
            
           </Row>
-          </div>
         
-          
-              
         </Container>
       </Container>
 

@@ -34,7 +34,7 @@ function Home2() {
               <b className="home-text"> nouvelles technologies</b> !
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvtar about-img">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>

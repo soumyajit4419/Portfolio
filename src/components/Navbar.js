@@ -54,18 +54,13 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
+          
             <Nav.Item>
-              <Nav.Link>
-                <ScrollLink
-                  to="home"
-                  smooth={true}
-                  duration={500}
-                  onClick={() => updateExpanded(false)}
-                >
-                  Accueil
-                </ScrollLink>
+              <Nav.Link href="#home" onClick={() => updateExpanded(false)}>
+                Accueil
               </Nav.Link>
             </Nav.Item>
+
             <Nav.Item>
               <Nav.Link href="#about" onClick={() => updateExpanded(false)}>
                 À propos
@@ -78,7 +73,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#resume" onClick={() => updateExpanded(false)}>
-                CV
+                Contact
               </Nav.Link>
             </Nav.Item>
           </Nav>

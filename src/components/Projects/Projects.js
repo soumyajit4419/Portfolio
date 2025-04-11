@@ -124,8 +124,8 @@ function Projects() {
               />
             </Col>
             <Col md={6}>
-              <p>Description : {selectedProject?.description}</p>
-              <p>Langages utilisés : {selectedProject?.langage}</p>
+              <p><strong>Description</strong> <br />{selectedProject?.description}</p>
+              <p><strong>Langages utilisés</strong> <br />{selectedProject?.langage}</p>
             </Col>
           </Row>
           {selectedProject?.demoLink && (

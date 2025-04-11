@@ -234,40 +234,7 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
-}
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -336,20 +303,35 @@ button:focus {
     font-weight: 500 !important;
     
   }
-  .Typewriter__cursor {
-    display: none !important;
-  }
-
- 
 
   .home-content h1 {
     font-size: 2rem;
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+  .home-about-section {
+    height: 100vh !important;
+  }
+  
+}
+
 .myAvtar {
   justify-content: center !important;
   
+}
+
+.about-img {
+  align-content: center;
 }
 
 @media (max-width: 767px) {
@@ -370,17 +352,24 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh; 
+  height: 70vh; 
   width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center; 
   text-align: center; 
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 @media (max-width: 767px) {
   .home-about-section {
-    height: 110vh; 
+    height: 120vh; 
+    font-size: 1.9vh;
+  }
+
+  .about-section{
+    font-size: 1.9vh;
   }
 }
 
@@ -510,7 +499,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
@@ -617,12 +606,14 @@ button:focus {
 /* --------- */
 
 .about-section {
+  
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   background-image: var(--section-background-color) !important;
   background-position: top center;
   background-repeat: no-repeat;
   color: var(--primary-color);
+  
 }
 
 .about-section-footer {
@@ -646,6 +637,13 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+.progress-bar {
+  background-color: rgba(72,60,108, 0.8) !important;
+  color: var(--primary-color) !important;
+  height: 20px !important;
+  margin-bottom: 10px !important;
 }
 
 @media (max-width: 767px) {
@@ -935,6 +933,7 @@ button:focus {
   border-radius: 10px; 
   border: none; 
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+  
 }
 
 .custom-modal .modal-header {
@@ -953,6 +952,7 @@ button:focus {
 .custom-modal .modal-body {
   font-size: 1rem; 
   line-height: 1.5; 
+  
 }
 
 .custom-modal .btn-primary {
