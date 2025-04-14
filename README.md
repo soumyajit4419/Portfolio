@@ -21,6 +21,7 @@
 <p>Pour lancer le serveur de dev :</p>
 <ol>
   <li>npm install</li>
-   <li>npm start</li>
+  <li>npm install --save @emailjs/browser</li>
+  <li>npm start</li>
 </ol>
 
