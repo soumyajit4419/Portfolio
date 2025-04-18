@@ -972,3 +972,70 @@ button:focus {
 .custom-modal .btn-secondary:hover {
   background-color: #333;
 }
+
+/* --------- */
+/* Timeline */
+/* --------- */
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+}
+
+.timeline-heading {
+  padding-top: 100px !important;
+}
+
+.timeline-item.active {
+  transform: translateX(-150px);
+}
+
+.timeline-summary {
+  text-align: center;
+}
+
+.timeline-summary h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.timeline-summary p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+}
+
+.timeline-details {
+  position: absolute;
+  left: 320px; /* Positionne la deuxième case à droite */
+  top: 0;
+  background-color: var(--dark-color);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: none; /* Masque la deuxième case par défaut */
+}
+
+.timeline-item.active .timeline-details {
+  display: block; /* Affiche la deuxième case uniquement si l'élément est actif */
+}

@@ -31,7 +31,7 @@ function Projects() {
       title: "La Bourse de la Machine Outil",
       subTitle: "Site web",
       description:
-        "Refonte totale du site de la Bourse de la Machine-Outil. Le site permet aux utilisateurs de créer un compte et de s'y connecter afin de mettre en vente des machines industrielles. Il offre également la possibilité de consulter les revues de l'entreprise. Réalisé en 2024 dans le cadre de mon alternance de troisième année de BUT Informatique.",
+        "Refonte totale du site de la Bourse de la Machine-Outil. Le site permet aux utilisateurs de créer un compte et de s'y connecter afin de mettre en vente des machines industrielles. Il offre également la possibilité de consulter les revues de l'entreprise. Réalisé en 2024 dans le cadre de mon alternance de troisième année de BUT Informatique. Le site dispose d’un back office (CMS), réservé aux employés, centralisant toutes les fonctions d’administration.",
       demoLink: "https://www.bourse-machine-outil.com",
       type: "web",
       langage: "HTML, CSS, PHP, JS, JQuery, SQL",
