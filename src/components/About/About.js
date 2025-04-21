@@ -10,35 +10,36 @@ import About2 from "./About2";
 function About() {
   return (
     <section>
-      <Container fluid className="about-section">
+      <Container fluid className="about-section" id="about">
         <Container >
-          <div className="about-header">
 
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Row style={{ justifyContent: "center" }}>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" }}>
+              À propos de <strong className="purple">moi </strong>
+            </h1>
+            <Col md={4} className="about-img">
+              <img
+                src={laptopImg}
+                alt="about"
+                className="img-fluid"
+                style={{ maxWidth: "100%" }}
+              />
+            </Col>
             <Col
-              md={7}
+              md={8}
               style={{
                 justifyContent: "center",
                 paddingTop: "30px",
                 paddingBottom: "50px",
+              
               }}
             >
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Qui <strong className="purple">suis-je </strong>?
-              </h1>
+              
               <Aboutcard />
             </Col>
-            <Col
-              md={5}
-              style={{ paddingTop: "120px", paddingBottom: "50px" }}
-              className="about-img">
-              <img src={laptopImg} alt="about" className="img-fluid" />
-            </Col>
+           
           </Row>
-          </div>
         
-          
-              
         </Container>
       </Container>
 
