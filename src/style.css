@@ -26,7 +26,7 @@ body {
 }
 
 .purple {
-  color: var(--background-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .home-text {
@@ -304,6 +304,11 @@ button:focus {
     
   }
 
+  .Typewriter__cursor {
+    font-size: 1em !important;
+    color: var(--secondary-color) !important;
+  }
+
   .home-content h1 {
     font-size: 2rem;
   }
@@ -511,6 +516,8 @@ button:focus {
   padding-right: 25px !important;
   height: auto !important;
   transition: transform 0.2s;
+  cursor: pointer;
+ 
 }
 
 .appli-card img {
@@ -828,48 +835,6 @@ button:focus {
 }
 
 /* --------- */
-/* Error 404 */
-/* --------- */
-
-.error-404-section {
-  display: flex !important;
-  flex: 1 !important; 
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  color: var(--primary-color) !important;
-  text-align: center !important;
-  padding: 100px 0 !important;
-}
-
-.error-404-section h1 {
-  font-size: 5rem;
-  color: var(--accent-color);
-}
-
-.error-404-section h2 {
-  font-size: 2rem;
-  color: var(--primary-color);
-}
-
-.error-404-section p {
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-}
-
-.error-404-section .btn-primary {
-  margin-top: 20px;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--primary-color);
-}
-
-.error-404-section .btn-primary:hover {
-  background-color: var(--dark-color);
-  border-color: var(--dark-color);
-}
-
-/* --------- */
 /* Contact */
 /* --------- */
 
@@ -950,8 +915,8 @@ button:focus {
 }
 
 .custom-modal .modal-body {
-  font-size: 1rem; 
-  line-height: 1.5; 
+  font-size: 1.5rem; 
+  line-height: 1.75; 
   
 }
 
@@ -983,6 +948,9 @@ button:focus {
   align-items: center;
   gap: 20px;
   position: relative;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  background-image: var(--section-background-color) !important;
 }
 
 .timeline-item {
@@ -997,45 +965,43 @@ button:focus {
   transition: all 0.3s ease;
   position: relative;
   padding: 20px;
-  justify-content: center;
+  
 }
 
-.timeline-heading {
-  padding-top: 100px !important;
+@media (min-width: 1024px) {
+  .timeline-item.shifted {
+    transform: translateX(-300px); 
+  }
+  
+  .timeline-item.active {
+    transform: translateX(-300px); 
+  }
 }
 
-.timeline-item.active {
-  transform: translateX(-150px);
-}
 
 .timeline-summary {
   text-align: center;
 }
 
-.timeline-summary h3 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.timeline-summary p {
-  font-size: 0.9rem;
-  margin: 5px 0 0;
-}
-
 .timeline-details {
   position: absolute;
-  left: 320px; /* Positionne la deuxième case à droite */
+  left: 320px; 
   top: 0;
   background-color: var(--dark-color);
   color: white;
   padding: 15px;
   border-radius: 10px;
-  width: 300px;
+  width: 650px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  display: none; /* Masque la deuxième case par défaut */
+  text-align: left;
+  display: none; 
+  line-height: 1.75
+}
+
+.timeline-details h4{
+  font-weight: bold;
 }
 
 .timeline-item.active .timeline-details {
-  display: block; /* Affiche la deuxième case uniquement si l'élément est actif */
+  display: block; 
 }
