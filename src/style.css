@@ -607,6 +607,13 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.about-activity svg {
+  margin-right: 8px;
 }
 
 @media (max-width: 767px) {
@@ -815,7 +822,7 @@ button:focus {
   padding-left: 0;
   width: 100%;
   max-width: 600px;
-  transition: height 0.3s ease; /* Smooth height transition */
+  transition: height 0.3s ease;
 }
 
 .timeline::before {
@@ -827,7 +834,7 @@ button:focus {
   width: 2px;
   background: #8a49a8;
   transform: translateX(-50%);
-  transition: height 0.3s ease; /* Smooth line height transition */
+  transition: height 0.3s ease;
 }
 
 .timeline-item {
@@ -837,7 +844,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  transition: all 0.3s ease; /* Smooth transition for shifting */
+  transition: all 0.3s ease;
 }
 
 /* Alternating left and right positions */
@@ -894,96 +901,63 @@ button:focus {
 
 .timeline-content {
   position: relative;
-  transition: all 0.3s ease; /* Smooth transition for shifting */
+  transition: all 0.3s ease;
 }
 
-.timeline-title {
-  font-size: 1.5em;
-  color: #c770f0;
-  margin-bottom: 5px;
-}
-
-.timeline-company {
-  font-size: 1.1em;
-  color: #a588c0;
-  margin-bottom: 5px;
-}
-
-.timeline-duration {
-  font-size: 0.9em;
-  color: #ffffff;
-  margin-bottom: 0;
-}
-
-.timeline-bubble {
+.timeline-content .quote-card-view {
   background: rgba(104, 24, 122, 0.8);
   border-radius: 8px;
   padding: 15px;
-  margin-top: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  position: relative;
-  color: white;
+}
+
+.timeline-content .blockquote {
+  margin-bottom: 0;
+}
+
+.timeline-content p {
   font-size: 0.9em;
-  transition: all 0.3s ease; /* Smooth transition for bubble appearance */
+  color: #ffffff;
 }
 
-/* Bubble arrow for left side */
-.timeline-item.left .timeline-bubble::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: 20px;
-  border: 5px solid transparent;
-  border-bottom-color: rgba(104, 24, 122, 0.8);
-}
-
-/* Bubble arrow for right side */
-.timeline-item.right .timeline-bubble::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  border: 5px solid transparent;
-  border-bottom-color: rgba(104, 24, 122, 0.8);
-}
-
-.timeline-bubble ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 0;
-}
-
-.timeline-bubble li {
-  margin-bottom: 5px;
+.timeline-content small {
+  color: #a588c0;
+  font-size: 0.8em;
 }
 
 @media (max-width: 767px) {
+  .timeline::before {
+    left: 20px; /* Move the vertical line to the left */
+    transform: translateX(0);
+  }
+
+  .timeline-item {
+    align-items: flex-start; /* Align items to the left to stack with the line */
+  }
+
   .timeline-item.left .timeline-content,
   .timeline-item.right .timeline-content {
-    align-self: flex-end;
+    align-self: flex-start;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 40px; /* Ensure space for the vertical line */
     margin-right: 0;
     text-align: left;
   }
 
-  .timeline-item.left .timeline-bubble::before,
-  .timeline-item.right .timeline-bubble::before {
-    left: 20px;
-    right: auto;
+  .timeline-dot {
+    left: 20px; /* Align dot with the vertical line */
+    transform: translateX(0);
   }
 
-  .timeline-title {
-    font-size: 1.2em;
-  }
-  .timeline-company {
-    font-size: 1em;
-  }
-  .timeline-duration {
+  .timeline-content p {
     font-size: 0.8em;
   }
-  .timeline-bubble {
-    font-size: 0.8em;
-    padding: 10px;
+
+  .timeline-content small {
+    font-size: 0.7em;
+  }
+
+  .timeline-content .quote-card-view {
+    padding: 10px; /* Reduce padding for smaller screens */
   }
 }

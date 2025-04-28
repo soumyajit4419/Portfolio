@@ -60,6 +60,9 @@ function Experience() {
         <p style={{ color: "white", textAlign: "center" }}>
           Professional milestones and achievements.
         </p>
+        <p style={{ color: "white", textAlign: "center" }}>
+        Click on the dots to view details about each experience.
+        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Col md={6} className="experience-timeline">
             <div className="timeline">
