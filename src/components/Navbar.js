@@ -100,7 +100,15 @@ function NavBar() {
                 <CgCardClubs style={{ marginBottom: "2px" }} /> My Wall
               </Nav.Link>
             </Nav.Item>
-
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgCardClubs style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 href="https://blog.aliesmail.tech/"

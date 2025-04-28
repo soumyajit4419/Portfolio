@@ -8,25 +8,30 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ali Esmail </span>
-            from <span className="purple"> Behura , Egypt.</span>
+            Hello Everyone, I am <span className="purple">Aly Esmaeil</span>
+            from <span className="purple">Egypt.</span>
             <br />
-            I am Recent Computer Science and Information Systems graduate.
+            I am a passionate <span className="purple">DevOps Engineer</span> with strong expertise in 
+            <span className="purple"> Cloud Computing, Automation, Infrastructure as Code, and Linux Systems Administration.</span>
             <br />
-            I have strong programming skills in <span className="purple"> Java, C++, and expertise in OOP, algorithms, and cloud technologies.</span> Seeking a software development position where I can apply my skills in developing efficient and innovative solutions.
+            I have hands-on experience with technologies like 
+            <span className="purple"> AWS, OpenStack, Kubernetes, Docker, Terraform, Jenkins, and Ansible.</span>
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I am committed to building scalable, secure, and efficient infrastructure solutions and continuously learning new technologies to improve system reliability and performance.
+            <br />
+            <br />
+            Apart from my professional work, some activities that I enjoy include:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Studying 
+              <ImPointRight /> Learning New DevOps Tools
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Contributing to Open Source Projects
             </li>
             <li className="about-activity">
-              <ImPointRight /> Teaching
+              <ImPointRight /> Sharing Knowledge through Tech Blogs and Tutorials
             </li>
           </ul>
         </blockquote>

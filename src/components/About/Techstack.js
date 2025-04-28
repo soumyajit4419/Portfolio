@@ -2,22 +2,32 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiMsqlServer,
-  DiAws,
-  DiCss3,
+  DiDatabase,
   DiMongodb,
-  DiHtml5,
   DiGit,
   DiJava,
+  DiDocker,
+  DiJenkins,
+  DiOpenshift,
+  DiRedhat,
+  DiPython,
+  DiMysql,
 } from "react-icons/di";
 import {
   SiApache,
   SiGithub,
-  SiHibernate,
-  SiSpring,
-  SiSpringboot,
+  SiAnsible,
+  SiOpenstack,
+  SiKubernetes,
+  SiTerraform,
+  SiPodman,
+  SiGitlab,
+  SiGithubactions,
+  SiAmazonaws,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { TbBrandGolang ,
+
+} from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -26,16 +36,19 @@ function Techstack() {
         <CgCPlusPlus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMsqlServer />
+        <DiMysql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiDatabase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
+        <DiDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiAws />
+        <SiAmazonaws />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiGithub />
@@ -44,26 +57,48 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSpring />
+        <SiAnsible />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSpringboot/>
+        <SiOpenstack/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiApache />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHibernate />
+        <SiKubernetes />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
+        <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJenkins />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiOpenshift />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiRedhat />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTerraform />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPodman />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGitlab />  
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGithubactions />
+      </Col>
+  
     </Row>
   );
 }
