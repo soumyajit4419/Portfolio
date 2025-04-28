@@ -12,10 +12,15 @@ import cert5 from "../../Assets/Certificates/cert5.png";
 import cert6 from "../../Assets/Certificates/cert6.jpg";
 import cert7 from "../../Assets/Certificates/cert7.jpg";
 import cert8 from "../../Assets/Certificates/cert8.jpg";
-
+import cert9 from "../../Assets/Certificates/cert9.png";
 // Image for the badge
 import badge1 from "../../Assets/Badges/badge1.png";
-
+import badge2 from "../../Assets/Badges/badge2.png";
+import badge3 from "../../Assets/Badges/badge3.png";
+import badge4 from "../../Assets/Badges/badge4.png";
+import badge5 from "../../Assets/Badges/badge5.png";
+import badge6 from "../../Assets/Badges/badge6.png";
+import badge0 from "../../Assets/Badges/badge0.png";
 function Wall() {
   // State to track which content to display (certificates or badges)
   const [displayType, setDisplayType] = useState("certificates");
@@ -86,6 +91,12 @@ function Wall() {
               </Col>
               <Col md={4} className="project-card">
                 <WallCard
+                  imgPath={cert9}
+                  certLink="https://drive.google.com/file/d/1boMEiwRuwFp1rLSmPX4sNDv1Q1u4UDVj/view?usp=drive_link"
+                />
+              </Col>
+              <Col md={4} className="project-card">
+                <WallCard
                   imgPath={cert1}
                   certLink="https://coursera.org/share/67dda612c2228fa549adea349bccc0ea"
                 />
@@ -128,7 +139,44 @@ function Wall() {
               <Col md={4} className="project-card">
                 <WallCard
                   imgPath={badge1}
-                  certLink="https://www.credly.com/badges/72cc7a75-289b-44ff-900a-a06062b82c80"
+                  certLink="https://www.credly.com/badges/72cc7a75-289b-44ff-900a-a06062b82c80/public_url"
+                />
+              </Col>
+              <Col md={4} className="project-card">
+                <WallCard
+                  imgPath={badge0}
+                  certLink="https://www.credly.com/badges/57301233-2368-45dd-a9cd-4ab8ae5bc52f/public_url"
+                />
+              </Col>  
+              <Col md={4} className="project-card">
+                <WallCard
+                  imgPath={badge2}
+                  certLink="https://www.credly.com/badges/58dea23e-c0f6-45ad-b47c-4762ca5a011a/public_url"
+                />
+              </Col>
+              <Col md={4} className="project-card">
+                <WallCard
+                  imgPath={badge3}
+                  certLink="https://www.credly.com/badges/85b5ff5e-b1c8-446e-81e8-41646f9765ae/public_url"
+                />
+              </Col>
+              <Col md={4} className="project-card">
+                <WallCard
+                  imgPath={badge4}
+                  certLink="https://www.credly.com/badges/58dea23e-c0f6-45ad-b47c-4762ca5a011a/public_url"
+                />
+              </Col>
+              <Col md={4} className="project-card">
+                <WallCard
+                  imgPath={badge5}
+                  certLink="https://www.credly.com/badges/8334314a-21d0-4f0a-97b1-c18dc00f2ec8/public_url"
+                />
+              </Col>
+              <Col md={4} className="project-card">
+                <WallCard
+                  imgPath={badge6}
+                  certLink="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3B1A68E925FA950EAA4B656B8D5F5065DBFA619519D2FF3B1CB9EE146C4FFE0D
+"
                 />
               </Col>
               {/* Add more badge cards here as needed */}
