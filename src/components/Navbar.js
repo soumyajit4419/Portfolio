@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import {  CgGitFork, CgCardClubs } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
@@ -91,10 +91,27 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                as={Link}
+                to="/wall"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgCardClubs style={{ marginBottom: "2px" }} /> My Wall
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgCardClubs style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href="https://blog.aliesmail.tech/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -104,7 +121,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/alielesawy/My-Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

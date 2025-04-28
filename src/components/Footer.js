@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiWhatsapp , SiTelegram } from "react-icons/si";
+import logo from "../Assets/logo.png";
 
 function Footer() {
   let date = new Date();
@@ -14,16 +15,16 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
+          <img src={logo} className="img-fluid logo" alt="brand" />
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright <b className="purple"> Aly Esmaeil </b> © {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/alielesawy"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -31,19 +32,10 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
+           
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
+                href="https://www.linkedin.com/in/alielesawy"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -51,14 +43,24 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
+           <li className="social-icons">
               <a
-                href="https://www.instagram.com/soumyajit4419"
+                href="https://t.me/alielesawy"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <SiTelegram />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://wa.me/01555344220"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiWhatsapp />
               </a>
             </li>
           </ul>
