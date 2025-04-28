@@ -18,7 +18,7 @@ function Footer() {
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright <b className="purple"> Ali Esmail </b> © {year}</h3>
+          <h3>Copyright <b className="purple"> Aly Esmaeil </b> © {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
