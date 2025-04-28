@@ -361,7 +361,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: transparent !important; /* Changed to transparent */
+  background: transparent !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
   z-index: 10 !important;
@@ -375,7 +375,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: transparent !important; /* Changed to transparent */
+  background: transparent !important;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -788,4 +788,202 @@ button:focus {
 .toggle-btn:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+/* --------- */
+/* Experience Section */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.experience-timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  max-width: 600px;
+  transition: height 0.3s ease; /* Smooth height transition */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #8a49a8;
+  transform: translateX(-50%);
+  transition: height 0.3s ease; /* Smooth line height transition */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease; /* Smooth transition for shifting */
+}
+
+/* Alternating left and right positions */
+.timeline-item.left .timeline-content {
+  align-self: flex-start;
+  width: 45%;
+  margin-right: 55%;
+  text-align: right;
+}
+
+.timeline-item.right .timeline-content {
+  align-self: flex-end;
+  width: 45%;
+  margin-left: 55%;
+  text-align: left;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #8a49a8;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(199, 112, 240, 0.5);
+  z-index: 10;
+}
+
+.timeline-dot:hover {
+  background: #c770f0;
+  border-color: #c770f0;
+  transform: translateX(-50%) scale(1.2);
+  box-shadow: 0 0 15px rgba(199, 112, 240, 0.8);
+}
+
+.timeline-dot-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #8a49a8;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-dot:hover .timeline-dot-inner {
+  background: #fff;
+}
+
+.timeline-content {
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for shifting */
+}
+
+.timeline-title {
+  font-size: 1.5em;
+  color: #c770f0;
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  font-size: 1.1em;
+  color: #a588c0;
+  margin-bottom: 5px;
+}
+
+.timeline-duration {
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.timeline-bubble {
+  background: rgba(104, 24, 122, 0.8);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: white;
+  font-size: 0.9em;
+  transition: all 0.3s ease; /* Smooth transition for bubble appearance */
+}
+
+/* Bubble arrow for left side */
+.timeline-item.left .timeline-bubble::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(104, 24, 122, 0.8);
+}
+
+/* Bubble arrow for right side */
+.timeline-item.right .timeline-bubble::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(104, 24, 122, 0.8);
+}
+
+.timeline-bubble ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.timeline-bubble li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    align-self: flex-end;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item.left .timeline-bubble::before,
+  .timeline-item.right .timeline-bubble::before {
+    left: 20px;
+    right: auto;
+  }
+
+  .timeline-title {
+    font-size: 1.2em;
+  }
+  .timeline-company {
+    font-size: 1em;
+  }
+  .timeline-duration {
+    font-size: 0.8em;
+  }
+  .timeline-bubble {
+    font-size: 0.8em;
+    padding: 10px;
+  }
 }
