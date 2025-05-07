@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import bmo from "../../Assets/Projects/bmo.png";
 import sousTraiter from "../../Assets/Projects/soustraiter.png";
 import appliScan from "../../Assets/Projects/appli_scan.png";
+import apiPoste from "../../Assets/Projects/apiposte.png";
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -54,6 +55,16 @@ function Projects() {
       demoLink: "https://www.sous-traiter.com/offre_emploi/liste_emploi.php",
       type: "web",
       langage: "HTML, CSS, PHP, JS, JQuery, SQL",
+    },
+    {
+      imgPath: apiPoste,
+      title: "API Poste",
+      subTitle: "Site web",
+      description:
+        "Projet réalisé dans le cadre d'un test de recrutement. Le site permet de consulter le statut de l'envoie d'un colis via l'API de La Poste.",
+      demoLink: "http://apiposte.fwh.is",
+      type: "web",
+      langage: "HTML, CSS, PHP",
     },
   ];
 
