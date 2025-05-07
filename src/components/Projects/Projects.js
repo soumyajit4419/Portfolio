@@ -28,6 +28,16 @@ function Projects() {
 
   const projects = [
     {
+      imgPath: apiPoste,
+      title: "API Poste",
+      subTitle: "Site web",
+      description:
+        "Projet réalisé dans le cadre d'un test de recrutement. Le site permet de consulter le statut de l'envoie d'un colis via l'API de La Poste.",
+      demoLink: "http://apiposte.fwh.is",
+      type: "web",
+      langage: "HTML, CSS, PHP",
+    },
+    {
       imgPath: bmo,
       title: "La Bourse de la Machine Outil",
       subTitle: "Site web",
@@ -55,16 +65,6 @@ function Projects() {
       demoLink: "https://www.sous-traiter.com/offre_emploi/liste_emploi.php",
       type: "web",
       langage: "HTML, CSS, PHP, JS, JQuery, SQL",
-    },
-    {
-      imgPath: apiPoste,
-      title: "API Poste",
-      subTitle: "Site web",
-      description:
-        "Projet réalisé dans le cadre d'un test de recrutement. Le site permet de consulter le statut de l'envoie d'un colis via l'API de La Poste.",
-      demoLink: "http://apiposte.fwh.is",
-      type: "web",
-      langage: "HTML, CSS, PHP",
     },
   ];
 
