@@ -23,12 +23,20 @@
   "typewriter-effect": "^3.0.1",
   "web-vitals": "^3.3.1"
 },
+  "devDependencies": {
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "@types/react-router-dom": "^6.4.3",
+    "typescript": "^5.3.0"
+  },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
