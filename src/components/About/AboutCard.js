@@ -13,8 +13,8 @@ function AboutCard() {
             <br />
             I am currently a student at <span className="purple">APJ ABDUL KALAM TECHNICAL UNIVERSITY</span>
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I am pursuing my btech in <span className="purple">Computer science engineering</span>
+            
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -34,7 +34,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Arpan</footer>
         </blockquote>
       </Card.Body>
     </Card>
