@@ -40,7 +40,7 @@ function Contact() {
           <h1 className="contact-heading">
             Contact
           </h1>
-            <p className="contact-description">
+            <p className="contact-description" style={{ textAlign: "center" }}>
                 N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
             </p>
           <Form ref={formRef} onSubmit={sendEmail}>
@@ -109,7 +109,7 @@ function Contact() {
           <hr style={{ margin: "20px", color: "#BFCDE0", borderWidth: "3px" }} />
 
           <Row>
-            <Col md={6} className="contact-info">
+            <Col md={6} className="contact-info" style={{ textAlign: "center" }}>
               <h3>Informations de contact</h3>
               <p>
                 Email : <strong>sacha.desquesnes@gmail.com</strong>
@@ -121,18 +121,18 @@ function Contact() {
                 Localisation : <strong>Caen, France</strong>
               </p>
             </Col>
-            <Col md={6} className="contact-info">
+            <Col md={6} className="contact-info" style={{ textAlign: "center" }}>
             <h3>Retrouvez moi sur :</h3>
             <ul className="footer-icons">
                 <li className="social-icons">
                     <a href="https://www.linkedin.com/in/sacha-desquesnes/"
                         style={{ color: "white" }}
-                        target="_blank" 
+                        target="_blank"
                         rel="noreferrer"
                         className="icon-colour  home-social-icons">
                         <FaLinkedinIn />
                     </a>
-                </li>         
+                </li>
             </ul>
             </Col>
           </Row>

@@ -15,13 +15,13 @@ function Home2() {
       <Container>
         <Row>
           <h1 style={{ fontSize: "2.6em" }}>
-              <strong className="home-text">Situation actuelle </strong> 
+              <strong className="home-text" style={{ textAlign: "center" }}>Situation actuelle </strong>
             </h1>
           <Col md={8} className="home-about-description">
-           
+
             <p className="home-about-body">
-              Récemment diplômé d'un <b className="home-text">BUT Informatique</b>, 
-              je suis à la recherche d'une opportunité professionnelle en tant que 
+              Récemment diplômé d'un <b className="home-text">BUT Informatique</b>,
+              je suis à la recherche d'une opportunité professionnelle en tant que
               <b className="home-text"> développeur web</b>.
               <br />
               <br />Mes compétences principales sont axées sur
@@ -40,7 +40,7 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-       
+
       </Container>
     </Container>
   );

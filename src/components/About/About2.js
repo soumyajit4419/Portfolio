@@ -11,17 +11,15 @@ function About2() {
         <Container fluid className="about-section-footer">
             <Container >
                 <div className="about-footer">
-
-                    <h1 className="project-heading">
+                    <h1 className="project-heading" style={{ textAlign: "center" }}>
                         <strong className="home-text">Connaissances</strong> techniques
                     </h1>
                     <Techstack />
 
-                    <h1 className="project-heading">
+                    <h1 className="project-heading" style={{ textAlign: "center" }}>
                         <strong className="home-text">Outils</strong>
                     </h1>
                     <Toolstack />
-                
                 </div>
             </Container>
         </Container>

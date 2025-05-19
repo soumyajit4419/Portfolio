@@ -22,6 +22,7 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.9.3",
     "react-tsparticles": "^1.42.2",
+    "react-vertical-timeline-component": "^3.5.3",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },

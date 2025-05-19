@@ -82,18 +82,20 @@ function Projects() {
   return (
     <Container fluid className="project-section" id="projects">
       <Container>
-        <h1 className="project-heading">
-          Mes précédents <strong className="purple">projets </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Vous trouverez ici mes projets personnels et professionnels
-        </p>
+        <div style={{ textAlign: "center" }}>
+          <h1 className="project-heading" >
+            Mes précédents <strong className="purple">projets </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Vous trouverez ici mes projets personnels et professionnels
+          </p>
+        </div>
 
         {/* Affichage conditionnel : Carousel sur mobile, Row sur desktop */}
         {isMobile ? (
-          <Carousel style={{ paddingBottom: "50px" }}>
+          <Carousel style={{ paddingBottom: "50px" } }>
             {projects.map((project, index) => (
-              <Carousel.Item key={index}>
+              <Carousel.Item key={index} >
                 <div
                   onClick={() => handleShow(project)}
                   style={{ cursor: "pointer" }}

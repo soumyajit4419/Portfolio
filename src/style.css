@@ -1,16 +1,14 @@
 html {
-  
   --section-background-color-home: linear-gradient(
     to bottom left,
     rgba(93, 93, 129, 0.5),
     rgba(93, 93, 129, 0.5)
-  ); 
+  );
 
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(72,60,108, 0.8),
     rgba(72,60,108, 0.8)
-    
   );
   --imp-text-color: #FEFCFD;
   --primary-color: #FEFCFD;
@@ -99,7 +97,6 @@ button:focus {
 }
 
 .navbar {
-  
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
@@ -161,7 +158,7 @@ button:focus {
   .navbar {
     /*padding: 1rem 2rem !important;*/
     font-size: 1.4rem !important;
-    background-color: var(--dark-color) !important; 
+    background-color: var(--dark-color) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -173,7 +170,7 @@ button:focus {
 
 .logo {
   height: 3.4em !important;
-  width: 4.5em !important; 
+  width: 4.5em !important;
  /*  height: 15% !important;
   width: 15% !important;*/
 }
@@ -195,7 +192,7 @@ button:focus {
 
   .logo {
     height: 2.4em !important;
-    width: 3.5em !important; 
+    width: 3.5em !important;
    /*  height: 15% !important;
     width: 15% !important;*/
   }
@@ -255,10 +252,10 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100%; 
+  width: 100%;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -301,7 +298,6 @@ button:focus {
   .Typewriter__wrapper {
     font-size: 0.8em !important;
     font-weight: 500 !important;
-    
   }
 
   .Typewriter__cursor {
@@ -318,7 +314,6 @@ button:focus {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    
   }
 
   .home-content h1 {
@@ -327,12 +322,10 @@ button:focus {
   .home-about-section {
     height: 100vh !important;
   }
-  
 }
 
 .myAvtar {
   justify-content: center !important;
-  
 }
 
 .about-img {
@@ -357,19 +350,19 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; 
-  width: 100%; 
+  height: 70vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; 
-  text-align: center; 
+  justify-content: center;
+  text-align: center;
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
 @media (max-width: 767px) {
   .home-about-section {
-    height: 120vh; 
+    height: 120vh;
     font-size: 1.9vh;
   }
 
@@ -380,7 +373,6 @@ button:focus {
 
 .home-about-description {
   color: white !important;
- 
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -503,8 +495,8 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 100px !important;
-  padding-bottom: 30px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
   background-image: var(--section-background-color) !important;
 }
 
@@ -515,6 +507,21 @@ button:focus {
   height: auto !important;
   transition: transform 0.2s;
   cursor: pointer;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.5px;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 0.7em;
 }
 
 .appli-card img {
@@ -614,14 +621,12 @@ button:focus {
 /* --------- */
 
 .about-section {
-  
   position: relative !important;
   padding-top: 100px !important;
   background-image: var(--section-background-color) !important;
   background-position: top center;
   background-repeat: no-repeat;
   color: var(--primary-color);
-  
 }
 
 .about-section-footer {
@@ -692,9 +697,8 @@ button:focus {
 /* --------- */
 
 .resume-section {
-   
-  width: 100%; 
-  justify-content: center; 
+  width: 100%;
+  justify-content: center;
   text-align: center;
   position: relative !important;
   padding-top: 60px !important;
@@ -852,7 +856,6 @@ button:focus {
 }
 
 .contact-form {
-  
   padding: 20px;
   border-radius: 10px;
 }
@@ -886,52 +889,47 @@ button:focus {
   margin-bottom: 20px;
 }
 
-
-
 /* --------- */
 /* Modal */
 /* --------- */
 .custom-modal .modal-content {
-  background-color: rgba(30, 30, 47, 0.8); 
-  
+  background-color: rgba(30, 30, 47, 0.8);
   backdrop-filter: blur(10px);
   color: white;
-  border-radius: 10px; 
-  border: none; 
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
-  
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .custom-modal .modal-header {
-  border-bottom: 1px solid #6c757d; 
+  border-bottom: 1px solid #6c757d;
 }
 
 .custom-modal .modal-title {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .custom-modal .modal-dialog {
-  max-width: 80%; 
+  max-width: 80%;
 }
 
 .custom-modal .modal-body {
-  font-size: 1.5rem; 
-  line-height: 1.75; 
-  
+  font-size: 1.5rem;
+  line-height: 1.75;
 }
 
 .custom-modal .btn-primary {
-  background-color: #6c63ff; 
+  background-color: #6c63ff;
   border: none;
 }
 
 .custom-modal .btn-primary:hover {
-  background-color: #5a54e0; 
+  background-color: #5a54e0;
 }
 
 .custom-modal .btn-secondary {
-  background-color: #444; 
+  background-color: #444;
   border: none;
 }
 
@@ -966,16 +964,15 @@ button:focus {
   transition: all 0.3s ease;
   position: relative;
   padding: 20px;
-  
 }
 
 @media (min-width: 1024px) {
   .timeline-item.shifted {
-    transform: translateX(-300px); 
+    transform: translateX(-300px);
   }
-  
+
   .timeline-item.active {
-    transform: translateX(-300px); 
+    transform: translateX(-300px);
   }
 }
 
@@ -986,7 +983,7 @@ button:focus {
 
 .timeline-details {
   position: absolute;
-  left: 320px; 
+  left: 320px;
   top: 0;
   background-color: var(--dark-color);
   color: white;
@@ -995,7 +992,7 @@ button:focus {
   width: 650px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
-  display: none; 
+  display: none;
   line-height: 1.75
 }
 
@@ -1004,5 +1001,17 @@ button:focus {
 }
 
 .timeline-item.active .timeline-details {
-  display: block; 
+  display: block;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.timeline-section {
+  background: "transparent";
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

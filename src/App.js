@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Timeline from "./components/Resume/Timeline";  
+import Timeline from "./components/Resume/Timeline";
 import Resume from "./components/Resume/ResumeNew";
 import Contact from "./components/Contact/Contact";
 import AnimatedWorms from "./components/AnimatedWorms";
@@ -30,13 +30,13 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <AnimatedWorms />
         <Navbar />
-    
+
         {/* Sections */}
         <Home />
         <About />
         <Projects />
         <Timeline />
- 
+
         <Resume />
         <Contact />
         <Footer />

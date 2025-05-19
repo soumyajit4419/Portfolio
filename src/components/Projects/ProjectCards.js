@@ -9,8 +9,8 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Subtitle>{props.subTitle}</Card.Subtitle>
+        <h3 className="project-title">{props.title}</h3>
+        <h5 className="project-subtitle">{props.subTitle}</h5>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>

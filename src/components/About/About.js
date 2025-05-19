@@ -14,7 +14,7 @@ function About() {
         <Container >
 
           <Row style={{ justifyContent: "center" }}>
-            <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" }}>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" , textAlign: "center" }}>
               À propos de <strong className="purple">moi </strong>
             </h1>
             <Col md={4} className="about-img">
@@ -31,15 +31,11 @@ function About() {
                 justifyContent: "center",
                 paddingTop: "30px",
                 paddingBottom: "50px",
-              
               }}
             >
-              
               <Aboutcard />
             </Col>
-           
           </Row>
-        
         </Container>
       </Container>
 
