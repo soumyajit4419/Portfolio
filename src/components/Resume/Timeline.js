@@ -89,7 +89,7 @@ function Timeline() {
       details: [
         "Obtention de mon BUT Informatique spécialité système d'information et numérique.",
       ],
-      icon: <FaBriefcase />,
+      icon: <FaGraduationCap />,
       color: "#5D5D81",
       entreprise : "Lycée Alexis de Tocqueville",
       lieu : "Cherbourg-Octeville",
