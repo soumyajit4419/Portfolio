@@ -5,6 +5,7 @@ import bmo from "../../Assets/Projects/bmo.png";
 import sousTraiter from "../../Assets/Projects/soustraiter.png";
 import appliScan from "../../Assets/Projects/appli_scan.png";
 import apiPoste from "../../Assets/Projects/apiposte.png";
+import asSarceaux from "../../Assets/Projects/as_sarceaux.png";
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -27,6 +28,16 @@ function Projects() {
   }, []);
 
   const projects = [
+    {
+      imgPath: asSarceaux,
+      title: "AS Sarceaux",
+      subTitle: "Site web",
+      description:
+        "Conception et développement du site vitrine officiel de l’AS Sarceaux, association sportive locale.",
+      demoLink: "https://as-sarceaux.vercel.app",
+      type: "web",
+      langage: "React, HTML, CSS, JS",
+    },
     {
       imgPath: apiPoste,
       title: "API Poste",
@@ -52,7 +63,7 @@ function Projects() {
       title: "Application de scan de code barre",
       subTitle: "Application Android",
       description:
-        "Création d'une application Android permettant de scanner les codes-barres des visiteurs à l'entrée d'un salon d'exposition de machines industrielles. Réalisée en 2023 dans le cadre de mon stage de deuxième année de BUT Informatique. Application uniquement utilisée en interne.",
+        "Création de deux applications Android en 2023, dans le cadre de mon stage de deuxième année de BUT Informatique, pour un salon d’exposition de machines industrielles. La première application est destinée aux employés, afin de gérer les entrées et sorties des visiteurs via un système de scan de codes-barres. La seconde s’adresse aux visiteurs et leur permet de scanner les badges d'autres participants afin de faciliter la prise de contact.",
       type: "mobile",
       langage: "Kotlin",
     },
@@ -92,7 +103,6 @@ function Projects() {
                     isBlog={false}
                     title={project.title}
                     subTitle={project.subTitle}
-                   
                   />
                 </div>
               </Carousel.Item>
@@ -103,7 +113,7 @@ function Projects() {
             {projects.map((project, index) => (
               <Col
                 md={4}
-                className={`project-card ${project.type === "mobile" ? "appli-card" : ""}`}
+                className={`project-card ${project.type === "mobile" ? "appli-card" : ""} ${project.type === "web" ? "web-card" : ""}`}
                 key={index}
                 onClick={() => handleShow(project)}
               >
@@ -112,7 +122,6 @@ function Projects() {
                   isBlog={false}
                   title={project.title}
                   subTitle={project.subTitle}
-                
                 />
               </Col>
             ))}
@@ -136,7 +145,7 @@ function Projects() {
             </Col>
             <Col md={6}>
               <p><strong>Description</strong> <br />{selectedProject?.description}</p>
-              <p><strong>Langages utilisés</strong> <br />{selectedProject?.langage}</p>
+              <p><strong>Technologies utilisées</strong> <br />{selectedProject?.langage}</p>
             </Col>
           </Row>
           {selectedProject?.demoLink && (
@@ -148,13 +157,11 @@ function Projects() {
             >
               Voir le projet
             </Button>
-            
           )}
           <Button variant="secondary" style={{ float: "right" }} onClick={handleClose}>
             Fermer
           </Button>
         </Modal.Body>
-   
       </Modal>
     </Container>
   );

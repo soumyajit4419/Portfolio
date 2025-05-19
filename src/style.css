@@ -497,7 +497,6 @@ button:focus {
 
 .blockquote-footer {
   color: #a588c0 !important;
-  
 }
 /* --------- */
 /* Projects */
@@ -511,13 +510,11 @@ button:focus {
 
 .project-card {
   padding-top: 50px !important;
-  
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
   transition: transform 0.2s;
   cursor: pointer;
- 
 }
 
 .appli-card img {
@@ -526,7 +523,11 @@ button:focus {
 
 .project-img-modal {
   width: -webkit-fill-available !important;
+  border-radius: 30px !important;
+}
 
+.web-card{
+  border-radius: 25px !important;
 }
 
 .project-card-view {
@@ -577,7 +578,7 @@ button:focus {
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
-  border-radius: 10px !important;
+  border-radius: 30px !important;
 }
 
 .blog-img {
