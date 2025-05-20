@@ -350,14 +350,14 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -622,7 +622,7 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 100px !important;
+  padding-top: 50px !important;
   background-image: var(--section-background-color) !important;
   background-position: top center;
   background-repeat: no-repeat;

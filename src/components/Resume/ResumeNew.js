@@ -19,13 +19,13 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section" id="resume">
 
-      <h1 style={{ fontSize: "2.6em" }}>
-              <strong className="home-text">Consultez mon Curriculum Vitae </strong> 
-            </h1>
+        <h1 style={{ fontSize: "2.6em" }}>
+              <strong className="home-text">Pour consulter mon Curriculum Vitae </strong>
+        </h1>
 
-            <br />
-            <br />
- 
+        <br />
+        <br />
+
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"

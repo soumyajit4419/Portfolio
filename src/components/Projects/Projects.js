@@ -33,7 +33,7 @@ function Projects() {
       title: "AS Sarceaux",
       subTitle: "Site web",
       description:
-        "Conception et développement du site vitrine officiel de l’AS Sarceaux, association sportive locale.",
+        "Conception et développement du site vitrine officiel de l’AS Sarceaux, association sportive locale. Réalisé en collaboration avec <a href='https://www.linkedin.com/in/samuel-launay-174306250/' target='_blank' style='color: #FEFCFD;'>Samuel Launay</a>.",
       demoLink: "https://as-sarceaux.vercel.app",
       type: "web",
       langage: "React, HTML, CSS, JS",
@@ -146,7 +146,10 @@ function Projects() {
               />
             </Col>
             <Col md={6}>
-              <p><strong>Description</strong> <br />{selectedProject?.description}</p>
+              <p>
+                <strong>Description</strong><br />
+                <span dangerouslySetInnerHTML={{ __html: selectedProject?.description }} />
+              </p>
               <p><strong>Technologies utilisées</strong> <br />{selectedProject?.langage}</p>
             </Col>
           </Row>

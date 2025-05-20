@@ -99,7 +99,7 @@ function Timeline() {
   return (
     <div className="timeline-section">
       <h1 className="project-heading timeline-heading" style={{ textAlign: "center" }}>
-        Mes <strong className="home-text">expériences professionnelles</strong>
+        Mon <strong className="home-text">parcours</strong>
       </h1>
       <VerticalTimeline>
         {timelineData.map((item, idx) => (
