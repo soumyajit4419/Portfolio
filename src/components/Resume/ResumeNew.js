@@ -31,7 +31,7 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", height: "70px", placeContent: "center", fontSize: "1.6em" }}
           >
             <AiOutlineDownload />
             &nbsp;Cliquez ici

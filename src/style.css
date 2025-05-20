@@ -7,8 +7,8 @@ html {
 
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(72,60,108, 0.8),
-    rgba(72,60,108, 0.8)
+    rgba(72,60,108, 0.1),
+    rgba(72,60,108, 0.1)
   );
   --imp-text-color: #FEFCFD;
   --primary-color: #FEFCFD;
@@ -16,6 +16,7 @@ html {
   --accent-color: #5D5D81;
   --dark-color: #3B3355;
   --background-color: #000505;
+  --highlight-text-color: #743c9c;
 }
 
 body {
@@ -24,15 +25,36 @@ body {
 }
 
 .purple {
-  color: var(--secondary-color) !important;
+  color: var(--highlight-text-color) !important;
 }
 
 .home-text {
-  color: var(--secondary-color) !important;
+  color: var(--highlight-text-color) !important;
 }
 
 button:focus {
   box-shadow: none !important;
+}
+
+.titre {
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.titre::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0;
+  height: 3px;
+  background: var(--highlight-text-color, #743c9c);
+  transition: width 0.4s cubic-bezier(.77,0,.18,1);
+}
+
+.titre.visible::after {
+  width: 100%;
 }
 
 /* --------- */
@@ -169,10 +191,8 @@ button:focus {
 }
 
 .logo {
-  height: 3.4em !important;
-  width: 4.5em !important;
- /*  height: 15% !important;
-  width: 15% !important;*/
+  height: 2.4em !important;
+  width: 3.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -285,19 +305,18 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #fff !important;
+  font-size: 1.5em !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
+  font-size: 1.5em !important;
   color: var(--secondary-color) !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 0.8em !important;
-    font-weight: 500 !important;
+    font-size: 1em !important;
+    font-weight: 600 !important;
   }
 
   .Typewriter__cursor {
@@ -308,6 +327,12 @@ button:focus {
   .home-content h1 {
     font-size: 2rem;
   }
+}
+
+.arrow-down {
+  font-size: 50px;
+  cursor: pointer !important;
+  display: inline-block;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -326,10 +351,21 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
+  padding-right: 20px !important;
 }
 
 .about-img {
   align-content: center;
+}
+
+.img-fluid {
+  max-width: 100% !important;
+}
+
+.photo{
+  border: #743c9c 5px solid !important;
+  border-radius: 10% !important;
+  max-width: 100% !important;
 }
 
 @media (max-width: 767px) {
@@ -362,7 +398,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .home-about-section {
-    height: 120vh;
+    height: 90vh;
     font-size: 1.9vh;
   }
 
@@ -379,7 +415,7 @@ button:focus {
 
 .home-about-body {
   padding-top: 50px;
-  font-size: 1.8em !important;
+  font-size: 1.5em !important;
   text-align: left;
 }
 
@@ -541,7 +577,7 @@ button:focus {
   box-shadow: 0 4px 5px 3px rgba(24, 26, 39, 0.459) !important;
   color: var(--primary-color) !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
+  opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -584,7 +620,7 @@ button:focus {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   border-radius: 30px !important;
 }
 
@@ -614,6 +650,7 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+  padding-bottom: 20px !important;
 }
 
 /* --------- */
@@ -623,6 +660,7 @@ button:focus {
 .about-section {
   position: relative !important;
   padding-top: 50px !important;
+  padding-bottom: 50px !important;
   background-image: var(--section-background-color) !important;
   background-position: top center;
   background-repeat: no-repeat;
@@ -637,7 +675,7 @@ button:focus {
 }
 
 .tech-icons {
-  background-color: #181a27 !important;
+  background-color: rgba(116,60,156, 0.3) !important;
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
@@ -650,6 +688,14 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+.con-tech-icons {
+   width: 20% !important;
+}
+
+.outil-tech-icons {
+   width: 10% !important;
 }
 
 .progress-bar {
@@ -845,7 +891,7 @@ button:focus {
 
 .contact-section {
   padding: 50px 0;
-  background-color: var(--dark-color);
+  background-image: var(--section-background-color) !important;
   color: var(--primary-color);
 }
 

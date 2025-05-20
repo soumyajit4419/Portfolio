@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import Titre from "../Common/Titre";
 
 
 function Timeline() {
@@ -24,6 +25,7 @@ function Timeline() {
       color: "#5D5D81",
       entreprise : "Action",
       lieu : "Mondeville",
+      bgColor : "#743c9c",
     },
     {
       year: "2024",
@@ -39,6 +41,7 @@ function Timeline() {
       color: "#5D5D81",
       entreprise : "Micromania",
       lieu : "Caen",
+      bgColor : "#3B3355",
     },
     {
       year: "2024",
@@ -51,6 +54,7 @@ function Timeline() {
       color: "#5D5D81",
       entreprise : "IUT Grand Ouest Normandie",
       lieu : "Ifs",
+      bgColor : "#743c9c",
     },
     {
       year: "2023 - 2024",
@@ -66,9 +70,10 @@ function Timeline() {
       color: "#5D5D81",
       entreprise : "Allnet",
       lieu : "Mondeville",
+      bgColor : "#3B3355",
     },
     {
-      year: "2023 - 2023",
+      year: "2023",
       title: "Développeur web",
       type: "Stage",
       details: [
@@ -81,6 +86,7 @@ function Timeline() {
       color: "#5D5D81",
       entreprise : "Allnet",
       lieu : "Mondeville",
+      bgColor : "#743c9c",
     },
     {
       year: "2021",
@@ -93,13 +99,14 @@ function Timeline() {
       color: "#5D5D81",
       entreprise : "Lycée Alexis de Tocqueville",
       lieu : "Cherbourg-Octeville",
+      bgColor : "#3B3355",
     },
   ];
 
   return (
     <div className="timeline-section">
       <h1 className="project-heading timeline-heading" style={{ textAlign: "center" }}>
-        Mon <strong className="home-text">parcours</strong>
+        <Titre>Mon <strong className="home-text">parcours</strong></Titre>
       </h1>
       <VerticalTimeline>
         {timelineData.map((item, idx) => (
@@ -108,7 +115,7 @@ function Timeline() {
             date={item.year}
             iconStyle={{ background: item.color, color: "#fff" }}
             icon={item.icon}
-            contentStyle={{ background: "#3B3355", color: "#fff" }}
+            contentStyle={{ background: item.bgColor, color: "#fff", opacity: 0.8 }}
             contentArrowStyle={{ borderRight: "7px solid #3B3355" }}
           >
             <h3 className="vertical-timeline-element-title">{item.title}</h3>

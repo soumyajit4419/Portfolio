@@ -7,7 +7,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <div style={{ fontSize: "1.5em" }}>
+          <div style={{ fontSize: "1.4em" }}>
             <p style={{ textAlign: "initial" }}>
               Bonjour ! Je m'appelle <span className="purple">Sacha Desquesnes </span>,
               j'ai 21 ans et j'habite sur <span className="purple"> Caen</span> dans le Calvados.
@@ -18,7 +18,6 @@ function AboutCard() {
               <br />
              </p>
           </div>
-         
         </blockquote>
       </Card.Body>
     </Card>

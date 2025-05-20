@@ -13,7 +13,6 @@ import {
   DiSymfony,
   DiMysql,
 } from "react-icons/di";
-
 import {
   SiPostgresql,
   SiKotlin,
@@ -65,7 +64,7 @@ function Techstack() {
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     if (progressRef.current) {
@@ -84,61 +83,71 @@ function Techstack() {
       style={{ justifyContent: "center", paddingBottom: "50px" }}
       ref={progressRef}
     >
-      <Col xs={4} md={2} className="tech-icons" title="HTML5">
-        <DiHtml5 />
-        <ProgressBar now={progress.html} />
+      <Col xs={12} md={6}>
+        <h3 style={{ textAlign: "center", marginBottom: 20 }}>Front-End</h3>
+        <div className="d-flex flex-wrap justify-content-center">
+          <div className="tech-icons con-tech-icons" title="HTML5">
+            <DiHtml5 />
+            <ProgressBar now={progress.html} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="CSS3">
+            <DiCss3 />
+            <ProgressBar now={progress.css} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="Bootstrap">
+            <DiBootstrap />
+            <ProgressBar now={progress.bootstrap} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="Tailwind CSS">
+            <SiTailwindcss />
+            <ProgressBar now={progress.tailwind} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="JavaScript">
+            <DiJavascript1 />
+            <ProgressBar now={progress.javascript} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="TypeScript">
+            <SiTypescript />
+            <ProgressBar now={progress.typescript} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="React">
+            <DiReact />
+            <ProgressBar now={progress.react} />
+          </div>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="CSS3">
-        <DiCss3 />
-        <ProgressBar now={progress.css} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Bootstrap">
-        <DiBootstrap />
-        <ProgressBar now={progress.bootstrap} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Tailwind CSS">
-        <SiTailwindcss />
-        <ProgressBar  now={progress.tailwind} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="PHP">
-        <DiPhp />
-        <ProgressBar now={progress.php} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Symfony">
-        <DiSymfony />
-        <ProgressBar now={progress.symfony} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="JavaScript">
-        <DiJavascript1 />
-        <ProgressBar now={progress.javascript} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="TypeScript">
-        <SiTypescript />
-        <ProgressBar  now={progress.typescript}/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="React">
-        <DiReact />
-        <ProgressBar now={progress.react} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="MySQL">
-        <DiMysql />
-        <ProgressBar now={progress.mysql} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="MongoDB">
-        <DiMongodb />
-        <ProgressBar  now={progress.mongodb} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="PostgreSQL">
-        <SiPostgresql />
-        <ProgressBar  now={progress.postgresql} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Kotlin">
-        <SiKotlin />
-        <ProgressBar  now={progress.kotlin} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="GIT">
-        <DiGit />
-        <ProgressBar  now={progress.git} />
+      <Col xs={12} md={6}>
+        <h3 style={{ textAlign: "center", marginBottom: 20 }}>Back-End</h3>
+        <div className="d-flex flex-wrap justify-content-center">
+          <div className="tech-icons con-tech-icons" title="PHP">
+            <DiPhp />
+            <ProgressBar now={progress.php} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="Symfony">
+            <DiSymfony />
+            <ProgressBar now={progress.symfony} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="MySQL">
+            <DiMysql />
+            <ProgressBar now={progress.mysql} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="MongoDB">
+            <DiMongodb />
+            <ProgressBar now={progress.mongodb} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="PostgreSQL">
+            <SiPostgresql />
+            <ProgressBar now={progress.postgresql} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="Kotlin">
+            <SiKotlin />
+            <ProgressBar now={progress.kotlin} />
+          </div>
+          <div className="tech-icons con-tech-icons" title="GIT">
+            <DiGit />
+            <ProgressBar now={progress.git} />
+          </div>
+        </div>
       </Col>
     </Row>
   );

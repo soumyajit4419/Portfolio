@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import { IoMdPerson } from "react-icons/io";
 import { MdOutlineAlternateEmail, MdOutlineMessage } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
+import Titre from "../Common/Titre";
 
 function Contact() {
   const formRef = useRef();
@@ -38,7 +39,7 @@ function Contact() {
       <Container fluid className="contact-section">
         <Container>
           <h1 className="contact-heading">
-            Contact
+            <Titre>Contact</Titre>
           </h1>
             <p className="contact-description" style={{ textAlign: "center" }}>
                 N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
