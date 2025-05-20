@@ -13,23 +13,29 @@ function Home() {
           <Row>
             <Col md={12} className="text-center">
               <h1>
-                <Typewriter
-                  options={{
-                    strings: [
-                      "<strong class='main-name'>SACHA<br />DESQUESNES</strong>",
-                      "<strong class='main-job'>Développeur web Full-Stack</strong>",
-                    ],
-                    autoStart: true,
-                    loop: true, 
-                    delay: 75,
-                    deleteSpeed: 50
-                    
-                  }}
-                />
+                <strong className='main-name'>SACHA DESQUESNES</strong>
+                <br />
+                <strong className='main-job'>Développeur web
+                  <Typewriter
+                    options={{
+                      strings: [
+                        " Full-Stack",
+                        " Front-End",
+                        " Back-End",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      delay: 75,
+                      deleteSpeed: 50
+                    }}
+                  />
+                </strong>
               </h1>
               <br />
               <br />
-              <div style={{ fontSize: '50px' }}><FaRegArrowAltCircleDown /></div>
+              <div className="arrow-down">
+                <FaRegArrowAltCircleDown />
+              </div>
             </Col>
           </Row>
         </Container>

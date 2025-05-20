@@ -12,25 +12,24 @@ import {
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons" title="GitHub">
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="GitHub">
         <SiGithub />
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="GitLab">
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="GitLab">
         <SiGitlab />
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="MacOS">
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="MacOS">
         <SiMacos />
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Visual Studio Code">
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="Visual Studio Code">
         <SiVisualstudiocode />
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="PHPStorm">
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="PHPStorm">
         <SiPhpstorm />
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Android Studio">
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="Android Studio">
         <SiAndroidstudio />
       </Col>
-      
     </Row>
   );
 }

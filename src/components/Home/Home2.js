@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import Titre from "../Common/Titre";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -14,9 +15,14 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <h1 style={{ fontSize: "2.6em" }}>
-              <strong className="home-text" style={{ textAlign: "center" }}>Situation actuelle </strong>
-            </h1>
+            <strong className="home-text" style={{ textAlign: "center" }}>
+              <Titre style={{ fontSize: "2.6em" }}>Situation actuelle </Titre>
+            </strong>
+          <Col md={4} className="myAvtar">
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
           <Col md={8} className="home-about-description">
 
             <p className="home-about-body">
@@ -33,11 +39,6 @@ function Home2() {
               Toutefois, je reste toujours curieux et motivé à l'idée d'apprendre de
               <b className="home-text"> nouvelles technologies</b> !
             </p>
-          </Col>
-          <Col md={4} className="myAvtar about-img">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
           </Col>
         </Row>
 

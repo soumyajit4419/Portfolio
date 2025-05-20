@@ -6,6 +6,8 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import About2 from "./About2";
+import Titre from "../Common/Titre";
+import photo from "../../Assets/photo.JPG";
 
 function About() {
   return (
@@ -15,25 +17,31 @@ function About() {
 
           <Row style={{ justifyContent: "center" }}>
             <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" , textAlign: "center" }}>
-              À propos de <strong className="purple">moi </strong>
+              <Titre>À propos de <strong className="purple">moi </strong></Titre>
             </h1>
-            <Col md={4} className="about-img">
-              <img
-                src={laptopImg}
-                alt="about"
-                className="img-fluid"
-                style={{ maxWidth: "100%" }}
-              />
-            </Col>
             <Col
               md={8}
+              xs={12}
+              order={{ xs: 1, md: 2 }}
               style={{
                 justifyContent: "center",
                 paddingTop: "30px",
-                paddingBottom: "50px",
               }}
             >
               <Aboutcard />
+            </Col>
+            <Col
+              md={4}
+              xs={12}
+              order={{ xs: 2, md: 1 }}
+              className="about-img"
+              style={{ textAlign: "center", marginBottom: 20 }}
+            >
+              <img
+                src={photo}
+                alt="about"
+                className="photo"
+              />
             </Col>
           </Row>
         </Container>

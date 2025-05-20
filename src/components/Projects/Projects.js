@@ -6,6 +6,7 @@ import sousTraiter from "../../Assets/Projects/soustraiter.png";
 import appliScan from "../../Assets/Projects/appli_scan.png";
 import apiPoste from "../../Assets/Projects/apiposte.png";
 import asSarceaux from "../../Assets/Projects/as_sarceaux.png";
+import Titre from "../Common/Titre";
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -83,12 +84,18 @@ function Projects() {
     <Container fluid className="project-section" id="projects">
       <Container>
         <div style={{ textAlign: "center" }}>
-          <h1 className="project-heading" >
-            Mes précédents <strong className="purple">projets </strong>
+          <h1 className="project-heading">
+            {isMobile ? (
+              <span>
+              <Titre>Mes précédents</Titre>
+              <Titre><strong className="purple">projets</strong></Titre>
+              </span>
+            ) : (
+              <Titre>
+                Mes précédents <strong className="purple">projets</strong>
+              </Titre>
+            )}
           </h1>
-          <p style={{ color: "white" }}>
-            Vous trouverez ici mes projets personnels et professionnels
-          </p>
         </div>
 
         {/* Affichage conditionnel : Carousel sur mobile, Row sur desktop */}
