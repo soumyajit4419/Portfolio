@@ -9,9 +9,14 @@ import {
   SiGitlab,
 } from "react-icons/si";
 
+import { DiGit } from "react-icons/di";
+
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="GitHub">
+        <DiGit />
+      </Col>
       <Col xs={4} md={2} className="tech-icons outil-tech-icons" title="GitHub">
         <SiGithub />
       </Col>

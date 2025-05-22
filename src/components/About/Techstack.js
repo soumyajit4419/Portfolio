@@ -35,7 +35,6 @@ function Techstack() {
     kotlin: 0,
     typescript: 0,
     tailwind: 0,
-    git: 0,
   });
 
   const progressRef = useRef(null);
@@ -59,7 +58,6 @@ function Techstack() {
               kotlin: 60,
               typescript: 60,
               tailwind: 60,
-              git: 75,
             });
           }
         });
@@ -142,10 +140,6 @@ function Techstack() {
           <div className="tech-icons con-tech-icons" title="Kotlin">
             <SiKotlin />
             <ProgressBar now={progress.kotlin} />
-          </div>
-          <div className="tech-icons con-tech-icons" title="GIT">
-            <DiGit />
-            <ProgressBar now={progress.git} />
           </div>
         </div>
       </Col>

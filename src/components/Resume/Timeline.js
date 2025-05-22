@@ -12,6 +12,7 @@ function Timeline() {
   const timelineData = [
     {
       year: "2024",
+      date: "Novembre - Décembre 2024",
       title: "Employé polyvalent",
       type: "CDI",
       details: [
@@ -29,6 +30,7 @@ function Timeline() {
     },
     {
       year: "2024",
+      date: "Août 2024",
       title: "Vendeur",
       type: "CDD",
       details: [
@@ -45,6 +47,7 @@ function Timeline() {
     },
     {
       year: "2024",
+      date: "Septembre 2021 - Juin 2024",
       title: "BUT Informatique",
       type: "BAC +3",
       details: [
@@ -58,6 +61,7 @@ function Timeline() {
     },
     {
       year: "2023 - 2024",
+      date: "Septembre 2023 - Juin 2024",
       title: "Développeur web",
       type: "Alternance",
       details: [
@@ -74,6 +78,7 @@ function Timeline() {
     },
     {
       year: "2023",
+      date: "Mai - Juillet 2023",
       title: "Développeur web",
       type: "Stage",
       details: [
@@ -90,6 +95,7 @@ function Timeline() {
     },
     {
       year: "2021",
+      date: "Septembre 2018 - Juin 2021",
       title: "Baccalauréat Technologique STI2D",
       type: "BAC",
       details: [
@@ -120,6 +126,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">{item.title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{item.entreprise} à {item.lieu}</h4>
+            <h5 style={{ fontSize: "0.9em" }}>{item.date}</h5>
             <br />
             <h5 style={{ marginBottom: 10 }}>{item.type}</h5>
             <hr />
