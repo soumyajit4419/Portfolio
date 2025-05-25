@@ -1,9 +1,10 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+  <a href="https://portfolioarpanmishra.netlify.app/" target="_blank">arpan.tech</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="![image](https://github.com/user-attachments/assets/69d39b4c-5b81-495a-8ef2-ab804af1036d)
+" />
 </div>
 
 <br/>
