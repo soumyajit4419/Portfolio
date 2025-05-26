@@ -11,6 +11,21 @@ import Titre from "../Common/Titre";
 function Timeline() {
   const timelineData = [
     {
+      year: "2025",
+      date: "Mars 2025 - Aujourd'hui",
+      title: "Développeur web Freelance",
+      type: "Freelance",
+      details: [
+        "Réalisation de projets web personnels ou pour divers clients.",
+        "Conception et développement de sites web et applications.",
+      ],
+      icon: <FaBriefcase />,
+      color: "#5D5D81",
+      entreprise : "",
+      lieu : "Caen",
+      bgColor : "#3B3355",
+    },
+    {
       year: "2024",
       date: "Novembre - Décembre 2024",
       title: "Employé polyvalent",

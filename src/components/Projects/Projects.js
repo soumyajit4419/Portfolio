@@ -6,6 +6,7 @@ import sousTraiter from "../../Assets/Projects/soustraiter.png";
 import appliScan from "../../Assets/Projects/appli_scan.png";
 import apiPoste from "../../Assets/Projects/apiposte.png";
 import asSarceaux from "../../Assets/Projects/as_sarceaux.png";
+import projetEnCours from "../../Assets/Projects/projet_en_cours.png";
 import Titre from "../Common/Titre";
 
 function Projects() {
@@ -29,6 +30,15 @@ function Projects() {
   }, []);
 
   const projects = [
+    {
+      imgPath: projetEnCours,
+      title: "Projet web en cours",
+      subTitle: "Site web",
+      description:
+        "",
+      type: "web",
+      langage: "React, Symfony, PHP, HTML, CSS, JS",
+    },
     {
       imgPath: asSarceaux,
       title: "AS Sarceaux",
