@@ -565,8 +565,13 @@ button:focus {
 }
 
 .project-img-modal {
-  width: -webkit-fill-available !important;
+  width: 100% !important;
+  max-width: 500px;
+  height: auto !important;
   border-radius: 30px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .web-card{
