@@ -6,3 +6,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
+/* No additional CSS is required to check directories or run the application.
+  These actions are performed using terminal commands, not CSS. */
