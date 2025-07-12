@@ -18,6 +18,10 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+button:focus {
+  box-shadow: none !important;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -72,7 +76,7 @@ html {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #212038d8 !important;
+  background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -86,7 +90,6 @@ html {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 1.5rem !important;
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
@@ -409,6 +412,7 @@ html {
 }
 
 .footer-body {
+  z-index: 1;
   text-align: center !important;
 }
 
@@ -598,10 +602,6 @@ html {
 /* Resume */
 /* --------- */
 
-.react-pdf__Page__textContent {
-  background-color: #181424;
-  color: rgb(255, 255, 255) !important;
-}
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
