@@ -57,7 +57,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              For more info about me, <a href="#about" className="purple"><b>click here.</b></a>
+              For more info about me, <a href="/about" className="purple"><b>click here.</b></a>
             </p>
           </Col>
 
