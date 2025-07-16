@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import AchievementCard from "./AchievementCard";
 
 function About() {
   return (
@@ -33,9 +34,32 @@ function About() {
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
+
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <strong className="purple">Achievement</strong>
+            </h1>
+            <AchievementCard />
+          </Col>
+          <Col
+            md={5}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img"
+          >
+            <img src={laptopImg} alt="about" className="img-fluid" />
+          </Col>
         </Row>
+
+        
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          <strong>Skillset </strong>
         </h1>
 
         <Techstack />
