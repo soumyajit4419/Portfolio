@@ -11,10 +11,10 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Adarsh Pakala </span>
             from <span className="purple"> Hyderabad, India.</span>
             <br />
-            I am currently employed as a Star AI Intern at Igebra.ai.
+            I am currently Looking for opportunities in Software Development roles to Contribute.
             <br />
-            I have completed B.Tech in Computer science and Engineering form Institute of Aernautical Engineering
-            Hyderabad.
+            I have completed B.Tech in Computer science and Engineering form Jawaharlal Nehru Technological University
+            Hyderabad (JNTUH).
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
