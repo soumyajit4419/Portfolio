@@ -1,6 +1,12 @@
 <h2 align="center">
   Portfolio Website <br/>
   <a href="https://humanwhoexplores.site/" target="_blank">humanwhoexplores.site</a>
+  Download My Resume <br />
+  <a href="public/krishan-chopra-resume-13-aug-2025.pdf" download="krishan-chopra-resume-13-aug-2025.pdf">
+    <button style="padding:10px 20px; font-size:16px; cursor:pointer;">
+        Download Resume
+    </button>
+  </a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/krishan-portfolio-website-main-photo.jpg" />
