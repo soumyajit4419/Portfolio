@@ -8,33 +8,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple">Ricardo Marinho, </span>
+            from <span className="purple"> Brazilia, Brazil.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I am currently building RaizTech, a startup focused on smart agricultural 
+            solutions and also developing an urban ride-sharing app to solve real mobility challenges.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I am pursuing a degree in Software Engineering, where I connect theory with practice to create scalable and meaningful solutions.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Make poems
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Playing at guitar
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Reading books
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Life is for those who know how to live, 
+            death is the full stop for those who knew how to write.."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Marcelo Gugu</footer>
         </blockquote>
       </Card.Body>
     </Card>
