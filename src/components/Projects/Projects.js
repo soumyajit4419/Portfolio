@@ -7,6 +7,7 @@ import appliScan from "../../Assets/Projects/appli_scan.png";
 import apiPoste from "../../Assets/Projects/apiposte.png";
 import asSarceaux from "../../Assets/Projects/as_sarceaux.png";
 import projetEnCours from "../../Assets/Projects/projet_en_cours.png";
+import ecarlate from "../../Assets/Projects/ecarlate.png";
 import Titre from "../Common/Titre";
 
 function Projects() {
@@ -40,6 +41,16 @@ function Projects() {
       langage: "React, Symfony, PHP, HTML, CSS, JS",
     },
     {
+      imgPath: ecarlate,
+      title: "Ecarlate RP",
+      subTitle: "Site web",
+      description:
+        "Conception d’un site vitrine pour la communauté Ecarlate RP (serveur Garry’s Mod) : infos serveur en temps réel, univers RP, règlement et ressources. Développé en React, hébergé sur Vercel, responsive. Projet arrêté suite à la fermeture du serveur.",
+      demoLink: "https://ecarlate-rp.vercel.app",
+      type: "web",
+      langage: "React, HTML, CSS, JS, API Rest",
+    },
+    {
       imgPath: asSarceaux,
       title: "AS Sarceaux",
       subTitle: "Site web",
@@ -55,9 +66,8 @@ function Projects() {
       subTitle: "Site web",
       description:
         "Projet réalisé dans le cadre d'un test de recrutement. Le site permet de consulter le statut de l'envoie d'un colis via l'API de La Poste.",
-      demoLink: "http://apiposte.fwh.is",
       type: "web",
-      langage: "HTML, CSS, PHP",
+      langage: "HTML, CSS, PHP, API Rest",
     },
     {
       imgPath: bmo,
