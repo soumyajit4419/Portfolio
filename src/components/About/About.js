@@ -1,53 +1,54 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import About2 from "./About2";
+import Titre from "../Common/Titre";
+import photo from "../../Assets/photo.JPG";
 
 function About() {
   return (
-    <Container fluid className="about-section">
-      <Particle />
-      <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+    <section>
+      <Container fluid className="about-section" id="about">
+        <Container >
+
+          <Row style={{ justifyContent: "center" }}>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" , textAlign: "center" }}>
+              <Titre>À propos de <strong className="purple">moi </strong></Titre>
             </h1>
-            <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
-        </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
-
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
+            <Col
+              md={8}
+              xs={12}
+              order={{ xs: 1, md: 2 }}
+              style={{
+                justifyContent: "center",
+                paddingTop: "30px",
+              }}
+            >
+              <Aboutcard />
+            </Col>
+            <Col
+              md={4}
+              xs={12}
+              order={{ xs: 2, md: 1 }}
+              className="about-img"
+              style={{ textAlign: "center", marginBottom: 20 }}
+            >
+              <img
+                src={photo}
+                alt="about"
+                className="photo"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </Container>
+
+      <About2 />
+    </section>
   );
 }
 
