@@ -20,6 +20,7 @@
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.42.2",
     "typewriter-effect": "^2.18.2",
+    "video-react": "^0.16.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -42,6 +42,11 @@ button:focus {
   opacity: 0;
 }
 
+/* #preloader-none {
+  opacity: 0;
+  display: none;
+} */
+
 #no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -257,7 +262,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -546,23 +551,36 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
   color: white !important;
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
+  display: flex !important;
+  align-self: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
   margin: 15px !important;
-  padding: 10px !important;
+  padding: 10px 20px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  outline: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
+  border-radius: 24px !important;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  width: fit-content !important;
+  cursor: pointer !important;
+  transition: outline-color 0.3s, outline-width 0.3s, transform 0.3s;
+  color: white;
+}
+
+.tech-icons-text {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -574,10 +592,10 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
 .tech-icon-images {
-  padding: 20px !important;
+  height: 1.6rem;
   line-height: 1.6 !important;
 }
 

@@ -1,30 +1,29 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
+import chrome from "../../Assets/TechIcons/Google Chrome.svg";
+import vsCode from "../../Assets/TechIcons/vscode.svg";
+import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <img src={macOs} alt="macOs" className="tech-icon-images" />
+        <div className="tech-icons-text">Mac Os</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+      <Col xs={4} md={2} className="tech-icons ">
+        <img src={chrome} alt="Chrome" className="tech-icon-images" />
+        <div className="tech-icons-text">Google Chrome</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+      <Col xs={4} md={2} className="tech-icons ">
+        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
+        <div className="tech-icons-text">Vs Code</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+
+      <Col xs={4} md={2} className="tech-icons ">
+        <img src={intelliJ} alt="go" className="tech-icon-images" />
+        <div className="tech-icons-text">IntelliJ</div>
       </Col>
     </Row>
   );
