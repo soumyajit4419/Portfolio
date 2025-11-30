@@ -6,35 +6,43 @@ import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" style={{ marginBottom: "10px" }}>
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
+      {/* Use a flex-column layout for the card body so that the buttons group can stick to the bottom */}
+      <Card.Body className="d-flex flex-column">
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
+        {/* Spacer div which pushes the button container down if content above is short */}
+        <div className="mt-auto" style={{ paddingTop: "10px" }}>
+          <div
+            style={{
+              display: "flex",
+              gap: "10px",
+              flexWrap: "wrap"
+            }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp;
+              {props.isBlog ? "Blog" : "GitHub"}
+            </Button>
+            {/* Render Demo button if applicable */}
+            {!props.isBlog && props.demoLink && (
+              <Button
+                variant="primary"
+                href={props.demoLink}
+                target="_blank"
+              >
+                <CgWebsite /> &nbsp;
+                Demo
+              </Button>
+            )}
+          </div>
+        </div>
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;
