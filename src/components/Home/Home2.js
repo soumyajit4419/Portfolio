@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container as="section" fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">

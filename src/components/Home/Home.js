@@ -15,7 +15,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
-    <section>
+    <main>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -23,7 +23,7 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave" role="img" aria-label="waving hand">
                   👋🏻
                 </span>
               </h1>
@@ -51,59 +51,61 @@ function Home() {
       </Container>
       <Home2 />
 
-      <Container>
-        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
-          <Col md={12} className="home-about-social">
-            <h1>Find Me On</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+      <section>
+        <Container>
+          <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
+            <Col md={12} className="home-about-social">
+              <h1>Find Me On</h1>
+              <p>
+                Feel free to <span className="purple">connect </span>with me
+              </p>
+              <ul className="home-about-social-links">
+                <li className="social-icons">
+                  <a
+                    href="https://github.com/soumyajit4419"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <AiFillGithub aria-label="github" />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://twitter.com/Soumyajit4419"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <AiOutlineTwitter aria-label="twitter" />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/soumyajit4419/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <FaLinkedinIn aria-label="linkedin" />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://www.instagram.com/soumyajit4419"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                  >
+                    <AiFillInstagram aria-label="instagram" />
+                  </a>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </main>
   );
 }
 
