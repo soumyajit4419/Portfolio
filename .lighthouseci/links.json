@@ -1,0 +1,5 @@
+{
+  "http://127.0.0.1:3000/": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1659546207844-47222.report.html",
+  "http://127.0.0.1:3000/about": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1659546208572-36953.report.html",
+  "http://127.0.0.1:3000/project": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1659546209244-49383.report.html"
+}
