@@ -1,0 +1,25 @@
+name: Vercel Deployment
+
+on:
+  push:
+    branches:
+      - preview/fix
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Allow unsecure commands
+        run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
+
+      - name: Deploy to Staging
+        id: deploy-vercel-staging
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC}}
+          scope: ${{ secrets.VERCEL_ORG_ID }}

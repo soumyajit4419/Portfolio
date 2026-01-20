@@ -1,0 +1,10 @@
+{
+  "build": {
+    "commands": [
+      "npm install -g env-cmd",
+      "yarn",   
+      "npm run build-server",   
+      "env-cmd -f .env.dev yarn run build" 
+    ]
+  }
+}
