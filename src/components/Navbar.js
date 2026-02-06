@@ -15,6 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { name, blogsLink } from "../data/portfolioData";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -39,7 +40,13 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <h2><strong className="main-name">
+          {name
+            .split(" ")
+            .map(word => word.charAt(0))
+            .join("")
+          }. 
+          </strong></h2>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -94,7 +101,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href={blogsLink}
                 target="_blank"
                 rel="noreferrer"
               >
