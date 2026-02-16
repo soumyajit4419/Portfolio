@@ -30,7 +30,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> SAAD KADDIOUI</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -61,7 +61,7 @@ function Home() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/saadkadd03"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -71,7 +71,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/saadkaddioui"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -81,7 +81,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/saadkaddioui/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -91,7 +91,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/kaddioui_saad"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -99,6 +99,16 @@ function Home() {
                   <AiFillInstagram />
                 </a>
               </li>
+            <li>
+              <a 
+                href="saadkaddioui6@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour home-social-icons"
+              >
+                <AiFillInstagram />
+              </a>
+            </li>
             </ul>
           </Col>
         </Row>

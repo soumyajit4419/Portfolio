@@ -10,6 +10,33 @@ import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
+  const showProjects = false; // change to true when needed
+
+  if (!showProjects) {
+  return (
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+          textAlign: "center",
+          padding: "20px",
+        }}
+      >
+        <h1 style={{ fontSize: "2.5rem", marginBottom: "10px" }}>
+          🚧 Page Under Construction
+        </h1>
+        <p style={{ fontSize: "1.1rem", opacity: 0.8 }}>
+          I’m still working on this section.  
+          Please check back soon!
+        </p>
+      </div>
+    );
+  } 
+  // remove the lines above to make page available
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -72,7 +99,7 @@ function Projects() {
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              demoLink="https://ai-for-social-good.soumya-jit.tech/"
             />
           </Col>
 
