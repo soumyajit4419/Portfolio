@@ -10,37 +10,43 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            COMMENT ALLIER<span className="purple"> MES 2 </span> PASSIONS ? 
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              D’une part ayant toujours été passionné par l’informatique et 
+              d’autre part attiré par les marchés financiers depuis maintenant 3 ans. 
+              <br></br>
+              <br />
+              La réponse a cette question m’a poussé à m’inscrire à un bachelor 
+              en développement afin de tirer le meilleur parti des des deux côtés 
+              sachant que plus de 80% des transactions sur les marchés financiers 
+              se font via des algorithmes de nos jours. 
+              J’aimerais me spécialiser en data sciences après ce bachelor.
               <br />
               <br />
-              I’m proficient in
+              Je suis à l'aise avec 
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Github/Gitlab, Node.js, JavaScript, TypeScript , HTML/CSS,  et les API.{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              Je développe des applications full-stack en m’appuyant sur des bases de données <b className="purple"> {" "}SQL et NoSQL.{" "} </b>
               <br />
               <br />
-              My key areas of interest include developing
+              J’accorde une importance particulière à la qualité du code
+              grâce aux tests API
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  (Postman) et (Cypress){" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              pour les tests end-to-end.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              Je gère également le déploiement d’applications web, notamment via Render. Je prends plaisir à créer des projets avec
+              <b className="purple"> Node.js </b> ainsi qu’avec des frameworks modernes tels que{" "}
               <i>
                 <b className="purple">React.js</b> and{" "}
                 <b className="purple">Next.js</b>.
