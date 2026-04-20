@@ -8,10 +8,10 @@ import Techstack from "../About/Techstack";
 import Github from "../About/Github";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Home() {
   return (
@@ -71,12 +71,12 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://x.com/Soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaXTwitter />
                 </a>
               </li>
               <li className="social-icons">
