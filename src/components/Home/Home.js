@@ -23,8 +23,10 @@ function Home() {
               <h2 className="heading-name">
                 I'm
                 <strong className="main-name"> M. Chastain Flournoy</strong>
-                <p>and this is my playground.</p>
               </h2>
+              {/* used to live inside the h2 (invalid markup) — pulled out
+                  but kept at the same size so the hero looks unchanged */}
+              <p className="heading-name">and this is my playground.</p>
 
             </Col>
 

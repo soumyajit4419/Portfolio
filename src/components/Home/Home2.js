@@ -13,9 +13,9 @@ function Home2() {
       <Container>
         <Row>
           <Col md={5} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h2 style={{ fontSize: "2.6em" }}>
               WHAT <span className="orange"> EXCITES </span> ME
-            </h1>
+            </h2>
             <div className="home-about-body">
               <p>
                 I'm passionate about user experience and accessibility. A
@@ -53,7 +53,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>CONNECT WITH ME</h1>
+            <h2 style={{ fontSize: "2.6em" }}>CONNECT WITH ME</h2>
                <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
