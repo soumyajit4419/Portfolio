@@ -29,6 +29,30 @@ a {
   text-decoration: none;
 }
 
+/* links were the one focusable thing missing a ring — match the buttons */
+a:focus-visible {
+  outline: 2px solid var(--imp-text-secondary) !important;
+  outline-offset: 2px !important;
+}
+
+/* hidden until a keyboard user tabs to it, then it drops in up top */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  z-index: 1100;
+  padding: 10px 16px;
+  background: #0c0513;
+  color: var(--imp-text-secondary);
+  border: 2px solid var(--imp-text-secondary);
+  border-radius: 6px;
+  transition: top 0.15s ease-in;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */

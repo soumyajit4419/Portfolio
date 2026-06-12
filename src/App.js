@@ -37,9 +37,11 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
+        {/* first thing a keyboard user hits — lets them jump the navbar */}
+        <a href="#main" className="skip-link">Skip to content</a>
         <Navbar />
         <ScrollToTop />
-        <main>
+        <main id="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
