@@ -1,7 +1,12 @@
 import React from "react";
 import Particles from "react-tsparticles";
+import useReducedMotion from "../hooks/useReducedMotion";
 
 function Particle() {
+  // if they've asked for less motion, keep the starfield but freeze it —
+  // particles still render, they just stop drifting and pulsing.
+  const reduced = useReducedMotion();
+
   return (
     <Particles
       id="tsparticles"
@@ -19,6 +24,7 @@ function Particle() {
             opacity: 0.03,
           },
           move: {
+            enable: !reduced,
             direction: "right",
             speed: 0.05,
           },
@@ -27,7 +33,7 @@ function Particle() {
           },
           opacity: {
             anim: {
-              enable: true,
+              enable: !reduced,
               speed: 1,
               opacity_min: 0.05,
             },
@@ -40,7 +46,7 @@ function Particle() {
               mode: "push",
             },
 
-           
+
         },
         particles: {
           color: {
