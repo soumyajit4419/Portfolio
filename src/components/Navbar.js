@@ -13,12 +13,15 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { useTheme } from "../ThemeContext";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -99,6 +102,16 @@ function NavBar() {
                 rel="noreferrer"
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link onClick={toggleTheme} style={{ cursor: "pointer" }}>
+                {theme === "dark" ? (
+                  <FiSun style={{ marginBottom: "2px" }} />
+                ) : (
+                  <FiMoon style={{ marginBottom: "2px" }} />
+                )}
               </Nav.Link>
             </Nav.Item>
 
