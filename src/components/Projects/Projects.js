@@ -14,7 +14,7 @@ import Particle from "../Particle";
 
 // Imagen del proyecto GALAH
 import galah from "../../Assets/Projects/galah_project.png";
-
+import globular_cluster from "../../Assets/Projects/binary_fraction.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -36,6 +36,16 @@ function Projects() {
               title="GALAH DR4: Random Forest para la Vía Láctea"
               description="Desarrollo de modelos de aprendizaje automático mediante Random Forest, utilizando datos espectroscópicos de más de 900.000 estrellas del catálogo GALAH DR4. El proyecto explora la clasificación de las distintas componentes de la Vía Láctea, la predicción de abundancias químicas y la estimación de edades estelares a partir de su composición química."
               ghLink="https://github.com/pablo-dz/GALAH-Galactic-Archaeology"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={globular_cluster}
+              isBlog={false}
+              title="Fracción binaria en cúmulos globulares: Gaia DR3 + MIST"
+              description="Estimación de la fracción de estrellas binarias de secuencia principal (MS-MS) en ocho cúmulos globulares, utilizando datos astrométricos y fotométricos de Gaia DR3 e isócronas MIST. El proyecto implementa el método de identificación de binarias de Pang et al. (2023a) y realiza un análisis preliminar de la relación entre la fracción binaria y la edad de los cúmulos."
+              ghLink="https://github.com/pablo-dz/gaia-binary-stars"
             />
           </Col>
 
