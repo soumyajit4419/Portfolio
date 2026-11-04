@@ -21,11 +21,11 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Mis <strong className="purple">Trabajos</strong> Recientes
+          Mis <strong className="purple">Trabajos</strong>
         </h1>
 
         <p style={{ color: "white" }}>
-          Una selección de algunos de mis proyectos más recientes.
+          Una selección de algunos de mis proyectos.
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
