@@ -25,19 +25,19 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Literatura 📚
+              <ImPointRight /> La lectura y literatura 📚
             </li>
             <li className="about-activity">
-              <ImPointRight /> Básquetbol 🏀
+              <ImPointRight /> Practicar básquetbol 🏀
             </li>
             <li className="about-activity">
-              <ImPointRight /> Ajedrez ♟️
+              <ImPointRight /> Jugar ajedrez con mis amigos ♟️ o en su defecto juegos de mesa 🎲 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Bajo eléctrico 🎸
+              <ImPointRight /> Estoy intentando aprender a tocar el bajo eléctrico 🎸
             </li>
             <li className="about-activity">
-              <ImPointRight /> Videojuegos 🎮
+              <ImPointRight /> Mi hobbie desde la infancia: videojuegos 🎮
             </li>
           </ul>
 
