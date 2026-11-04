@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
@@ -10,46 +11,56 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              SOBRE <span className="purple"> MÍ </span>
             </h1>
+
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              Soy <b className="purple">Licenciado en Astronomía</b> de la
+              Pontificia Universidad Católica de Chile. Mi formación
+              académica me ha permitido desarrollar una sólida base en
+              matemáticas, programación y análisis estadístico, áreas que
+              han despertado mi especial interés por la{" "}
+              <b className="purple">Ciencia de Datos</b>.
               <br />
               <br />
-              I’m proficient in
+              Durante mi experiencia como asistente de investigación,
+              trabajé en el análisis de datos espectroscópicos de 14 galaxias
+              en fusión, desarrollando{" "}
+              <b className="purple">pipelines en Python</b> para procesar
+              observaciones del instrumento VLT/MUSE. Mediante modelos
+              estadísticos y métodos de optimización, estudié las propiedades
+              físicas y cinemáticas de estos sistemas.
+              <br />
+              <br />
+              También he aplicado herramientas computacionales en otros
+              contextos, como el procesamiento y estructuración de
+              información mediante <b className="purple">SQL</b> durante mi
+              experiencia en CONAF. Asimismo, he desarrollado proyectos de{" "}
+              <b className="purple">Machine Learning</b>, utilizando
+              algoritmos como Random Forest para analizar datos astronómicos
+              del catálogo GALAH.
+              <br />
+              <br />
+              Mis principales intereses se encuentran en el{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  aprendizaje automático, la inteligencia artificial y el
+                  desarrollo de modelos predictivos
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
-              <br />
-              <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              . Me motiva explorar cómo las herramientas matemáticas y
+              computacionales permiten extraer conocimiento de los datos y
+              abordar problemas complejos en distintas áreas.
             </p>
           </Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="Ilustración personal"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -57,4 +68,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
