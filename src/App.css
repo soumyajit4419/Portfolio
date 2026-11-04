@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.tech-icons {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
