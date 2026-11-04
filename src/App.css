@@ -42,3 +42,23 @@
   height: 45px;
   object-fit: contain;
 }
+
+
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px 25px;
+  color: white;
+  background-color: #c084f5;
+  border: 1px solid #c084f5;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: transparent;
+  color: #c084f5;
+}
