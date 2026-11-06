@@ -11,43 +11,39 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             ¡Hola! Soy <span className="purple">Pablo Díaz</span>, de{" "}
             <span className="purple">Santiago, Chile</span>.
-            Soy Licenciado en Astronomía de la Pontificia Universidad Católica de Chile (PUC). 
             <br />
             <br />
-            Durante 2025 trabajé como asistente de investigación en el Instituto de Astrofísica PUC, donde tuve la oportunidad de desarrollar experiencia trabajando con datos científicos y herramientas computacionales.
+            Me interesa explorar cómo distintas disciplinas pueden complementarse para comprender y abordar problemas complejos. Mi formación en astronomía me ha llevado a desarrollar una manera de pensar basada en el análisis, la observación y la búsqueda de explicaciones, pero también ha despertado mi interés por otras áreas, particularmente la ciencia de datos y la tecnología.
             <br />
             <br />
-            Mi formación en astronomía despertó mi interés por la programación, el análisis de datos, la inteligencia artificial y la resolución de problemas complejos. Con el tiempo, ese interés se ha extendido más allá del ámbito científico, llevándome a explorar distintas aplicaciones de la computación y las nuevas tecnologías.
+            Disfruto aprender cosas nuevas, experimentar con herramientas e ideas y enfrentar desafíos que me obliguen a salir de lo conocido. Me motiva especialmente encontrar conexiones entre distintos campos del conocimiento y transformar esa curiosidad en proyectos concretos..
             <br />
             <br />
-            Me interesa especialmente trabajar en proyectos que combinen pensamiento analítico, creatividad y tecnología, aprovechando las herramientas computacionales para abordar problemas y desarrollar nuevas soluciones. Siempre mantengo la curiosidad por aprender y enfrentar nuevos desafíos.
-                        
-
-            <br />
-            <br />
-            Fuera del ámbito académico, disfruto de:
+            Fuera del trabajo y los estudios, disfruto de:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Leer novelas, especialmente aquellas relacionadas con tópicos filosóficos 📚
+              <ImPointRight /> Leer novelas, especialmente aquellas
+              relacionadas con tópicos filosóficos 📚
             </li>
             <li className="about-activity">
               <ImPointRight /> Jugar básquetbol con amigos 🏀
             </li>
             <li className="about-activity">
-              <ImPointRight /> Ajedrez o juegos de mesa ♟️🎲 
+              <ImPointRight /> El ajedrez y los juegos de mesa ♟️🎲
             </li>
             <li className="about-activity">
-              <ImPointRight /> Estoy intentando aprender a tocar el bajo eléctrico 🎸
+              <ImPointRight /> Aprender a tocar el bajo eléctrico 🎸
             </li>
             <li className="about-activity">
-              <ImPointRight /> Mi hobbie más antiguo, los videojuegos 🎮
+              <ImPointRight /> Los videojuegos, uno de mis intereses más
+              antiguos 🎮
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            “Science is more than a body of knowledge; it is a way of thinking.”
+            "Science is more than a body of knowledge; it is a way of thinking."
           </p>
           <footer className="blockquote-footer">Carl Sagan</footer>
         </blockquote>

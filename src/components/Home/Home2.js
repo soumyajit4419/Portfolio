@@ -41,7 +41,7 @@ function Home2() {
               del catálogo GALAH.
               <br />
               <br />
-              Mis principales intereses se encuentran en el{" "}
+              Mis principales intereses profesionales se encuentran en el{" "}
               <i>
                 <b className="purple">
                   aprendizaje automático, la inteligencia artificial y el
