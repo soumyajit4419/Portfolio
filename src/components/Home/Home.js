@@ -37,7 +37,7 @@ function Home() {
            <Col md={5} className="home-visual">
             <Spiral />
            </Col>
-           
+
           </Row>
         </Container>
       </Container>

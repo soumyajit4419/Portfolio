@@ -612,9 +612,56 @@ button:focus {
   padding-left: 1px !important;
 }
 
+/* --------- */
+/* About image */
+/* --------- */
+
+.about-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 35px !important;
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+}
+
+.about-profile-img {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+  margin-top: 0;
+
+  border-radius: 16px;
+  filter: brightness(1.06) contrast(1.04);
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(148, 85, 255, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-profile-img:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(148, 85, 255, 0.18);
+}
+
+/* Pantallas pequeñas */
 @media (max-width: 767px) {
   .about-img {
-    padding-top: 0 !important;
+    padding-left: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .about-profile-img {
+    max-width: 320px;
   }
 }
 /* --------- */

@@ -5,8 +5,10 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+//import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import meImg from "../../Assets/avatar.jpeg";
+
 
 function About() {
   return (
@@ -14,8 +16,7 @@ function About() {
       <Particle />
       <Container fluid className="about-section">
         <Container>
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <Col
+        <Row style={{ justifyContent: "center", alignItems: "flex-start", padding: "10px" }}>            <Col
               md={7}
               style={{
                 justifyContent: "center",
@@ -31,13 +32,12 @@ function About() {
 
             <Col
               md={5}
-              style={{ paddingTop: "120px", paddingBottom: "50px" }}
               className="about-img"
             >
               <img
-                src={laptopImg}
-                alt="Ilustración de trabajo y tecnología"
-                className="img-fluid"
+                src={meImg}
+                alt="Ilustración personal"
+                className="img-fluid about-profile-img"
               />
             </Col>
           </Row>
