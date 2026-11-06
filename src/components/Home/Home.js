@@ -1,12 +1,13 @@
 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+//import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Spiral from "./Spiral";
 
 function Home() {
   return (
@@ -33,14 +34,10 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="Illustration"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col>
+           <Col md={5} className="home-visual">
+            <Spiral />
+           </Col>
+           
           </Row>
         </Container>
       </Container>

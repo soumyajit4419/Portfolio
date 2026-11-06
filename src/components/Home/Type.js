@@ -6,10 +6,10 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Licenciado en Astronomía",
-          "Interesado en Ciencia de Datos",
-          "Análisis de Datos Científicos",
-          "Apasionado por la Programación",
+          "Formación en Astronomía",
+          "Ciencia de Datos ",
+          "Análisis Computacional",
+          "Programación y Tecnología",
         ],
         autoStart: true,
         loop: true,

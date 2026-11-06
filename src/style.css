@@ -261,8 +261,8 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  z-index: 0;
+  isolation: isolate;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -270,11 +270,12 @@ button:focus {
 }
 
 .home-content {
+  position: relative;
+  z-index: 1;
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
-
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
