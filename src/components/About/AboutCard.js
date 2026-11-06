@@ -11,13 +11,18 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             ¡Hola! Soy <span className="purple">Pablo Díaz</span>, de{" "}
             <span className="purple">Santiago, Chile</span>.
+            Soy Licenciado en Astronomía de la Pontificia Universidad Católica de Chile (PUC). 
             <br />
-            Soy Licenciado en Astronomía de la Pontificia Universidad Católica
-            de Chile y cuento con un certificado académico en Computación e
-            Informática.
             <br />
-            Durante 2025 trabajé como asistente de investigación en el
-            Instituto de Astrofísica UC.
+            Durante 2025 trabajé como asistente de investigación en el Instituto de Astrofísica PUC, donde tuve la oportunidad de desarrollar experiencia trabajando con datos científicos y herramientas computacionales.
+            <br />
+            <br />
+            Mi formación en astronomía despertó mi interés por la programación, el análisis de datos, la inteligencia artificial y la resolución de problemas complejos. Con el tiempo, ese interés se ha extendido más allá del ámbito científico, llevándome a explorar distintas aplicaciones de la computación y las nuevas tecnologías.
+            <br />
+            <br />
+            Me interesa especialmente trabajar en proyectos que combinen pensamiento analítico, creatividad y tecnología, aprovechando las herramientas computacionales para abordar problemas y desarrollar nuevas soluciones. Siempre mantengo la curiosidad por aprender y enfrentar nuevos desafíos.
+                        
+
             <br />
             <br />
             Fuera del ámbito académico, disfruto de:
@@ -25,19 +30,19 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> La lectura y literatura 📚
+              <ImPointRight /> Leer novelas, especialmente aquellas relacionadas con tópicos filosóficos 📚
             </li>
             <li className="about-activity">
-              <ImPointRight /> Practicar básquetbol 🏀
+              <ImPointRight /> Jugar básquetbol con amigos 🏀
             </li>
             <li className="about-activity">
-              <ImPointRight /> Jugar ajedrez con mis amigos ♟️ o en su defecto juegos de mesa 🎲 
+              <ImPointRight /> Ajedrez o juegos de mesa ♟️🎲 
             </li>
             <li className="about-activity">
               <ImPointRight /> Estoy intentando aprender a tocar el bajo eléctrico 🎸
             </li>
             <li className="about-activity">
-              <ImPointRight /> Mi hobbie desde la infancia: videojuegos 🎮
+              <ImPointRight /> Mi hobbie más antiguo, los videojuegos 🎮
             </li>
           </ul>
 

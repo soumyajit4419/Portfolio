@@ -45,6 +45,11 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
+        <img src={Javascript} alt="JavaScript" className="tech-icon-images" />
+        <div className="tech-icons-text">JavaScript</div>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
         <img src={Ruby} alt="Ruby" className="tech-icon-images" />
         <div className="tech-icons-text">Ruby</div>
       </Col>
